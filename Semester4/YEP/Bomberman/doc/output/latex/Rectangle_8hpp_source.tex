@@ -1,0 +1,41 @@
+\hypertarget{Rectangle_8hpp_source}{}\doxysection{Rectangle.\+hpp}
+\label{Rectangle_8hpp_source}\index{src/raylib/rectangle/Rectangle.hpp@{src/raylib/rectangle/Rectangle.hpp}}
+\mbox{\hyperlink{Rectangle_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#ifndef RECTANGLE\_HPP\_}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#define RECTANGLE\_HPP\_}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include "{}../Raylib.hpp"{}}}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 \textcolor{keyword}{namespace }indie}
+\DoxyCodeLine{18 \{}
+\DoxyCodeLine{19     \textcolor{keyword}{namespace }raylib}
+\DoxyCodeLine{20     \{}
+\DoxyCodeLine{22         \textcolor{keyword}{class }\mbox{\hyperlink{classindie_1_1raylib_1_1Rectangle}{Rectangle}} \{}
+\DoxyCodeLine{23           \textcolor{keyword}{public}:}
+\DoxyCodeLine{32             \mbox{\hyperlink{classindie_1_1raylib_1_1Rectangle_ad1834120ff533105d870010aaac6b932}{Rectangle}}(\textcolor{keywordtype}{float} x, \textcolor{keywordtype}{float} y, \textcolor{keywordtype}{float} width, \textcolor{keywordtype}{float} height);}
+\DoxyCodeLine{42             \mbox{\hyperlink{classindie_1_1raylib_1_1Rectangle_afc6258c0b0167bbe7edb6d863030c574}{Rectangle}}(\textcolor{keywordtype}{float} x, \textcolor{keywordtype}{float} y, \textcolor{keywordtype}{float} width, \textcolor{keywordtype}{float} height, Color color);}
+\DoxyCodeLine{47             \mbox{\hyperlink{classindie_1_1raylib_1_1Rectangle_a60cbf9a50b94a4a005cd403bf6a03e53}{\string~Rectangle}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{53             ::Vector2 \mbox{\hyperlink{classindie_1_1raylib_1_1Rectangle_af920b4a3606787777e80eb8ff5a3592c}{getSize}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{60             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Rectangle_a243c355fb21ea22eddae85132300558e}{setSize}}(\textcolor{keywordtype}{float} newWidth, \textcolor{keywordtype}{float} newHeight);}
+\DoxyCodeLine{66             ::Vector2 \mbox{\hyperlink{classindie_1_1raylib_1_1Rectangle_a46cceedb8a177f6a6b497e88f8a9f9c3}{getPosition}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{73             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Rectangle_a04cb5e1b06e0f8420991173226868467}{setPosition}}(\textcolor{keywordtype}{float} posX, \textcolor{keywordtype}{float} posY);}
+\DoxyCodeLine{79             ::Color \mbox{\hyperlink{classindie_1_1raylib_1_1Rectangle_a9e6e558e134cd2cb1622674332c22376}{getColor}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{85             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Rectangle_aa3e651f88cea60b16ca7f07e4f4a1cda}{setColor}}(::Color color);}
+\DoxyCodeLine{89             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Rectangle_acc271531eed7bf04cb946baeeae70d16}{draw}}();}
+\DoxyCodeLine{95             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Rectangle_acc271531eed7bf04cb946baeeae70d16}{draw}}(::Color color);}
+\DoxyCodeLine{105             \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Rectangle_acc271531eed7bf04cb946baeeae70d16}{draw}}(\textcolor{keywordtype}{int} posX, \textcolor{keywordtype}{int} posY, \textcolor{keywordtype}{int} width, \textcolor{keywordtype}{int} height, ::Color color);}
+\DoxyCodeLine{113             \mbox{\hyperlink{classindie_1_1raylib_1_1Rectangle_ad1834120ff533105d870010aaac6b932}{::Rectangle}} \mbox{\hyperlink{classindie_1_1raylib_1_1Rectangle_a7bead9849b006fe7c2a0676dea00b993}{getCollision}}(\mbox{\hyperlink{classindie_1_1raylib_1_1Rectangle_ad1834120ff533105d870010aaac6b932}{::Rectangle}} rec2) \textcolor{keyword}{const};}
+\DoxyCodeLine{122             \textcolor{keywordtype}{bool} \mbox{\hyperlink{classindie_1_1raylib_1_1Rectangle_a26d379fb67fda6a743cd6ea8e20516c2}{checkCollision}}(\mbox{\hyperlink{classindie_1_1raylib_1_1Rectangle_ad1834120ff533105d870010aaac6b932}{::Rectangle}} rec2) \textcolor{keyword}{const};}
+\DoxyCodeLine{123 }
+\DoxyCodeLine{124           \textcolor{keyword}{private}:}
+\DoxyCodeLine{129             \mbox{\hyperlink{classindie_1_1raylib_1_1Rectangle_ad1834120ff533105d870010aaac6b932}{::Rectangle}} \_rectangle;}
+\DoxyCodeLine{134             ::Color \_color;}
+\DoxyCodeLine{135         \};}
+\DoxyCodeLine{136     \} \textcolor{comment}{// namespace raylib}}
+\DoxyCodeLine{137 \} \textcolor{comment}{// namespace indie}}
+\DoxyCodeLine{138 }
+\DoxyCodeLine{139 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* !RECTANGLE\_HPP\_ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

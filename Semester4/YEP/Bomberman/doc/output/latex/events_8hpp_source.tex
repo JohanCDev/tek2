@@ -1,0 +1,90 @@
+\hypertarget{events_8hpp_source}{}\doxysection{events.\+hpp}
+\label{events_8hpp_source}\index{include/events.hpp@{include/events.hpp}}
+\mbox{\hyperlink{events_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{/*}}
+\DoxyCodeLine{2 \textcolor{comment}{** EPITECH PROJECT, 2022}}
+\DoxyCodeLine{3 \textcolor{comment}{** Bomberman}}
+\DoxyCodeLine{4 \textcolor{comment}{** File description:}}
+\DoxyCodeLine{5 \textcolor{comment}{** Events}}
+\DoxyCodeLine{6 \textcolor{comment}{*/}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#ifndef INDIE\_EVENT\_HPP\_}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#define INDIE\_EVENT\_HPP\_}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{Vec2_8hpp}{Vec2.hpp}}"{}}}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 \textcolor{keyword}{namespace }indie}
+\DoxyCodeLine{18 \{}
+\DoxyCodeLine{22     \textcolor{keyword}{struct }\mbox{\hyperlink{structindie_1_1Event}{Event}} \{}
+\DoxyCodeLine{27         \textcolor{keyword}{using }\mbox{\hyperlink{structindie_1_1Event_ac031731b216e52b5396b2eb49a9e4e70}{Key}} = char;}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{30         \textcolor{keyword}{struct }\mbox{\hyperlink{structindie_1_1Event_1_1SizeEvent}{SizeEvent}} \{}
+\DoxyCodeLine{32             \mbox{\hyperlink{structindie_1_1vec2}{vec2u}} \mbox{\hyperlink{structindie_1_1Event_1_1SizeEvent_aad534aa2764ba4c50d8ecd37db7dd9e6}{oldSize}};}
+\DoxyCodeLine{34             \mbox{\hyperlink{structindie_1_1vec2}{vec2i}} \mbox{\hyperlink{structindie_1_1Event_1_1SizeEvent_add2262b73d41ec7f796ea867ef2f0264}{newSize}};}
+\DoxyCodeLine{35         \};}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{38         \textcolor{keyword}{struct }\mbox{\hyperlink{structindie_1_1Event_1_1KeyEvent}{KeyEvent}} \{}
+\DoxyCodeLine{40             \textcolor{keywordtype}{bool} \mbox{\hyperlink{structindie_1_1Event_1_1KeyEvent_aec0aa46fc33fb0ce85ebca85d29d94fd}{l\_alt}};}
+\DoxyCodeLine{42             \textcolor{keywordtype}{bool} \mbox{\hyperlink{structindie_1_1Event_1_1KeyEvent_a107ea11545f0f62289e959aaafb5dce8}{r\_alt}};}
+\DoxyCodeLine{44             \textcolor{keywordtype}{bool} \mbox{\hyperlink{structindie_1_1Event_1_1KeyEvent_ada572e2d89d4db516cf873742cbc0a60}{l\_control}};}
+\DoxyCodeLine{46             \textcolor{keywordtype}{bool} \mbox{\hyperlink{structindie_1_1Event_1_1KeyEvent_a8ba7d399e217b14a5364647aca7e10b3}{r\_control}};}
+\DoxyCodeLine{48             \textcolor{keywordtype}{bool} \mbox{\hyperlink{structindie_1_1Event_1_1KeyEvent_aee74db2f7ae031f864234ad418d096f5}{l\_shift}};}
+\DoxyCodeLine{50             \textcolor{keywordtype}{bool} \mbox{\hyperlink{structindie_1_1Event_1_1KeyEvent_a6472059d31687c7f89efe1594193adad}{r\_shift}};}
+\DoxyCodeLine{52             \textcolor{keywordtype}{bool} \mbox{\hyperlink{structindie_1_1Event_1_1KeyEvent_a570e93306f0649c5d91e6b9e11b0de1e}{up}};}
+\DoxyCodeLine{54             \textcolor{keywordtype}{bool} \mbox{\hyperlink{structindie_1_1Event_1_1KeyEvent_a96d27a73aa45a862c018eeb70cafdaf9}{down}};}
+\DoxyCodeLine{56             \textcolor{keywordtype}{bool} \mbox{\hyperlink{structindie_1_1Event_1_1KeyEvent_a0e9dae7c57bfe164f7e4b95e415091dd}{left}};}
+\DoxyCodeLine{58             \textcolor{keywordtype}{bool} \mbox{\hyperlink{structindie_1_1Event_1_1KeyEvent_a464d5961fc32cc9fef1bed97ed52ebea}{right}};}
+\DoxyCodeLine{60             \textcolor{keywordtype}{bool} \mbox{\hyperlink{structindie_1_1Event_1_1KeyEvent_a9de544b5f24a3596e7053443b0ba4b29}{enter}};}
+\DoxyCodeLine{62             \mbox{\hyperlink{structindie_1_1Event_ac031731b216e52b5396b2eb49a9e4e70}{Key}} \mbox{\hyperlink{structindie_1_1Event_1_1KeyEvent_a6d80719fd9ed0b24513a5fef92167e25}{code}};}
+\DoxyCodeLine{63         \};}
+\DoxyCodeLine{64 }
+\DoxyCodeLine{66         \textcolor{keyword}{enum} \mbox{\hyperlink{structindie_1_1Event_a1e4e02afb02bb331036a743527e7447d}{ControllerCode}} \{}
+\DoxyCodeLine{68             \mbox{\hyperlink{structindie_1_1Event_a1e4e02afb02bb331036a743527e7447da17328e7b2aa391c14a24b25112f05537}{CONTROLLER\_NONE}},}
+\DoxyCodeLine{70             \mbox{\hyperlink{structindie_1_1Event_a1e4e02afb02bb331036a743527e7447dadd2db3783fa356f9ace00481291991ed}{UP\_BUTTON}},}
+\DoxyCodeLine{72             \mbox{\hyperlink{structindie_1_1Event_a1e4e02afb02bb331036a743527e7447dae199287258aa2b327241d4d76fbabe25}{RIGHT\_BUTTON}},}
+\DoxyCodeLine{74             \mbox{\hyperlink{structindie_1_1Event_a1e4e02afb02bb331036a743527e7447da05fdeed6d47b1442f9b5a9bd417c7fdf}{DOWN\_BUTTON}},}
+\DoxyCodeLine{76             \mbox{\hyperlink{structindie_1_1Event_a1e4e02afb02bb331036a743527e7447da7d7387eef6790bba4e6775ae68985888}{LEFT\_BUTTON}},}
+\DoxyCodeLine{78             \mbox{\hyperlink{structindie_1_1Event_a1e4e02afb02bb331036a743527e7447da6852095f484ecb89d3fa9de8cbb603b1}{T\_BUTTON}},}
+\DoxyCodeLine{80             \mbox{\hyperlink{structindie_1_1Event_a1e4e02afb02bb331036a743527e7447da590923957e767b68c0d87cd0026d909b}{O\_BUTTON}},}
+\DoxyCodeLine{82             \mbox{\hyperlink{structindie_1_1Event_a1e4e02afb02bb331036a743527e7447da9a5d76cc038059a623ec5e9a575d122a}{X\_BUTTON}},}
+\DoxyCodeLine{84             \mbox{\hyperlink{structindie_1_1Event_a1e4e02afb02bb331036a743527e7447da74c30b1774c6edb96f34fb604e7ff05b}{S\_BUTTON}},}
+\DoxyCodeLine{86             \mbox{\hyperlink{structindie_1_1Event_a1e4e02afb02bb331036a743527e7447da6113c840914d24be28487dcd4d4ae937}{L1\_BUTTON}},}
+\DoxyCodeLine{88             \mbox{\hyperlink{structindie_1_1Event_a1e4e02afb02bb331036a743527e7447daa2f5976694149a39128e4c3c46c2533d}{L2\_BUTTON}},}
+\DoxyCodeLine{90             \mbox{\hyperlink{structindie_1_1Event_a1e4e02afb02bb331036a743527e7447da86e8721c638cce206293eefa3f8cd2b6}{R1\_BUTTON}},}
+\DoxyCodeLine{92             \mbox{\hyperlink{structindie_1_1Event_a1e4e02afb02bb331036a743527e7447da5f6807574478ea0d4e1934dd76f503a0}{R2\_BUTTON}},}
+\DoxyCodeLine{94             \mbox{\hyperlink{structindie_1_1Event_a1e4e02afb02bb331036a743527e7447daa5aed2dc331f2bbeac754db58a9116bc}{SHARE\_BUTTON}},}
+\DoxyCodeLine{96             \mbox{\hyperlink{structindie_1_1Event_a1e4e02afb02bb331036a743527e7447da90520771eff0a69d9aca42340799503c}{TOUCHPAD\_BUTTON}},}
+\DoxyCodeLine{98             \mbox{\hyperlink{structindie_1_1Event_a1e4e02afb02bb331036a743527e7447da0f60151d6a5b42bff3b054c93083a336}{OPTION\_BUTTON}},}
+\DoxyCodeLine{100             \mbox{\hyperlink{structindie_1_1Event_a1e4e02afb02bb331036a743527e7447da87813b73a47aa5daceff29f7fac36b5d}{L3\_BUTTON}},}
+\DoxyCodeLine{102             \mbox{\hyperlink{structindie_1_1Event_a1e4e02afb02bb331036a743527e7447daefc28fb0017093b1e08bce1043bb785a}{R3\_BUTTON}}}
+\DoxyCodeLine{103         \};}
+\DoxyCodeLine{104 }
+\DoxyCodeLine{106         \textcolor{keyword}{enum} \mbox{\hyperlink{structindie_1_1Event_ab71803dd89e98c51223b830a824248bc}{JoystickDirection}} \{}
+\DoxyCodeLine{108             \mbox{\hyperlink{structindie_1_1Event_ab71803dd89e98c51223b830a824248bca25938f05a7955f5a31c9403ed2ad7ffd}{JOYSTICK\_NONE}},}
+\DoxyCodeLine{110             \mbox{\hyperlink{structindie_1_1Event_ab71803dd89e98c51223b830a824248bca5b2fdd09f5be04f91f0025e246b25376}{UP}},}
+\DoxyCodeLine{112             \mbox{\hyperlink{structindie_1_1Event_ab71803dd89e98c51223b830a824248bca28cd2eb630aca6c2809ae83f055a6cbb}{RIGHT}},}
+\DoxyCodeLine{114             \mbox{\hyperlink{structindie_1_1Event_ab71803dd89e98c51223b830a824248bca2a1de5ac07923e4f722f9dcc0cac3509}{DOWN}},}
+\DoxyCodeLine{116             \mbox{\hyperlink{structindie_1_1Event_ab71803dd89e98c51223b830a824248bcacd1a15c3d1874d45007f6b11124d07a8}{LEFT}}}
+\DoxyCodeLine{117         \};}
+\DoxyCodeLine{118 }
+\DoxyCodeLine{120         \textcolor{keyword}{struct }\mbox{\hyperlink{structindie_1_1Event_1_1ControllerEvent}{ControllerEvent}} \{}
+\DoxyCodeLine{122             \textcolor{keywordtype}{int} \mbox{\hyperlink{structindie_1_1Event_1_1ControllerEvent_a5e8de9f3e57e213046e4ca9af12f4254}{code}};}
+\DoxyCodeLine{124             \mbox{\hyperlink{structindie_1_1Event_ab71803dd89e98c51223b830a824248bc}{JoystickDirection}} \mbox{\hyperlink{structindie_1_1Event_1_1ControllerEvent_a7e8cd7c8f256591162470510ce3e006f}{leftJoystick}};}
+\DoxyCodeLine{126             \mbox{\hyperlink{structindie_1_1Event_ab71803dd89e98c51223b830a824248bc}{JoystickDirection}} \mbox{\hyperlink{structindie_1_1Event_1_1ControllerEvent_a5729d812c03134356384c350bf5df7a7}{rightJoystick}};}
+\DoxyCodeLine{128             \textcolor{keywordtype}{bool} \mbox{\hyperlink{structindie_1_1Event_1_1ControllerEvent_a03f62ae6108d4e34b1c6f6a63ada353f}{connected}};}
+\DoxyCodeLine{129         \};}
+\DoxyCodeLine{130 }
+\DoxyCodeLine{131         \textcolor{comment}{// Member data}}
+\DoxyCodeLine{132         \textcolor{keyword}{union }\{}
+\DoxyCodeLine{134             \textcolor{keywordtype}{bool} \mbox{\hyperlink{structindie_1_1Event_a1d472077d23bd743a56407ec3760c4b2}{resized}};}
+\DoxyCodeLine{136             \mbox{\hyperlink{structindie_1_1Event_1_1KeyEvent}{KeyEvent}} \mbox{\hyperlink{structindie_1_1Event_a68c11c563613fdb87b8f807cfa92fe20}{key}};}
+\DoxyCodeLine{138             \mbox{\hyperlink{structindie_1_1Event_1_1ControllerEvent}{ControllerEvent}} \mbox{\hyperlink{structindie_1_1Event_a3d94d2f6f5bd25ab70cfc99e57bce4bc}{controller}}[4];}
+\DoxyCodeLine{139         \};}
+\DoxyCodeLine{140     \};}
+\DoxyCodeLine{141 \} \textcolor{comment}{// namespace indie}}
+\DoxyCodeLine{142 }
+\DoxyCodeLine{143 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// !defined(ARCADE\_EVENT\_HPP\_)}}
+
+\end{DoxyCode}

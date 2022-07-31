@@ -1,0 +1,62 @@
+Bomberman \href{https://github.com/JohanCDev/Bomberman/actions/workflows/build_and_mirror.yml}{\texttt{ }} \hypertarget{md_README_autotoc_md5}{}\doxysection{$<$a href=\char`\"{}https\+://github.\+com/\+Johan\+CDev/\+Bomberman\char`\"{} $>$$<$img src=\char`\"{}https\+://img.\+shields.\+io/github/license/\+Johan\+CDev/\+Bomberman\char`\"{} alt=\char`\"{}\+License\char`\"{}/$>$$<$/a$>$}\label{md_README_autotoc_md5}
+\hypertarget{md_README_autotoc_md6}{}\doxysection{Building}\label{md_README_autotoc_md6}
+\hypertarget{md_README_autotoc_md7}{}\doxysubsection{Command Line (via CMake)}\label{md_README_autotoc_md7}
+Required tools\+:
+\begin{DoxyItemize}
+\item CMake 3.\+17 (minimum)
+\end{DoxyItemize}
+
+on Linux\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\# Create the build directory}
+\DoxyCodeLine{mkdir build \&\& cd build }
+\DoxyCodeLine{}
+\DoxyCodeLine{\# Configure the project}
+\DoxyCodeLine{cmake .. -\/G 'Unix Makefiles' -\/DCMAKE\_BUILD\_TYPE=Release}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# Build the executable and libraries}
+\DoxyCodeLine{cmake -\/-\/build .}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# Return to previous directory}
+\DoxyCodeLine{cd -\/}
+
+\end{DoxyCode}
+
+
+on Windows\+:
+
+Required tools\+:
+\begin{DoxyItemize}
+\item Visual Studio 17 2022 (minimum) 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\# Create the build directory}
+\DoxyCodeLine{mkdir build \&\& cd build }
+\DoxyCodeLine{}
+\DoxyCodeLine{\# Configure the project}
+\DoxyCodeLine{cmake .. -\/G 'Visual Studio 17 2022' -\/DCMAKE\_BUILD\_TYPE=Release}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# Build the executable and libraries}
+\DoxyCodeLine{cmake -\/-\/build .}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# Return to previous directory}
+\DoxyCodeLine{cd -\/}
+
+\end{DoxyCode}
+
+\end{DoxyItemize}\hypertarget{md_README_autotoc_md8}{}\doxysection{Documentation}\label{md_README_autotoc_md8}
+\hypertarget{md_README_autotoc_md9}{}\doxysubsection{Local}\label{md_README_autotoc_md9}
+Required tools\+:
+\begin{DoxyItemize}
+\item Doxygen
+\end{DoxyItemize}
+
+on Linux\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\# Run at the root of the project}
+\DoxyCodeLine{doxygen}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# Open the genrated pages}
+\DoxyCodeLine{xdg-\/open doc/generated/html/index.html}
+
+\end{DoxyCode}
+ 

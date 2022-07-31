@@ -1,0 +1,6 @@
+#!/usr/bin/env python3
+import sys
+import main_prog
+
+if __name__ == '__main__':
+    sys.exit(main_prog.process(len(sys.argv), sys.argv))

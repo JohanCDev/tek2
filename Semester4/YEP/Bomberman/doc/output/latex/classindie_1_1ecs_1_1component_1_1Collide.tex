@@ -1,0 +1,113 @@
+\hypertarget{classindie_1_1ecs_1_1component_1_1Collide}{}\doxysection{indie\+::ecs\+::component\+::Collide Class Reference}
+\label{classindie_1_1ecs_1_1component_1_1Collide}\index{indie::ecs::component::Collide@{indie::ecs::component::Collide}}
+
+
+\mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Collide}{Collide}} component.  
+
+
+
+
+{\ttfamily \#include $<$Collide.\+hpp$>$}
+
+Inheritance diagram for indie\+::ecs\+::component\+::Collide\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classindie_1_1ecs_1_1component_1_1Collide}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classindie_1_1ecs_1_1component_1_1Collide_aa3a7dc37b677595cfd92e0d6ff82472d}\label{classindie_1_1ecs_1_1component_1_1Collide_aa3a7dc37b677595cfd92e0d6ff82472d}} 
+{\bfseries Collide} ()
+\begin{DoxyCompactList}\small\item\em Create new collide component. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classindie_1_1ecs_1_1component_1_1Collide_a2fd9f0ceefc586dd1edd2adbf3cbab9f}\label{classindie_1_1ecs_1_1component_1_1Collide_a2fd9f0ceefc586dd1edd2adbf3cbab9f}} 
+{\bfseries $\sim$\+Collide} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{IComponent_8hpp_ac44f0ed416679d299da366d37fd5eac8}{indie\+::ecs\+::component\+::compo\+Type}} \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Collide_a482a111e40bfde4bd637b16efb3219bf}{get\+Type}} () const
+\begin{DoxyCompactList}\small\item\em Get type of the component. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Collide_add41de16ce2c5ab2a975e17db32fe685}{check\+Collision}} (\mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Collide}{indie\+::ecs\+::component\+::\+Collide}} $\ast$other\+Entity\+Collide)
+\begin{DoxyCompactList}\small\item\em Check if there is a collision with other entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Collide_af7d3fe2504a8738593d22489557dc658}{set\+Collide}} (bool collide)
+\begin{DoxyCompactList}\small\item\em Set the state of collision. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Collide_a7bbc6e246c36be4072f6cf06c038415d}{get\+Collide}} () const
+\begin{DoxyCompactList}\small\item\em Get if the entity has a \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Collide}{Collide}} component. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Collide}{Collide}} component. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classindie_1_1ecs_1_1component_1_1Collide_add41de16ce2c5ab2a975e17db32fe685}\label{classindie_1_1ecs_1_1component_1_1Collide_add41de16ce2c5ab2a975e17db32fe685}} 
+\index{indie::ecs::component::Collide@{indie::ecs::component::Collide}!checkCollision@{checkCollision}}
+\index{checkCollision@{checkCollision}!indie::ecs::component::Collide@{indie::ecs::component::Collide}}
+\doxysubsubsection{\texorpdfstring{checkCollision()}{checkCollision()}}
+{\footnotesize\ttfamily bool indie\+::ecs\+::component\+::\+Collide\+::check\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Collide}{indie\+::ecs\+::component\+::\+Collide}} $\ast$}]{other\+Entity\+Collide }\end{DoxyParamCaption})}
+
+
+
+Check if there is a collision with other entity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other\+Entity\+Collide} & The other component \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true There is a collision 
+
+false There isn\textquotesingle{}t a collision 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classindie_1_1ecs_1_1component_1_1Collide_a7bbc6e246c36be4072f6cf06c038415d}\label{classindie_1_1ecs_1_1component_1_1Collide_a7bbc6e246c36be4072f6cf06c038415d}} 
+\index{indie::ecs::component::Collide@{indie::ecs::component::Collide}!getCollide@{getCollide}}
+\index{getCollide@{getCollide}!indie::ecs::component::Collide@{indie::ecs::component::Collide}}
+\doxysubsubsection{\texorpdfstring{getCollide()}{getCollide()}}
+{\footnotesize\ttfamily bool indie\+::ecs\+::component\+::\+Collide\+::get\+Collide (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get if the entity has a \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Collide}{Collide}} component. 
+
+\begin{DoxyReturn}{Returns}
+true Entity has the collide component 
+
+false Entity hasn\textquotesingle{}t the collide component 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classindie_1_1ecs_1_1component_1_1Collide_a482a111e40bfde4bd637b16efb3219bf}\label{classindie_1_1ecs_1_1component_1_1Collide_a482a111e40bfde4bd637b16efb3219bf}} 
+\index{indie::ecs::component::Collide@{indie::ecs::component::Collide}!getType@{getType}}
+\index{getType@{getType}!indie::ecs::component::Collide@{indie::ecs::component::Collide}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{IComponent_8hpp_ac44f0ed416679d299da366d37fd5eac8}{indie\+::ecs\+::component\+::compo\+Type}} indie\+::ecs\+::component\+::\+Collide\+::get\+Type (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get type of the component. 
+
+\begin{DoxyReturn}{Returns}
+indie\+::ecs\+::component\+::compo\+Type Compo\+Type of the component. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1IComponent_ac3aec994ad076be5fe4daa8041795da0}{indie\+::ecs\+::component\+::\+IComponent}}.
+
+\mbox{\Hypertarget{classindie_1_1ecs_1_1component_1_1Collide_af7d3fe2504a8738593d22489557dc658}\label{classindie_1_1ecs_1_1component_1_1Collide_af7d3fe2504a8738593d22489557dc658}} 
+\index{indie::ecs::component::Collide@{indie::ecs::component::Collide}!setCollide@{setCollide}}
+\index{setCollide@{setCollide}!indie::ecs::component::Collide@{indie::ecs::component::Collide}}
+\doxysubsubsection{\texorpdfstring{setCollide()}{setCollide()}}
+{\footnotesize\ttfamily void indie\+::ecs\+::component\+::\+Collide\+::set\+Collide (\begin{DoxyParamCaption}\item[{bool}]{collide }\end{DoxyParamCaption})}
+
+
+
+Set the state of collision. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em collide} & True for collision, False for no collision \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/ecs/component/\+Collide/\mbox{\hyperlink{component_2Collide_2Collide_8hpp}{Collide.\+hpp}}\item 
+src/ecs/component/\+Collide/\mbox{\hyperlink{component_2Collide_2Collide_8cpp}{Collide.\+cpp}}\end{DoxyCompactItemize}

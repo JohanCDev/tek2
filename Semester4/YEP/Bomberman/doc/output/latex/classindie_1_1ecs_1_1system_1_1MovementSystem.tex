@@ -1,0 +1,78 @@
+\hypertarget{classindie_1_1ecs_1_1system_1_1MovementSystem}{}\doxysection{indie\+::ecs\+::system\+::Movement\+System Class Reference}
+\label{classindie_1_1ecs_1_1system_1_1MovementSystem}\index{indie::ecs::system::MovementSystem@{indie::ecs::system::MovementSystem}}
+
+
+Movement system.  
+
+
+
+
+{\ttfamily \#include $<$Movement.\+hpp$>$}
+
+Inheritance diagram for indie\+::ecs\+::system\+::Movement\+System\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classindie_1_1ecs_1_1system_1_1MovementSystem}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classindie_1_1ecs_1_1system_1_1MovementSystem_a1203aae6ca61e6a65971ccaa89155bab}\label{classindie_1_1ecs_1_1system_1_1MovementSystem_a1203aae6ca61e6a65971ccaa89155bab}} 
+{\bfseries Movement\+System} ()
+\begin{DoxyCompactList}\small\item\em Create new movement system. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classindie_1_1ecs_1_1system_1_1MovementSystem_ab24b1b730b96d4c082e5f18cb293d0b0}\label{classindie_1_1ecs_1_1system_1_1MovementSystem_ab24b1b730b96d4c082e5f18cb293d0b0}} 
+{\bfseries $\sim$\+Movement\+System} ()
+\begin{DoxyCompactList}\small\item\em Destroy movement system. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1MovementSystem_acce6593b2be6ec210a12a85fa29c3b0f}{update}} (std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classindie_1_1ecs_1_1entity_1_1Entity}{indie\+::ecs\+::entity\+::\+Entity}} $>$ $>$ \&entities) override
+\begin{DoxyCompactList}\small\item\em Update all position of given entities. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ISystem_8hpp_aec184346273b5fda2bad6ad1aaa44620}{indie\+::ecs\+::system\+::\+System\+Type}} \mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1MovementSystem_afd906c576eb39a89ee3b21b7c6001f01}{get\+System\+Type}} () const override
+\begin{DoxyCompactList}\small\item\em Get the type of system. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Movement system. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classindie_1_1ecs_1_1system_1_1MovementSystem_afd906c576eb39a89ee3b21b7c6001f01}\label{classindie_1_1ecs_1_1system_1_1MovementSystem_afd906c576eb39a89ee3b21b7c6001f01}} 
+\index{indie::ecs::system::MovementSystem@{indie::ecs::system::MovementSystem}!getSystemType@{getSystemType}}
+\index{getSystemType@{getSystemType}!indie::ecs::system::MovementSystem@{indie::ecs::system::MovementSystem}}
+\doxysubsubsection{\texorpdfstring{getSystemType()}{getSystemType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ISystem_8hpp_aec184346273b5fda2bad6ad1aaa44620}{indie\+::ecs\+::system\+::\+System\+Type}} indie\+::ecs\+::system\+::\+Movement\+System\+::get\+System\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the type of system. 
+
+\begin{DoxyReturn}{Returns}
+enum value correspond to the type of system 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1ISystem_a4b74e1abca439d48bbb15b4ce62ade3e}{indie\+::ecs\+::system\+::\+ISystem}}.
+
+\mbox{\Hypertarget{classindie_1_1ecs_1_1system_1_1MovementSystem_acce6593b2be6ec210a12a85fa29c3b0f}\label{classindie_1_1ecs_1_1system_1_1MovementSystem_acce6593b2be6ec210a12a85fa29c3b0f}} 
+\index{indie::ecs::system::MovementSystem@{indie::ecs::system::MovementSystem}!update@{update}}
+\index{update@{update}!indie::ecs::system::MovementSystem@{indie::ecs::system::MovementSystem}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void indie\+::ecs\+::system\+::\+Movement\+System\+::update (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classindie_1_1ecs_1_1entity_1_1Entity}{indie\+::ecs\+::entity\+::\+Entity}} $>$ $>$ \&}]{entities }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Update all position of given entities. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entities} & vector of entities. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1ISystem_aa4e9422532642acdb47b70f31405d4d1}{indie\+::ecs\+::system\+::\+ISystem}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/ecs/system/\+Movement/\mbox{\hyperlink{Movement_8hpp}{Movement.\+hpp}}\item 
+src/ecs/system/\+Movement/\mbox{\hyperlink{Movement_8cpp}{Movement.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,128 @@
+\hypertarget{classindie_1_1ecs_1_1system_1_1Collide}{}\doxysection{indie\+::ecs\+::system\+::Collide Class Reference}
+\label{classindie_1_1ecs_1_1system_1_1Collide}\index{indie::ecs::system::Collide@{indie::ecs::system::Collide}}
+
+
+\mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1Collide}{Collide}} system.  
+
+
+
+
+{\ttfamily \#include $<$Collide.\+hpp$>$}
+
+Inheritance diagram for indie\+::ecs\+::system\+::Collide\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classindie_1_1ecs_1_1system_1_1Collide}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classindie_1_1ecs_1_1system_1_1Collide_aaae0ef0bdc33b163e8af0ac20cb64c16}\label{classindie_1_1ecs_1_1system_1_1Collide_aaae0ef0bdc33b163e8af0ac20cb64c16}} 
+{\bfseries Collide} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1Collide}{Collide}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classindie_1_1ecs_1_1system_1_1Collide_a0e97207df398f4f5d9af2be44f4a8dba}\label{classindie_1_1ecs_1_1system_1_1Collide_a0e97207df398f4f5d9af2be44f4a8dba}} 
+{\bfseries $\sim$\+Collide} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1Collide}{Collide}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1Collide_af91bc9e159a9ce1eb63d0702477827e6}{update}} (std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classindie_1_1ecs_1_1entity_1_1Entity}{indie\+::ecs\+::entity\+::\+Entity}} $>$ $>$ \&entities)
+\begin{DoxyCompactList}\small\item\em Update all the entities with the system properties. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1Collide_a468f6881a29e58cfdeefdb0c33aa9aec}{check\+Cube\+Collision}} (auto drawable, auto collide, \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Transform}{indie\+::ecs\+::component\+::\+Transform}} $\ast$transform, auto other\+Entity\+Collide, auto other\+Entity\+Drawable, \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Transform}{indie\+::ecs\+::component\+::\+Transform}} $\ast$other\+Transform)
+\begin{DoxyCompactList}\small\item\em Check collisions between cubes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1Collide_a9f1f60b49b85c60637bb118e91a3000c}{check\+Sphere\+Collision}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classindie_1_1ecs_1_1entity_1_1Entity}{indie\+::ecs\+::entity\+::\+Entity}} $>$ \&entity, std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classindie_1_1ecs_1_1entity_1_1Entity}{indie\+::ecs\+::entity\+::\+Entity}} $>$ \&other\+Entity, std\+::vector$<$ int $>$ \&compo\+To\+Remove, int \&count)
+\begin{DoxyCompactList}\small\item\em Check collisions between spheres. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ISystem_8hpp_aec184346273b5fda2bad6ad1aaa44620}{indie\+::ecs\+::system\+::\+System\+Type}} \mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1Collide_a539cc528ba23866d573f349a9eae2b80}{get\+System\+Type}} () const
+\begin{DoxyCompactList}\small\item\em Get the type of system. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1Collide}{Collide}} system. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classindie_1_1ecs_1_1system_1_1Collide_a468f6881a29e58cfdeefdb0c33aa9aec}\label{classindie_1_1ecs_1_1system_1_1Collide_a468f6881a29e58cfdeefdb0c33aa9aec}} 
+\index{indie::ecs::system::Collide@{indie::ecs::system::Collide}!checkCubeCollision@{checkCubeCollision}}
+\index{checkCubeCollision@{checkCubeCollision}!indie::ecs::system::Collide@{indie::ecs::system::Collide}}
+\doxysubsubsection{\texorpdfstring{checkCubeCollision()}{checkCubeCollision()}}
+{\footnotesize\ttfamily void indie\+::ecs\+::system\+::\+Collide\+::check\+Cube\+Collision (\begin{DoxyParamCaption}\item[{auto}]{drawable,  }\item[{auto}]{collide,  }\item[{\mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Transform}{indie\+::ecs\+::component\+::\+Transform}} $\ast$}]{transform,  }\item[{auto}]{other\+Entity\+Collide,  }\item[{auto}]{other\+Entity\+Drawable,  }\item[{\mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Transform}{indie\+::ecs\+::component\+::\+Transform}} $\ast$}]{other\+Transform }\end{DoxyParamCaption})}
+
+
+
+Check collisions between cubes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em drawable} & The drawable component \\
+\hline
+{\em collide} & The collide component \\
+\hline
+{\em transform} & The transform component \\
+\hline
+{\em other\+Entity\+Collide} & The other collide component \\
+\hline
+{\em other\+Entity\+Drawable} & The other drawable component \\
+\hline
+{\em other\+Transform} & The other transform component \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1ecs_1_1system_1_1Collide_a9f1f60b49b85c60637bb118e91a3000c}\label{classindie_1_1ecs_1_1system_1_1Collide_a9f1f60b49b85c60637bb118e91a3000c}} 
+\index{indie::ecs::system::Collide@{indie::ecs::system::Collide}!checkSphereCollision@{checkSphereCollision}}
+\index{checkSphereCollision@{checkSphereCollision}!indie::ecs::system::Collide@{indie::ecs::system::Collide}}
+\doxysubsubsection{\texorpdfstring{checkSphereCollision()}{checkSphereCollision()}}
+{\footnotesize\ttfamily void indie\+::ecs\+::system\+::\+Collide\+::check\+Sphere\+Collision (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classindie_1_1ecs_1_1entity_1_1Entity}{indie\+::ecs\+::entity\+::\+Entity}} $>$ \&}]{entity,  }\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classindie_1_1ecs_1_1entity_1_1Entity}{indie\+::ecs\+::entity\+::\+Entity}} $>$ \&}]{other\+Entity,  }\item[{std\+::vector$<$ int $>$ \&}]{compo\+To\+Remove,  }\item[{int \&}]{count }\end{DoxyParamCaption})}
+
+
+
+Check collisions between spheres. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & Sphere entity \\
+\hline
+{\em other\+Entity} & Other entity \\
+\hline
+{\em compo\+To\+Remove} & Component to remove \\
+\hline
+{\em count} & Counter \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1ecs_1_1system_1_1Collide_a539cc528ba23866d573f349a9eae2b80}\label{classindie_1_1ecs_1_1system_1_1Collide_a539cc528ba23866d573f349a9eae2b80}} 
+\index{indie::ecs::system::Collide@{indie::ecs::system::Collide}!getSystemType@{getSystemType}}
+\index{getSystemType@{getSystemType}!indie::ecs::system::Collide@{indie::ecs::system::Collide}}
+\doxysubsubsection{\texorpdfstring{getSystemType()}{getSystemType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ISystem_8hpp_aec184346273b5fda2bad6ad1aaa44620}{indie\+::ecs\+::system\+::\+System\+Type}} indie\+::ecs\+::system\+::\+Collide\+::get\+System\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the type of system. 
+
+\begin{DoxyReturn}{Returns}
+indie\+::ecs\+::system\+::\+System\+Type System\+Type 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1ISystem_a4b74e1abca439d48bbb15b4ce62ade3e}{indie\+::ecs\+::system\+::\+ISystem}}.
+
+\mbox{\Hypertarget{classindie_1_1ecs_1_1system_1_1Collide_af91bc9e159a9ce1eb63d0702477827e6}\label{classindie_1_1ecs_1_1system_1_1Collide_af91bc9e159a9ce1eb63d0702477827e6}} 
+\index{indie::ecs::system::Collide@{indie::ecs::system::Collide}!update@{update}}
+\index{update@{update}!indie::ecs::system::Collide@{indie::ecs::system::Collide}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void indie\+::ecs\+::system\+::\+Collide\+::update (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classindie_1_1ecs_1_1entity_1_1Entity}{indie\+::ecs\+::entity\+::\+Entity}} $>$ $>$ \&}]{entities }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Update all the entities with the system properties. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entities} & vector of entites to update \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1ISystem_aa4e9422532642acdb47b70f31405d4d1}{indie\+::ecs\+::system\+::\+ISystem}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/ecs/system/\+Collide/\mbox{\hyperlink{system_2Collide_2Collide_8hpp}{Collide.\+hpp}}\item 
+src/ecs/system/\+Collide/\mbox{\hyperlink{system_2Collide_2Collide_8cpp}{Collide.\+cpp}}\end{DoxyCompactItemize}

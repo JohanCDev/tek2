@@ -1,0 +1,68 @@
+\hypertarget{MapGenerator_8hpp}{}\doxysection{src/map/\+Map\+Generator.hpp File Reference}
+\label{MapGenerator_8hpp}\index{src/map/MapGenerator.hpp@{src/map/MapGenerator.hpp}}
+
+
+The generator for the map of the game.  
+
+
+{\ttfamily \#include $<$cstdlib$>$}\newline
+{\ttfamily \#include $<$ctime$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classindie_1_1map_1_1MapGenerator}{indie\+::map\+::\+Map\+Generator}}
+\begin{DoxyCompactList}\small\item\em Map generator class implementation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{MapGenerator_8hpp_ac749b87dd5d843e4add3eb8e8a130f62}\label{MapGenerator_8hpp_ac749b87dd5d843e4add3eb8e8a130f62}} 
+\#define {\bfseries WALL}~\textquotesingle{}\#\textquotesingle{}
+\begin{DoxyCompactList}\small\item\em Macro for wall. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{MapGenerator_8hpp_a2b7cf2a3641be7b89138615764d60ba3}\label{MapGenerator_8hpp_a2b7cf2a3641be7b89138615764d60ba3}} 
+\#define {\bfseries EMPTY}~\textquotesingle{} \textquotesingle{}
+\begin{DoxyCompactList}\small\item\em Macro for nothing. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{MapGenerator_8hpp_a23a390cc01279924f6190334c5fa97a0}\label{MapGenerator_8hpp_a23a390cc01279924f6190334c5fa97a0}} 
+\#define {\bfseries BOX}~\textquotesingle{}.\textquotesingle{}
+\begin{DoxyCompactList}\small\item\em Macro for boxes. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{MapGenerator_8hpp_a695b5e1104f16256e4bbc35dba643786}\label{MapGenerator_8hpp_a695b5e1104f16256e4bbc35dba643786}} 
+\#define {\bfseries SPEED\+\_\+\+BOX}~\textquotesingle{}S\textquotesingle{}
+\begin{DoxyCompactList}\small\item\em Macro for speed bonus. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{MapGenerator_8hpp_a62f7b159573d0a0f2b38e2ee32f7dd6f}\label{MapGenerator_8hpp_a62f7b159573d0a0f2b38e2ee32f7dd6f}} 
+\#define {\bfseries BOMB\+\_\+\+BOX}~\textquotesingle{}B\textquotesingle{}
+\begin{DoxyCompactList}\small\item\em Macro for bomb box bonus. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{MapGenerator_8hpp_a560d4572ad86c17302d21381790f9017}\label{MapGenerator_8hpp_a560d4572ad86c17302d21381790f9017}} 
+\#define {\bfseries BOMB\+\_\+\+RADIUS}~\textquotesingle{}R\textquotesingle{}
+\begin{DoxyCompactList}\small\item\em Macro for bomb radius bonus. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{MapGenerator_8hpp_aff32b2add5186520b5ae86864ebaf51a}\label{MapGenerator_8hpp_aff32b2add5186520b5ae86864ebaf51a}} 
+\#define {\bfseries PLAYER1}~\textquotesingle{}1\textquotesingle{}
+\begin{DoxyCompactList}\small\item\em Macro for player1. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{MapGenerator_8hpp_a7a2041512655fbd01e15d4516f7fb7cc}\label{MapGenerator_8hpp_a7a2041512655fbd01e15d4516f7fb7cc}} 
+\#define {\bfseries PLAYER2}~\textquotesingle{}2\textquotesingle{}
+\begin{DoxyCompactList}\small\item\em Macro for player2. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{MapGenerator_8hpp_a2992603a5f60b0da78add837d283d16b}\label{MapGenerator_8hpp_a2992603a5f60b0da78add837d283d16b}} 
+\#define {\bfseries PLAYER3}~\textquotesingle{}3\textquotesingle{}
+\begin{DoxyCompactList}\small\item\em Macro for player3. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{MapGenerator_8hpp_a39d7b2d2fae1ef23ab41ba7a5ab45202}\label{MapGenerator_8hpp_a39d7b2d2fae1ef23ab41ba7a5ab45202}} 
+\#define {\bfseries PLAYER4}~\textquotesingle{}4\textquotesingle{}
+\begin{DoxyCompactList}\small\item\em Macro for player4. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The generator for the map of the game. 
+
+\begin{DoxyAuthor}{Author}
+Victor (\href{mailto:victor.harri-chal@epitech.eu}{\texttt{ victor.\+harri-\/chal@epitech.\+eu}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2022-\/06-\/13
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2022 
+\end{DoxyCopyright}

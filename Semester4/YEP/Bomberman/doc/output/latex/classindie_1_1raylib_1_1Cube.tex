@@ -1,0 +1,270 @@
+\hypertarget{classindie_1_1raylib_1_1Cube}{}\doxysection{indie\+::raylib\+::Cube Class Reference}
+\label{classindie_1_1raylib_1_1Cube}\index{indie::raylib::Cube@{indie::raylib::Cube}}
+
+
+\mbox{\hyperlink{classindie_1_1raylib_1_1Cube}{Cube}} class encapsulation.  
+
+
+
+
+{\ttfamily \#include $<$Cube.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classindie_1_1raylib_1_1Cube_a2242b871defc5069c88ed73e9456a6b8}{Cube}} (float x, float y, float z, float width, float height, float length)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classindie_1_1raylib_1_1Cube}{Cube}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classindie_1_1raylib_1_1Cube_a71a93ac57cc999eccd4b1d73b6992dd5}{Cube}} (float x, float y, float z, float width, float height, float length, \+::\+Color color)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classindie_1_1raylib_1_1Cube}{Cube}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Cube_a76180cd60a901c312d1a8de3759ea882}\label{classindie_1_1raylib_1_1Cube_a76180cd60a901c312d1a8de3759ea882}} 
+{\bfseries $\sim$\+Cube} ()=default
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classindie_1_1raylib_1_1Cube}{Cube}} object. \end{DoxyCompactList}\item 
+\+::\+Vector3 \mbox{\hyperlink{classindie_1_1raylib_1_1Cube_afbc06721cbd978497197d12cbaad4fed}{get\+Position}} () const
+\begin{DoxyCompactList}\small\item\em Get cube position. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1raylib_1_1Cube_a072a639cb5bf11e08bedda409d9fbd4a}{set\+Position}} (float newX, float newY, float newZ)
+\begin{DoxyCompactList}\small\item\em Set the \mbox{\hyperlink{classindie_1_1raylib_1_1Cube}{Cube}} position. \end{DoxyCompactList}\item 
+\+::\+Vector3 \mbox{\hyperlink{classindie_1_1raylib_1_1Cube_a22dbef835aca389611c26a96f1136916}{get\+Size}} () const
+\begin{DoxyCompactList}\small\item\em Get cube size. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1raylib_1_1Cube_aea771a7efa9b3a4d1e36833abe198697}{set\+Size}} (float new\+Width, float new\+Height, float new\+Length)
+\begin{DoxyCompactList}\small\item\em Set the \mbox{\hyperlink{classindie_1_1raylib_1_1Cube}{Cube}} size. \end{DoxyCompactList}\item 
+\+::\+Color \mbox{\hyperlink{classindie_1_1raylib_1_1Cube_a33cfc3095886ceef23f63015a694880c}{get\+Color}} () const
+\begin{DoxyCompactList}\small\item\em Get \mbox{\hyperlink{classindie_1_1raylib_1_1Cube}{Cube}} color. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1raylib_1_1Cube_a156700b6207fc55cb62344a60baef9a7}{set\+Color}} (\+::\+Color color)
+\begin{DoxyCompactList}\small\item\em Set \mbox{\hyperlink{classindie_1_1raylib_1_1Cube}{Cube}} color. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Cube_a9879d4660f22dba8e097e252ee4a4753}\label{classindie_1_1raylib_1_1Cube_a9879d4660f22dba8e097e252ee4a4753}} 
+void {\bfseries draw} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} cube. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Cube_a6dfbbf5bc99ddd0ef5f382641244bc0c}\label{classindie_1_1raylib_1_1Cube_a6dfbbf5bc99ddd0ef5f382641244bc0c}} 
+void {\bfseries draw\+Wires} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} cube wires. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classindie_1_1raylib_1_1Cube_afcd189d073de1e5751664a78d3844c46}{draw}} (\+::\+Vector3 position, \+::\+Vector3 size, \+::\+Color color)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} cube. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classindie_1_1raylib_1_1Cube_a8abb618a69b313931ca502c1fa64e786}{draw\+Wires}} (\+::\+Vector3 position, \+::\+Vector3 size, \+::\+Color color)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} cube wires. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classindie_1_1raylib_1_1Cube_a0c2f4241d76ffd9f62b94e254091fba6}{draw\+Texture}} (\+::\+Texture2D texture, \+::\+Vector3 position, float width, float height, float length, \+::\+Color color)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} textured-\/cube. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classindie_1_1raylib_1_1Cube}{Cube}} class encapsulation. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Cube_a2242b871defc5069c88ed73e9456a6b8}\label{classindie_1_1raylib_1_1Cube_a2242b871defc5069c88ed73e9456a6b8}} 
+\index{indie::raylib::Cube@{indie::raylib::Cube}!Cube@{Cube}}
+\index{Cube@{Cube}!indie::raylib::Cube@{indie::raylib::Cube}}
+\doxysubsubsection{\texorpdfstring{Cube()}{Cube()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily indie\+::raylib\+::\+Cube\+::\+Cube (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z,  }\item[{float}]{width,  }\item[{float}]{height,  }\item[{float}]{length }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classindie_1_1raylib_1_1Cube}{Cube}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \mbox{\hyperlink{classindie_1_1raylib_1_1Cube}{Cube}} X position \\
+\hline
+{\em y} & \mbox{\hyperlink{classindie_1_1raylib_1_1Cube}{Cube}} Y position \\
+\hline
+{\em z} & \mbox{\hyperlink{classindie_1_1raylib_1_1Cube}{Cube}} Z position \\
+\hline
+{\em width} & \mbox{\hyperlink{classindie_1_1raylib_1_1Cube}{Cube}} Width \\
+\hline
+{\em height} & \mbox{\hyperlink{classindie_1_1raylib_1_1Cube}{Cube}} height \\
+\hline
+{\em length} & \mbox{\hyperlink{classindie_1_1raylib_1_1Cube}{Cube}} length \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Cube_a71a93ac57cc999eccd4b1d73b6992dd5}\label{classindie_1_1raylib_1_1Cube_a71a93ac57cc999eccd4b1d73b6992dd5}} 
+\index{indie::raylib::Cube@{indie::raylib::Cube}!Cube@{Cube}}
+\index{Cube@{Cube}!indie::raylib::Cube@{indie::raylib::Cube}}
+\doxysubsubsection{\texorpdfstring{Cube()}{Cube()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily indie\+::raylib\+::\+Cube\+::\+Cube (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z,  }\item[{float}]{width,  }\item[{float}]{height,  }\item[{float}]{length,  }\item[{\+::\+Color}]{color }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classindie_1_1raylib_1_1Cube}{Cube}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \mbox{\hyperlink{classindie_1_1raylib_1_1Cube}{Cube}} X position \\
+\hline
+{\em y} & \mbox{\hyperlink{classindie_1_1raylib_1_1Cube}{Cube}} Y position \\
+\hline
+{\em z} & \mbox{\hyperlink{classindie_1_1raylib_1_1Cube}{Cube}} Z position \\
+\hline
+{\em width} & \mbox{\hyperlink{classindie_1_1raylib_1_1Cube}{Cube}} Width \\
+\hline
+{\em height} & \mbox{\hyperlink{classindie_1_1raylib_1_1Cube}{Cube}} height \\
+\hline
+{\em length} & \mbox{\hyperlink{classindie_1_1raylib_1_1Cube}{Cube}} length \\
+\hline
+{\em color} & \mbox{\hyperlink{classindie_1_1raylib_1_1Cube}{Cube}} Color \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Cube_afcd189d073de1e5751664a78d3844c46}\label{classindie_1_1raylib_1_1Cube_afcd189d073de1e5751664a78d3844c46}} 
+\index{indie::raylib::Cube@{indie::raylib::Cube}!draw@{draw}}
+\index{draw@{draw}!indie::raylib::Cube@{indie::raylib::Cube}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void indie\+::raylib\+::\+Cube\+::draw (\begin{DoxyParamCaption}\item[{\+::\+Vector3}]{position,  }\item[{\+::\+Vector3}]{size,  }\item[{\+::\+Color}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} cube. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & \mbox{\hyperlink{classindie_1_1raylib_1_1Cube}{Cube}} position \\
+\hline
+{\em size} & \mbox{\hyperlink{classindie_1_1raylib_1_1Cube}{Cube}} size \\
+\hline
+{\em color} & \mbox{\hyperlink{classindie_1_1raylib_1_1Cube}{Cube}} color \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Cube_a0c2f4241d76ffd9f62b94e254091fba6}\label{classindie_1_1raylib_1_1Cube_a0c2f4241d76ffd9f62b94e254091fba6}} 
+\index{indie::raylib::Cube@{indie::raylib::Cube}!drawTexture@{drawTexture}}
+\index{drawTexture@{drawTexture}!indie::raylib::Cube@{indie::raylib::Cube}}
+\doxysubsubsection{\texorpdfstring{drawTexture()}{drawTexture()}}
+{\footnotesize\ttfamily void indie\+::raylib\+::\+Cube\+::draw\+Texture (\begin{DoxyParamCaption}\item[{\+::\+Texture2D}]{texture,  }\item[{\+::\+Vector3}]{position,  }\item[{float}]{width,  }\item[{float}]{height,  }\item[{float}]{length,  }\item[{\+::\+Color}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} textured-\/cube. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture} & \mbox{\hyperlink{classindie_1_1raylib_1_1Cube}{Cube}} texture \\
+\hline
+{\em position} & \mbox{\hyperlink{classindie_1_1raylib_1_1Cube}{Cube}} position \\
+\hline
+{\em width} & \mbox{\hyperlink{classindie_1_1raylib_1_1Cube}{Cube}} width \\
+\hline
+{\em height} & \mbox{\hyperlink{classindie_1_1raylib_1_1Cube}{Cube}} height \\
+\hline
+{\em length} & \mbox{\hyperlink{classindie_1_1raylib_1_1Cube}{Cube}} length \\
+\hline
+{\em color} & \mbox{\hyperlink{classindie_1_1raylib_1_1Cube}{Cube}} color \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Cube_a8abb618a69b313931ca502c1fa64e786}\label{classindie_1_1raylib_1_1Cube_a8abb618a69b313931ca502c1fa64e786}} 
+\index{indie::raylib::Cube@{indie::raylib::Cube}!drawWires@{drawWires}}
+\index{drawWires@{drawWires}!indie::raylib::Cube@{indie::raylib::Cube}}
+\doxysubsubsection{\texorpdfstring{drawWires()}{drawWires()}}
+{\footnotesize\ttfamily void indie\+::raylib\+::\+Cube\+::draw\+Wires (\begin{DoxyParamCaption}\item[{\+::\+Vector3}]{position,  }\item[{\+::\+Vector3}]{size,  }\item[{\+::\+Color}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} cube wires. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & \mbox{\hyperlink{classindie_1_1raylib_1_1Cube}{Cube}} position \\
+\hline
+{\em size} & \mbox{\hyperlink{classindie_1_1raylib_1_1Cube}{Cube}} size \\
+\hline
+{\em color} & \mbox{\hyperlink{classindie_1_1raylib_1_1Cube}{Cube}} color \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Cube_a33cfc3095886ceef23f63015a694880c}\label{classindie_1_1raylib_1_1Cube_a33cfc3095886ceef23f63015a694880c}} 
+\index{indie::raylib::Cube@{indie::raylib::Cube}!getColor@{getColor}}
+\index{getColor@{getColor}!indie::raylib::Cube@{indie::raylib::Cube}}
+\doxysubsubsection{\texorpdfstring{getColor()}{getColor()}}
+{\footnotesize\ttfamily Color indie\+::raylib\+::\+Cube\+::get\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get \mbox{\hyperlink{classindie_1_1raylib_1_1Cube}{Cube}} color. 
+
+\begin{DoxyReturn}{Returns}
+Color \mbox{\hyperlink{classindie_1_1raylib_1_1Cube}{Cube}} color 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Cube_afbc06721cbd978497197d12cbaad4fed}\label{classindie_1_1raylib_1_1Cube_afbc06721cbd978497197d12cbaad4fed}} 
+\index{indie::raylib::Cube@{indie::raylib::Cube}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!indie::raylib::Cube@{indie::raylib::Cube}}
+\doxysubsubsection{\texorpdfstring{getPosition()}{getPosition()}}
+{\footnotesize\ttfamily Vector3 indie\+::raylib\+::\+Cube\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get cube position. 
+
+\begin{DoxyReturn}{Returns}
+Vector3 \mbox{\hyperlink{classindie_1_1raylib_1_1Cube}{Cube}} position 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Cube_a22dbef835aca389611c26a96f1136916}\label{classindie_1_1raylib_1_1Cube_a22dbef835aca389611c26a96f1136916}} 
+\index{indie::raylib::Cube@{indie::raylib::Cube}!getSize@{getSize}}
+\index{getSize@{getSize}!indie::raylib::Cube@{indie::raylib::Cube}}
+\doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
+{\footnotesize\ttfamily Vector3 indie\+::raylib\+::\+Cube\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get cube size. 
+
+\begin{DoxyReturn}{Returns}
+Vector3 \mbox{\hyperlink{classindie_1_1raylib_1_1Cube}{Cube}} size 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Cube_a156700b6207fc55cb62344a60baef9a7}\label{classindie_1_1raylib_1_1Cube_a156700b6207fc55cb62344a60baef9a7}} 
+\index{indie::raylib::Cube@{indie::raylib::Cube}!setColor@{setColor}}
+\index{setColor@{setColor}!indie::raylib::Cube@{indie::raylib::Cube}}
+\doxysubsubsection{\texorpdfstring{setColor()}{setColor()}}
+{\footnotesize\ttfamily void indie\+::raylib\+::\+Cube\+::set\+Color (\begin{DoxyParamCaption}\item[{\+::\+Color}]{color }\end{DoxyParamCaption})}
+
+
+
+Set \mbox{\hyperlink{classindie_1_1raylib_1_1Cube}{Cube}} color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & \mbox{\hyperlink{classindie_1_1raylib_1_1Cube}{Cube}} color \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Cube_a072a639cb5bf11e08bedda409d9fbd4a}\label{classindie_1_1raylib_1_1Cube_a072a639cb5bf11e08bedda409d9fbd4a}} 
+\index{indie::raylib::Cube@{indie::raylib::Cube}!setPosition@{setPosition}}
+\index{setPosition@{setPosition}!indie::raylib::Cube@{indie::raylib::Cube}}
+\doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}}
+{\footnotesize\ttfamily void indie\+::raylib\+::\+Cube\+::set\+Position (\begin{DoxyParamCaption}\item[{float}]{newX,  }\item[{float}]{newY,  }\item[{float}]{newZ }\end{DoxyParamCaption})}
+
+
+
+Set the \mbox{\hyperlink{classindie_1_1raylib_1_1Cube}{Cube}} position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em newX} & \mbox{\hyperlink{classindie_1_1raylib_1_1Cube}{Cube}} X position \\
+\hline
+{\em newY} & \mbox{\hyperlink{classindie_1_1raylib_1_1Cube}{Cube}} Y position \\
+\hline
+{\em newZ} & \mbox{\hyperlink{classindie_1_1raylib_1_1Cube}{Cube}} Z position \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Cube_aea771a7efa9b3a4d1e36833abe198697}\label{classindie_1_1raylib_1_1Cube_aea771a7efa9b3a4d1e36833abe198697}} 
+\index{indie::raylib::Cube@{indie::raylib::Cube}!setSize@{setSize}}
+\index{setSize@{setSize}!indie::raylib::Cube@{indie::raylib::Cube}}
+\doxysubsubsection{\texorpdfstring{setSize()}{setSize()}}
+{\footnotesize\ttfamily void indie\+::raylib\+::\+Cube\+::set\+Size (\begin{DoxyParamCaption}\item[{float}]{new\+Width,  }\item[{float}]{new\+Height,  }\item[{float}]{new\+Length }\end{DoxyParamCaption})}
+
+
+
+Set the \mbox{\hyperlink{classindie_1_1raylib_1_1Cube}{Cube}} size. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Width} & \mbox{\hyperlink{classindie_1_1raylib_1_1Cube}{Cube}} width value \\
+\hline
+{\em new\+Height} & \mbox{\hyperlink{classindie_1_1raylib_1_1Cube}{Cube}} height value \\
+\hline
+{\em new\+Length} & \mbox{\hyperlink{classindie_1_1raylib_1_1Cube}{Cube}} length value \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/raylib/cube/\mbox{\hyperlink{Cube_8hpp}{Cube.\+hpp}}\item 
+src/raylib/cube/\mbox{\hyperlink{Cube_8cpp}{Cube.\+cpp}}\end{DoxyCompactItemize}

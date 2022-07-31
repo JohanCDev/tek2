@@ -1,0 +1,62 @@
+\hypertarget{MapGenerator_8hpp_source}{}\doxysection{Map\+Generator.\+hpp}
+\label{MapGenerator_8hpp_source}\index{src/map/MapGenerator.hpp@{src/map/MapGenerator.hpp}}
+\mbox{\hyperlink{MapGenerator_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#ifndef MAPGENERATOR\_HPP\_}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#define MAPGENERATOR\_HPP\_}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{comment}{// OWN INCLUDE}}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 \textcolor{comment}{// BASIC INCLUDE}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#include <cstdlib>}}
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#include <ctime>}}
+\DoxyCodeLine{20 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{21 \textcolor{preprocessor}{\#include <stdio.h>}}
+\DoxyCodeLine{22 \textcolor{preprocessor}{\#include <string.h>}}
+\DoxyCodeLine{23 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{29 \textcolor{preprocessor}{\#define WALL        '\#'}}
+\DoxyCodeLine{34 \textcolor{preprocessor}{\#define EMPTY       ' '}}
+\DoxyCodeLine{39 \textcolor{preprocessor}{\#define BOX         '.'}}
+\DoxyCodeLine{44 \textcolor{preprocessor}{\#define SPEED\_BOX   'S'}}
+\DoxyCodeLine{49 \textcolor{preprocessor}{\#define BOMB\_BOX    'B'}}
+\DoxyCodeLine{54 \textcolor{preprocessor}{\#define BOMB\_RADIUS 'R'}}
+\DoxyCodeLine{59 \textcolor{preprocessor}{\#define PLAYER1     '1'}}
+\DoxyCodeLine{64 \textcolor{preprocessor}{\#define PLAYER2     '2'}}
+\DoxyCodeLine{69 \textcolor{preprocessor}{\#define PLAYER3     '3'}}
+\DoxyCodeLine{74 \textcolor{preprocessor}{\#define PLAYER4     '4'}}
+\DoxyCodeLine{75 }
+\DoxyCodeLine{76 \textcolor{keyword}{namespace }indie}
+\DoxyCodeLine{77 \{}
+\DoxyCodeLine{78     \textcolor{keyword}{namespace }map}
+\DoxyCodeLine{79     \{}
+\DoxyCodeLine{83         \textcolor{keyword}{class }\mbox{\hyperlink{classindie_1_1map_1_1MapGenerator}{MapGenerator}} \{}
+\DoxyCodeLine{84           \textcolor{keyword}{public}:}
+\DoxyCodeLine{88             \mbox{\hyperlink{classindie_1_1map_1_1MapGenerator_a3d821167d07122cdd6d8d4c5c626c14e}{MapGenerator}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{92             \mbox{\hyperlink{classindie_1_1map_1_1MapGenerator_af4cd7fbd4a4d6ce39e9ebed9288235e5}{\string~MapGenerator}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{98             \mbox{\hyperlink{classindie_1_1map_1_1MapGenerator_a97089fe2cfa067751d3fe45161cd3ff1}{MapGenerator}}(\textcolor{keyword}{const} \mbox{\hyperlink{classindie_1_1map_1_1MapGenerator}{MapGenerator}} \&component) = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{106             \mbox{\hyperlink{classindie_1_1map_1_1MapGenerator}{MapGenerator}} \&\mbox{\hyperlink{classindie_1_1map_1_1MapGenerator_adf5d071dc9516e774c27286d39988f45}{operator=}}(\textcolor{keyword}{const} \mbox{\hyperlink{classindie_1_1map_1_1MapGenerator}{MapGenerator}} \&component) = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{107 }
+\DoxyCodeLine{111             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1map_1_1MapGenerator_acdc13e2987030d8389df4b972870ff88}{createWall}}();}
+\DoxyCodeLine{115             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1map_1_1MapGenerator_ac862b1c4671a764776312f5d92c99d2b}{placeBoxes}}();}
+\DoxyCodeLine{119             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1map_1_1MapGenerator_a2c0de4c18e9a31e73c95ebb9d7a30655}{placeRandomEmptySpace}}();}
+\DoxyCodeLine{123             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1map_1_1MapGenerator_af77eeab00afd62e749c03dca2a920a19}{placeBonusBoxes}}();}
+\DoxyCodeLine{127             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1map_1_1MapGenerator_af8ed9bf3843aac46939c489c0ee895f3}{placePlayers}}();}
+\DoxyCodeLine{134             \textcolor{keywordtype}{int} \mbox{\hyperlink{classindie_1_1map_1_1MapGenerator_afeed6f1c40c9d1ff0c839605f6eac2a9}{countBonusOnLine}}(\textcolor{keywordtype}{int} i);}
+\DoxyCodeLine{141             \textcolor{keywordtype}{int} \mbox{\hyperlink{classindie_1_1map_1_1MapGenerator_aff955c17fed06a62aa1512342e5047f8}{generateRandomNumber}}(\textcolor{keywordtype}{int} nbrMax);}
+\DoxyCodeLine{142 }
+\DoxyCodeLine{148             \textcolor{keyword}{inline} \textcolor{keyword}{const} std::vector<std::vector<char>> \&\mbox{\hyperlink{classindie_1_1map_1_1MapGenerator_ad5df301455dc48ed01c13ae41742bd61}{getMap}}(\textcolor{keywordtype}{void})\textcolor{keyword}{ const}}
+\DoxyCodeLine{149 \textcolor{keyword}{            }\{}
+\DoxyCodeLine{150                 \textcolor{keywordflow}{return} \_map;}
+\DoxyCodeLine{151             \};}
+\DoxyCodeLine{152 }
+\DoxyCodeLine{153           \textcolor{keyword}{private}:}
+\DoxyCodeLine{154             std::vector<std::vector<char>> \_map;}
+\DoxyCodeLine{155         \};}
+\DoxyCodeLine{156     \} \textcolor{comment}{// namespace map}}
+\DoxyCodeLine{157 \} \textcolor{comment}{// namespace indie}}
+\DoxyCodeLine{158 }
+\DoxyCodeLine{159 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* !MAPGENERATOR\_HPP\_ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

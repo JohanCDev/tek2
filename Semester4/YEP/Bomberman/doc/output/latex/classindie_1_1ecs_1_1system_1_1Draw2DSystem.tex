@@ -1,0 +1,116 @@
+\hypertarget{classindie_1_1ecs_1_1system_1_1Draw2DSystem}{}\doxysection{indie\+::ecs\+::system\+::Draw2\+DSystem Class Reference}
+\label{classindie_1_1ecs_1_1system_1_1Draw2DSystem}\index{indie::ecs::system::Draw2DSystem@{indie::ecs::system::Draw2DSystem}}
+
+
+Draw2D system.  
+
+
+
+
+{\ttfamily \#include $<$Draw2\+D.\+hpp$>$}
+
+Inheritance diagram for indie\+::ecs\+::system\+::Draw2\+DSystem\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classindie_1_1ecs_1_1system_1_1Draw2DSystem}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classindie_1_1ecs_1_1system_1_1Draw2DSystem_a1d8780a49dcc54a816e414b4b14f3ab3}\label{classindie_1_1ecs_1_1system_1_1Draw2DSystem_a1d8780a49dcc54a816e414b4b14f3ab3}} 
+{\bfseries Draw2\+DSystem} ()
+\begin{DoxyCompactList}\small\item\em Create new draw 2d system. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classindie_1_1ecs_1_1system_1_1Draw2DSystem_a1c849f3c887e696c87bf7ccae7242057}\label{classindie_1_1ecs_1_1system_1_1Draw2DSystem_a1c849f3c887e696c87bf7ccae7242057}} 
+{\bfseries $\sim$\+Draw2\+DSystem} ()
+\begin{DoxyCompactList}\small\item\em Destroy draw 2d system. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1Draw2DSystem_ac39a3b5755dce65d032c546d32fa3c3f}{draw\+Text}} (auto drawable\+Compo, auto transform\+Compo)
+\begin{DoxyCompactList}\small\item\em Draw text with given properties. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1Draw2DSystem_a5aa5f9df31113680403e848172524350}{draw\+Rectangle}} (auto drawable\+Compo, auto transform\+Compo)
+\begin{DoxyCompactList}\small\item\em Draw rectangle with given properties. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1Draw2DSystem_a0fa84fe770d2f8be0a0b0fabf89a50ca}{update}} (std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classindie_1_1ecs_1_1entity_1_1Entity}{indie\+::ecs\+::entity\+::\+Entity}} $>$ $>$ \&entities) override
+\begin{DoxyCompactList}\small\item\em Draw all given entities with Drawable2D component. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ISystem_8hpp_aec184346273b5fda2bad6ad1aaa44620}{indie\+::ecs\+::system\+::\+System\+Type}} \mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1Draw2DSystem_a5c2f5b23a76e3d44b53e2a31aa5fa87a}{get\+System\+Type}} () const override
+\begin{DoxyCompactList}\small\item\em Get the type of system. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Draw2D system. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classindie_1_1ecs_1_1system_1_1Draw2DSystem_a5aa5f9df31113680403e848172524350}\label{classindie_1_1ecs_1_1system_1_1Draw2DSystem_a5aa5f9df31113680403e848172524350}} 
+\index{indie::ecs::system::Draw2DSystem@{indie::ecs::system::Draw2DSystem}!drawRectangle@{drawRectangle}}
+\index{drawRectangle@{drawRectangle}!indie::ecs::system::Draw2DSystem@{indie::ecs::system::Draw2DSystem}}
+\doxysubsubsection{\texorpdfstring{drawRectangle()}{drawRectangle()}}
+{\footnotesize\ttfamily void indie\+::ecs\+::system\+::\+Draw2\+DSystem\+::draw\+Rectangle (\begin{DoxyParamCaption}\item[{auto}]{drawable\+Compo,  }\item[{auto}]{transform\+Compo }\end{DoxyParamCaption})}
+
+
+
+Draw rectangle with given properties. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em drawable\+Compo} & the drawable component of the entity with the size and color. \\
+\hline
+{\em transform\+Compo} & the transform component of the entity with his position. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1ecs_1_1system_1_1Draw2DSystem_ac39a3b5755dce65d032c546d32fa3c3f}\label{classindie_1_1ecs_1_1system_1_1Draw2DSystem_ac39a3b5755dce65d032c546d32fa3c3f}} 
+\index{indie::ecs::system::Draw2DSystem@{indie::ecs::system::Draw2DSystem}!drawText@{drawText}}
+\index{drawText@{drawText}!indie::ecs::system::Draw2DSystem@{indie::ecs::system::Draw2DSystem}}
+\doxysubsubsection{\texorpdfstring{drawText()}{drawText()}}
+{\footnotesize\ttfamily void indie\+::ecs\+::system\+::\+Draw2\+DSystem\+::draw\+Text (\begin{DoxyParamCaption}\item[{auto}]{drawable\+Compo,  }\item[{auto}]{transform\+Compo }\end{DoxyParamCaption})}
+
+
+
+Draw text with given properties. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em drawable\+Compo} & the drawable component of the entity with the text and color. \\
+\hline
+{\em transform\+Compo} & the transform component of the entity with his position. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1ecs_1_1system_1_1Draw2DSystem_a5c2f5b23a76e3d44b53e2a31aa5fa87a}\label{classindie_1_1ecs_1_1system_1_1Draw2DSystem_a5c2f5b23a76e3d44b53e2a31aa5fa87a}} 
+\index{indie::ecs::system::Draw2DSystem@{indie::ecs::system::Draw2DSystem}!getSystemType@{getSystemType}}
+\index{getSystemType@{getSystemType}!indie::ecs::system::Draw2DSystem@{indie::ecs::system::Draw2DSystem}}
+\doxysubsubsection{\texorpdfstring{getSystemType()}{getSystemType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ISystem_8hpp_aec184346273b5fda2bad6ad1aaa44620}{indie\+::ecs\+::system\+::\+System\+Type}} indie\+::ecs\+::system\+::\+Draw2\+DSystem\+::get\+System\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the type of system. 
+
+\begin{DoxyReturn}{Returns}
+indie\+::ecs\+::system\+::\+System\+Type System\+Type 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1ISystem_a4b74e1abca439d48bbb15b4ce62ade3e}{indie\+::ecs\+::system\+::\+ISystem}}.
+
+\mbox{\Hypertarget{classindie_1_1ecs_1_1system_1_1Draw2DSystem_a0fa84fe770d2f8be0a0b0fabf89a50ca}\label{classindie_1_1ecs_1_1system_1_1Draw2DSystem_a0fa84fe770d2f8be0a0b0fabf89a50ca}} 
+\index{indie::ecs::system::Draw2DSystem@{indie::ecs::system::Draw2DSystem}!update@{update}}
+\index{update@{update}!indie::ecs::system::Draw2DSystem@{indie::ecs::system::Draw2DSystem}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void indie\+::ecs\+::system\+::\+Draw2\+DSystem\+::update (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classindie_1_1ecs_1_1entity_1_1Entity}{indie\+::ecs\+::entity\+::\+Entity}} $>$ $>$ \&}]{entities }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Draw all given entities with Drawable2D component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entities} & all entities to draw. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1ISystem_aa4e9422532642acdb47b70f31405d4d1}{indie\+::ecs\+::system\+::\+ISystem}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/ecs/system/\+Draw2\+D/\mbox{\hyperlink{Draw2D_8hpp}{Draw2\+D.\+hpp}}\item 
+src/ecs/system/\+Draw2\+D/\mbox{\hyperlink{Draw2D_8cpp}{Draw2\+D.\+cpp}}\end{DoxyCompactItemize}

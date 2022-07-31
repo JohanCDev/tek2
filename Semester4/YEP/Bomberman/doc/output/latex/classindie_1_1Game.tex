@@ -1,0 +1,231 @@
+\hypertarget{classindie_1_1Game}{}\doxysection{indie\+::Game Class Reference}
+\label{classindie_1_1Game}\index{indie::Game@{indie::Game}}
+
+
+\mbox{\hyperlink{classindie_1_1Game}{Game}} class.  
+
+
+
+
+{\ttfamily \#include $<$Game.\+hpp$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classindie_1_1Game_aa21b8f6bc6873ab2ac8def113b57d57d}\label{classindie_1_1Game_aa21b8f6bc6873ab2ac8def113b57d57d}} 
+enum class \mbox{\hyperlink{classindie_1_1Game_aa21b8f6bc6873ab2ac8def113b57d57d}{Screens}} \{ \newline
+{\bfseries Menu} = 1
+, {\bfseries Game}
+, {\bfseries Pre\+Menu}
+, {\bfseries Game\+Options}
+, \newline
+{\bfseries Set\+Music}
+, {\bfseries Set\+Sound}
+, {\bfseries Set\+Fps}
+, {\bfseries Count}
+ \}
+\begin{DoxyCompactList}\small\item\em enum containing all navigable screens \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classindie_1_1Game_a392dc75308970481f8729a34811f08a1}\label{classindie_1_1Game_a392dc75308970481f8729a34811f08a1}} 
+enum \mbox{\hyperlink{classindie_1_1Game_a392dc75308970481f8729a34811f08a1}{Sounds}} \{ {\bfseries BOMB\+\_\+S} = 0
+, {\bfseries GAME\+\_\+\+READY\+\_\+S} = 1
+, {\bfseries SELECT\+\_\+S} = 2
+ \}
+\begin{DoxyCompactList}\small\item\em enum containing all type of sounds \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classindie_1_1Game_a22a13564af59b393bf9b995e4a3e0a57}\label{classindie_1_1Game_a22a13564af59b393bf9b995e4a3e0a57}} 
+enum \mbox{\hyperlink{classindie_1_1Game_a22a13564af59b393bf9b995e4a3e0a57}{Musics}} \{ {\bfseries MENU\+\_\+\+SOUND}
+ \}
+\begin{DoxyCompactList}\small\item\em enum containing all musics \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classindie_1_1Game_a867b898128765343eea44257920c13d5}{Game}} (size\+\_\+t base\+Fps=60)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classindie_1_1Game_ac20225515e1dfc7947d0d2ce3c0a9aa1}\label{classindie_1_1Game_ac20225515e1dfc7947d0d2ce3c0a9aa1}} 
+{\bfseries $\sim$\+Game} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classindie_1_1Game_a823945fece79e75ef27a5512eea85dac}\label{classindie_1_1Game_a823945fece79e75ef27a5512eea85dac}} 
+void {\bfseries init} (void)
+\begin{DoxyCompactList}\small\item\em Initialize the game class elements. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classindie_1_1Game_aaf0072c197ad3636b47bc13de2c21a12}\label{classindie_1_1Game_aaf0072c197ad3636b47bc13de2c21a12}} 
+void {\bfseries run} (void)
+\begin{DoxyCompactList}\small\item\em Run the game class. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classindie_1_1Game_a5c1e25217f54a655a336de3ba618063a}\label{classindie_1_1Game_a5c1e25217f54a655a336de3ba618063a}} 
+void {\bfseries draw} (void)
+\begin{DoxyCompactList}\small\item\em Draw game elements. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classindie_1_1Game_a959deeba4f24330cae4cb8b41e2643a9}\label{classindie_1_1Game_a959deeba4f24330cae4cb8b41e2643a9}} 
+void {\bfseries update} (void)
+\begin{DoxyCompactList}\small\item\em Update game elements. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classindie_1_1Game_af6c280739aca532e0f0c81e0b77b0190}{process\+Events}} (void)
+\begin{DoxyCompactList}\small\item\em Process events. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classindie_1_1Game_a0441972c059bce3d04c989b7078c79f3}{handle\+Event}} ()
+\begin{DoxyCompactList}\small\item\em Handle the events. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classindie_1_1Game_a959250720726b710a2fe765cb8862415}\label{classindie_1_1Game_a959250720726b710a2fe765cb8862415}} 
+void {\bfseries init\+Scenes} ()
+\begin{DoxyCompactList}\small\item\em Init all scenes. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classindie_1_1Game_a50b5046c6ad392633554f9f0573c8bda}\label{classindie_1_1Game_a50b5046c6ad392633554f9f0573c8bda}} 
+void {\bfseries init\+Sounds} ()
+\begin{DoxyCompactList}\small\item\em Init all sounds. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classindie_1_1Game_abdba08c4278573134cd9a3e5b03e562f}\label{classindie_1_1Game_abdba08c4278573134cd9a3e5b03e562f}} 
+void {\bfseries init\+Music} ()
+\begin{DoxyCompactList}\small\item\em Init all musics. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classindie_1_1Game_a5636af9831013d0843401d616afb322f}\label{classindie_1_1Game_a5636af9831013d0843401d616afb322f}} 
+void {\bfseries destroy} ()
+\begin{DoxyCompactList}\small\item\em Destroy all. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classindie_1_1Game_aa4074dbd8b75f270092f10cc3f62626f}\label{classindie_1_1Game_aa4074dbd8b75f270092f10cc3f62626f}} 
+void {\bfseries destroy\+Entities} ()
+\begin{DoxyCompactList}\small\item\em Destroy all entities. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classindie_1_1Game_a6da70c1f7a773b5cc28bf2184e2f7d4d}\label{classindie_1_1Game_a6da70c1f7a773b5cc28bf2184e2f7d4d}} 
+void {\bfseries destroy\+Systems} ()
+\begin{DoxyCompactList}\small\item\em Destroy systems. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1Game_a287cef35512d64a5f4c49b03d0938dac}{handle\+Screens\+Swap}} (int ret)
+\begin{DoxyCompactList}\small\item\em Swap between screens. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classindie_1_1Game_a0a89336ae67c8192b0767f46ad118af0}\label{classindie_1_1Game_a0a89336ae67c8192b0767f46ad118af0}} 
+void {\bfseries reinit\+Game} ()
+\begin{DoxyCompactList}\small\item\em Reinitialize the game class elements. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1Game_a30ad05638ef9c9eb901f2f47b1b91345}{set\+Actual\+Screen}} (\mbox{\hyperlink{classindie_1_1Game_aa21b8f6bc6873ab2ac8def113b57d57d}{Screens}} new\+Screen)
+\begin{DoxyCompactList}\small\item\em Set the actual screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1Game_a2f204faf553a61cc968ce08f9cf9d1c0}{set\+Sound\+Event}} (int entitites\+Index)
+\begin{DoxyCompactList}\small\item\em Set the Sound \mbox{\hyperlink{structindie_1_1Event}{Event}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classindie_1_1Game_a03fa61a2a9bf158dda11e29c0a9c5172}\label{classindie_1_1Game_a03fa61a2a9bf158dda11e29c0a9c5172}} 
+void {\bfseries save\+Game} ()
+\begin{DoxyCompactList}\small\item\em Save the current game. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classindie_1_1Game_a1d907c4c2f22dd17281f78bf0598c680}\label{classindie_1_1Game_a1d907c4c2f22dd17281f78bf0598c680}} 
+void {\bfseries load\+Game} ()
+\begin{DoxyCompactList}\small\item\em Load the last saved game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1Game_aa188a44c17dc24ab17dd3b9bb44a0819}{add\+Sound\+Entity}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classindie_1_1ecs_1_1entity_1_1Entity}{indie\+::ecs\+::entity\+::\+Entity}} $>$ entity)
+\begin{DoxyCompactList}\small\item\em Add sound entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1Game_a46e485b6ad4cbb74692a512754f1499f}{add\+Sound\+System}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1ISystem}{indie\+::ecs\+::system\+::\+ISystem}} $>$ system)
+\begin{DoxyCompactList}\small\item\em Add sound system. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classindie_1_1Game}{Game}} class. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classindie_1_1Game_a867b898128765343eea44257920c13d5}\label{classindie_1_1Game_a867b898128765343eea44257920c13d5}} 
+\index{indie::Game@{indie::Game}!Game@{Game}}
+\index{Game@{Game}!indie::Game@{indie::Game}}
+\doxysubsubsection{\texorpdfstring{Game()}{Game()}}
+{\footnotesize\ttfamily indie\+::\+Game\+::\+Game (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{base\+Fps = {\ttfamily 60} }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Fps} & base fps (60 by default) \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classindie_1_1Game_aa188a44c17dc24ab17dd3b9bb44a0819}\label{classindie_1_1Game_aa188a44c17dc24ab17dd3b9bb44a0819}} 
+\index{indie::Game@{indie::Game}!addSoundEntity@{addSoundEntity}}
+\index{addSoundEntity@{addSoundEntity}!indie::Game@{indie::Game}}
+\doxysubsubsection{\texorpdfstring{addSoundEntity()}{addSoundEntity()}}
+{\footnotesize\ttfamily void indie\+::\+Game\+::add\+Sound\+Entity (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classindie_1_1ecs_1_1entity_1_1Entity}{indie\+::ecs\+::entity\+::\+Entity}} $>$}]{entity }\end{DoxyParamCaption})}
+
+
+
+Add sound entity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & Entity sound to add \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1Game_a46e485b6ad4cbb74692a512754f1499f}\label{classindie_1_1Game_a46e485b6ad4cbb74692a512754f1499f}} 
+\index{indie::Game@{indie::Game}!addSoundSystem@{addSoundSystem}}
+\index{addSoundSystem@{addSoundSystem}!indie::Game@{indie::Game}}
+\doxysubsubsection{\texorpdfstring{addSoundSystem()}{addSoundSystem()}}
+{\footnotesize\ttfamily void indie\+::\+Game\+::add\+Sound\+System (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1ISystem}{indie\+::ecs\+::system\+::\+ISystem}} $>$}]{system }\end{DoxyParamCaption})}
+
+
+
+Add sound system. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em system} & System sound to add \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1Game_a0441972c059bce3d04c989b7078c79f3}\label{classindie_1_1Game_a0441972c059bce3d04c989b7078c79f3}} 
+\index{indie::Game@{indie::Game}!handleEvent@{handleEvent}}
+\index{handleEvent@{handleEvent}!indie::Game@{indie::Game}}
+\doxysubsubsection{\texorpdfstring{handleEvent()}{handleEvent()}}
+{\footnotesize\ttfamily int indie\+::\+Game\+::handle\+Event (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Handle the events. 
+
+\begin{DoxyReturn}{Returns}
+int The scene number 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classindie_1_1Game_a287cef35512d64a5f4c49b03d0938dac}\label{classindie_1_1Game_a287cef35512d64a5f4c49b03d0938dac}} 
+\index{indie::Game@{indie::Game}!handleScreensSwap@{handleScreensSwap}}
+\index{handleScreensSwap@{handleScreensSwap}!indie::Game@{indie::Game}}
+\doxysubsubsection{\texorpdfstring{handleScreensSwap()}{handleScreensSwap()}}
+{\footnotesize\ttfamily void indie\+::\+Game\+::handle\+Screens\+Swap (\begin{DoxyParamCaption}\item[{int}]{ret }\end{DoxyParamCaption})}
+
+
+
+Swap between screens. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ret} & Scene number \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1Game_af6c280739aca532e0f0c81e0b77b0190}\label{classindie_1_1Game_af6c280739aca532e0f0c81e0b77b0190}} 
+\index{indie::Game@{indie::Game}!processEvents@{processEvents}}
+\index{processEvents@{processEvents}!indie::Game@{indie::Game}}
+\doxysubsubsection{\texorpdfstring{processEvents()}{processEvents()}}
+{\footnotesize\ttfamily bool indie\+::\+Game\+::process\+Events (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Process events. 
+
+\begin{DoxyReturn}{Returns}
+true \mbox{\hyperlink{structindie_1_1Event}{Event}} has been executed 
+
+false \mbox{\hyperlink{structindie_1_1Event}{Event}} hasn\textquotesingle{}t been executed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classindie_1_1Game_a30ad05638ef9c9eb901f2f47b1b91345}\label{classindie_1_1Game_a30ad05638ef9c9eb901f2f47b1b91345}} 
+\index{indie::Game@{indie::Game}!setActualScreen@{setActualScreen}}
+\index{setActualScreen@{setActualScreen}!indie::Game@{indie::Game}}
+\doxysubsubsection{\texorpdfstring{setActualScreen()}{setActualScreen()}}
+{\footnotesize\ttfamily void indie\+::\+Game\+::set\+Actual\+Screen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classindie_1_1Game_aa21b8f6bc6873ab2ac8def113b57d57d}{Screens}}}]{new\+Screen }\end{DoxyParamCaption})}
+
+
+
+Set the actual screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Screen} & The new screen \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1Game_a2f204faf553a61cc968ce08f9cf9d1c0}\label{classindie_1_1Game_a2f204faf553a61cc968ce08f9cf9d1c0}} 
+\index{indie::Game@{indie::Game}!setSoundEvent@{setSoundEvent}}
+\index{setSoundEvent@{setSoundEvent}!indie::Game@{indie::Game}}
+\doxysubsubsection{\texorpdfstring{setSoundEvent()}{setSoundEvent()}}
+{\footnotesize\ttfamily void indie\+::\+Game\+::set\+Sound\+Event (\begin{DoxyParamCaption}\item[{int}]{entitites\+Index }\end{DoxyParamCaption})}
+
+
+
+Set the Sound \mbox{\hyperlink{structindie_1_1Event}{Event}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entitites\+Index} & Index for entity \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/game/Game.\+hpp\item 
+src/game/Game.\+cpp\end{DoxyCompactItemize}

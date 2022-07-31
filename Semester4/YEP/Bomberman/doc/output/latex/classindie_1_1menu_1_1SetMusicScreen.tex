@@ -1,0 +1,189 @@
+\hypertarget{classindie_1_1menu_1_1SetMusicScreen}{}\doxysection{indie\+::menu\+::Set\+Music\+Screen Class Reference}
+\label{classindie_1_1menu_1_1SetMusicScreen}\index{indie::menu::SetMusicScreen@{indie::menu::SetMusicScreen}}
+
+
+Class for the Set Music Screen.  
+
+
+
+
+{\ttfamily \#include $<$Set\+Music\+Screen.\+hpp$>$}
+
+Inheritance diagram for indie\+::menu\+::Set\+Music\+Screen\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classindie_1_1menu_1_1SetMusicScreen}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classindie_1_1menu_1_1SetMusicScreen_a7defef002234bb346d1f57d6f18644fa}{Set\+Music\+Screen}} (std\+::map$<$ int, \mbox{\hyperlink{classindie_1_1raylib_1_1Sound}{indie\+::raylib\+::\+Sound}} $>$ $\ast$musics)
+\begin{DoxyCompactList}\small\item\em Set the Music Screen object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classindie_1_1menu_1_1SetMusicScreen_aeb9bfff9117dca2677e1722ab4bf5400}\label{classindie_1_1menu_1_1SetMusicScreen_aeb9bfff9117dca2677e1722ab4bf5400}} 
+{\bfseries $\sim$\+Set\+Music\+Screen} ()=default
+\begin{DoxyCompactList}\small\item\em Destroy the Set Music Screen object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1menu_1_1SetMusicScreen_acc82deef027c05be407ae340afe3855a}{init}} () override
+\begin{DoxyCompactList}\small\item\em Init the Music Screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1menu_1_1SetMusicScreen_a521b28f1a164727578e1a47ae3f06c57}{draw}} () override
+\begin{DoxyCompactList}\small\item\em Draw the Music Screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1menu_1_1SetMusicScreen_a5f3b08636ab0e417c625c29c4fe6df8d}{update}} () override
+\begin{DoxyCompactList}\small\item\em Update the Music Screen. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classindie_1_1menu_1_1SetMusicScreen_a8f8c3a3526ce7f8cf81ed0e712bc9d43}{handle\+Event}} (\mbox{\hyperlink{structindie_1_1Event}{indie\+::\+Event}} \&event) override
+\begin{DoxyCompactList}\small\item\em Handle event for the Music Screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1menu_1_1SetMusicScreen_a037bab4f35df41397816158744f9308a}{add\+Entity}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classindie_1_1ecs_1_1entity_1_1Entity}{indie\+::ecs\+::entity\+::\+Entity}} $>$ entity) override
+\begin{DoxyCompactList}\small\item\em Add entity for the Music Screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1menu_1_1SetMusicScreen_a6c696f479fd643e8a7bf85024d866758}{add\+System}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1ISystem}{indie\+::ecs\+::system\+::\+ISystem}} $>$ system) override
+\begin{DoxyCompactList}\small\item\em Add system for the Music Screen. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classindie_1_1menu_1_1SetMusicScreen_a21f51072b6398a8e8877389197ae1d24}{check\+Cursor\+Position}} (bool direction)
+\begin{DoxyCompactList}\small\item\em Check where the cursor is. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class for the Set Music Screen. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classindie_1_1menu_1_1SetMusicScreen_a7defef002234bb346d1f57d6f18644fa}\label{classindie_1_1menu_1_1SetMusicScreen_a7defef002234bb346d1f57d6f18644fa}} 
+\index{indie::menu::SetMusicScreen@{indie::menu::SetMusicScreen}!SetMusicScreen@{SetMusicScreen}}
+\index{SetMusicScreen@{SetMusicScreen}!indie::menu::SetMusicScreen@{indie::menu::SetMusicScreen}}
+\doxysubsubsection{\texorpdfstring{SetMusicScreen()}{SetMusicScreen()}}
+{\footnotesize\ttfamily indie\+::menu\+::\+Set\+Music\+Screen\+::\+Set\+Music\+Screen (\begin{DoxyParamCaption}\item[{std\+::map$<$ int, \mbox{\hyperlink{classindie_1_1raylib_1_1Sound}{indie\+::raylib\+::\+Sound}} $>$ $\ast$}]{musics }\end{DoxyParamCaption})}
+
+
+
+Set the Music Screen object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em musics} & Map for music on the screen \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classindie_1_1menu_1_1SetMusicScreen_a037bab4f35df41397816158744f9308a}\label{classindie_1_1menu_1_1SetMusicScreen_a037bab4f35df41397816158744f9308a}} 
+\index{indie::menu::SetMusicScreen@{indie::menu::SetMusicScreen}!addEntity@{addEntity}}
+\index{addEntity@{addEntity}!indie::menu::SetMusicScreen@{indie::menu::SetMusicScreen}}
+\doxysubsubsection{\texorpdfstring{addEntity()}{addEntity()}}
+{\footnotesize\ttfamily void indie\+::menu\+::\+Set\+Music\+Screen\+::add\+Entity (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classindie_1_1ecs_1_1entity_1_1Entity}{indie\+::ecs\+::entity\+::\+Entity}} $>$}]{entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Add entity for the Music Screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & Entity to add for the Music Screen \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classindie_1_1IScreen_a08ef01692ea36f0eb9cdf06bf41b12a7}{indie\+::\+IScreen}}.
+
+\mbox{\Hypertarget{classindie_1_1menu_1_1SetMusicScreen_a6c696f479fd643e8a7bf85024d866758}\label{classindie_1_1menu_1_1SetMusicScreen_a6c696f479fd643e8a7bf85024d866758}} 
+\index{indie::menu::SetMusicScreen@{indie::menu::SetMusicScreen}!addSystem@{addSystem}}
+\index{addSystem@{addSystem}!indie::menu::SetMusicScreen@{indie::menu::SetMusicScreen}}
+\doxysubsubsection{\texorpdfstring{addSystem()}{addSystem()}}
+{\footnotesize\ttfamily void indie\+::menu\+::\+Set\+Music\+Screen\+::add\+System (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1ISystem}{indie\+::ecs\+::system\+::\+ISystem}} $>$}]{system }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Add system for the Music Screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em system} & System to add for the Music Screen \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classindie_1_1IScreen_a492a5f07982dc9df97b71251413e8129}{indie\+::\+IScreen}}.
+
+\mbox{\Hypertarget{classindie_1_1menu_1_1SetMusicScreen_a21f51072b6398a8e8877389197ae1d24}\label{classindie_1_1menu_1_1SetMusicScreen_a21f51072b6398a8e8877389197ae1d24}} 
+\index{indie::menu::SetMusicScreen@{indie::menu::SetMusicScreen}!checkCursorPosition@{checkCursorPosition}}
+\index{checkCursorPosition@{checkCursorPosition}!indie::menu::SetMusicScreen@{indie::menu::SetMusicScreen}}
+\doxysubsubsection{\texorpdfstring{checkCursorPosition()}{checkCursorPosition()}}
+{\footnotesize\ttfamily int indie\+::menu\+::\+Set\+Music\+Screen\+::check\+Cursor\+Position (\begin{DoxyParamCaption}\item[{bool}]{direction }\end{DoxyParamCaption})}
+
+
+
+Check where the cursor is. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em direction} & True is UP and False is DOWN \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int The index for the button 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classindie_1_1menu_1_1SetMusicScreen_a521b28f1a164727578e1a47ae3f06c57}\label{classindie_1_1menu_1_1SetMusicScreen_a521b28f1a164727578e1a47ae3f06c57}} 
+\index{indie::menu::SetMusicScreen@{indie::menu::SetMusicScreen}!draw@{draw}}
+\index{draw@{draw}!indie::menu::SetMusicScreen@{indie::menu::SetMusicScreen}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void indie\+::menu\+::\+Set\+Music\+Screen\+::draw (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Draw the Music Screen. 
+
+
+
+Implements \mbox{\hyperlink{classindie_1_1IScreen_a50e467ab6b7efae4114a9c3f17fa8ef4}{indie\+::\+IScreen}}.
+
+\mbox{\Hypertarget{classindie_1_1menu_1_1SetMusicScreen_a8f8c3a3526ce7f8cf81ed0e712bc9d43}\label{classindie_1_1menu_1_1SetMusicScreen_a8f8c3a3526ce7f8cf81ed0e712bc9d43}} 
+\index{indie::menu::SetMusicScreen@{indie::menu::SetMusicScreen}!handleEvent@{handleEvent}}
+\index{handleEvent@{handleEvent}!indie::menu::SetMusicScreen@{indie::menu::SetMusicScreen}}
+\doxysubsubsection{\texorpdfstring{handleEvent()}{handleEvent()}}
+{\footnotesize\ttfamily int indie\+::menu\+::\+Set\+Music\+Screen\+::handle\+Event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structindie_1_1Event}{indie\+::\+Event}} \&}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Handle event for the Music Screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & \mbox{\hyperlink{structindie_1_1Event}{Event}} to be handled \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int The scene number 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classindie_1_1IScreen_a715fc5be821e5ed1e66087cf4945234c}{indie\+::\+IScreen}}.
+
+\mbox{\Hypertarget{classindie_1_1menu_1_1SetMusicScreen_acc82deef027c05be407ae340afe3855a}\label{classindie_1_1menu_1_1SetMusicScreen_acc82deef027c05be407ae340afe3855a}} 
+\index{indie::menu::SetMusicScreen@{indie::menu::SetMusicScreen}!init@{init}}
+\index{init@{init}!indie::menu::SetMusicScreen@{indie::menu::SetMusicScreen}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void indie\+::menu\+::\+Set\+Music\+Screen\+::init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Init the Music Screen. 
+
+
+
+Implements \mbox{\hyperlink{classindie_1_1IScreen_a8a94615d59b1a467347bf806b5c92f17}{indie\+::\+IScreen}}.
+
+\mbox{\Hypertarget{classindie_1_1menu_1_1SetMusicScreen_a5f3b08636ab0e417c625c29c4fe6df8d}\label{classindie_1_1menu_1_1SetMusicScreen_a5f3b08636ab0e417c625c29c4fe6df8d}} 
+\index{indie::menu::SetMusicScreen@{indie::menu::SetMusicScreen}!update@{update}}
+\index{update@{update}!indie::menu::SetMusicScreen@{indie::menu::SetMusicScreen}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void indie\+::menu\+::\+Set\+Music\+Screen\+::update (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Update the Music Screen. 
+
+
+
+Implements \mbox{\hyperlink{classindie_1_1IScreen_aa8a7600f2869b54991b1ae551e8735c1}{indie\+::\+IScreen}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/screens/set\+\_\+music/\mbox{\hyperlink{SetMusicScreen_8hpp}{Set\+Music\+Screen.\+hpp}}\item 
+src/screens/set\+\_\+music/\mbox{\hyperlink{SetMusicScreen_8cpp}{Set\+Music\+Screen.\+cpp}}\end{DoxyCompactItemize}

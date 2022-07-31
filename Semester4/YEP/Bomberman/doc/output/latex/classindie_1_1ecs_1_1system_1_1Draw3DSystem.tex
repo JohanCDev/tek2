@@ -1,0 +1,116 @@
+\hypertarget{classindie_1_1ecs_1_1system_1_1Draw3DSystem}{}\doxysection{indie\+::ecs\+::system\+::Draw3\+DSystem Class Reference}
+\label{classindie_1_1ecs_1_1system_1_1Draw3DSystem}\index{indie::ecs::system::Draw3DSystem@{indie::ecs::system::Draw3DSystem}}
+
+
+Draw3D system.  
+
+
+
+
+{\ttfamily \#include $<$Draw3\+D.\+hpp$>$}
+
+Inheritance diagram for indie\+::ecs\+::system\+::Draw3\+DSystem\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classindie_1_1ecs_1_1system_1_1Draw3DSystem}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classindie_1_1ecs_1_1system_1_1Draw3DSystem_a95ae490ead64de0f0afbaafa2b4a82c5}\label{classindie_1_1ecs_1_1system_1_1Draw3DSystem_a95ae490ead64de0f0afbaafa2b4a82c5}} 
+{\bfseries Draw3\+DSystem} ()
+\begin{DoxyCompactList}\small\item\em Create a new draw 3d system. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classindie_1_1ecs_1_1system_1_1Draw3DSystem_accc08abbf580b6db3ab4f1362fe58f8c}\label{classindie_1_1ecs_1_1system_1_1Draw3DSystem_accc08abbf580b6db3ab4f1362fe58f8c}} 
+{\bfseries $\sim$\+Draw3\+DSystem} ()
+\begin{DoxyCompactList}\small\item\em Destroy a draw 3d system. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1Draw3DSystem_aa8e29be22e1d4042a8428904231c5d4d}{draw\+Sphere}} (auto drawable\+Compo, auto transform\+Compo)
+\begin{DoxyCompactList}\small\item\em Draw sphere with given properties. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1Draw3DSystem_ae6bbc7e3fffe3bf556d7f06a07f1632d}{draw\+Cube}} (auto drawable\+Compo, auto transform\+Compo)
+\begin{DoxyCompactList}\small\item\em Draw cube with given properties. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1Draw3DSystem_a92ab732ce98a6ae72c8bbb5b63f1cbcb}{update}} (std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classindie_1_1ecs_1_1entity_1_1Entity}{indie\+::ecs\+::entity\+::\+Entity}} $>$ $>$ \&entities) override
+\begin{DoxyCompactList}\small\item\em Draw all given entities with Drawable3D component. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ISystem_8hpp_aec184346273b5fda2bad6ad1aaa44620}{indie\+::ecs\+::system\+::\+System\+Type}} \mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1Draw3DSystem_a69fb08513d1acfb8b3470f6bc19984ee}{get\+System\+Type}} () const override
+\begin{DoxyCompactList}\small\item\em Get the type of system. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Draw3D system. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classindie_1_1ecs_1_1system_1_1Draw3DSystem_ae6bbc7e3fffe3bf556d7f06a07f1632d}\label{classindie_1_1ecs_1_1system_1_1Draw3DSystem_ae6bbc7e3fffe3bf556d7f06a07f1632d}} 
+\index{indie::ecs::system::Draw3DSystem@{indie::ecs::system::Draw3DSystem}!drawCube@{drawCube}}
+\index{drawCube@{drawCube}!indie::ecs::system::Draw3DSystem@{indie::ecs::system::Draw3DSystem}}
+\doxysubsubsection{\texorpdfstring{drawCube()}{drawCube()}}
+{\footnotesize\ttfamily void indie\+::ecs\+::system\+::\+Draw3\+DSystem\+::draw\+Cube (\begin{DoxyParamCaption}\item[{auto}]{drawable\+Compo,  }\item[{auto}]{transform\+Compo }\end{DoxyParamCaption})}
+
+
+
+Draw cube with given properties. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em drawable\+Compo} & the drawable component of the entity with the size and color. \\
+\hline
+{\em transform\+Compo} & the transform component of the entity with his position. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1ecs_1_1system_1_1Draw3DSystem_aa8e29be22e1d4042a8428904231c5d4d}\label{classindie_1_1ecs_1_1system_1_1Draw3DSystem_aa8e29be22e1d4042a8428904231c5d4d}} 
+\index{indie::ecs::system::Draw3DSystem@{indie::ecs::system::Draw3DSystem}!drawSphere@{drawSphere}}
+\index{drawSphere@{drawSphere}!indie::ecs::system::Draw3DSystem@{indie::ecs::system::Draw3DSystem}}
+\doxysubsubsection{\texorpdfstring{drawSphere()}{drawSphere()}}
+{\footnotesize\ttfamily void indie\+::ecs\+::system\+::\+Draw3\+DSystem\+::draw\+Sphere (\begin{DoxyParamCaption}\item[{auto}]{drawable\+Compo,  }\item[{auto}]{transform\+Compo }\end{DoxyParamCaption})}
+
+
+
+Draw sphere with given properties. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em drawable\+Compo} & the drawable component of the entity with the radius and color. \\
+\hline
+{\em transform\+Compo} & the transform component of the entity with his position. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1ecs_1_1system_1_1Draw3DSystem_a69fb08513d1acfb8b3470f6bc19984ee}\label{classindie_1_1ecs_1_1system_1_1Draw3DSystem_a69fb08513d1acfb8b3470f6bc19984ee}} 
+\index{indie::ecs::system::Draw3DSystem@{indie::ecs::system::Draw3DSystem}!getSystemType@{getSystemType}}
+\index{getSystemType@{getSystemType}!indie::ecs::system::Draw3DSystem@{indie::ecs::system::Draw3DSystem}}
+\doxysubsubsection{\texorpdfstring{getSystemType()}{getSystemType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ISystem_8hpp_aec184346273b5fda2bad6ad1aaa44620}{indie\+::ecs\+::system\+::\+System\+Type}} indie\+::ecs\+::system\+::\+Draw3\+DSystem\+::get\+System\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the type of system. 
+
+\begin{DoxyReturn}{Returns}
+indie\+::ecs\+::system\+::\+System\+Type System\+Type 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1ISystem_a4b74e1abca439d48bbb15b4ce62ade3e}{indie\+::ecs\+::system\+::\+ISystem}}.
+
+\mbox{\Hypertarget{classindie_1_1ecs_1_1system_1_1Draw3DSystem_a92ab732ce98a6ae72c8bbb5b63f1cbcb}\label{classindie_1_1ecs_1_1system_1_1Draw3DSystem_a92ab732ce98a6ae72c8bbb5b63f1cbcb}} 
+\index{indie::ecs::system::Draw3DSystem@{indie::ecs::system::Draw3DSystem}!update@{update}}
+\index{update@{update}!indie::ecs::system::Draw3DSystem@{indie::ecs::system::Draw3DSystem}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void indie\+::ecs\+::system\+::\+Draw3\+DSystem\+::update (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classindie_1_1ecs_1_1entity_1_1Entity}{indie\+::ecs\+::entity\+::\+Entity}} $>$ $>$ \&}]{entities }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Draw all given entities with Drawable3D component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entities} & the entities to draw. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1ISystem_aa4e9422532642acdb47b70f31405d4d1}{indie\+::ecs\+::system\+::\+ISystem}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/ecs/system/\+Draw3\+D/\mbox{\hyperlink{Draw3D_8hpp}{Draw3\+D.\+hpp}}\item 
+src/ecs/system/\+Draw3\+D/\mbox{\hyperlink{Draw3D_8cpp}{Draw3\+D.\+cpp}}\end{DoxyCompactItemize}

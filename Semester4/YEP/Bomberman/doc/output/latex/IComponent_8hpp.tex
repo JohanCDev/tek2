@@ -1,0 +1,72 @@
+\hypertarget{IComponent_8hpp}{}\doxysection{src/ecs/component/\+IComponent.hpp File Reference}
+\label{IComponent_8hpp}\index{src/ecs/component/IComponent.hpp@{src/ecs/component/IComponent.hpp}}
+
+
+Interface for every compponents.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include \char`\"{}../../raylib/\+Raylib.\+hpp\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1IComponent}{indie\+::ecs\+::component\+::\+IComponent}}
+\begin{DoxyCompactList}\small\item\em Component interface. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{IComponent_8hpp_ac44f0ed416679d299da366d37fd5eac8}\label{IComponent_8hpp_ac44f0ed416679d299da366d37fd5eac8}} 
+enum \mbox{\hyperlink{IComponent_8hpp_ac44f0ed416679d299da366d37fd5eac8}{indie\+::ecs\+::component\+::compo\+Type}} \{ \newline
+{\bfseries TRANSFORM}
+, {\bfseries DRAWABLE2D}
+, {\bfseries DRAWABLE3D}
+, {\bfseries ALIVE}
+, \newline
+{\bfseries COLLECTABLE}
+, {\bfseries INVENTORY}
+, {\bfseries EXPLODABLE}
+, {\bfseries COLLIDE}
+, \newline
+{\bfseries SOUND}
+, {\bfseries DESTROYABLE}
+, {\bfseries UNKNOWNCOMPO}
+ \}
+\begin{DoxyCompactList}\small\item\em Enum for component type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{IComponent_8hpp_aa8502d67dffca22bc7fe2149622da4e6}\label{IComponent_8hpp_aa8502d67dffca22bc7fe2149622da4e6}} 
+enum \mbox{\hyperlink{IComponent_8hpp_aa8502d67dffca22bc7fe2149622da4e6}{indie\+::ecs\+::component\+::drawable\+Type}} \{ \newline
+{\bfseries CIRCLE}
+, {\bfseries TEXT}
+, {\bfseries RECTANGLE}
+, {\bfseries SPHERE}
+, \newline
+{\bfseries CUBE}
+, {\bfseries UNKNOWNDRAWABLE}
+ \}
+\begin{DoxyCompactList}\small\item\em Enum for drawable type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{IComponent_8hpp_a7556b6608f1c7620d69cfee745a74351}\label{IComponent_8hpp_a7556b6608f1c7620d69cfee745a74351}} 
+enum \mbox{\hyperlink{IComponent_8hpp_a7556b6608f1c7620d69cfee745a74351}{indie\+::ecs\+::component\+::bonus\+Type}} \{ \newline
+{\bfseries BOMBUP}
+, {\bfseries SPEEDUP}
+, {\bfseries FIREUP}
+, {\bfseries WALLPASS}
+, \newline
+{\bfseries UNKNOWNBONUS}
+ \}
+\begin{DoxyCompactList}\small\item\em Enum for bonus type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface for every compponents. 
+
+\begin{DoxyAuthor}{Author}
+Cédric Corge (\href{mailto:cedric.corge@epitech.eu}{\texttt{ cedric.\+corge@epitech.\+eu}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2022-\/06-\/01
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2022 
+\end{DoxyCopyright}

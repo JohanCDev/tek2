@@ -1,0 +1,203 @@
+\hypertarget{classindie_1_1menu_1_1MenuScreen}{}\doxysection{indie\+::menu\+::Menu\+Screen Class Reference}
+\label{classindie_1_1menu_1_1MenuScreen}\index{indie::menu::MenuScreen@{indie::menu::MenuScreen}}
+
+
+Class for the Menu Screen.  
+
+
+
+
+{\ttfamily \#include $<$Menu\+Screen.\+hpp$>$}
+
+Inheritance diagram for indie\+::menu\+::Menu\+Screen\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classindie_1_1menu_1_1MenuScreen}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classindie_1_1menu_1_1MenuScreen_ace4d6bdb66567bffa2e5b4e88ff192a9}\label{classindie_1_1menu_1_1MenuScreen_ace4d6bdb66567bffa2e5b4e88ff192a9}} 
+enum \mbox{\hyperlink{classindie_1_1menu_1_1MenuScreen_ace4d6bdb66567bffa2e5b4e88ff192a9}{cursor\+Position}} \{ {\bfseries NEW\+\_\+\+GAME} = 0
+, {\bfseries LOAD\+\_\+\+GAME} = 1
+, {\bfseries EXIT} = 2
+ \}
+\begin{DoxyCompactList}\small\item\em Cursor enum for the option choice (New game, Load game or exit game) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classindie_1_1menu_1_1MenuScreen_ad49e9ab4410d4cd51efdca0aa8997208}\label{classindie_1_1menu_1_1MenuScreen_ad49e9ab4410d4cd51efdca0aa8997208}} 
+{\bfseries Menu\+Screen} ()
+\begin{DoxyCompactList}\small\item\em Construct a new Menu Screen object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classindie_1_1menu_1_1MenuScreen_abcd6f51b54f412ef5b77a0c0d8fcec75}\label{classindie_1_1menu_1_1MenuScreen_abcd6f51b54f412ef5b77a0c0d8fcec75}} 
+{\bfseries $\sim$\+Menu\+Screen} ()=default
+\begin{DoxyCompactList}\small\item\em Destroy the Menu Screen object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1menu_1_1MenuScreen_a7d6ca35ef9e5ee9402f5918cbc0de8a3}{init}} () override
+\begin{DoxyCompactList}\small\item\em Init the Menu Screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1menu_1_1MenuScreen_a1b8f7b8ab498403301e05c3292f7e786}{draw}} () override
+\begin{DoxyCompactList}\small\item\em Draw the Menu Screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1menu_1_1MenuScreen_a4621b9e9ce38fdccc1b1acda25f85478}{update}} () override
+\begin{DoxyCompactList}\small\item\em Update the Menu Screen. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classindie_1_1menu_1_1MenuScreen_a19789ffc37a4b52a0f0c503a4adeab2b}{handle\+Event}} (\mbox{\hyperlink{structindie_1_1Event}{indie\+::\+Event}} \&event) override
+\begin{DoxyCompactList}\small\item\em Handle event for the Menu Screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1menu_1_1MenuScreen_ad45e73cc9887c5c2c8cf79f0b9b25b15}{add\+Entity}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classindie_1_1ecs_1_1entity_1_1Entity}{indie\+::ecs\+::entity\+::\+Entity}} $>$ entity) override
+\begin{DoxyCompactList}\small\item\em Add entity for the Menu Screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1menu_1_1MenuScreen_af6a8924fd4edbd35c580e2eb54b0f7a4}{add\+System}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1ISystem}{indie\+::ecs\+::system\+::\+ISystem}} $>$ system) override
+\begin{DoxyCompactList}\small\item\em Add system for the Menu Screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1menu_1_1MenuScreen_a4d88ea98ead5bf13451da7b34fa5ad05}{set\+Size}} (int where, float height, float width)
+\begin{DoxyCompactList}\small\item\em Set the size of the Menu Screen. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classindie_1_1menu_1_1MenuScreen_aa1ecb604cbea377676c8d5edaad5af6e}{check\+Cursor\+Position}} (bool direction)
+\begin{DoxyCompactList}\small\item\em Check where the cursor is. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class for the Menu Screen. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classindie_1_1menu_1_1MenuScreen_ad45e73cc9887c5c2c8cf79f0b9b25b15}\label{classindie_1_1menu_1_1MenuScreen_ad45e73cc9887c5c2c8cf79f0b9b25b15}} 
+\index{indie::menu::MenuScreen@{indie::menu::MenuScreen}!addEntity@{addEntity}}
+\index{addEntity@{addEntity}!indie::menu::MenuScreen@{indie::menu::MenuScreen}}
+\doxysubsubsection{\texorpdfstring{addEntity()}{addEntity()}}
+{\footnotesize\ttfamily void indie\+::menu\+::\+Menu\+Screen\+::add\+Entity (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classindie_1_1ecs_1_1entity_1_1Entity}{indie\+::ecs\+::entity\+::\+Entity}} $>$}]{entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Add entity for the Menu Screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & Entity to add for the Menu Screen \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classindie_1_1IScreen_a08ef01692ea36f0eb9cdf06bf41b12a7}{indie\+::\+IScreen}}.
+
+\mbox{\Hypertarget{classindie_1_1menu_1_1MenuScreen_af6a8924fd4edbd35c580e2eb54b0f7a4}\label{classindie_1_1menu_1_1MenuScreen_af6a8924fd4edbd35c580e2eb54b0f7a4}} 
+\index{indie::menu::MenuScreen@{indie::menu::MenuScreen}!addSystem@{addSystem}}
+\index{addSystem@{addSystem}!indie::menu::MenuScreen@{indie::menu::MenuScreen}}
+\doxysubsubsection{\texorpdfstring{addSystem()}{addSystem()}}
+{\footnotesize\ttfamily void indie\+::menu\+::\+Menu\+Screen\+::add\+System (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1ISystem}{indie\+::ecs\+::system\+::\+ISystem}} $>$}]{system }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Add system for the Menu Screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em system} & System to add for the Menu Screen \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classindie_1_1IScreen_a492a5f07982dc9df97b71251413e8129}{indie\+::\+IScreen}}.
+
+\mbox{\Hypertarget{classindie_1_1menu_1_1MenuScreen_aa1ecb604cbea377676c8d5edaad5af6e}\label{classindie_1_1menu_1_1MenuScreen_aa1ecb604cbea377676c8d5edaad5af6e}} 
+\index{indie::menu::MenuScreen@{indie::menu::MenuScreen}!checkCursorPosition@{checkCursorPosition}}
+\index{checkCursorPosition@{checkCursorPosition}!indie::menu::MenuScreen@{indie::menu::MenuScreen}}
+\doxysubsubsection{\texorpdfstring{checkCursorPosition()}{checkCursorPosition()}}
+{\footnotesize\ttfamily int indie\+::menu\+::\+Menu\+Screen\+::check\+Cursor\+Position (\begin{DoxyParamCaption}\item[{bool}]{direction }\end{DoxyParamCaption})}
+
+
+
+Check where the cursor is. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em direction} & True is UP and False is DOWN \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int The index for the button 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classindie_1_1menu_1_1MenuScreen_a1b8f7b8ab498403301e05c3292f7e786}\label{classindie_1_1menu_1_1MenuScreen_a1b8f7b8ab498403301e05c3292f7e786}} 
+\index{indie::menu::MenuScreen@{indie::menu::MenuScreen}!draw@{draw}}
+\index{draw@{draw}!indie::menu::MenuScreen@{indie::menu::MenuScreen}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void indie\+::menu\+::\+Menu\+Screen\+::draw (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Draw the Menu Screen. 
+
+
+
+Implements \mbox{\hyperlink{classindie_1_1IScreen_a50e467ab6b7efae4114a9c3f17fa8ef4}{indie\+::\+IScreen}}.
+
+\mbox{\Hypertarget{classindie_1_1menu_1_1MenuScreen_a19789ffc37a4b52a0f0c503a4adeab2b}\label{classindie_1_1menu_1_1MenuScreen_a19789ffc37a4b52a0f0c503a4adeab2b}} 
+\index{indie::menu::MenuScreen@{indie::menu::MenuScreen}!handleEvent@{handleEvent}}
+\index{handleEvent@{handleEvent}!indie::menu::MenuScreen@{indie::menu::MenuScreen}}
+\doxysubsubsection{\texorpdfstring{handleEvent()}{handleEvent()}}
+{\footnotesize\ttfamily int indie\+::menu\+::\+Menu\+Screen\+::handle\+Event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structindie_1_1Event}{indie\+::\+Event}} \&}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Handle event for the Menu Screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & \mbox{\hyperlink{structindie_1_1Event}{Event}} to be handled \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int The Scene Number 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classindie_1_1IScreen_a715fc5be821e5ed1e66087cf4945234c}{indie\+::\+IScreen}}.
+
+\mbox{\Hypertarget{classindie_1_1menu_1_1MenuScreen_a7d6ca35ef9e5ee9402f5918cbc0de8a3}\label{classindie_1_1menu_1_1MenuScreen_a7d6ca35ef9e5ee9402f5918cbc0de8a3}} 
+\index{indie::menu::MenuScreen@{indie::menu::MenuScreen}!init@{init}}
+\index{init@{init}!indie::menu::MenuScreen@{indie::menu::MenuScreen}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void indie\+::menu\+::\+Menu\+Screen\+::init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Init the Menu Screen. 
+
+
+
+Implements \mbox{\hyperlink{classindie_1_1IScreen_a8a94615d59b1a467347bf806b5c92f17}{indie\+::\+IScreen}}.
+
+\mbox{\Hypertarget{classindie_1_1menu_1_1MenuScreen_a4d88ea98ead5bf13451da7b34fa5ad05}\label{classindie_1_1menu_1_1MenuScreen_a4d88ea98ead5bf13451da7b34fa5ad05}} 
+\index{indie::menu::MenuScreen@{indie::menu::MenuScreen}!setSize@{setSize}}
+\index{setSize@{setSize}!indie::menu::MenuScreen@{indie::menu::MenuScreen}}
+\doxysubsubsection{\texorpdfstring{setSize()}{setSize()}}
+{\footnotesize\ttfamily void indie\+::menu\+::\+Menu\+Screen\+::set\+Size (\begin{DoxyParamCaption}\item[{int}]{where,  }\item[{float}]{height,  }\item[{float}]{width }\end{DoxyParamCaption})}
+
+
+
+Set the size of the Menu Screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em where} & Position \\
+\hline
+{\em height} & Height ~\newline
+ \\
+\hline
+{\em width} & Width \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1menu_1_1MenuScreen_a4621b9e9ce38fdccc1b1acda25f85478}\label{classindie_1_1menu_1_1MenuScreen_a4621b9e9ce38fdccc1b1acda25f85478}} 
+\index{indie::menu::MenuScreen@{indie::menu::MenuScreen}!update@{update}}
+\index{update@{update}!indie::menu::MenuScreen@{indie::menu::MenuScreen}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void indie\+::menu\+::\+Menu\+Screen\+::update (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Update the Menu Screen. 
+
+
+
+Implements \mbox{\hyperlink{classindie_1_1IScreen_aa8a7600f2869b54991b1ae551e8735c1}{indie\+::\+IScreen}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/screens/menu/\mbox{\hyperlink{MenuScreen_8hpp}{Menu\+Screen.\+hpp}}\item 
+src/screens/menu/\mbox{\hyperlink{MenuScreen_8cpp}{Menu\+Screen.\+cpp}}\end{DoxyCompactItemize}

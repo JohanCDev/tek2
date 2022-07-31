@@ -1,0 +1,142 @@
+\hypertarget{classindie_1_1map_1_1MapGenerator}{}\doxysection{indie\+::map\+::Map\+Generator Class Reference}
+\label{classindie_1_1map_1_1MapGenerator}\index{indie::map::MapGenerator@{indie::map::MapGenerator}}
+
+
+Map generator class implementation.  
+
+
+
+
+{\ttfamily \#include $<$Map\+Generator.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classindie_1_1map_1_1MapGenerator_a3d821167d07122cdd6d8d4c5c626c14e}\label{classindie_1_1map_1_1MapGenerator_a3d821167d07122cdd6d8d4c5c626c14e}} 
+{\bfseries Map\+Generator} ()=default
+\begin{DoxyCompactList}\small\item\em Construct a new Map Generator object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classindie_1_1map_1_1MapGenerator_af4cd7fbd4a4d6ce39e9ebed9288235e5}\label{classindie_1_1map_1_1MapGenerator_af4cd7fbd4a4d6ce39e9ebed9288235e5}} 
+{\bfseries $\sim$\+Map\+Generator} ()=default
+\begin{DoxyCompactList}\small\item\em Destroy the Map Generator object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classindie_1_1map_1_1MapGenerator_a97089fe2cfa067751d3fe45161cd3ff1}{Map\+Generator}} (const \mbox{\hyperlink{classindie_1_1map_1_1MapGenerator}{Map\+Generator}} \&component)=default
+\begin{DoxyCompactList}\small\item\em Construct a new Map Generator object from a copy. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classindie_1_1map_1_1MapGenerator}{Map\+Generator}} \& \mbox{\hyperlink{classindie_1_1map_1_1MapGenerator_adf5d071dc9516e774c27286d39988f45}{operator=}} (const \mbox{\hyperlink{classindie_1_1map_1_1MapGenerator}{Map\+Generator}} \&component)=default
+\begin{DoxyCompactList}\small\item\em Copy a map generator object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classindie_1_1map_1_1MapGenerator_acdc13e2987030d8389df4b972870ff88}\label{classindie_1_1map_1_1MapGenerator_acdc13e2987030d8389df4b972870ff88}} 
+void {\bfseries create\+Wall} ()
+\begin{DoxyCompactList}\small\item\em Create a Wall. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classindie_1_1map_1_1MapGenerator_ac862b1c4671a764776312f5d92c99d2b}\label{classindie_1_1map_1_1MapGenerator_ac862b1c4671a764776312f5d92c99d2b}} 
+void {\bfseries place\+Boxes} ()
+\begin{DoxyCompactList}\small\item\em Place a box. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classindie_1_1map_1_1MapGenerator_a2c0de4c18e9a31e73c95ebb9d7a30655}\label{classindie_1_1map_1_1MapGenerator_a2c0de4c18e9a31e73c95ebb9d7a30655}} 
+void {\bfseries place\+Random\+Empty\+Space} ()
+\begin{DoxyCompactList}\small\item\em Place an empty space. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classindie_1_1map_1_1MapGenerator_af77eeab00afd62e749c03dca2a920a19}\label{classindie_1_1map_1_1MapGenerator_af77eeab00afd62e749c03dca2a920a19}} 
+void {\bfseries place\+Bonus\+Boxes} ()
+\begin{DoxyCompactList}\small\item\em Place a bonus box. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classindie_1_1map_1_1MapGenerator_af8ed9bf3843aac46939c489c0ee895f3}\label{classindie_1_1map_1_1MapGenerator_af8ed9bf3843aac46939c489c0ee895f3}} 
+void {\bfseries place\+Players} ()
+\begin{DoxyCompactList}\small\item\em Place the players. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classindie_1_1map_1_1MapGenerator_afeed6f1c40c9d1ff0c839605f6eac2a9}{count\+Bonus\+On\+Line}} (int i)
+\begin{DoxyCompactList}\small\item\em Count the bonuses on a line. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classindie_1_1map_1_1MapGenerator_aff955c17fed06a62aa1512342e5047f8}{generate\+Random\+Number}} (int nbr\+Max)
+\begin{DoxyCompactList}\small\item\em Generate a random number. \end{DoxyCompactList}\item 
+const std\+::vector$<$ std\+::vector$<$ char $>$ $>$ \& \mbox{\hyperlink{classindie_1_1map_1_1MapGenerator_ad5df301455dc48ed01c13ae41742bd61}{get\+Map}} (void) const
+\begin{DoxyCompactList}\small\item\em Get the Map object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Map generator class implementation. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classindie_1_1map_1_1MapGenerator_a97089fe2cfa067751d3fe45161cd3ff1}\label{classindie_1_1map_1_1MapGenerator_a97089fe2cfa067751d3fe45161cd3ff1}} 
+\index{indie::map::MapGenerator@{indie::map::MapGenerator}!MapGenerator@{MapGenerator}}
+\index{MapGenerator@{MapGenerator}!indie::map::MapGenerator@{indie::map::MapGenerator}}
+\doxysubsubsection{\texorpdfstring{MapGenerator()}{MapGenerator()}}
+{\footnotesize\ttfamily indie\+::map\+::\+Map\+Generator\+::\+Map\+Generator (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classindie_1_1map_1_1MapGenerator}{Map\+Generator}} \&}]{component }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Construct a new Map Generator object from a copy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em component} & to copy \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classindie_1_1map_1_1MapGenerator_afeed6f1c40c9d1ff0c839605f6eac2a9}\label{classindie_1_1map_1_1MapGenerator_afeed6f1c40c9d1ff0c839605f6eac2a9}} 
+\index{indie::map::MapGenerator@{indie::map::MapGenerator}!countBonusOnLine@{countBonusOnLine}}
+\index{countBonusOnLine@{countBonusOnLine}!indie::map::MapGenerator@{indie::map::MapGenerator}}
+\doxysubsubsection{\texorpdfstring{countBonusOnLine()}{countBonusOnLine()}}
+{\footnotesize\ttfamily int indie\+::map\+::\+Map\+Generator\+::count\+Bonus\+On\+Line (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Count the bonuses on a line. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & line to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Number of bonuses on the line 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classindie_1_1map_1_1MapGenerator_aff955c17fed06a62aa1512342e5047f8}\label{classindie_1_1map_1_1MapGenerator_aff955c17fed06a62aa1512342e5047f8}} 
+\index{indie::map::MapGenerator@{indie::map::MapGenerator}!generateRandomNumber@{generateRandomNumber}}
+\index{generateRandomNumber@{generateRandomNumber}!indie::map::MapGenerator@{indie::map::MapGenerator}}
+\doxysubsubsection{\texorpdfstring{generateRandomNumber()}{generateRandomNumber()}}
+{\footnotesize\ttfamily int indie\+::map\+::\+Map\+Generator\+::generate\+Random\+Number (\begin{DoxyParamCaption}\item[{int}]{nbr\+Max }\end{DoxyParamCaption})}
+
+
+
+Generate a random number. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nbr\+Max} & max number generated \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int the number generated 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classindie_1_1map_1_1MapGenerator_ad5df301455dc48ed01c13ae41742bd61}\label{classindie_1_1map_1_1MapGenerator_ad5df301455dc48ed01c13ae41742bd61}} 
+\index{indie::map::MapGenerator@{indie::map::MapGenerator}!getMap@{getMap}}
+\index{getMap@{getMap}!indie::map::MapGenerator@{indie::map::MapGenerator}}
+\doxysubsubsection{\texorpdfstring{getMap()}{getMap()}}
+{\footnotesize\ttfamily const std\+::vector$<$ std\+::vector$<$ char $>$ $>$ \& indie\+::map\+::\+Map\+Generator\+::get\+Map (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the Map object. 
+
+\begin{DoxyReturn}{Returns}
+const std\+::vector$<$std\+::vector$<$char$>$$>$\& the map 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classindie_1_1map_1_1MapGenerator_adf5d071dc9516e774c27286d39988f45}\label{classindie_1_1map_1_1MapGenerator_adf5d071dc9516e774c27286d39988f45}} 
+\index{indie::map::MapGenerator@{indie::map::MapGenerator}!operator=@{operator=}}
+\index{operator=@{operator=}!indie::map::MapGenerator@{indie::map::MapGenerator}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classindie_1_1map_1_1MapGenerator}{Map\+Generator}} \& indie\+::map\+::\+Map\+Generator\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classindie_1_1map_1_1MapGenerator}{Map\+Generator}} \&}]{component }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Copy a map generator object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em component} & to copy\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classindie_1_1map_1_1MapGenerator}{Map\+Generator}} \mbox{\hyperlink{classindie_1_1map_1_1MapGenerator}{Map\+Generator}} object 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/map/\mbox{\hyperlink{MapGenerator_8hpp}{Map\+Generator.\+hpp}}\item 
+src/map/\mbox{\hyperlink{MapGenerator_8cpp}{Map\+Generator.\+cpp}}\end{DoxyCompactItemize}

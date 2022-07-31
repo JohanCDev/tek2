@@ -1,0 +1,752 @@
+\hypertarget{classindie_1_1raylib_1_1Texture2D}{}\doxysection{indie\+::raylib\+::Texture2D Class Reference}
+\label{classindie_1_1raylib_1_1Texture2D}\index{indie::raylib::Texture2D@{indie::raylib::Texture2D}}
+
+
+Texture2d class encapsulation.  
+
+
+
+
+{\ttfamily \#include $<$Texture2\+D.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a594d4979a25c307d5b6f6e88bf8cb56a}{Texture2D}} (unsigned int id, int width, int height, int mipmaps, int format)
+\begin{DoxyCompactList}\small\item\em Construct a new Texture 2 D object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Texture2D_a8f6ff84a9b449288fdbae70c8b3567d7}\label{classindie_1_1raylib_1_1Texture2D_a8f6ff84a9b449288fdbae70c8b3567d7}} 
+{\bfseries $\sim$\+Texture2D} ()=default
+\begin{DoxyCompactList}\small\item\em Destroy the Texture 2 D object. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_ae52415203ba90ae1128038dfe47df975}{get\+Id}} () const
+\begin{DoxyCompactList}\small\item\em Get texture ID. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a6740ccb5429171d79c86193d7e4d353e}{set\+Id}} (unsigned int id)
+\begin{DoxyCompactList}\small\item\em Set texture ID. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a149f194c56022e91848980a51d652eee}{get\+Width}} () const
+\begin{DoxyCompactList}\small\item\em Get texture width. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a0f7c4d13f8e76b2219f24086437a8592}{set\+Width}} (int width)
+\begin{DoxyCompactList}\small\item\em Set texture width. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_af71f7384b3ebf36611a0dc27072f7fd2}{get\+Height}} () const
+\begin{DoxyCompactList}\small\item\em Get texture height. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a471fa8a538dbbaa43d54f32273a3eb5c}{set\+Height}} (int height)
+\begin{DoxyCompactList}\small\item\em Set texture height. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a3f864dcc7097394d08f8961ee9538756}{get\+Mipmaps}} () const
+\begin{DoxyCompactList}\small\item\em Get texture mipmaps. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a952470748dbe1add78314420b32f92bc}{set\+Mipmaps}} (int mipmaps)
+\begin{DoxyCompactList}\small\item\em Set texture mipmaps. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_ae05d7b71e2e25429c2f4d4ec697fd83d}{get\+Format}} () const
+\begin{DoxyCompactList}\small\item\em Get texture format. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a3f239252a0a9ddbf71e18e22ce0b680d}{set\+Format}} (int format)
+\begin{DoxyCompactList}\small\item\em Set texture format. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_af3062d8e02f672a5549e899949b998da}{draw}} (int posX, int posY, \+::\+Color tint)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} a \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a056825308cdcfb67958b7f7d1a35cec4}{drawV}} (\+::\+Vector2 position, \+::\+Color tint)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} a \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} with position defined as Vector2. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_ac2858b034b305c2b08caba0139c59635}{draw\+Ex}} (\+::\+Vector2 position, float rotation, float scale, \+::\+Color tint)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} a \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} with extended parameters. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_af4536ce5bb04d9b5f077b9c279752922}{draw\+Rec}} (\+::\+Rectangle source, \+::\+Vector2 position, \+::\+Color tint)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} a part of a texture defined by a rectangle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_afad0187ab85b8a2e1b4ae1216a23b862}{draw\+Quad}} (\+::\+Vector2 tiling, \+::\+Vector2 offset, \+::\+Rectangle quad, \+::\+Color tint)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} texture quad with tiling and offset parameters. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a299be810ee39c0c1b7a6fd6eb2e38735}{draw\+Tiled}} (\+::\+Rectangle source, \+::\+Rectangle dest, \+::\+Vector2 origin, float rotation, float scale, \+::\+Color tint)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} part of a texture (defined by a rectangle) with rotation and scale tiled into dest. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a6b5b576f0797722af0342bd57ab3dc18}{draw\+Pro}} (\+::\+Rectangle source, \+::\+Rectangle dest, \+::\+Vector2 origin, float rotation, \+::\+Color tint)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} a part of a texture defined by a rectangle with \textquotesingle{}pro\textquotesingle{} parameters. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a2772461618679a249bd469f1b23a0729}{draw\+NPatch}} (\+::\+NPatch\+Info n\+Patch\+Info, \+::\+Rectangle dest, \+::\+Vector2 origin, float rotation, \+::\+Color tint)
+\begin{DoxyCompactList}\small\item\em Draws a texture (or part of it) that stretches or shrinks nicely. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a00fbe859f51c34f2f22c69f74cee0941}{draw\+Poly}} (\+::\+Vector2 center, \+::\+Vector2 $\ast$points, \+::\+Vector2 $\ast$texcoords, int points\+Count, \+::\+Color tint)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} a textured polygon. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Texture2D_ae327faa3dfa803f02ce12759deaf8dc4}\label{classindie_1_1raylib_1_1Texture2D_ae327faa3dfa803f02ce12759deaf8dc4}} 
+void {\bfseries unload} (void)
+\begin{DoxyCompactList}\small\item\em Unload texture from GPU memory (VRAM) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a383ec78014a5376fea1bbc5e9ce4e2a2}{update}} (const void $\ast$pixels)
+\begin{DoxyCompactList}\small\item\em Update GPU texture with new data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_aa5101ca8257852ac4e36ad2454cf63f0}{draw}} (\mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a594d4979a25c307d5b6f6e88bf8cb56a}{\+::\+Texture2D}} texture, int posX, int posY, \+::\+Color tint)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} a \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}}. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a5715079d1466c573975f4168f5788eec}{drawV}} (\mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a594d4979a25c307d5b6f6e88bf8cb56a}{\+::\+Texture2D}} texture, \+::\+Vector2 position, \+::\+Color tint)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} a \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} with position defined as Vector2. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a7553d9e3e744dd375cffef68fe2d5f60}{draw\+Ex}} (\mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a594d4979a25c307d5b6f6e88bf8cb56a}{\+::\+Texture2D}} texture, \+::\+Vector2 position, float rotation, float scale, \+::\+Color tint)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} a \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} with extended parameters. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_abf4223bfcd35895f7dba1c107adc4fd3}{draw\+Rec}} (\mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a594d4979a25c307d5b6f6e88bf8cb56a}{\+::\+Texture2D}} texture, \+::\+Rectangle source, \+::\+Vector2 position, \+::\+Color tint)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} a part of a texture defined by a rectangle. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_ab7083a51a4f6372c6d62f74b2cca1a9c}{draw\+Quad}} (\mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a594d4979a25c307d5b6f6e88bf8cb56a}{\+::\+Texture2D}} texture, \+::\+Vector2 tiling, \+::\+Vector2 offset, \+::\+Rectangle quad, \+::\+Color tint)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} texture quad with tiling and offset parameters. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_adbd027369070476735a0c9aa33e9bb10}{draw\+Tiled}} (\mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a594d4979a25c307d5b6f6e88bf8cb56a}{\+::\+Texture2D}} texture, \+::\+Rectangle source, \+::\+Rectangle dest, \+::\+Vector2 origin, float rotation, float scale, \+::\+Color tint)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} part of a texture (defined by a rectangle) with rotation and scale tiled into dest. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_ad48bd29799ac071cbeb9edec3e5a8d08}{draw\+Pro}} (\mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a594d4979a25c307d5b6f6e88bf8cb56a}{\+::\+Texture2D}} texture, \+::\+Rectangle source, \+::\+Rectangle dest, \+::\+Vector2 origin, float rotation, \+::\+Color tint)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} a part of a texture defined by a rectangle with \textquotesingle{}pro\textquotesingle{} parameters. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a0757d19733b4697f13425e217a307c99}{draw\+NPatch}} (\mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a594d4979a25c307d5b6f6e88bf8cb56a}{\+::\+Texture2D}} texture, \+::\+NPatch\+Info n\+Patch\+Info, \+::\+Rectangle dest, \+::\+Vector2 origin, float rotation, \+::\+Color tint)
+\begin{DoxyCompactList}\small\item\em Draws a texture (or part of it) that stretches or shrinks nicely. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a74de9bedf61034826d2d72186a2549ab}{draw\+Poly}} (\mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a594d4979a25c307d5b6f6e88bf8cb56a}{\+::\+Texture2D}} texture, \+::\+Vector2 center, \+::\+Vector2 $\ast$points, \+::\+Vector2 $\ast$texcoords, int points\+Count, \+::\+Color tint)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} a textured polygon. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a594d4979a25c307d5b6f6e88bf8cb56a}{\+::\+Texture2D}} \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a094952ba5f011e96b31e8fe2b6357854}{load}} (const char $\ast$file\+Name)
+\begin{DoxyCompactList}\small\item\em Load texture from file into GPU memory (VRAM) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a594d4979a25c307d5b6f6e88bf8cb56a}{\+::\+Texture2D}} \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a7bb4f51ff2538b39ef97b017ecc4f919}{load\+From\+Image}} (\+::\+Image image)
+\begin{DoxyCompactList}\small\item\em Load texture from image data. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a4061879a36760f0ab64f31e9a8fbacad}{unload}} (\mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a594d4979a25c307d5b6f6e88bf8cb56a}{\+::\+Texture2D}} texture)
+\begin{DoxyCompactList}\small\item\em Unload texture from GPU memory (VRAM) \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a75c500c58a1e4beed9b76a70d1400ee5}{update}} (\mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a594d4979a25c307d5b6f6e88bf8cb56a}{\+::\+Texture2D}} texture, const void $\ast$pixels)
+\begin{DoxyCompactList}\small\item\em Update GPU texture with new data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Texture2d class encapsulation. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Texture2D_a594d4979a25c307d5b6f6e88bf8cb56a}\label{classindie_1_1raylib_1_1Texture2D_a594d4979a25c307d5b6f6e88bf8cb56a}} 
+\index{indie::raylib::Texture2D@{indie::raylib::Texture2D}!Texture2D@{Texture2D}}
+\index{Texture2D@{Texture2D}!indie::raylib::Texture2D@{indie::raylib::Texture2D}}
+\doxysubsubsection{\texorpdfstring{Texture2D()}{Texture2D()}}
+{\footnotesize\ttfamily indie\+::raylib\+::\+Texture2\+D\+::\+Texture2D (\begin{DoxyParamCaption}\item[{unsigned int}]{id,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{int}]{mipmaps,  }\item[{int}]{format }\end{DoxyParamCaption})}
+
+
+
+Construct a new Texture 2 D object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Texture ID \\
+\hline
+{\em width} & Texture width \\
+\hline
+{\em height} & Texture height \\
+\hline
+{\em mipmaps} & Texture mipmaps \\
+\hline
+{\em format} & Texture format \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Texture2D_aa5101ca8257852ac4e36ad2454cf63f0}\label{classindie_1_1raylib_1_1Texture2D_aa5101ca8257852ac4e36ad2454cf63f0}} 
+\index{indie::raylib::Texture2D@{indie::raylib::Texture2D}!draw@{draw}}
+\index{draw@{draw}!indie::raylib::Texture2D@{indie::raylib::Texture2D}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void indie\+::raylib\+::\+Texture2\+D\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a594d4979a25c307d5b6f6e88bf8cb56a}{\+::\+Texture2D}}}]{texture,  }\item[{int}]{posX,  }\item[{int}]{posY,  }\item[{\+::\+Color}]{tint }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} a \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture} & Texture object \\
+\hline
+{\em posX} & \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} X position \\
+\hline
+{\em posY} & \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} Y position \\
+\hline
+{\em tint} & \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} color \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Texture2D_af3062d8e02f672a5549e899949b998da}\label{classindie_1_1raylib_1_1Texture2D_af3062d8e02f672a5549e899949b998da}} 
+\index{indie::raylib::Texture2D@{indie::raylib::Texture2D}!draw@{draw}}
+\index{draw@{draw}!indie::raylib::Texture2D@{indie::raylib::Texture2D}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void indie\+::raylib\+::\+Texture2\+D\+::draw (\begin{DoxyParamCaption}\item[{int}]{posX,  }\item[{int}]{posY,  }\item[{\+::\+Color}]{tint }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} a \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em posX} & \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} X position \\
+\hline
+{\em posY} & \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} Y position \\
+\hline
+{\em tint} & \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} color \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Texture2D_a7553d9e3e744dd375cffef68fe2d5f60}\label{classindie_1_1raylib_1_1Texture2D_a7553d9e3e744dd375cffef68fe2d5f60}} 
+\index{indie::raylib::Texture2D@{indie::raylib::Texture2D}!drawEx@{drawEx}}
+\index{drawEx@{drawEx}!indie::raylib::Texture2D@{indie::raylib::Texture2D}}
+\doxysubsubsection{\texorpdfstring{drawEx()}{drawEx()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void indie\+::raylib\+::\+Texture2\+D\+::draw\+Ex (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a594d4979a25c307d5b6f6e88bf8cb56a}{\+::\+Texture2D}}}]{texture,  }\item[{\+::\+Vector2}]{position,  }\item[{float}]{rotation,  }\item[{float}]{scale,  }\item[{\+::\+Color}]{tint }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} a \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} with extended parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture} & \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} object \\
+\hline
+{\em position} & \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} position \\
+\hline
+{\em rotation} & \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} rotation \\
+\hline
+{\em scale} & \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} scale \\
+\hline
+{\em tint} & \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} color \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Texture2D_ac2858b034b305c2b08caba0139c59635}\label{classindie_1_1raylib_1_1Texture2D_ac2858b034b305c2b08caba0139c59635}} 
+\index{indie::raylib::Texture2D@{indie::raylib::Texture2D}!drawEx@{drawEx}}
+\index{drawEx@{drawEx}!indie::raylib::Texture2D@{indie::raylib::Texture2D}}
+\doxysubsubsection{\texorpdfstring{drawEx()}{drawEx()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void indie\+::raylib\+::\+Texture2\+D\+::draw\+Ex (\begin{DoxyParamCaption}\item[{\+::\+Vector2}]{position,  }\item[{float}]{rotation,  }\item[{float}]{scale,  }\item[{\+::\+Color}]{tint }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} a \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} with extended parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} position \\
+\hline
+{\em rotation} & \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} rotation \\
+\hline
+{\em scale} & \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} scale \\
+\hline
+{\em tint} & \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} color \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Texture2D_a2772461618679a249bd469f1b23a0729}\label{classindie_1_1raylib_1_1Texture2D_a2772461618679a249bd469f1b23a0729}} 
+\index{indie::raylib::Texture2D@{indie::raylib::Texture2D}!drawNPatch@{drawNPatch}}
+\index{drawNPatch@{drawNPatch}!indie::raylib::Texture2D@{indie::raylib::Texture2D}}
+\doxysubsubsection{\texorpdfstring{drawNPatch()}{drawNPatch()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void indie\+::raylib\+::\+Texture2\+D\+::draw\+NPatch (\begin{DoxyParamCaption}\item[{\+::\+NPatch\+Info}]{n\+Patch\+Info,  }\item[{\+::\+Rectangle}]{dest,  }\item[{\+::\+Vector2}]{origin,  }\item[{float}]{rotation,  }\item[{\+::\+Color}]{tint }\end{DoxyParamCaption})}
+
+
+
+Draws a texture (or part of it) that stretches or shrinks nicely. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n\+Patch\+Info} & n\+Patch\+Info object \\
+\hline
+{\em dest} & \mbox{\hyperlink{classindie_1_1raylib_1_1Rectangle}{Rectangle}} object \\
+\hline
+{\em origin} & \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} origin \\
+\hline
+{\em rotation} & \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} rotation \\
+\hline
+{\em tint} & \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} color \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Texture2D_a0757d19733b4697f13425e217a307c99}\label{classindie_1_1raylib_1_1Texture2D_a0757d19733b4697f13425e217a307c99}} 
+\index{indie::raylib::Texture2D@{indie::raylib::Texture2D}!drawNPatch@{drawNPatch}}
+\index{drawNPatch@{drawNPatch}!indie::raylib::Texture2D@{indie::raylib::Texture2D}}
+\doxysubsubsection{\texorpdfstring{drawNPatch()}{drawNPatch()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void indie\+::raylib\+::\+Texture2\+D\+::draw\+NPatch (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a594d4979a25c307d5b6f6e88bf8cb56a}{\+::\+Texture2D}}}]{texture,  }\item[{\+::\+NPatch\+Info}]{n\+Patch\+Info,  }\item[{\+::\+Rectangle}]{dest,  }\item[{\+::\+Vector2}]{origin,  }\item[{float}]{rotation,  }\item[{\+::\+Color}]{tint }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Draws a texture (or part of it) that stretches or shrinks nicely. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture} & \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} object \\
+\hline
+{\em n\+Patch\+Info} & n\+Patch\+Info object \\
+\hline
+{\em dest} & \mbox{\hyperlink{classindie_1_1raylib_1_1Rectangle}{Rectangle}} object \\
+\hline
+{\em origin} & \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} origin \\
+\hline
+{\em rotation} & \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} rotation \\
+\hline
+{\em tint} & \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} color \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Texture2D_a74de9bedf61034826d2d72186a2549ab}\label{classindie_1_1raylib_1_1Texture2D_a74de9bedf61034826d2d72186a2549ab}} 
+\index{indie::raylib::Texture2D@{indie::raylib::Texture2D}!drawPoly@{drawPoly}}
+\index{drawPoly@{drawPoly}!indie::raylib::Texture2D@{indie::raylib::Texture2D}}
+\doxysubsubsection{\texorpdfstring{drawPoly()}{drawPoly()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static void indie\+::raylib\+::\+Texture2\+D\+::draw\+Poly (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a594d4979a25c307d5b6f6e88bf8cb56a}{\+::\+Texture2D}}}]{texture,  }\item[{\+::\+Vector2}]{center,  }\item[{\+::\+Vector2 $\ast$}]{points,  }\item[{\+::\+Vector2 $\ast$}]{texcoords,  }\item[{int}]{points\+Count,  }\item[{\+::\+Color}]{tint }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} a textured polygon. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture} & \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} object \\
+\hline
+{\em center} & \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} center \\
+\hline
+{\em points} & \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} points \\
+\hline
+{\em texcoords} & \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} coords \\
+\hline
+{\em points\+Count} & \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} points count \\
+\hline
+{\em tint} & \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} color \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Texture2D_a00fbe859f51c34f2f22c69f74cee0941}\label{classindie_1_1raylib_1_1Texture2D_a00fbe859f51c34f2f22c69f74cee0941}} 
+\index{indie::raylib::Texture2D@{indie::raylib::Texture2D}!drawPoly@{drawPoly}}
+\index{drawPoly@{drawPoly}!indie::raylib::Texture2D@{indie::raylib::Texture2D}}
+\doxysubsubsection{\texorpdfstring{drawPoly()}{drawPoly()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void indie\+::raylib\+::\+Texture2\+D\+::draw\+Poly (\begin{DoxyParamCaption}\item[{\+::\+Vector2}]{center,  }\item[{\+::\+Vector2 $\ast$}]{points,  }\item[{\+::\+Vector2 $\ast$}]{texcoords,  }\item[{int}]{points\+Count,  }\item[{\+::\+Color}]{tint }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} a textured polygon. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em center} & \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} center \\
+\hline
+{\em points} & \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} points \\
+\hline
+{\em texcoords} & \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} coords \\
+\hline
+{\em points\+Count} & \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} points count \\
+\hline
+{\em tint} & \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} color \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Texture2D_a6b5b576f0797722af0342bd57ab3dc18}\label{classindie_1_1raylib_1_1Texture2D_a6b5b576f0797722af0342bd57ab3dc18}} 
+\index{indie::raylib::Texture2D@{indie::raylib::Texture2D}!drawPro@{drawPro}}
+\index{drawPro@{drawPro}!indie::raylib::Texture2D@{indie::raylib::Texture2D}}
+\doxysubsubsection{\texorpdfstring{drawPro()}{drawPro()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void indie\+::raylib\+::\+Texture2\+D\+::draw\+Pro (\begin{DoxyParamCaption}\item[{\+::\+Rectangle}]{source,  }\item[{\+::\+Rectangle}]{dest,  }\item[{\+::\+Vector2}]{origin,  }\item[{float}]{rotation,  }\item[{\+::\+Color}]{tint }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} a part of a texture defined by a rectangle with \textquotesingle{}pro\textquotesingle{} parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & \mbox{\hyperlink{classindie_1_1raylib_1_1Rectangle}{Rectangle}} object \\
+\hline
+{\em dest} & \mbox{\hyperlink{classindie_1_1raylib_1_1Rectangle}{Rectangle}} object \\
+\hline
+{\em origin} & \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} origin \\
+\hline
+{\em rotation} & \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} rotation \\
+\hline
+{\em tint} & \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} color \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Texture2D_ad48bd29799ac071cbeb9edec3e5a8d08}\label{classindie_1_1raylib_1_1Texture2D_ad48bd29799ac071cbeb9edec3e5a8d08}} 
+\index{indie::raylib::Texture2D@{indie::raylib::Texture2D}!drawPro@{drawPro}}
+\index{drawPro@{drawPro}!indie::raylib::Texture2D@{indie::raylib::Texture2D}}
+\doxysubsubsection{\texorpdfstring{drawPro()}{drawPro()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void indie\+::raylib\+::\+Texture2\+D\+::draw\+Pro (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a594d4979a25c307d5b6f6e88bf8cb56a}{\+::\+Texture2D}}}]{texture,  }\item[{\+::\+Rectangle}]{source,  }\item[{\+::\+Rectangle}]{dest,  }\item[{\+::\+Vector2}]{origin,  }\item[{float}]{rotation,  }\item[{\+::\+Color}]{tint }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} a part of a texture defined by a rectangle with \textquotesingle{}pro\textquotesingle{} parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture} & \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} object \\
+\hline
+{\em source} & \mbox{\hyperlink{classindie_1_1raylib_1_1Rectangle}{Rectangle}} object \\
+\hline
+{\em dest} & \mbox{\hyperlink{classindie_1_1raylib_1_1Rectangle}{Rectangle}} object \\
+\hline
+{\em origin} & \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} origin \\
+\hline
+{\em rotation} & \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} rotation \\
+\hline
+{\em tint} & \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} color \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Texture2D_ab7083a51a4f6372c6d62f74b2cca1a9c}\label{classindie_1_1raylib_1_1Texture2D_ab7083a51a4f6372c6d62f74b2cca1a9c}} 
+\index{indie::raylib::Texture2D@{indie::raylib::Texture2D}!drawQuad@{drawQuad}}
+\index{drawQuad@{drawQuad}!indie::raylib::Texture2D@{indie::raylib::Texture2D}}
+\doxysubsubsection{\texorpdfstring{drawQuad()}{drawQuad()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void indie\+::raylib\+::\+Texture2\+D\+::draw\+Quad (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a594d4979a25c307d5b6f6e88bf8cb56a}{\+::\+Texture2D}}}]{texture,  }\item[{\+::\+Vector2}]{tiling,  }\item[{\+::\+Vector2}]{offset,  }\item[{\+::\+Rectangle}]{quad,  }\item[{\+::\+Color}]{tint }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} texture quad with tiling and offset parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture} & \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} object \\
+\hline
+{\em tiling} & \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} tiling \\
+\hline
+{\em offset} & \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} offset \\
+\hline
+{\em quad} & \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} quad \\
+\hline
+{\em tint} & \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} color \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Texture2D_afad0187ab85b8a2e1b4ae1216a23b862}\label{classindie_1_1raylib_1_1Texture2D_afad0187ab85b8a2e1b4ae1216a23b862}} 
+\index{indie::raylib::Texture2D@{indie::raylib::Texture2D}!drawQuad@{drawQuad}}
+\index{drawQuad@{drawQuad}!indie::raylib::Texture2D@{indie::raylib::Texture2D}}
+\doxysubsubsection{\texorpdfstring{drawQuad()}{drawQuad()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void indie\+::raylib\+::\+Texture2\+D\+::draw\+Quad (\begin{DoxyParamCaption}\item[{\+::\+Vector2}]{tiling,  }\item[{\+::\+Vector2}]{offset,  }\item[{\+::\+Rectangle}]{quad,  }\item[{\+::\+Color}]{tint }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} texture quad with tiling and offset parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tiling} & \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} tiling \\
+\hline
+{\em offset} & \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} offset \\
+\hline
+{\em quad} & \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} quad \\
+\hline
+{\em tint} & \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} color \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Texture2D_af4536ce5bb04d9b5f077b9c279752922}\label{classindie_1_1raylib_1_1Texture2D_af4536ce5bb04d9b5f077b9c279752922}} 
+\index{indie::raylib::Texture2D@{indie::raylib::Texture2D}!drawRec@{drawRec}}
+\index{drawRec@{drawRec}!indie::raylib::Texture2D@{indie::raylib::Texture2D}}
+\doxysubsubsection{\texorpdfstring{drawRec()}{drawRec()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void indie\+::raylib\+::\+Texture2\+D\+::draw\+Rec (\begin{DoxyParamCaption}\item[{\+::\+Rectangle}]{source,  }\item[{\+::\+Vector2}]{position,  }\item[{\+::\+Color}]{tint }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} a part of a texture defined by a rectangle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & \mbox{\hyperlink{classindie_1_1raylib_1_1Rectangle}{Rectangle}} object \\
+\hline
+{\em position} & \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} position \\
+\hline
+{\em tint} & \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} color \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Texture2D_abf4223bfcd35895f7dba1c107adc4fd3}\label{classindie_1_1raylib_1_1Texture2D_abf4223bfcd35895f7dba1c107adc4fd3}} 
+\index{indie::raylib::Texture2D@{indie::raylib::Texture2D}!drawRec@{drawRec}}
+\index{drawRec@{drawRec}!indie::raylib::Texture2D@{indie::raylib::Texture2D}}
+\doxysubsubsection{\texorpdfstring{drawRec()}{drawRec()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void indie\+::raylib\+::\+Texture2\+D\+::draw\+Rec (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a594d4979a25c307d5b6f6e88bf8cb56a}{\+::\+Texture2D}}}]{texture,  }\item[{\+::\+Rectangle}]{source,  }\item[{\+::\+Vector2}]{position,  }\item[{\+::\+Color}]{tint }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} a part of a texture defined by a rectangle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture} & \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} object \\
+\hline
+{\em source} & \mbox{\hyperlink{classindie_1_1raylib_1_1Rectangle}{Rectangle}} object \\
+\hline
+{\em position} & \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} position \\
+\hline
+{\em tint} & \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} color \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Texture2D_a299be810ee39c0c1b7a6fd6eb2e38735}\label{classindie_1_1raylib_1_1Texture2D_a299be810ee39c0c1b7a6fd6eb2e38735}} 
+\index{indie::raylib::Texture2D@{indie::raylib::Texture2D}!drawTiled@{drawTiled}}
+\index{drawTiled@{drawTiled}!indie::raylib::Texture2D@{indie::raylib::Texture2D}}
+\doxysubsubsection{\texorpdfstring{drawTiled()}{drawTiled()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void indie\+::raylib\+::\+Texture2\+D\+::draw\+Tiled (\begin{DoxyParamCaption}\item[{\+::\+Rectangle}]{source,  }\item[{\+::\+Rectangle}]{dest,  }\item[{\+::\+Vector2}]{origin,  }\item[{float}]{rotation,  }\item[{float}]{scale,  }\item[{\+::\+Color}]{tint }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} part of a texture (defined by a rectangle) with rotation and scale tiled into dest. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & \mbox{\hyperlink{classindie_1_1raylib_1_1Rectangle}{Rectangle}} object \\
+\hline
+{\em dest} & \mbox{\hyperlink{classindie_1_1raylib_1_1Rectangle}{Rectangle}} object \\
+\hline
+{\em origin} & \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} origin \\
+\hline
+{\em rotation} & \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} rotation \\
+\hline
+{\em scale} & \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} scale \\
+\hline
+{\em tint} & \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} color \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Texture2D_adbd027369070476735a0c9aa33e9bb10}\label{classindie_1_1raylib_1_1Texture2D_adbd027369070476735a0c9aa33e9bb10}} 
+\index{indie::raylib::Texture2D@{indie::raylib::Texture2D}!drawTiled@{drawTiled}}
+\index{drawTiled@{drawTiled}!indie::raylib::Texture2D@{indie::raylib::Texture2D}}
+\doxysubsubsection{\texorpdfstring{drawTiled()}{drawTiled()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void indie\+::raylib\+::\+Texture2\+D\+::draw\+Tiled (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a594d4979a25c307d5b6f6e88bf8cb56a}{\+::\+Texture2D}}}]{texture,  }\item[{\+::\+Rectangle}]{source,  }\item[{\+::\+Rectangle}]{dest,  }\item[{\+::\+Vector2}]{origin,  }\item[{float}]{rotation,  }\item[{float}]{scale,  }\item[{\+::\+Color}]{tint }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} part of a texture (defined by a rectangle) with rotation and scale tiled into dest. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture} & \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} object \\
+\hline
+{\em source} & \mbox{\hyperlink{classindie_1_1raylib_1_1Rectangle}{Rectangle}} object \\
+\hline
+{\em dest} & \mbox{\hyperlink{classindie_1_1raylib_1_1Rectangle}{Rectangle}} object \\
+\hline
+{\em origin} & \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} origin \\
+\hline
+{\em rotation} & \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} rotation \\
+\hline
+{\em scale} & \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} scale \\
+\hline
+{\em tint} & \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} color \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Texture2D_a5715079d1466c573975f4168f5788eec}\label{classindie_1_1raylib_1_1Texture2D_a5715079d1466c573975f4168f5788eec}} 
+\index{indie::raylib::Texture2D@{indie::raylib::Texture2D}!drawV@{drawV}}
+\index{drawV@{drawV}!indie::raylib::Texture2D@{indie::raylib::Texture2D}}
+\doxysubsubsection{\texorpdfstring{drawV()}{drawV()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void indie\+::raylib\+::\+Texture2\+D\+::drawV (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a594d4979a25c307d5b6f6e88bf8cb56a}{\+::\+Texture2D}}}]{texture,  }\item[{\+::\+Vector2}]{position,  }\item[{\+::\+Color}]{tint }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} a \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} with position defined as Vector2. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture} & \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} object \\
+\hline
+{\em position} & \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} position \\
+\hline
+{\em tint} & \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} color \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Texture2D_a056825308cdcfb67958b7f7d1a35cec4}\label{classindie_1_1raylib_1_1Texture2D_a056825308cdcfb67958b7f7d1a35cec4}} 
+\index{indie::raylib::Texture2D@{indie::raylib::Texture2D}!drawV@{drawV}}
+\index{drawV@{drawV}!indie::raylib::Texture2D@{indie::raylib::Texture2D}}
+\doxysubsubsection{\texorpdfstring{drawV()}{drawV()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void indie\+::raylib\+::\+Texture2\+D\+::drawV (\begin{DoxyParamCaption}\item[{\+::\+Vector2}]{position,  }\item[{\+::\+Color}]{tint }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} a \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} with position defined as Vector2. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} position \\
+\hline
+{\em tint} & \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} color \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Texture2D_ae05d7b71e2e25429c2f4d4ec697fd83d}\label{classindie_1_1raylib_1_1Texture2D_ae05d7b71e2e25429c2f4d4ec697fd83d}} 
+\index{indie::raylib::Texture2D@{indie::raylib::Texture2D}!getFormat@{getFormat}}
+\index{getFormat@{getFormat}!indie::raylib::Texture2D@{indie::raylib::Texture2D}}
+\doxysubsubsection{\texorpdfstring{getFormat()}{getFormat()}}
+{\footnotesize\ttfamily int indie\+::raylib\+::\+Texture2\+D\+::get\+Format (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get texture format. 
+
+\begin{DoxyReturn}{Returns}
+int Texture format 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Texture2D_af71f7384b3ebf36611a0dc27072f7fd2}\label{classindie_1_1raylib_1_1Texture2D_af71f7384b3ebf36611a0dc27072f7fd2}} 
+\index{indie::raylib::Texture2D@{indie::raylib::Texture2D}!getHeight@{getHeight}}
+\index{getHeight@{getHeight}!indie::raylib::Texture2D@{indie::raylib::Texture2D}}
+\doxysubsubsection{\texorpdfstring{getHeight()}{getHeight()}}
+{\footnotesize\ttfamily int indie\+::raylib\+::\+Texture2\+D\+::get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get texture height. 
+
+\begin{DoxyReturn}{Returns}
+int Texture height 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Texture2D_ae52415203ba90ae1128038dfe47df975}\label{classindie_1_1raylib_1_1Texture2D_ae52415203ba90ae1128038dfe47df975}} 
+\index{indie::raylib::Texture2D@{indie::raylib::Texture2D}!getId@{getId}}
+\index{getId@{getId}!indie::raylib::Texture2D@{indie::raylib::Texture2D}}
+\doxysubsubsection{\texorpdfstring{getId()}{getId()}}
+{\footnotesize\ttfamily unsigned int indie\+::raylib\+::\+Texture2\+D\+::get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get texture ID. 
+
+\begin{DoxyReturn}{Returns}
+int Texture ID 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Texture2D_a3f864dcc7097394d08f8961ee9538756}\label{classindie_1_1raylib_1_1Texture2D_a3f864dcc7097394d08f8961ee9538756}} 
+\index{indie::raylib::Texture2D@{indie::raylib::Texture2D}!getMipmaps@{getMipmaps}}
+\index{getMipmaps@{getMipmaps}!indie::raylib::Texture2D@{indie::raylib::Texture2D}}
+\doxysubsubsection{\texorpdfstring{getMipmaps()}{getMipmaps()}}
+{\footnotesize\ttfamily int indie\+::raylib\+::\+Texture2\+D\+::get\+Mipmaps (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get texture mipmaps. 
+
+\begin{DoxyReturn}{Returns}
+int Texture mipmaps 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Texture2D_a149f194c56022e91848980a51d652eee}\label{classindie_1_1raylib_1_1Texture2D_a149f194c56022e91848980a51d652eee}} 
+\index{indie::raylib::Texture2D@{indie::raylib::Texture2D}!getWidth@{getWidth}}
+\index{getWidth@{getWidth}!indie::raylib::Texture2D@{indie::raylib::Texture2D}}
+\doxysubsubsection{\texorpdfstring{getWidth()}{getWidth()}}
+{\footnotesize\ttfamily int indie\+::raylib\+::\+Texture2\+D\+::get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get texture width. 
+
+\begin{DoxyReturn}{Returns}
+int Texture width 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Texture2D_a094952ba5f011e96b31e8fe2b6357854}\label{classindie_1_1raylib_1_1Texture2D_a094952ba5f011e96b31e8fe2b6357854}} 
+\index{indie::raylib::Texture2D@{indie::raylib::Texture2D}!load@{load}}
+\index{load@{load}!indie::raylib::Texture2D@{indie::raylib::Texture2D}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} indie\+::raylib\+::\+Texture2\+D\+::load (\begin{DoxyParamCaption}\item[{const char $\ast$}]{file\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Load texture from file into GPU memory (VRAM) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & Filepath to the texture file\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} The texture2D object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Texture2D_a7bb4f51ff2538b39ef97b017ecc4f919}\label{classindie_1_1raylib_1_1Texture2D_a7bb4f51ff2538b39ef97b017ecc4f919}} 
+\index{indie::raylib::Texture2D@{indie::raylib::Texture2D}!loadFromImage@{loadFromImage}}
+\index{loadFromImage@{loadFromImage}!indie::raylib::Texture2D@{indie::raylib::Texture2D}}
+\doxysubsubsection{\texorpdfstring{loadFromImage()}{loadFromImage()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} indie\+::raylib\+::\+Texture2\+D\+::load\+From\+Image (\begin{DoxyParamCaption}\item[{\+::\+Image}]{image }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Load texture from image data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & Image object\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} The texture2D object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Texture2D_a3f239252a0a9ddbf71e18e22ce0b680d}\label{classindie_1_1raylib_1_1Texture2D_a3f239252a0a9ddbf71e18e22ce0b680d}} 
+\index{indie::raylib::Texture2D@{indie::raylib::Texture2D}!setFormat@{setFormat}}
+\index{setFormat@{setFormat}!indie::raylib::Texture2D@{indie::raylib::Texture2D}}
+\doxysubsubsection{\texorpdfstring{setFormat()}{setFormat()}}
+{\footnotesize\ttfamily void indie\+::raylib\+::\+Texture2\+D\+::set\+Format (\begin{DoxyParamCaption}\item[{int}]{format }\end{DoxyParamCaption})}
+
+
+
+Set texture format. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em format} & Texture format \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Texture2D_a471fa8a538dbbaa43d54f32273a3eb5c}\label{classindie_1_1raylib_1_1Texture2D_a471fa8a538dbbaa43d54f32273a3eb5c}} 
+\index{indie::raylib::Texture2D@{indie::raylib::Texture2D}!setHeight@{setHeight}}
+\index{setHeight@{setHeight}!indie::raylib::Texture2D@{indie::raylib::Texture2D}}
+\doxysubsubsection{\texorpdfstring{setHeight()}{setHeight()}}
+{\footnotesize\ttfamily void indie\+::raylib\+::\+Texture2\+D\+::set\+Height (\begin{DoxyParamCaption}\item[{int}]{height }\end{DoxyParamCaption})}
+
+
+
+Set texture height. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em height} & Texture height \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Texture2D_a6740ccb5429171d79c86193d7e4d353e}\label{classindie_1_1raylib_1_1Texture2D_a6740ccb5429171d79c86193d7e4d353e}} 
+\index{indie::raylib::Texture2D@{indie::raylib::Texture2D}!setId@{setId}}
+\index{setId@{setId}!indie::raylib::Texture2D@{indie::raylib::Texture2D}}
+\doxysubsubsection{\texorpdfstring{setId()}{setId()}}
+{\footnotesize\ttfamily void indie\+::raylib\+::\+Texture2\+D\+::set\+Id (\begin{DoxyParamCaption}\item[{unsigned int}]{id }\end{DoxyParamCaption})}
+
+
+
+Set texture ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Texture ID \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Texture2D_a952470748dbe1add78314420b32f92bc}\label{classindie_1_1raylib_1_1Texture2D_a952470748dbe1add78314420b32f92bc}} 
+\index{indie::raylib::Texture2D@{indie::raylib::Texture2D}!setMipmaps@{setMipmaps}}
+\index{setMipmaps@{setMipmaps}!indie::raylib::Texture2D@{indie::raylib::Texture2D}}
+\doxysubsubsection{\texorpdfstring{setMipmaps()}{setMipmaps()}}
+{\footnotesize\ttfamily void indie\+::raylib\+::\+Texture2\+D\+::set\+Mipmaps (\begin{DoxyParamCaption}\item[{int}]{mipmaps }\end{DoxyParamCaption})}
+
+
+
+Set texture mipmaps. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mipmaps} & Texture mipmaps \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Texture2D_a0f7c4d13f8e76b2219f24086437a8592}\label{classindie_1_1raylib_1_1Texture2D_a0f7c4d13f8e76b2219f24086437a8592}} 
+\index{indie::raylib::Texture2D@{indie::raylib::Texture2D}!setWidth@{setWidth}}
+\index{setWidth@{setWidth}!indie::raylib::Texture2D@{indie::raylib::Texture2D}}
+\doxysubsubsection{\texorpdfstring{setWidth()}{setWidth()}}
+{\footnotesize\ttfamily void indie\+::raylib\+::\+Texture2\+D\+::set\+Width (\begin{DoxyParamCaption}\item[{int}]{width }\end{DoxyParamCaption})}
+
+
+
+Set texture width. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & Texture width \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Texture2D_a4061879a36760f0ab64f31e9a8fbacad}\label{classindie_1_1raylib_1_1Texture2D_a4061879a36760f0ab64f31e9a8fbacad}} 
+\index{indie::raylib::Texture2D@{indie::raylib::Texture2D}!unload@{unload}}
+\index{unload@{unload}!indie::raylib::Texture2D@{indie::raylib::Texture2D}}
+\doxysubsubsection{\texorpdfstring{unload()}{unload()}}
+{\footnotesize\ttfamily void indie\+::raylib\+::\+Texture2\+D\+::unload (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a594d4979a25c307d5b6f6e88bf8cb56a}{\+::\+Texture2D}}}]{texture }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Unload texture from GPU memory (VRAM) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture} & The texture2D object to unload \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Texture2D_a75c500c58a1e4beed9b76a70d1400ee5}\label{classindie_1_1raylib_1_1Texture2D_a75c500c58a1e4beed9b76a70d1400ee5}} 
+\index{indie::raylib::Texture2D@{indie::raylib::Texture2D}!update@{update}}
+\index{update@{update}!indie::raylib::Texture2D@{indie::raylib::Texture2D}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void indie\+::raylib\+::\+Texture2\+D\+::update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a594d4979a25c307d5b6f6e88bf8cb56a}{\+::\+Texture2D}}}]{texture,  }\item[{const void $\ast$}]{pixels }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Update GPU texture with new data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture} & \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} object \\
+\hline
+{\em pixels} & Pointer to data for update \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Texture2D_a383ec78014a5376fea1bbc5e9ce4e2a2}\label{classindie_1_1raylib_1_1Texture2D_a383ec78014a5376fea1bbc5e9ce4e2a2}} 
+\index{indie::raylib::Texture2D@{indie::raylib::Texture2D}!update@{update}}
+\index{update@{update}!indie::raylib::Texture2D@{indie::raylib::Texture2D}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void indie\+::raylib\+::\+Texture2\+D\+::update (\begin{DoxyParamCaption}\item[{const void $\ast$}]{pixels }\end{DoxyParamCaption})}
+
+
+
+Update GPU texture with new data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pixels} & Pointer to data for update \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/raylib/texture2d/\mbox{\hyperlink{Texture2D_8hpp}{Texture2\+D.\+hpp}}\item 
+src/raylib/texture2d/\mbox{\hyperlink{Texture2D_8cpp}{Texture2\+D.\+cpp}}\end{DoxyCompactItemize}

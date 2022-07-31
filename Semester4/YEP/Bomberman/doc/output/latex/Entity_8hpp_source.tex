@@ -1,0 +1,81 @@
+\hypertarget{Entity_8hpp_source}{}\doxysection{Entity.\+hpp}
+\label{Entity_8hpp_source}\index{src/ecs/entity/Entity.hpp@{src/ecs/entity/Entity.hpp}}
+\mbox{\hyperlink{Entity_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#ifndef ENTITY\_HPP\_}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#define ENTITY\_HPP\_}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include <memory>}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#include "{}../component/Alive/Alive.hpp"{}}}
+\DoxyCodeLine{20 \textcolor{preprocessor}{\#include "{}../component/Collectable/Collectable.hpp"{}}}
+\DoxyCodeLine{21 \textcolor{preprocessor}{\#include "{}../component/Collide/Collide.hpp"{}}}
+\DoxyCodeLine{22 \textcolor{preprocessor}{\#include "{}../component/Destroyable/Destroyable.hpp"{}}}
+\DoxyCodeLine{23 \textcolor{preprocessor}{\#include "{}../component/Drawable2D/Drawable2D.hpp"{}}}
+\DoxyCodeLine{24 \textcolor{preprocessor}{\#include "{}../component/Drawable3D/Drawable3D.hpp"{}}}
+\DoxyCodeLine{25 \textcolor{preprocessor}{\#include "{}../component/Explodable/Explodable.hpp"{}}}
+\DoxyCodeLine{26 \textcolor{preprocessor}{\#include "{}../component/IComponent.hpp"{}}}
+\DoxyCodeLine{27 \textcolor{preprocessor}{\#include "{}../component/Inventory/Inventory.hpp"{}}}
+\DoxyCodeLine{28 \textcolor{preprocessor}{\#include "{}../component/Sound/Sound.hpp"{}}}
+\DoxyCodeLine{29 \textcolor{preprocessor}{\#include "{}../component/Transform/Transform.hpp"{}}}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31 \textcolor{keyword}{namespace }indie}
+\DoxyCodeLine{32 \{}
+\DoxyCodeLine{33     \textcolor{keyword}{namespace }ecs}
+\DoxyCodeLine{34     \{}
+\DoxyCodeLine{35         \textcolor{keyword}{namespace }entity}
+\DoxyCodeLine{36         \{}
+\DoxyCodeLine{41             \textcolor{keyword}{enum} \mbox{\hyperlink{Entity_8hpp_a7bca52f144f3350f6f4bd61d567e75ef}{entityType}} \{ PLAYER\_1, PLAYER\_2, PLAYER\_3, PLAYER\_4, \mbox{\hyperlink{MapGenerator_8hpp_ac749b87dd5d843e4add3eb8e8a130f62}{WALL}}, BOXES, TEXT, BOMB, UNKNOWN \};}
+\DoxyCodeLine{43             \textcolor{keyword}{class }\mbox{\hyperlink{classindie_1_1ecs_1_1entity_1_1Entity}{Entity}} \{}
+\DoxyCodeLine{44               \textcolor{keyword}{public}:}
+\DoxyCodeLine{50                 \mbox{\hyperlink{classindie_1_1ecs_1_1entity_1_1Entity_af64f4ae51c3b34196a50320a551bf5e5}{Entity}}(\mbox{\hyperlink{Entity_8hpp_a7bca52f144f3350f6f4bd61d567e75ef}{entityType}} type);}
+\DoxyCodeLine{55                 \mbox{\hyperlink{classindie_1_1ecs_1_1entity_1_1Entity_af64f4ae51c3b34196a50320a551bf5e5}{Entity}}();}
+\DoxyCodeLine{59                 \mbox{\hyperlink{classindie_1_1ecs_1_1entity_1_1Entity_a95496c206425fbe8bfd0de67e65f884f}{\string~Entity}}();}
+\DoxyCodeLine{67                 \textcolor{keyword}{template} <\textcolor{keyword}{typename} T, \textcolor{keyword}{typename}... Args> \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1ecs_1_1entity_1_1Entity_a25268427a9487b9cc2718deb2d64faf4}{addComponent}}(Args... args)}
+\DoxyCodeLine{68                 \{}
+\DoxyCodeLine{69                     this-\/>\_componentVector.push\_back(std::unique\_ptr<T>(\textcolor{keyword}{new} T\{std::forward<Args>(args)...\}));}
+\DoxyCodeLine{70                 \}}
+\DoxyCodeLine{71 }
+\DoxyCodeLine{80                 \textcolor{keywordtype}{bool} \mbox{\hyperlink{classindie_1_1ecs_1_1entity_1_1Entity_abd627d6f858ae1da7eac30ea9250bab2}{hasCompoType}}(\mbox{\hyperlink{IComponent_8hpp_ac44f0ed416679d299da366d37fd5eac8}{indie::ecs::component::compoType}} type)}
+\DoxyCodeLine{81                 \{}
+\DoxyCodeLine{82                     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} \&compo : \_componentVector) \{}
+\DoxyCodeLine{83                         \textcolor{keywordflow}{if} (compo-\/>getType() == type)}
+\DoxyCodeLine{84                             \textcolor{keywordflow}{return} (\textcolor{keyword}{true});}
+\DoxyCodeLine{85                     \}}
+\DoxyCodeLine{86                     \textcolor{keywordflow}{return} (\textcolor{keyword}{false});}
+\DoxyCodeLine{87                 \}}
+\DoxyCodeLine{93                 std::vector<indie::ecs::component::Drawable2D *> \mbox{\hyperlink{classindie_1_1ecs_1_1entity_1_1Entity_aa8af8e7aeeb8b0f87212abac93a24ae1}{getDrawableVector}}()\textcolor{keyword}{ const}}
+\DoxyCodeLine{94 \textcolor{keyword}{                }\{}
+\DoxyCodeLine{95                     std::vector<indie::ecs::component::Drawable2D *> vector;}
+\DoxyCodeLine{96                     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} \&compo : \_componentVector) \{}
+\DoxyCodeLine{97                         \textcolor{keywordflow}{if} (compo-\/>getType() == indie::ecs::component::compoType::DRAWABLE2D) \{}
+\DoxyCodeLine{98                             vector.push\_back(\textcolor{keyword}{dynamic\_cast<}\mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Drawable2D}{indie::ecs::component::Drawable2D}} *\textcolor{keyword}{>}(compo.get()));}
+\DoxyCodeLine{99                         \}}
+\DoxyCodeLine{100                     \}}
+\DoxyCodeLine{101                     \textcolor{keywordflow}{return} (vector);}
+\DoxyCodeLine{102                 \}}
+\DoxyCodeLine{111                 \textcolor{keyword}{template} <\textcolor{keyword}{typename} T> T *\mbox{\hyperlink{classindie_1_1ecs_1_1entity_1_1Entity_ac5222c85d3e9e3e2e83175ec7bd291b6}{getComponent}}(\mbox{\hyperlink{IComponent_8hpp_ac44f0ed416679d299da366d37fd5eac8}{indie::ecs::component::compoType}} type)}
+\DoxyCodeLine{112                 \{}
+\DoxyCodeLine{113                     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} \&compo : \_componentVector) \{}
+\DoxyCodeLine{114                         \textcolor{keywordflow}{if} (compo-\/>getType() == type) \{}
+\DoxyCodeLine{115                             \textcolor{keywordflow}{return} (\textcolor{keyword}{dynamic\_cast<}T *\textcolor{keyword}{>}(compo.get()));}
+\DoxyCodeLine{116                         \}}
+\DoxyCodeLine{117                     \}}
+\DoxyCodeLine{118                     \textcolor{keywordflow}{return} (\textcolor{keyword}{nullptr});}
+\DoxyCodeLine{119                 \}}
+\DoxyCodeLine{125                 \mbox{\hyperlink{Entity_8hpp_a7bca52f144f3350f6f4bd61d567e75ef}{indie::ecs::entity::entityType}} \mbox{\hyperlink{classindie_1_1ecs_1_1entity_1_1Entity_abdfaaccfd480d439463e849cc2ae81cb}{getEntityType}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{126 }
+\DoxyCodeLine{127               \textcolor{keyword}{private}:}
+\DoxyCodeLine{132                 std::vector<std::unique\_ptr<indie::ecs::component::IComponent>> \_componentVector;}
+\DoxyCodeLine{137                 \mbox{\hyperlink{Entity_8hpp_a7bca52f144f3350f6f4bd61d567e75ef}{entity::entityType}} \_type;}
+\DoxyCodeLine{138             \};}
+\DoxyCodeLine{139         \} \textcolor{comment}{// namespace entity}}
+\DoxyCodeLine{140     \}     \textcolor{comment}{// namespace ecs}}
+\DoxyCodeLine{141 \} \textcolor{comment}{// namespace indie}}
+\DoxyCodeLine{142 }
+\DoxyCodeLine{143 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* !ENTITY\_HPP\_ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

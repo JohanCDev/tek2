@@ -1,0 +1,210 @@
+\hypertarget{structindie_1_1Event}{}\doxysection{indie\+::Event Struct Reference}
+\label{structindie_1_1Event}\index{indie::Event@{indie::Event}}
+
+
+{\ttfamily \#include $<$events.\+hpp$>$}
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structindie_1_1Event_1_1ControllerEvent}{Controller\+Event}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{structindie_1_1Event}{Event}} happening on the controller. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structindie_1_1Event_1_1KeyEvent}{Key\+Event}}
+\begin{DoxyCompactList}\small\item\em Keyboard event parameters (Event\+::\+Type\+::\+Key\+Pressed, Event\+::\+Type\+::\+Key\+Released). \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structindie_1_1Event_1_1SizeEvent}{Size\+Event}}
+\begin{DoxyCompactList}\small\item\em Size events parameters (Event\+::\+Type\+::\+Resized). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{structindie_1_1Event_a1e4e02afb02bb331036a743527e7447d}{Controller\+Code}} \{ \newline
+\mbox{\hyperlink{structindie_1_1Event_a1e4e02afb02bb331036a743527e7447da17328e7b2aa391c14a24b25112f05537}{CONTROLLER\+\_\+\+NONE}}
+, \mbox{\hyperlink{structindie_1_1Event_a1e4e02afb02bb331036a743527e7447dadd2db3783fa356f9ace00481291991ed}{UP\+\_\+\+BUTTON}}
+, \mbox{\hyperlink{structindie_1_1Event_a1e4e02afb02bb331036a743527e7447dae199287258aa2b327241d4d76fbabe25}{RIGHT\+\_\+\+BUTTON}}
+, \mbox{\hyperlink{structindie_1_1Event_a1e4e02afb02bb331036a743527e7447da05fdeed6d47b1442f9b5a9bd417c7fdf}{DOWN\+\_\+\+BUTTON}}
+, \newline
+\mbox{\hyperlink{structindie_1_1Event_a1e4e02afb02bb331036a743527e7447da7d7387eef6790bba4e6775ae68985888}{LEFT\+\_\+\+BUTTON}}
+, \mbox{\hyperlink{structindie_1_1Event_a1e4e02afb02bb331036a743527e7447da6852095f484ecb89d3fa9de8cbb603b1}{T\+\_\+\+BUTTON}}
+, \mbox{\hyperlink{structindie_1_1Event_a1e4e02afb02bb331036a743527e7447da590923957e767b68c0d87cd0026d909b}{O\+\_\+\+BUTTON}}
+, \mbox{\hyperlink{structindie_1_1Event_a1e4e02afb02bb331036a743527e7447da9a5d76cc038059a623ec5e9a575d122a}{X\+\_\+\+BUTTON}}
+, \newline
+\mbox{\hyperlink{structindie_1_1Event_a1e4e02afb02bb331036a743527e7447da74c30b1774c6edb96f34fb604e7ff05b}{S\+\_\+\+BUTTON}}
+, \mbox{\hyperlink{structindie_1_1Event_a1e4e02afb02bb331036a743527e7447da6113c840914d24be28487dcd4d4ae937}{L1\+\_\+\+BUTTON}}
+, \mbox{\hyperlink{structindie_1_1Event_a1e4e02afb02bb331036a743527e7447daa2f5976694149a39128e4c3c46c2533d}{L2\+\_\+\+BUTTON}}
+, \mbox{\hyperlink{structindie_1_1Event_a1e4e02afb02bb331036a743527e7447da86e8721c638cce206293eefa3f8cd2b6}{R1\+\_\+\+BUTTON}}
+, \newline
+\mbox{\hyperlink{structindie_1_1Event_a1e4e02afb02bb331036a743527e7447da5f6807574478ea0d4e1934dd76f503a0}{R2\+\_\+\+BUTTON}}
+, \mbox{\hyperlink{structindie_1_1Event_a1e4e02afb02bb331036a743527e7447daa5aed2dc331f2bbeac754db58a9116bc}{SHARE\+\_\+\+BUTTON}}
+, \mbox{\hyperlink{structindie_1_1Event_a1e4e02afb02bb331036a743527e7447da90520771eff0a69d9aca42340799503c}{TOUCHPAD\+\_\+\+BUTTON}}
+, \mbox{\hyperlink{structindie_1_1Event_a1e4e02afb02bb331036a743527e7447da0f60151d6a5b42bff3b054c93083a336}{OPTION\+\_\+\+BUTTON}}
+, \newline
+\mbox{\hyperlink{structindie_1_1Event_a1e4e02afb02bb331036a743527e7447da87813b73a47aa5daceff29f7fac36b5d}{L3\+\_\+\+BUTTON}}
+, \mbox{\hyperlink{structindie_1_1Event_a1e4e02afb02bb331036a743527e7447daefc28fb0017093b1e08bce1043bb785a}{R3\+\_\+\+BUTTON}}
+ \}
+\begin{DoxyCompactList}\small\item\em Controller button input. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{structindie_1_1Event_ab71803dd89e98c51223b830a824248bc}{Joystick\+Direction}} \{ \newline
+\mbox{\hyperlink{structindie_1_1Event_ab71803dd89e98c51223b830a824248bca25938f05a7955f5a31c9403ed2ad7ffd}{JOYSTICK\+\_\+\+NONE}}
+, \mbox{\hyperlink{structindie_1_1Event_ab71803dd89e98c51223b830a824248bca5b2fdd09f5be04f91f0025e246b25376}{UP}}
+, \mbox{\hyperlink{structindie_1_1Event_ab71803dd89e98c51223b830a824248bca28cd2eb630aca6c2809ae83f055a6cbb}{RIGHT}}
+, \mbox{\hyperlink{structindie_1_1Event_ab71803dd89e98c51223b830a824248bca2a1de5ac07923e4f722f9dcc0cac3509}{DOWN}}
+, \newline
+\mbox{\hyperlink{structindie_1_1Event_ab71803dd89e98c51223b830a824248bcacd1a15c3d1874d45007f6b11124d07a8}{LEFT}}
+ \}
+\begin{DoxyCompactList}\small\item\em Right joystick events. \end{DoxyCompactList}\item 
+using \mbox{\hyperlink{structindie_1_1Event_ac031731b216e52b5396b2eb49a9e4e70}{Key}} = char
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structindie_1_1Event_aad6c1cd3e40d835e24a86eaaee809c5a}\label{structindie_1_1Event_aad6c1cd3e40d835e24a86eaaee809c5a}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>bool {\bfseries resized}\\
+\>\>{\em Is the window resized? }\\
+\>\mbox{\hyperlink{structindie_1_1Event_1_1KeyEvent}{KeyEvent}} {\bfseries key}\\
+\>\>{\em Key event parameters (Event::KeyPressed, Event::KeyReleased). }\\
+\>\mbox{\hyperlink{structindie_1_1Event_1_1ControllerEvent}{ControllerEvent}} {\bfseries controller} \mbox{[}4\mbox{]}\\
+\>\>{\em Controller events. }\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Contains an event\textquotesingle{}s data.
+
+\mbox{\hyperlink{structindie_1_1Event}{Event}} data is fetched by first checking its type and then accessing the correspoding member. 
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{structindie_1_1Event_ac031731b216e52b5396b2eb49a9e4e70}\label{structindie_1_1Event_ac031731b216e52b5396b2eb49a9e4e70}} 
+\index{indie::Event@{indie::Event}!Key@{Key}}
+\index{Key@{Key}!indie::Event@{indie::Event}}
+\doxysubsubsection{\texorpdfstring{Key}{Key}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{structindie_1_1Event_ac031731b216e52b5396b2eb49a9e4e70}{indie\+::\+Event\+::\+Key}} =  char}
+
+Key code for keyboard events.
+
+Keys are represented by their corresponding character, meaning that some keys are not currently representable using this format (such as the Enter key). 
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{structindie_1_1Event_a1e4e02afb02bb331036a743527e7447d}\label{structindie_1_1Event_a1e4e02afb02bb331036a743527e7447d}} 
+\index{indie::Event@{indie::Event}!ControllerCode@{ControllerCode}}
+\index{ControllerCode@{ControllerCode}!indie::Event@{indie::Event}}
+\doxysubsubsection{\texorpdfstring{ControllerCode}{ControllerCode}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{structindie_1_1Event_a1e4e02afb02bb331036a743527e7447d}{indie\+::\+Event\+::\+Controller\+Code}}}
+
+
+
+Controller button input. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CONTROLLER\_NONE@{CONTROLLER\_NONE}!indie::Event@{indie::Event}}\index{indie::Event@{indie::Event}!CONTROLLER\_NONE@{CONTROLLER\_NONE}}}\mbox{\Hypertarget{structindie_1_1Event_a1e4e02afb02bb331036a743527e7447da17328e7b2aa391c14a24b25112f05537}\label{structindie_1_1Event_a1e4e02afb02bb331036a743527e7447da17328e7b2aa391c14a24b25112f05537}} 
+CONTROLLER\+\_\+\+NONE&Nothing is happening. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{UP\_BUTTON@{UP\_BUTTON}!indie::Event@{indie::Event}}\index{indie::Event@{indie::Event}!UP\_BUTTON@{UP\_BUTTON}}}\mbox{\Hypertarget{structindie_1_1Event_a1e4e02afb02bb331036a743527e7447dadd2db3783fa356f9ace00481291991ed}\label{structindie_1_1Event_a1e4e02afb02bb331036a743527e7447dadd2db3783fa356f9ace00481291991ed}} 
+UP\+\_\+\+BUTTON&Up arrow. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RIGHT\_BUTTON@{RIGHT\_BUTTON}!indie::Event@{indie::Event}}\index{indie::Event@{indie::Event}!RIGHT\_BUTTON@{RIGHT\_BUTTON}}}\mbox{\Hypertarget{structindie_1_1Event_a1e4e02afb02bb331036a743527e7447dae199287258aa2b327241d4d76fbabe25}\label{structindie_1_1Event_a1e4e02afb02bb331036a743527e7447dae199287258aa2b327241d4d76fbabe25}} 
+RIGHT\+\_\+\+BUTTON&Right arrow. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DOWN\_BUTTON@{DOWN\_BUTTON}!indie::Event@{indie::Event}}\index{indie::Event@{indie::Event}!DOWN\_BUTTON@{DOWN\_BUTTON}}}\mbox{\Hypertarget{structindie_1_1Event_a1e4e02afb02bb331036a743527e7447da05fdeed6d47b1442f9b5a9bd417c7fdf}\label{structindie_1_1Event_a1e4e02afb02bb331036a743527e7447da05fdeed6d47b1442f9b5a9bd417c7fdf}} 
+DOWN\+\_\+\+BUTTON&Down arrow. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LEFT\_BUTTON@{LEFT\_BUTTON}!indie::Event@{indie::Event}}\index{indie::Event@{indie::Event}!LEFT\_BUTTON@{LEFT\_BUTTON}}}\mbox{\Hypertarget{structindie_1_1Event_a1e4e02afb02bb331036a743527e7447da7d7387eef6790bba4e6775ae68985888}\label{structindie_1_1Event_a1e4e02afb02bb331036a743527e7447da7d7387eef6790bba4e6775ae68985888}} 
+LEFT\+\_\+\+BUTTON&Left arrow. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T\_BUTTON@{T\_BUTTON}!indie::Event@{indie::Event}}\index{indie::Event@{indie::Event}!T\_BUTTON@{T\_BUTTON}}}\mbox{\Hypertarget{structindie_1_1Event_a1e4e02afb02bb331036a743527e7447da6852095f484ecb89d3fa9de8cbb603b1}\label{structindie_1_1Event_a1e4e02afb02bb331036a743527e7447da6852095f484ecb89d3fa9de8cbb603b1}} 
+T\+\_\+\+BUTTON&Triangle key. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{O\_BUTTON@{O\_BUTTON}!indie::Event@{indie::Event}}\index{indie::Event@{indie::Event}!O\_BUTTON@{O\_BUTTON}}}\mbox{\Hypertarget{structindie_1_1Event_a1e4e02afb02bb331036a743527e7447da590923957e767b68c0d87cd0026d909b}\label{structindie_1_1Event_a1e4e02afb02bb331036a743527e7447da590923957e767b68c0d87cd0026d909b}} 
+O\+\_\+\+BUTTON&Circle button. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{X\_BUTTON@{X\_BUTTON}!indie::Event@{indie::Event}}\index{indie::Event@{indie::Event}!X\_BUTTON@{X\_BUTTON}}}\mbox{\Hypertarget{structindie_1_1Event_a1e4e02afb02bb331036a743527e7447da9a5d76cc038059a623ec5e9a575d122a}\label{structindie_1_1Event_a1e4e02afb02bb331036a743527e7447da9a5d76cc038059a623ec5e9a575d122a}} 
+X\+\_\+\+BUTTON&Cross button. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\_BUTTON@{S\_BUTTON}!indie::Event@{indie::Event}}\index{indie::Event@{indie::Event}!S\_BUTTON@{S\_BUTTON}}}\mbox{\Hypertarget{structindie_1_1Event_a1e4e02afb02bb331036a743527e7447da74c30b1774c6edb96f34fb604e7ff05b}\label{structindie_1_1Event_a1e4e02afb02bb331036a743527e7447da74c30b1774c6edb96f34fb604e7ff05b}} 
+S\+\_\+\+BUTTON&Square button. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{L1\_BUTTON@{L1\_BUTTON}!indie::Event@{indie::Event}}\index{indie::Event@{indie::Event}!L1\_BUTTON@{L1\_BUTTON}}}\mbox{\Hypertarget{structindie_1_1Event_a1e4e02afb02bb331036a743527e7447da6113c840914d24be28487dcd4d4ae937}\label{structindie_1_1Event_a1e4e02afb02bb331036a743527e7447da6113c840914d24be28487dcd4d4ae937}} 
+L1\+\_\+\+BUTTON&L1. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{L2\_BUTTON@{L2\_BUTTON}!indie::Event@{indie::Event}}\index{indie::Event@{indie::Event}!L2\_BUTTON@{L2\_BUTTON}}}\mbox{\Hypertarget{structindie_1_1Event_a1e4e02afb02bb331036a743527e7447daa2f5976694149a39128e4c3c46c2533d}\label{structindie_1_1Event_a1e4e02afb02bb331036a743527e7447daa2f5976694149a39128e4c3c46c2533d}} 
+L2\+\_\+\+BUTTON&L2. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R1\_BUTTON@{R1\_BUTTON}!indie::Event@{indie::Event}}\index{indie::Event@{indie::Event}!R1\_BUTTON@{R1\_BUTTON}}}\mbox{\Hypertarget{structindie_1_1Event_a1e4e02afb02bb331036a743527e7447da86e8721c638cce206293eefa3f8cd2b6}\label{structindie_1_1Event_a1e4e02afb02bb331036a743527e7447da86e8721c638cce206293eefa3f8cd2b6}} 
+R1\+\_\+\+BUTTON&R1. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R2\_BUTTON@{R2\_BUTTON}!indie::Event@{indie::Event}}\index{indie::Event@{indie::Event}!R2\_BUTTON@{R2\_BUTTON}}}\mbox{\Hypertarget{structindie_1_1Event_a1e4e02afb02bb331036a743527e7447da5f6807574478ea0d4e1934dd76f503a0}\label{structindie_1_1Event_a1e4e02afb02bb331036a743527e7447da5f6807574478ea0d4e1934dd76f503a0}} 
+R2\+\_\+\+BUTTON&R2. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SHARE\_BUTTON@{SHARE\_BUTTON}!indie::Event@{indie::Event}}\index{indie::Event@{indie::Event}!SHARE\_BUTTON@{SHARE\_BUTTON}}}\mbox{\Hypertarget{structindie_1_1Event_a1e4e02afb02bb331036a743527e7447daa5aed2dc331f2bbeac754db58a9116bc}\label{structindie_1_1Event_a1e4e02afb02bb331036a743527e7447daa5aed2dc331f2bbeac754db58a9116bc}} 
+SHARE\+\_\+\+BUTTON&Share button. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TOUCHPAD\_BUTTON@{TOUCHPAD\_BUTTON}!indie::Event@{indie::Event}}\index{indie::Event@{indie::Event}!TOUCHPAD\_BUTTON@{TOUCHPAD\_BUTTON}}}\mbox{\Hypertarget{structindie_1_1Event_a1e4e02afb02bb331036a743527e7447da90520771eff0a69d9aca42340799503c}\label{structindie_1_1Event_a1e4e02afb02bb331036a743527e7447da90520771eff0a69d9aca42340799503c}} 
+TOUCHPAD\+\_\+\+BUTTON&Touchpad button. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OPTION\_BUTTON@{OPTION\_BUTTON}!indie::Event@{indie::Event}}\index{indie::Event@{indie::Event}!OPTION\_BUTTON@{OPTION\_BUTTON}}}\mbox{\Hypertarget{structindie_1_1Event_a1e4e02afb02bb331036a743527e7447da0f60151d6a5b42bff3b054c93083a336}\label{structindie_1_1Event_a1e4e02afb02bb331036a743527e7447da0f60151d6a5b42bff3b054c93083a336}} 
+OPTION\+\_\+\+BUTTON&Option button. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{L3\_BUTTON@{L3\_BUTTON}!indie::Event@{indie::Event}}\index{indie::Event@{indie::Event}!L3\_BUTTON@{L3\_BUTTON}}}\mbox{\Hypertarget{structindie_1_1Event_a1e4e02afb02bb331036a743527e7447da87813b73a47aa5daceff29f7fac36b5d}\label{structindie_1_1Event_a1e4e02afb02bb331036a743527e7447da87813b73a47aa5daceff29f7fac36b5d}} 
+L3\+\_\+\+BUTTON&L3. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R3\_BUTTON@{R3\_BUTTON}!indie::Event@{indie::Event}}\index{indie::Event@{indie::Event}!R3\_BUTTON@{R3\_BUTTON}}}\mbox{\Hypertarget{structindie_1_1Event_a1e4e02afb02bb331036a743527e7447daefc28fb0017093b1e08bce1043bb785a}\label{structindie_1_1Event_a1e4e02afb02bb331036a743527e7447daefc28fb0017093b1e08bce1043bb785a}} 
+R3\+\_\+\+BUTTON&R3. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{structindie_1_1Event_ab71803dd89e98c51223b830a824248bc}\label{structindie_1_1Event_ab71803dd89e98c51223b830a824248bc}} 
+\index{indie::Event@{indie::Event}!JoystickDirection@{JoystickDirection}}
+\index{JoystickDirection@{JoystickDirection}!indie::Event@{indie::Event}}
+\doxysubsubsection{\texorpdfstring{JoystickDirection}{JoystickDirection}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{structindie_1_1Event_ab71803dd89e98c51223b830a824248bc}{indie\+::\+Event\+::\+Joystick\+Direction}}}
+
+
+
+Right joystick events. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{JOYSTICK\_NONE@{JOYSTICK\_NONE}!indie::Event@{indie::Event}}\index{indie::Event@{indie::Event}!JOYSTICK\_NONE@{JOYSTICK\_NONE}}}\mbox{\Hypertarget{structindie_1_1Event_ab71803dd89e98c51223b830a824248bca25938f05a7955f5a31c9403ed2ad7ffd}\label{structindie_1_1Event_ab71803dd89e98c51223b830a824248bca25938f05a7955f5a31c9403ed2ad7ffd}} 
+JOYSTICK\+\_\+\+NONE&Nothing is happening. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{UP@{UP}!indie::Event@{indie::Event}}\index{indie::Event@{indie::Event}!UP@{UP}}}\mbox{\Hypertarget{structindie_1_1Event_ab71803dd89e98c51223b830a824248bca5b2fdd09f5be04f91f0025e246b25376}\label{structindie_1_1Event_ab71803dd89e98c51223b830a824248bca5b2fdd09f5be04f91f0025e246b25376}} 
+UP&Joystick going up. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RIGHT@{RIGHT}!indie::Event@{indie::Event}}\index{indie::Event@{indie::Event}!RIGHT@{RIGHT}}}\mbox{\Hypertarget{structindie_1_1Event_ab71803dd89e98c51223b830a824248bca28cd2eb630aca6c2809ae83f055a6cbb}\label{structindie_1_1Event_ab71803dd89e98c51223b830a824248bca28cd2eb630aca6c2809ae83f055a6cbb}} 
+RIGHT&Joystick going right. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DOWN@{DOWN}!indie::Event@{indie::Event}}\index{indie::Event@{indie::Event}!DOWN@{DOWN}}}\mbox{\Hypertarget{structindie_1_1Event_ab71803dd89e98c51223b830a824248bca2a1de5ac07923e4f722f9dcc0cac3509}\label{structindie_1_1Event_ab71803dd89e98c51223b830a824248bca2a1de5ac07923e4f722f9dcc0cac3509}} 
+DOWN&Joystick going down. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LEFT@{LEFT}!indie::Event@{indie::Event}}\index{indie::Event@{indie::Event}!LEFT@{LEFT}}}\mbox{\Hypertarget{structindie_1_1Event_ab71803dd89e98c51223b830a824248bcacd1a15c3d1874d45007f6b11124d07a8}\label{structindie_1_1Event_ab71803dd89e98c51223b830a824248bcacd1a15c3d1874d45007f6b11124d07a8}} 
+LEFT&Joystick going left. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{events_8hpp}{events.\+hpp}}\end{DoxyCompactItemize}

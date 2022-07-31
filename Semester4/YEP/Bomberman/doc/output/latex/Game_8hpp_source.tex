@@ -1,0 +1,87 @@
+\hypertarget{Game_8hpp_source}{}\doxysection{Game.\+hpp}
+\label{Game_8hpp_source}\index{src/game/Game.hpp@{src/game/Game.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{/*}}
+\DoxyCodeLine{2 \textcolor{comment}{** EPITECH PROJECT, 2022}}
+\DoxyCodeLine{3 \textcolor{comment}{** Bomberman}}
+\DoxyCodeLine{4 \textcolor{comment}{** File description:}}
+\DoxyCodeLine{5 \textcolor{comment}{** Game}}
+\DoxyCodeLine{6 \textcolor{comment}{*/}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#ifndef GAME\_HPP\_}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#define GAME\_HPP\_}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include <cstddef>}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <map>}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include <memory>}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include "{}../ecs/system/Collide/Collide.hpp"{}}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#include "{}../ecs/system/Draw2D/Draw2D.hpp"{}}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#include "{}../ecs/system/Draw3D/Draw3D.hpp"{}}}
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#include "{}../ecs/system/Movement/Movement.hpp"{}}}
+\DoxyCodeLine{20 \textcolor{preprocessor}{\#include "{}../ecs/system/Sound/Sound.hpp"{}}}
+\DoxyCodeLine{21 \textcolor{preprocessor}{\#include "{}../player/Player.hpp"{}}}
+\DoxyCodeLine{22 \textcolor{preprocessor}{\#include "{}../screens/IScreen.hpp"{}}}
+\DoxyCodeLine{23 \textcolor{preprocessor}{\#include "{}../screens/game/GameScreen.hpp"{}}}
+\DoxyCodeLine{24 \textcolor{preprocessor}{\#include "{}../screens/menu/MenuScreen.hpp"{}}}
+\DoxyCodeLine{25 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{events_8hpp}{events.hpp}}"{}}}
+\DoxyCodeLine{26 \textcolor{preprocessor}{\#include "{}../screens/game\_options/GameOptionsScreen.hpp"{}}}
+\DoxyCodeLine{27 \textcolor{preprocessor}{\#include "{}../screens/pre\_menu/PreMenuScreen.hpp"{}}}
+\DoxyCodeLine{28 \textcolor{preprocessor}{\#include "{}../screens/set\_fps/SetFpsScreen.hpp"{}}}
+\DoxyCodeLine{29 \textcolor{preprocessor}{\#include "{}../screens/set\_music/SetMusicScreen.hpp"{}}}
+\DoxyCodeLine{30 \textcolor{preprocessor}{\#include "{}../screens/set\_sound/SetSoundScreen.hpp"{}}}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32 \textcolor{keyword}{namespace }indie}
+\DoxyCodeLine{33 \{}
+\DoxyCodeLine{35     \textcolor{keyword}{class }\mbox{\hyperlink{classindie_1_1Game}{Game}} \{}
+\DoxyCodeLine{36       \textcolor{keyword}{public}:}
+\DoxyCodeLine{38         \textcolor{keyword}{enum class} \mbox{\hyperlink{classindie_1_1Game_aa21b8f6bc6873ab2ac8def113b57d57d}{Screens}} \{ Menu = 1, \mbox{\hyperlink{classindie_1_1Game_a867b898128765343eea44257920c13d5}{Game}}, PreMenu, GameOptions, SetMusic, SetSound, SetFps, Count \};}
+\DoxyCodeLine{40         \textcolor{keyword}{enum} \mbox{\hyperlink{classindie_1_1Game_a392dc75308970481f8729a34811f08a1}{Sounds}} \{ BOMB\_S = 0, GAME\_READY\_S = 1, SELECT\_S = 2 \};}
+\DoxyCodeLine{42         \textcolor{keyword}{enum} \mbox{\hyperlink{classindie_1_1Game_a22a13564af59b393bf9b995e4a3e0a57}{Musics}} \{ MENU\_SOUND \};}
+\DoxyCodeLine{45         \mbox{\hyperlink{classindie_1_1Game_a867b898128765343eea44257920c13d5}{Game}}(\textcolor{keywordtype}{size\_t} baseFps = 60);}
+\DoxyCodeLine{47         \mbox{\hyperlink{classindie_1_1Game_ac20225515e1dfc7947d0d2ce3c0a9aa1}{\string~Game}}();}
+\DoxyCodeLine{49         \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1Game_a823945fece79e75ef27a5512eea85dac}{init}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{51         \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1Game_aaf0072c197ad3636b47bc13de2c21a12}{run}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{53         \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1Game_a5c1e25217f54a655a336de3ba618063a}{draw}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{55         \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1Game_a959deeba4f24330cae4cb8b41e2643a9}{update}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{59         \textcolor{keywordtype}{bool} \mbox{\hyperlink{classindie_1_1Game_af6c280739aca532e0f0c81e0b77b0190}{processEvents}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{62         \textcolor{keywordtype}{int} \mbox{\hyperlink{classindie_1_1Game_a0441972c059bce3d04c989b7078c79f3}{handleEvent}}();}
+\DoxyCodeLine{64         \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1Game_a959250720726b710a2fe765cb8862415}{initScenes}}();}
+\DoxyCodeLine{69         \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1Game_a50b5046c6ad392633554f9f0573c8bda}{initSounds}}();}
+\DoxyCodeLine{74         \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1Game_abdba08c4278573134cd9a3e5b03e562f}{initMusic}}();}
+\DoxyCodeLine{79         \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1Game_a5636af9831013d0843401d616afb322f}{destroy}}();}
+\DoxyCodeLine{84         \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1Game_aa4074dbd8b75f270092f10cc3f62626f}{destroyEntities}}();}
+\DoxyCodeLine{89         \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1Game_a6da70c1f7a773b5cc28bf2184e2f7d4d}{destroySystems}}();}
+\DoxyCodeLine{92         \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1Game_a287cef35512d64a5f4c49b03d0938dac}{handleScreensSwap}}(\textcolor{keywordtype}{int} ret);}
+\DoxyCodeLine{94         \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1Game_a0a89336ae67c8192b0767f46ad118af0}{reinitGame}}();}
+\DoxyCodeLine{97         \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1Game_a30ad05638ef9c9eb901f2f47b1b91345}{setActualScreen}}(\mbox{\hyperlink{classindie_1_1Game_aa21b8f6bc6873ab2ac8def113b57d57d}{Screens}} newScreen);}
+\DoxyCodeLine{103         \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1Game_a2f204faf553a61cc968ce08f9cf9d1c0}{setSoundEvent}}(\textcolor{keywordtype}{int} entititesIndex);}
+\DoxyCodeLine{105         \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1Game_a03fa61a2a9bf158dda11e29c0a9c5172}{saveGame}}();}
+\DoxyCodeLine{107         \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1Game_a1d907c4c2f22dd17281f78bf0598c680}{loadGame}}();}
+\DoxyCodeLine{113         \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1Game_aa188a44c17dc24ab17dd3b9bb44a0819}{addSoundEntity}}(std::unique\_ptr<indie::ecs::entity::Entity> entity);}
+\DoxyCodeLine{119         \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1Game_a46e485b6ad4cbb74692a512754f1499f}{addSoundSystem}}(std::unique\_ptr<indie::ecs::system::ISystem> system);}
+\DoxyCodeLine{120 }
+\DoxyCodeLine{121       \textcolor{keyword}{protected}:}
+\DoxyCodeLine{122       \textcolor{keyword}{private}:}
+\DoxyCodeLine{124         \mbox{\hyperlink{classindie_1_1Game_aa21b8f6bc6873ab2ac8def113b57d57d}{Screens}} \_actualScreen;}
+\DoxyCodeLine{126         \textcolor{keywordtype}{size\_t} \_fps;}
+\DoxyCodeLine{128         std::vector<player::Player> \_players;}
+\DoxyCodeLine{130         \mbox{\hyperlink{classindie_1_1menu_1_1MenuScreen}{indie::menu::MenuScreen}} *\_menu;}
+\DoxyCodeLine{132         \mbox{\hyperlink{classindie_1_1menu_1_1GameScreen}{indie::menu::GameScreen}} *\_game;}
+\DoxyCodeLine{134         \mbox{\hyperlink{classindie_1_1menu_1_1PreMenuScreen}{indie::menu::PreMenuScreen}} *\_premenu;}
+\DoxyCodeLine{136         \mbox{\hyperlink{classindie_1_1menu_1_1GameOptionsScreen}{indie::menu::GameOptionsScreen}} *\_gameoptions;}
+\DoxyCodeLine{138         \mbox{\hyperlink{classindie_1_1menu_1_1SetFpsScreen}{indie::menu::SetFpsScreen}} *\_setFps;}
+\DoxyCodeLine{140         \mbox{\hyperlink{classindie_1_1menu_1_1SetSoundScreen}{indie::menu::SetSoundScreen}} *\_setSound;}
+\DoxyCodeLine{142         \mbox{\hyperlink{classindie_1_1menu_1_1SetMusicScreen}{indie::menu::SetMusicScreen}} *\_setMusic;}
+\DoxyCodeLine{144         \mbox{\hyperlink{structindie_1_1Event}{indie::Event}} \_event;}
+\DoxyCodeLine{145         std::vector<std::unique\_ptr<indie::ecs::entity::Entity>> \_sound\_entities;}
+\DoxyCodeLine{146         std::vector<std::unique\_ptr<indie::ecs::system::ISystem>> \_sound\_systems;}
+\DoxyCodeLine{147         std::map<int, indie::raylib::Sound> \_musics;}
+\DoxyCodeLine{148     \};}
+\DoxyCodeLine{149 \} \textcolor{comment}{// namespace indie}}
+\DoxyCodeLine{150 }
+\DoxyCodeLine{151 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* !GAME\_HPP\_ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

@@ -1,0 +1,155 @@
+\hypertarget{classindie_1_1ecs_1_1entity_1_1Entity}{}\doxysection{indie\+::ecs\+::entity\+::Entity Class Reference}
+\label{classindie_1_1ecs_1_1entity_1_1Entity}\index{indie::ecs::entity::Entity@{indie::ecs::entity::Entity}}
+
+
+\mbox{\hyperlink{classindie_1_1ecs_1_1entity_1_1Entity}{Entity}} class.  
+
+
+
+
+{\ttfamily \#include $<$Entity.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classindie_1_1ecs_1_1entity_1_1Entity_a057e39e03979893f414c3315d1266043}{Entity}} (\mbox{\hyperlink{Entity_8hpp_a7bca52f144f3350f6f4bd61d567e75ef}{entity\+Type}} type)
+\begin{DoxyCompactList}\small\item\em Create new entity. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classindie_1_1ecs_1_1entity_1_1Entity_af64f4ae51c3b34196a50320a551bf5e5}\label{classindie_1_1ecs_1_1entity_1_1Entity_af64f4ae51c3b34196a50320a551bf5e5}} 
+{\bfseries Entity} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classindie_1_1ecs_1_1entity_1_1Entity}{Entity}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classindie_1_1ecs_1_1entity_1_1Entity_a95496c206425fbe8bfd0de67e65f884f}\label{classindie_1_1ecs_1_1entity_1_1Entity_a95496c206425fbe8bfd0de67e65f884f}} 
+{\bfseries $\sim$\+Entity} ()
+\begin{DoxyCompactList}\small\item\em Destroy entity. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T , typename... Args$>$ }\\void \mbox{\hyperlink{classindie_1_1ecs_1_1entity_1_1Entity_a25268427a9487b9cc2718deb2d64faf4}{add\+Component}} (Args... args)
+\begin{DoxyCompactList}\small\item\em Add component to entity. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classindie_1_1ecs_1_1entity_1_1Entity_abd627d6f858ae1da7eac30ea9250bab2}{has\+Compo\+Type}} (\mbox{\hyperlink{IComponent_8hpp_ac44f0ed416679d299da366d37fd5eac8}{indie\+::ecs\+::component\+::compo\+Type}} type)
+\begin{DoxyCompactList}\small\item\em Check if the entity have a component of the given type. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Drawable2D}{indie\+::ecs\+::component\+::\+Drawable2D}} $\ast$ $>$ \mbox{\hyperlink{classindie_1_1ecs_1_1entity_1_1Entity_aa8af8e7aeeb8b0f87212abac93a24ae1}{get\+Drawable\+Vector}} () const
+\begin{DoxyCompactList}\small\item\em Get the Drawable Vector. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\T $\ast$ \mbox{\hyperlink{classindie_1_1ecs_1_1entity_1_1Entity_ac5222c85d3e9e3e2e83175ec7bd291b6}{get\+Component}} (\mbox{\hyperlink{IComponent_8hpp_ac44f0ed416679d299da366d37fd5eac8}{indie\+::ecs\+::component\+::compo\+Type}} type)
+\begin{DoxyCompactList}\small\item\em Get the Component of the given type. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{Entity_8hpp_a7bca52f144f3350f6f4bd61d567e75ef}{indie\+::ecs\+::entity\+::entity\+Type}} \mbox{\hyperlink{classindie_1_1ecs_1_1entity_1_1Entity_abdfaaccfd480d439463e849cc2ae81cb}{get\+Entity\+Type}} () const
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{classindie_1_1ecs_1_1entity_1_1Entity}{Entity}} Type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classindie_1_1ecs_1_1entity_1_1Entity}{Entity}} class. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classindie_1_1ecs_1_1entity_1_1Entity_a057e39e03979893f414c3315d1266043}\label{classindie_1_1ecs_1_1entity_1_1Entity_a057e39e03979893f414c3315d1266043}} 
+\index{indie::ecs::entity::Entity@{indie::ecs::entity::Entity}!Entity@{Entity}}
+\index{Entity@{Entity}!indie::ecs::entity::Entity@{indie::ecs::entity::Entity}}
+\doxysubsubsection{\texorpdfstring{Entity()}{Entity()}}
+{\footnotesize\ttfamily indie\+::ecs\+::entity\+::\+Entity\+::\+Entity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Entity_8hpp_a7bca52f144f3350f6f4bd61d567e75ef}{entity\+Type}}}]{type }\end{DoxyParamCaption})}
+
+
+
+Create new entity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & \mbox{\hyperlink{classindie_1_1ecs_1_1entity_1_1Entity}{Entity}} type \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classindie_1_1ecs_1_1entity_1_1Entity_a25268427a9487b9cc2718deb2d64faf4}\label{classindie_1_1ecs_1_1entity_1_1Entity_a25268427a9487b9cc2718deb2d64faf4}} 
+\index{indie::ecs::entity::Entity@{indie::ecs::entity::Entity}!addComponent@{addComponent}}
+\index{addComponent@{addComponent}!indie::ecs::entity::Entity@{indie::ecs::entity::Entity}}
+\doxysubsubsection{\texorpdfstring{addComponent()}{addComponent()}}
+{\footnotesize\ttfamily template$<$typename T , typename... Args$>$ \\
+void indie\+::ecs\+::entity\+::\+Entity\+::add\+Component (\begin{DoxyParamCaption}\item[{Args...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Add component to entity. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & the component to add \\
+\hline
+{\em Args} & The necessary params to create the component \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em args} & The necessary params to create the component \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1ecs_1_1entity_1_1Entity_ac5222c85d3e9e3e2e83175ec7bd291b6}\label{classindie_1_1ecs_1_1entity_1_1Entity_ac5222c85d3e9e3e2e83175ec7bd291b6}} 
+\index{indie::ecs::entity::Entity@{indie::ecs::entity::Entity}!getComponent@{getComponent}}
+\index{getComponent@{getComponent}!indie::ecs::entity::Entity@{indie::ecs::entity::Entity}}
+\doxysubsubsection{\texorpdfstring{getComponent()}{getComponent()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T $\ast$ indie\+::ecs\+::entity\+::\+Entity\+::get\+Component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{IComponent_8hpp_ac44f0ed416679d299da366d37fd5eac8}{indie\+::ecs\+::component\+::compo\+Type}}}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the Component of the given type. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The type of component to get \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em type} & The compo\+Type value of the component to get\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T$\ast$ Pointer to the wanted component 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classindie_1_1ecs_1_1entity_1_1Entity_aa8af8e7aeeb8b0f87212abac93a24ae1}\label{classindie_1_1ecs_1_1entity_1_1Entity_aa8af8e7aeeb8b0f87212abac93a24ae1}} 
+\index{indie::ecs::entity::Entity@{indie::ecs::entity::Entity}!getDrawableVector@{getDrawableVector}}
+\index{getDrawableVector@{getDrawableVector}!indie::ecs::entity::Entity@{indie::ecs::entity::Entity}}
+\doxysubsubsection{\texorpdfstring{getDrawableVector()}{getDrawableVector()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Drawable2D}{indie\+::ecs\+::component\+::\+Drawable2D}} $\ast$ $>$ indie\+::ecs\+::entity\+::\+Entity\+::get\+Drawable\+Vector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the Drawable Vector. 
+
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$indie\+::ecs\+::component\+::\+Drawable2\+D $\ast$$>$ Vector of Drawable2D component 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classindie_1_1ecs_1_1entity_1_1Entity_abdfaaccfd480d439463e849cc2ae81cb}\label{classindie_1_1ecs_1_1entity_1_1Entity_abdfaaccfd480d439463e849cc2ae81cb}} 
+\index{indie::ecs::entity::Entity@{indie::ecs::entity::Entity}!getEntityType@{getEntityType}}
+\index{getEntityType@{getEntityType}!indie::ecs::entity::Entity@{indie::ecs::entity::Entity}}
+\doxysubsubsection{\texorpdfstring{getEntityType()}{getEntityType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{Entity_8hpp_a7bca52f144f3350f6f4bd61d567e75ef}{indie\+::ecs\+::entity\+::entity\+Type}} indie\+::ecs\+::entity\+::\+Entity\+::get\+Entity\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the \mbox{\hyperlink{classindie_1_1ecs_1_1entity_1_1Entity}{Entity}} Type. 
+
+\begin{DoxyReturn}{Returns}
+indie\+::ecs\+::entity\+::entity\+Type The entity type 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classindie_1_1ecs_1_1entity_1_1Entity_abd627d6f858ae1da7eac30ea9250bab2}\label{classindie_1_1ecs_1_1entity_1_1Entity_abd627d6f858ae1da7eac30ea9250bab2}} 
+\index{indie::ecs::entity::Entity@{indie::ecs::entity::Entity}!hasCompoType@{hasCompoType}}
+\index{hasCompoType@{hasCompoType}!indie::ecs::entity::Entity@{indie::ecs::entity::Entity}}
+\doxysubsubsection{\texorpdfstring{hasCompoType()}{hasCompoType()}}
+{\footnotesize\ttfamily bool indie\+::ecs\+::entity\+::\+Entity\+::has\+Compo\+Type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{IComponent_8hpp_ac44f0ed416679d299da366d37fd5eac8}{indie\+::ecs\+::component\+::compo\+Type}}}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Check if the entity have a component of the given type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & the compo\+Type value to check.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true The component is present 
+
+false The component isn\textquotesingle{}t present 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/ecs/entity/\mbox{\hyperlink{Entity_8hpp}{Entity.\+hpp}}\item 
+src/ecs/entity/\mbox{\hyperlink{Entity_8cpp}{Entity.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,54 @@
+\hypertarget{Camera3D_8hpp_source}{}\doxysection{Camera3\+D.\+hpp}
+\label{Camera3D_8hpp_source}\index{src/raylib/camera3d/Camera3D.hpp@{src/raylib/camera3d/Camera3D.hpp}}
+\mbox{\hyperlink{Camera3D_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#ifndef CAMERA3D\_HPP\_}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#define CAMERA3D\_HPP\_}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include "{}../Raylib.hpp"{}}}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 \textcolor{keyword}{namespace }indie}
+\DoxyCodeLine{18 \{}
+\DoxyCodeLine{19     \textcolor{keyword}{namespace }raylib}
+\DoxyCodeLine{20     \{}
+\DoxyCodeLine{22         \textcolor{keyword}{class }\mbox{\hyperlink{classindie_1_1raylib_1_1Camera3D}{Camera3D}} \{}
+\DoxyCodeLine{23           \textcolor{keyword}{public}:}
+\DoxyCodeLine{33             \mbox{\hyperlink{classindie_1_1raylib_1_1Camera3D_aae89c65f875353e45ebc425314142d84}{Camera3D}}(::Vector3 position, ::Vector3 target, ::Vector3 up, \textcolor{keywordtype}{float} fovy, \textcolor{keywordtype}{int} projection);}
+\DoxyCodeLine{38             \mbox{\hyperlink{classindie_1_1raylib_1_1Camera3D_a0d2950f074358f7b70559d06edd74903}{\string~Camera3D}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{46             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Camera3D_abeb16ab43801d6065b074db82dbf9fb3}{setPosition}}(\textcolor{keywordtype}{float} newX, \textcolor{keywordtype}{float} newY, \textcolor{keywordtype}{float} newZ);}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{53             ::Vector3 \mbox{\hyperlink{classindie_1_1raylib_1_1Camera3D_a7e2010b7d45b3c89df71660855c3e51e}{getPosition}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{62             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Camera3D_aad31bfc7a1e5aee6602a887076a2f83b}{setTarget}}(\textcolor{keywordtype}{float} newX, \textcolor{keywordtype}{float} newY, \textcolor{keywordtype}{float} newZ);}
+\DoxyCodeLine{63 }
+\DoxyCodeLine{69             ::Vector3 \mbox{\hyperlink{classindie_1_1raylib_1_1Camera3D_aff875948429054b8e8dbf3fd9b1468d8}{getTarget}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{70 }
+\DoxyCodeLine{78             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Camera3D_af261b963a1ac520831bb07a3fcbc82c5}{setUp}}(\textcolor{keywordtype}{float} newX, \textcolor{keywordtype}{float} newY, \textcolor{keywordtype}{float} newZ);}
+\DoxyCodeLine{79 }
+\DoxyCodeLine{85             ::Vector3 \mbox{\hyperlink{classindie_1_1raylib_1_1Camera3D_ad83263c712f92a1a524e41adef608335}{getUp}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{86 }
+\DoxyCodeLine{92             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Camera3D_a81d7f4baa5045eb77e739836f647dbf4}{setFovy}}(\textcolor{keywordtype}{float} newFovy);}
+\DoxyCodeLine{93 }
+\DoxyCodeLine{99             \textcolor{keywordtype}{float} \mbox{\hyperlink{classindie_1_1raylib_1_1Camera3D_a79d94a3ec0bcb6396f583b55e21c4e80}{getFovy}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{100 }
+\DoxyCodeLine{106             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Camera3D_a12396e1d0606be9e64c99a6b727e5048}{setProjection}}(\textcolor{keywordtype}{int} newProjection);}
+\DoxyCodeLine{112             \textcolor{keywordtype}{int} \mbox{\hyperlink{classindie_1_1raylib_1_1Camera3D_a600e178227779aa49411f3f7a9ad50c3}{getProjection}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{113 }
+\DoxyCodeLine{117             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Camera3D_ae188f7595f1264d098fda98073671db0}{beginMode}}();}
+\DoxyCodeLine{118 }
+\DoxyCodeLine{124             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Camera3D_a19a1533d79eeb58b3708a438792f6369}{setMode}}(\textcolor{keywordtype}{int} mode);}
+\DoxyCodeLine{125 }
+\DoxyCodeLine{129             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Camera3D_a36e100faf09c444dcf52339cdf7e9ddc}{endMode}}();}
+\DoxyCodeLine{130 }
+\DoxyCodeLine{134             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Camera3D_a8856f877554155889b77c346a54579d5}{update}}();}
+\DoxyCodeLine{135 }
+\DoxyCodeLine{136           \textcolor{keyword}{private}:}
+\DoxyCodeLine{141             \mbox{\hyperlink{classindie_1_1raylib_1_1Camera3D_aae89c65f875353e45ebc425314142d84}{::Camera3D}} \_camera;}
+\DoxyCodeLine{142         \};}
+\DoxyCodeLine{143     \} \textcolor{comment}{// namespace raylib}}
+\DoxyCodeLine{144 \} \textcolor{comment}{// namespace indie}}
+\DoxyCodeLine{145 }
+\DoxyCodeLine{146 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* !CAMERA3D\_HPP\_ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

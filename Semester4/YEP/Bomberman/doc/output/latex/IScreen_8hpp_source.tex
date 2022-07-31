@@ -1,0 +1,30 @@
+\hypertarget{IScreen_8hpp_source}{}\doxysection{IScreen.\+hpp}
+\label{IScreen_8hpp_source}\index{src/screens/IScreen.hpp@{src/screens/IScreen.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#ifndef ISCREEN\_HPP\_}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#define ISCREEN\_HPP\_}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include <memory>}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include "{}../ecs/entity/Entity.hpp"{}}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#include "{}../ecs/system/ISystem.hpp"{}}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{events_8hpp}{events.hpp}}"{}}}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20 \textcolor{keyword}{namespace }indie}
+\DoxyCodeLine{21 \{}
+\DoxyCodeLine{23     \textcolor{keyword}{class }\mbox{\hyperlink{classindie_1_1IScreen}{IScreen}} \{}
+\DoxyCodeLine{24       \textcolor{keyword}{public}:}
+\DoxyCodeLine{29         \textcolor{keyword}{virtual} \mbox{\hyperlink{classindie_1_1IScreen_afe9a398578abb8ef858b01746b0883dc}{\string~IScreen}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{34         \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1IScreen_a8a94615d59b1a467347bf806b5c92f17}{init}}() = 0;}
+\DoxyCodeLine{39         \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1IScreen_a50e467ab6b7efae4114a9c3f17fa8ef4}{draw}}() = 0;}
+\DoxyCodeLine{44         \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1IScreen_aa8a7600f2869b54991b1ae551e8735c1}{update}}() = 0;}
+\DoxyCodeLine{51         \textcolor{keyword}{virtual} \textcolor{keywordtype}{int} \mbox{\hyperlink{classindie_1_1IScreen_a715fc5be821e5ed1e66087cf4945234c}{handleEvent}}(\mbox{\hyperlink{structindie_1_1Event}{indie::Event}} \&event) = 0;}
+\DoxyCodeLine{57         \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1IScreen_a08ef01692ea36f0eb9cdf06bf41b12a7}{addEntity}}(std::unique\_ptr<indie::ecs::entity::Entity> entity) = 0;}
+\DoxyCodeLine{63         \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1IScreen_a492a5f07982dc9df97b71251413e8129}{addSystem}}(std::unique\_ptr<indie::ecs::system::ISystem> system) = 0;}
+\DoxyCodeLine{64     \};}
+\DoxyCodeLine{65 \} \textcolor{comment}{// namespace indie}}
+\DoxyCodeLine{66 }
+\DoxyCodeLine{67 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* !ISCREEN\_HPP\_ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

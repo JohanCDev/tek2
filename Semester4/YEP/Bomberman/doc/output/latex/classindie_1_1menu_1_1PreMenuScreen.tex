@@ -1,0 +1,354 @@
+\hypertarget{classindie_1_1menu_1_1PreMenuScreen}{}\doxysection{indie\+::menu\+::Pre\+Menu\+Screen Class Reference}
+\label{classindie_1_1menu_1_1PreMenuScreen}\index{indie::menu::PreMenuScreen@{indie::menu::PreMenuScreen}}
+
+
+Class for the Pre-\/\+Menu Screen.  
+
+
+
+
+{\ttfamily \#include $<$Pre\+Menu\+Screen.\+hpp$>$}
+
+Inheritance diagram for indie\+::menu\+::Pre\+Menu\+Screen\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classindie_1_1menu_1_1PreMenuScreen}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classindie_1_1menu_1_1PreMenuScreen_aba0fa17fbc52d65cd0c0dc680798e98a}{Pre\+Menu\+Screen}} (std\+::vector$<$ \mbox{\hyperlink{classindie_1_1player_1_1Player}{player\+::\+Player}} $>$ $\ast$players)
+\begin{DoxyCompactList}\small\item\em Construct a new Pre Menu Screen object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classindie_1_1menu_1_1PreMenuScreen_a9cbde8c9ff9cd5a7efe6f56cebd69fcb}\label{classindie_1_1menu_1_1PreMenuScreen_a9cbde8c9ff9cd5a7efe6f56cebd69fcb}} 
+{\bfseries $\sim$\+Pre\+Menu\+Screen} ()=default
+\begin{DoxyCompactList}\small\item\em Destroy the Pre Menu Screen object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1menu_1_1PreMenuScreen_ae168653d373d8885dbadc8c63b6cc523}{init}} () override
+\begin{DoxyCompactList}\small\item\em Init the Pre-\/\+Menu Screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1menu_1_1PreMenuScreen_a94a6c71394bd32f8b61a310b727d99f6}{draw}} () override
+\begin{DoxyCompactList}\small\item\em Draw the Pre-\/\+Menu Screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1menu_1_1PreMenuScreen_aa05faa1ca647be62e14dec778353974d}{update}} () override
+\begin{DoxyCompactList}\small\item\em Update the Pre-\/\+Menu Screen. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classindie_1_1menu_1_1PreMenuScreen_a51d7d35695b616aed950a0ad2cb363fd}{handle\+Event}} (\mbox{\hyperlink{structindie_1_1Event}{indie\+::\+Event}} \&event) override
+\begin{DoxyCompactList}\small\item\em Handle event for the Pre-\/\+Menu Screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1menu_1_1PreMenuScreen_a00a3f328322699fd916d5e37b3866648}{add\+Entity}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classindie_1_1ecs_1_1entity_1_1Entity}{indie\+::ecs\+::entity\+::\+Entity}} $>$ entity) override
+\begin{DoxyCompactList}\small\item\em Add entity for the Pre-\/\+Menu Screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1menu_1_1PreMenuScreen_aede7df7a322722768f6474a4628ddbe7}{add\+System}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1ISystem}{indie\+::ecs\+::system\+::\+ISystem}} $>$ system) override
+\begin{DoxyCompactList}\small\item\em Add system for the Pre-\/\+Menu Screen. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classindie_1_1menu_1_1PreMenuScreen_a6caf538dff807a4770a747af40cf64cd}{get\+Nb\+Players}} () const
+\begin{DoxyCompactList}\small\item\em Get the Number of players. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classindie_1_1menu_1_1PreMenuScreen_a1866d91cd461c0fbf5bcf22e1437167c}{is\+Player2\+Playing}} () const
+\begin{DoxyCompactList}\small\item\em Player2 is playing or not. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classindie_1_1menu_1_1PreMenuScreen_a20cf21a02a3eea9614d71530f9fa6b3e}{is\+Player3\+Playing}} () const
+\begin{DoxyCompactList}\small\item\em Player3 is playing or not. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classindie_1_1menu_1_1PreMenuScreen_a64fea0bad49befc3d03a9e1f37b819c7}{is\+Player4\+Playing}} () const
+\begin{DoxyCompactList}\small\item\em Player4 is playing or not. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classindie_1_1menu_1_1PreMenuScreen_a5599dd2cc293f66968113db5af04efd1}{get\+Is\+Game\+Ready}} () const
+\begin{DoxyCompactList}\small\item\em Check if the game is ready or not. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1menu_1_1PreMenuScreen_ab1fe8ae35ede07a59bd19b96ce39f9aa}{set\+Is\+Game\+Ready}} (bool is\+\_\+game\+\_\+ready)
+\begin{DoxyCompactList}\small\item\em Set the state of the game. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classindie_1_1menu_1_1PreMenuScreen_ad815a439239bb13ee4298c6b85e6d5c7}{check\+\_\+if\+\_\+players\+\_\+are\+\_\+ready}} ()
+\begin{DoxyCompactList}\small\item\em Check if all players are ready. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1menu_1_1PreMenuScreen_aa16c801c3b1e073cc427aab5c3bd8e81}{handle\+Player1}} (\mbox{\hyperlink{structindie_1_1Event}{indie\+::\+Event}} \&event)
+\begin{DoxyCompactList}\small\item\em Handle \mbox{\hyperlink{structindie_1_1Event}{Event}} from player 1. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1menu_1_1PreMenuScreen_ae21872e71e86ad8ce698e607504fc203}{handle\+Player2}} (\mbox{\hyperlink{structindie_1_1Event}{indie\+::\+Event}} \&event)
+\begin{DoxyCompactList}\small\item\em Handle \mbox{\hyperlink{structindie_1_1Event}{Event}} from player 2. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1menu_1_1PreMenuScreen_a12d219abf0315640a387d0f6e7c8164b}{handle\+Player3}} (\mbox{\hyperlink{structindie_1_1Event}{indie\+::\+Event}} \&event)
+\begin{DoxyCompactList}\small\item\em Handle \mbox{\hyperlink{structindie_1_1Event}{Event}} from player 3. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1menu_1_1PreMenuScreen_abbde47bc06fb50a258e5d74aa0b9c3cd}{handle\+Player4}} (\mbox{\hyperlink{structindie_1_1Event}{indie\+::\+Event}} \&event)
+\begin{DoxyCompactList}\small\item\em Handle \mbox{\hyperlink{structindie_1_1Event}{Event}} from player 4. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class for the Pre-\/\+Menu Screen. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classindie_1_1menu_1_1PreMenuScreen_aba0fa17fbc52d65cd0c0dc680798e98a}\label{classindie_1_1menu_1_1PreMenuScreen_aba0fa17fbc52d65cd0c0dc680798e98a}} 
+\index{indie::menu::PreMenuScreen@{indie::menu::PreMenuScreen}!PreMenuScreen@{PreMenuScreen}}
+\index{PreMenuScreen@{PreMenuScreen}!indie::menu::PreMenuScreen@{indie::menu::PreMenuScreen}}
+\doxysubsubsection{\texorpdfstring{PreMenuScreen()}{PreMenuScreen()}}
+{\footnotesize\ttfamily indie\+::menu\+::\+Pre\+Menu\+Screen\+::\+Pre\+Menu\+Screen (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classindie_1_1player_1_1Player}{player\+::\+Player}} $>$ $\ast$}]{players }\end{DoxyParamCaption})}
+
+
+
+Construct a new Pre Menu Screen object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em players} & Vector of player for the game \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classindie_1_1menu_1_1PreMenuScreen_a00a3f328322699fd916d5e37b3866648}\label{classindie_1_1menu_1_1PreMenuScreen_a00a3f328322699fd916d5e37b3866648}} 
+\index{indie::menu::PreMenuScreen@{indie::menu::PreMenuScreen}!addEntity@{addEntity}}
+\index{addEntity@{addEntity}!indie::menu::PreMenuScreen@{indie::menu::PreMenuScreen}}
+\doxysubsubsection{\texorpdfstring{addEntity()}{addEntity()}}
+{\footnotesize\ttfamily void indie\+::menu\+::\+Pre\+Menu\+Screen\+::add\+Entity (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classindie_1_1ecs_1_1entity_1_1Entity}{indie\+::ecs\+::entity\+::\+Entity}} $>$}]{entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Add entity for the Pre-\/\+Menu Screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & Entity to add for the Pre-\/\+Menu Screen \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classindie_1_1IScreen_a08ef01692ea36f0eb9cdf06bf41b12a7}{indie\+::\+IScreen}}.
+
+\mbox{\Hypertarget{classindie_1_1menu_1_1PreMenuScreen_aede7df7a322722768f6474a4628ddbe7}\label{classindie_1_1menu_1_1PreMenuScreen_aede7df7a322722768f6474a4628ddbe7}} 
+\index{indie::menu::PreMenuScreen@{indie::menu::PreMenuScreen}!addSystem@{addSystem}}
+\index{addSystem@{addSystem}!indie::menu::PreMenuScreen@{indie::menu::PreMenuScreen}}
+\doxysubsubsection{\texorpdfstring{addSystem()}{addSystem()}}
+{\footnotesize\ttfamily void indie\+::menu\+::\+Pre\+Menu\+Screen\+::add\+System (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1ISystem}{indie\+::ecs\+::system\+::\+ISystem}} $>$}]{system }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Add system for the Pre-\/\+Menu Screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em system} & System to add for the Pre-\/\+Menu Screen \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classindie_1_1IScreen_a492a5f07982dc9df97b71251413e8129}{indie\+::\+IScreen}}.
+
+\mbox{\Hypertarget{classindie_1_1menu_1_1PreMenuScreen_ad815a439239bb13ee4298c6b85e6d5c7}\label{classindie_1_1menu_1_1PreMenuScreen_ad815a439239bb13ee4298c6b85e6d5c7}} 
+\index{indie::menu::PreMenuScreen@{indie::menu::PreMenuScreen}!check\_if\_players\_are\_ready@{check\_if\_players\_are\_ready}}
+\index{check\_if\_players\_are\_ready@{check\_if\_players\_are\_ready}!indie::menu::PreMenuScreen@{indie::menu::PreMenuScreen}}
+\doxysubsubsection{\texorpdfstring{check\_if\_players\_are\_ready()}{check\_if\_players\_are\_ready()}}
+{\footnotesize\ttfamily bool indie\+::menu\+::\+Pre\+Menu\+Screen\+::check\+\_\+if\+\_\+players\+\_\+are\+\_\+ready (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Check if all players are ready. 
+
+\begin{DoxyReturn}{Returns}
+true All players are ready 
+
+false 1 or more player is not ready 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classindie_1_1menu_1_1PreMenuScreen_a94a6c71394bd32f8b61a310b727d99f6}\label{classindie_1_1menu_1_1PreMenuScreen_a94a6c71394bd32f8b61a310b727d99f6}} 
+\index{indie::menu::PreMenuScreen@{indie::menu::PreMenuScreen}!draw@{draw}}
+\index{draw@{draw}!indie::menu::PreMenuScreen@{indie::menu::PreMenuScreen}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void indie\+::menu\+::\+Pre\+Menu\+Screen\+::draw (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Draw the Pre-\/\+Menu Screen. 
+
+
+
+Implements \mbox{\hyperlink{classindie_1_1IScreen_a50e467ab6b7efae4114a9c3f17fa8ef4}{indie\+::\+IScreen}}.
+
+\mbox{\Hypertarget{classindie_1_1menu_1_1PreMenuScreen_a5599dd2cc293f66968113db5af04efd1}\label{classindie_1_1menu_1_1PreMenuScreen_a5599dd2cc293f66968113db5af04efd1}} 
+\index{indie::menu::PreMenuScreen@{indie::menu::PreMenuScreen}!getIsGameReady@{getIsGameReady}}
+\index{getIsGameReady@{getIsGameReady}!indie::menu::PreMenuScreen@{indie::menu::PreMenuScreen}}
+\doxysubsubsection{\texorpdfstring{getIsGameReady()}{getIsGameReady()}}
+{\footnotesize\ttfamily bool indie\+::menu\+::\+Pre\+Menu\+Screen\+::get\+Is\+Game\+Ready (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Check if the game is ready or not. 
+
+\begin{DoxyReturn}{Returns}
+true The game is ready 
+
+false The game is not ready 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classindie_1_1menu_1_1PreMenuScreen_a6caf538dff807a4770a747af40cf64cd}\label{classindie_1_1menu_1_1PreMenuScreen_a6caf538dff807a4770a747af40cf64cd}} 
+\index{indie::menu::PreMenuScreen@{indie::menu::PreMenuScreen}!getNbPlayers@{getNbPlayers}}
+\index{getNbPlayers@{getNbPlayers}!indie::menu::PreMenuScreen@{indie::menu::PreMenuScreen}}
+\doxysubsubsection{\texorpdfstring{getNbPlayers()}{getNbPlayers()}}
+{\footnotesize\ttfamily int indie\+::menu\+::\+Pre\+Menu\+Screen\+::get\+Nb\+Players (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the Number of players. 
+
+\begin{DoxyReturn}{Returns}
+int The numer of players 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classindie_1_1menu_1_1PreMenuScreen_a51d7d35695b616aed950a0ad2cb363fd}\label{classindie_1_1menu_1_1PreMenuScreen_a51d7d35695b616aed950a0ad2cb363fd}} 
+\index{indie::menu::PreMenuScreen@{indie::menu::PreMenuScreen}!handleEvent@{handleEvent}}
+\index{handleEvent@{handleEvent}!indie::menu::PreMenuScreen@{indie::menu::PreMenuScreen}}
+\doxysubsubsection{\texorpdfstring{handleEvent()}{handleEvent()}}
+{\footnotesize\ttfamily int indie\+::menu\+::\+Pre\+Menu\+Screen\+::handle\+Event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structindie_1_1Event}{indie\+::\+Event}} \&}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Handle event for the Pre-\/\+Menu Screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & \mbox{\hyperlink{structindie_1_1Event}{Event}} to be handled \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int The scene number 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classindie_1_1IScreen_a715fc5be821e5ed1e66087cf4945234c}{indie\+::\+IScreen}}.
+
+\mbox{\Hypertarget{classindie_1_1menu_1_1PreMenuScreen_aa16c801c3b1e073cc427aab5c3bd8e81}\label{classindie_1_1menu_1_1PreMenuScreen_aa16c801c3b1e073cc427aab5c3bd8e81}} 
+\index{indie::menu::PreMenuScreen@{indie::menu::PreMenuScreen}!handlePlayer1@{handlePlayer1}}
+\index{handlePlayer1@{handlePlayer1}!indie::menu::PreMenuScreen@{indie::menu::PreMenuScreen}}
+\doxysubsubsection{\texorpdfstring{handlePlayer1()}{handlePlayer1()}}
+{\footnotesize\ttfamily void indie\+::menu\+::\+Pre\+Menu\+Screen\+::handle\+Player1 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structindie_1_1Event}{indie\+::\+Event}} \&}]{event }\end{DoxyParamCaption})}
+
+
+
+Handle \mbox{\hyperlink{structindie_1_1Event}{Event}} from player 1. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & \mbox{\hyperlink{structindie_1_1Event}{Event}} to be handled \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1menu_1_1PreMenuScreen_ae21872e71e86ad8ce698e607504fc203}\label{classindie_1_1menu_1_1PreMenuScreen_ae21872e71e86ad8ce698e607504fc203}} 
+\index{indie::menu::PreMenuScreen@{indie::menu::PreMenuScreen}!handlePlayer2@{handlePlayer2}}
+\index{handlePlayer2@{handlePlayer2}!indie::menu::PreMenuScreen@{indie::menu::PreMenuScreen}}
+\doxysubsubsection{\texorpdfstring{handlePlayer2()}{handlePlayer2()}}
+{\footnotesize\ttfamily void indie\+::menu\+::\+Pre\+Menu\+Screen\+::handle\+Player2 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structindie_1_1Event}{indie\+::\+Event}} \&}]{event }\end{DoxyParamCaption})}
+
+
+
+Handle \mbox{\hyperlink{structindie_1_1Event}{Event}} from player 2. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & \mbox{\hyperlink{structindie_1_1Event}{Event}} to be handled \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1menu_1_1PreMenuScreen_a12d219abf0315640a387d0f6e7c8164b}\label{classindie_1_1menu_1_1PreMenuScreen_a12d219abf0315640a387d0f6e7c8164b}} 
+\index{indie::menu::PreMenuScreen@{indie::menu::PreMenuScreen}!handlePlayer3@{handlePlayer3}}
+\index{handlePlayer3@{handlePlayer3}!indie::menu::PreMenuScreen@{indie::menu::PreMenuScreen}}
+\doxysubsubsection{\texorpdfstring{handlePlayer3()}{handlePlayer3()}}
+{\footnotesize\ttfamily void indie\+::menu\+::\+Pre\+Menu\+Screen\+::handle\+Player3 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structindie_1_1Event}{indie\+::\+Event}} \&}]{event }\end{DoxyParamCaption})}
+
+
+
+Handle \mbox{\hyperlink{structindie_1_1Event}{Event}} from player 3. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & \mbox{\hyperlink{structindie_1_1Event}{Event}} to be handled \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1menu_1_1PreMenuScreen_abbde47bc06fb50a258e5d74aa0b9c3cd}\label{classindie_1_1menu_1_1PreMenuScreen_abbde47bc06fb50a258e5d74aa0b9c3cd}} 
+\index{indie::menu::PreMenuScreen@{indie::menu::PreMenuScreen}!handlePlayer4@{handlePlayer4}}
+\index{handlePlayer4@{handlePlayer4}!indie::menu::PreMenuScreen@{indie::menu::PreMenuScreen}}
+\doxysubsubsection{\texorpdfstring{handlePlayer4()}{handlePlayer4()}}
+{\footnotesize\ttfamily void indie\+::menu\+::\+Pre\+Menu\+Screen\+::handle\+Player4 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structindie_1_1Event}{indie\+::\+Event}} \&}]{event }\end{DoxyParamCaption})}
+
+
+
+Handle \mbox{\hyperlink{structindie_1_1Event}{Event}} from player 4. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & \mbox{\hyperlink{structindie_1_1Event}{Event}} to be handled \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1menu_1_1PreMenuScreen_ae168653d373d8885dbadc8c63b6cc523}\label{classindie_1_1menu_1_1PreMenuScreen_ae168653d373d8885dbadc8c63b6cc523}} 
+\index{indie::menu::PreMenuScreen@{indie::menu::PreMenuScreen}!init@{init}}
+\index{init@{init}!indie::menu::PreMenuScreen@{indie::menu::PreMenuScreen}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void indie\+::menu\+::\+Pre\+Menu\+Screen\+::init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Init the Pre-\/\+Menu Screen. 
+
+
+
+Implements \mbox{\hyperlink{classindie_1_1IScreen_a8a94615d59b1a467347bf806b5c92f17}{indie\+::\+IScreen}}.
+
+\mbox{\Hypertarget{classindie_1_1menu_1_1PreMenuScreen_a1866d91cd461c0fbf5bcf22e1437167c}\label{classindie_1_1menu_1_1PreMenuScreen_a1866d91cd461c0fbf5bcf22e1437167c}} 
+\index{indie::menu::PreMenuScreen@{indie::menu::PreMenuScreen}!isPlayer2Playing@{isPlayer2Playing}}
+\index{isPlayer2Playing@{isPlayer2Playing}!indie::menu::PreMenuScreen@{indie::menu::PreMenuScreen}}
+\doxysubsubsection{\texorpdfstring{isPlayer2Playing()}{isPlayer2Playing()}}
+{\footnotesize\ttfamily bool indie\+::menu\+::\+Pre\+Menu\+Screen\+::is\+Player2\+Playing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Player2 is playing or not. 
+
+\begin{DoxyReturn}{Returns}
+true Player2 is playing 
+
+false Player2 is not playing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classindie_1_1menu_1_1PreMenuScreen_a20cf21a02a3eea9614d71530f9fa6b3e}\label{classindie_1_1menu_1_1PreMenuScreen_a20cf21a02a3eea9614d71530f9fa6b3e}} 
+\index{indie::menu::PreMenuScreen@{indie::menu::PreMenuScreen}!isPlayer3Playing@{isPlayer3Playing}}
+\index{isPlayer3Playing@{isPlayer3Playing}!indie::menu::PreMenuScreen@{indie::menu::PreMenuScreen}}
+\doxysubsubsection{\texorpdfstring{isPlayer3Playing()}{isPlayer3Playing()}}
+{\footnotesize\ttfamily bool indie\+::menu\+::\+Pre\+Menu\+Screen\+::is\+Player3\+Playing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Player3 is playing or not. 
+
+\begin{DoxyReturn}{Returns}
+true Player3 is playing 
+
+false Player3 is not playing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classindie_1_1menu_1_1PreMenuScreen_a64fea0bad49befc3d03a9e1f37b819c7}\label{classindie_1_1menu_1_1PreMenuScreen_a64fea0bad49befc3d03a9e1f37b819c7}} 
+\index{indie::menu::PreMenuScreen@{indie::menu::PreMenuScreen}!isPlayer4Playing@{isPlayer4Playing}}
+\index{isPlayer4Playing@{isPlayer4Playing}!indie::menu::PreMenuScreen@{indie::menu::PreMenuScreen}}
+\doxysubsubsection{\texorpdfstring{isPlayer4Playing()}{isPlayer4Playing()}}
+{\footnotesize\ttfamily bool indie\+::menu\+::\+Pre\+Menu\+Screen\+::is\+Player4\+Playing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Player4 is playing or not. 
+
+\begin{DoxyReturn}{Returns}
+true Player4 is playing 
+
+false Player4 is not playing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classindie_1_1menu_1_1PreMenuScreen_ab1fe8ae35ede07a59bd19b96ce39f9aa}\label{classindie_1_1menu_1_1PreMenuScreen_ab1fe8ae35ede07a59bd19b96ce39f9aa}} 
+\index{indie::menu::PreMenuScreen@{indie::menu::PreMenuScreen}!setIsGameReady@{setIsGameReady}}
+\index{setIsGameReady@{setIsGameReady}!indie::menu::PreMenuScreen@{indie::menu::PreMenuScreen}}
+\doxysubsubsection{\texorpdfstring{setIsGameReady()}{setIsGameReady()}}
+{\footnotesize\ttfamily void indie\+::menu\+::\+Pre\+Menu\+Screen\+::set\+Is\+Game\+Ready (\begin{DoxyParamCaption}\item[{bool}]{is\+\_\+game\+\_\+ready }\end{DoxyParamCaption})}
+
+
+
+Set the state of the game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em is\+\_\+game\+\_\+ready} & True for game ready and False for game not ready \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1menu_1_1PreMenuScreen_aa05faa1ca647be62e14dec778353974d}\label{classindie_1_1menu_1_1PreMenuScreen_aa05faa1ca647be62e14dec778353974d}} 
+\index{indie::menu::PreMenuScreen@{indie::menu::PreMenuScreen}!update@{update}}
+\index{update@{update}!indie::menu::PreMenuScreen@{indie::menu::PreMenuScreen}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void indie\+::menu\+::\+Pre\+Menu\+Screen\+::update (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Update the Pre-\/\+Menu Screen. 
+
+
+
+Implements \mbox{\hyperlink{classindie_1_1IScreen_aa8a7600f2869b54991b1ae551e8735c1}{indie\+::\+IScreen}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/screens/pre\+\_\+menu/\mbox{\hyperlink{PreMenuScreen_8hpp}{Pre\+Menu\+Screen.\+hpp}}\item 
+src/screens/pre\+\_\+menu/\mbox{\hyperlink{PreMenuScreen_8cpp}{Pre\+Menu\+Screen.\+cpp}}\end{DoxyCompactItemize}

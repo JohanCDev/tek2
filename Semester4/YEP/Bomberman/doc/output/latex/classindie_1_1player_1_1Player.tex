@@ -1,0 +1,386 @@
+\hypertarget{classindie_1_1player_1_1Player}{}\doxysection{indie\+::player\+::Player Class Reference}
+\label{classindie_1_1player_1_1Player}\index{indie::player::Player@{indie::player::Player}}
+
+
+\mbox{\hyperlink{classindie_1_1player_1_1Player}{Player}} class.  
+
+
+
+
+{\ttfamily \#include $<$Player.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classindie_1_1player_1_1Player_a4f7cb3ce491ba569699a59e68aaf71bb}{Player}} (Color color, short unsigned int controller\+Id, bool is\+Alive=true, bool is\+Playing=false, unsigned short bomb\+Radius=1, unsigned short bomb\+Stock=2, unsigned short max\+Bomb\+Stock=2, unsigned int speed=12)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classindie_1_1player_1_1Player}{Player}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classindie_1_1player_1_1Player_a8ba875ecdae8a2afdd2b700a38e7cca8}{Player}} (const \mbox{\hyperlink{classindie_1_1player_1_1Player}{Player}} \&player)=default
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classindie_1_1player_1_1Player}{Player}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classindie_1_1player_1_1Player}{Player}} \& \mbox{\hyperlink{classindie_1_1player_1_1Player_a421161bc4104ce4266e692a93eb0dac1}{operator=}} (const \mbox{\hyperlink{classindie_1_1player_1_1Player}{Player}} \&player)=default
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classindie_1_1player_1_1Player}{Player}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classindie_1_1player_1_1Player_a791591dee2dfe24090d5bb572c48f2ae}\label{classindie_1_1player_1_1Player_a791591dee2dfe24090d5bb572c48f2ae}} 
+{\bfseries $\sim$\+Player} ()=default
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classindie_1_1player_1_1Player}{Player}} object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classindie_1_1player_1_1Player_aa7bdd5fffab294d76475effbaff43b07}{get\+Is\+Alive}} () const
+\begin{DoxyCompactList}\small\item\em Get if the player is alive or not. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classindie_1_1player_1_1Player_a70bea0a6ae9f518a73ade9bb49924b5d}{get\+Is\+Playing}} () const
+\begin{DoxyCompactList}\small\item\em Get if the player is playing or not. \end{DoxyCompactList}\item 
+short unsigned int \mbox{\hyperlink{classindie_1_1player_1_1Player_aefae7e801cebee11a734ed3ef746b0a9}{get\+Controller\+Id}} () const
+\begin{DoxyCompactList}\small\item\em Get the Controller Id. \end{DoxyCompactList}\item 
+short unsigned int \mbox{\hyperlink{classindie_1_1player_1_1Player_aa8b96eaba9000a26bd0874ae752ce8e0}{get\+Speed}} () const
+\begin{DoxyCompactList}\small\item\em Get the speed of the player. \end{DoxyCompactList}\item 
+short unsigned int \mbox{\hyperlink{classindie_1_1player_1_1Player_ad09aaf52831a6f90992f8e39d07d5a39}{get\+Bomb\+Radius}} () const
+\begin{DoxyCompactList}\small\item\em Get the bomb radius of the player. \end{DoxyCompactList}\item 
+short unsigned int \mbox{\hyperlink{classindie_1_1player_1_1Player_afd6c556df9cb65241909e645c883a628}{get\+Bomb\+Stock}} () const
+\begin{DoxyCompactList}\small\item\em Get the bomb stock of the player. \end{DoxyCompactList}\item 
+short unsigned int \mbox{\hyperlink{classindie_1_1player_1_1Player_a15062436d6342046d7846068a21e8611}{get\+Max\+Bomb\+Stock}} () const
+\begin{DoxyCompactList}\small\item\em Get the max bomb stock of the player. \end{DoxyCompactList}\item 
+Color \mbox{\hyperlink{classindie_1_1player_1_1Player_a4ad89c8f19f5b3ecc66a20fb248b3848}{get\+Color}} () const
+\begin{DoxyCompactList}\small\item\em Get the Color. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1player_1_1Player_ada052ebd7d7ffdb3299672f6b8786d49}{set\+Is\+Alive}} (bool is\+Alive)
+\item 
+void \mbox{\hyperlink{classindie_1_1player_1_1Player_a21933aa375ebb86693f18932b302a968}{set\+Is\+Playing}} (bool is\+Playing)
+\begin{DoxyCompactList}\small\item\em Set player\textquotesingle{}s playing state. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1player_1_1Player_a57e502c857f02b6565b65b98879b663b}{set\+Controller\+Id}} (short unsigned int value)
+\item 
+void \mbox{\hyperlink{classindie_1_1player_1_1Player_a0e4d3278b1b64dcf85dffbb72b46bd73}{set\+Speed}} (short unsigned int value)
+\begin{DoxyCompactList}\small\item\em Set player\textquotesingle{}s speed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1player_1_1Player_ad9fe16fa25295bb19275d0a28c66b1ba}{change\+Speed}} (short int difference)
+\begin{DoxyCompactList}\small\item\em Change player\textquotesingle{}s speed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1player_1_1Player_a6501dfd7a1ca60cd1779c3588ccf93ac}{set\+Bomb\+Radius}} (short unsigned int value)
+\begin{DoxyCompactList}\small\item\em Set player\textquotesingle{}s bomb radius. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1player_1_1Player_ad4dcdc9efe76b1db102d7752ee7f2670}{set\+Bomb\+Stock}} (short unsigned int value)
+\begin{DoxyCompactList}\small\item\em Set player\textquotesingle{}s bomb stock. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1player_1_1Player_a5ac7f42e44e13d508e8a01488e604725}{set\+Max\+Bomb\+Stock}} (short unsigned int value)
+\begin{DoxyCompactList}\small\item\em Set player\textquotesingle{}s max bomb stock. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1player_1_1Player_a10e301173103d514447f7bb1ec5bb152}{set\+Color}} (Color color)
+\begin{DoxyCompactList}\small\item\em Set the Color. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1player_1_1Player_aa8b1ae2391c6c45db2f99f734636c2f4}{set\+Pos}} (\mbox{\hyperlink{Vec2_8hpp_aecf6af7b876e985cdfb875933855df31}{vec2u}} position)
+\begin{DoxyCompactList}\small\item\em Set player\textquotesingle{}s position. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classindie_1_1player_1_1Player}{Player}} class. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classindie_1_1player_1_1Player_a4f7cb3ce491ba569699a59e68aaf71bb}\label{classindie_1_1player_1_1Player_a4f7cb3ce491ba569699a59e68aaf71bb}} 
+\index{indie::player::Player@{indie::player::Player}!Player@{Player}}
+\index{Player@{Player}!indie::player::Player@{indie::player::Player}}
+\doxysubsubsection{\texorpdfstring{Player()}{Player()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily indie\+::player\+::\+Player\+::\+Player (\begin{DoxyParamCaption}\item[{Color}]{color,  }\item[{short unsigned int}]{controller\+Id,  }\item[{bool}]{is\+Alive = {\ttfamily true},  }\item[{bool}]{is\+Playing = {\ttfamily false},  }\item[{unsigned short}]{bomb\+Radius = {\ttfamily 1},  }\item[{unsigned short}]{bomb\+Stock = {\ttfamily 2},  }\item[{unsigned short}]{max\+Bomb\+Stock = {\ttfamily 2},  }\item[{unsigned int}]{speed = {\ttfamily 12} }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classindie_1_1player_1_1Player}{Player}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & \mbox{\hyperlink{classindie_1_1player_1_1Player}{Player}} color \\
+\hline
+{\em controller\+Id} & \mbox{\hyperlink{classindie_1_1player_1_1Player}{Player}} controller Id \\
+\hline
+{\em is\+Alive} & \mbox{\hyperlink{classindie_1_1player_1_1Player}{Player}} is alive or not \\
+\hline
+{\em is\+Playing} & \mbox{\hyperlink{classindie_1_1player_1_1Player}{Player}} is playing or not \\
+\hline
+{\em bomb\+Radius} & \mbox{\hyperlink{classindie_1_1player_1_1Player}{Player}}\textquotesingle{}s bomb radius \\
+\hline
+{\em bomb\+Stock} & \mbox{\hyperlink{classindie_1_1player_1_1Player}{Player}}\textquotesingle{}s bomb stock \\
+\hline
+{\em max\+Bomb\+Stock} & \mbox{\hyperlink{classindie_1_1player_1_1Player}{Player}}\textquotesingle{}s max bomb stock \\
+\hline
+{\em speed} & \mbox{\hyperlink{classindie_1_1player_1_1Player}{Player}}\textquotesingle{}s speed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1player_1_1Player_a8ba875ecdae8a2afdd2b700a38e7cca8}\label{classindie_1_1player_1_1Player_a8ba875ecdae8a2afdd2b700a38e7cca8}} 
+\index{indie::player::Player@{indie::player::Player}!Player@{Player}}
+\index{Player@{Player}!indie::player::Player@{indie::player::Player}}
+\doxysubsubsection{\texorpdfstring{Player()}{Player()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily indie\+::player\+::\+Player\+::\+Player (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classindie_1_1player_1_1Player}{Player}} \&}]{player }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Construct a new \mbox{\hyperlink{classindie_1_1player_1_1Player}{Player}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & to copy \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classindie_1_1player_1_1Player_ad9fe16fa25295bb19275d0a28c66b1ba}\label{classindie_1_1player_1_1Player_ad9fe16fa25295bb19275d0a28c66b1ba}} 
+\index{indie::player::Player@{indie::player::Player}!changeSpeed@{changeSpeed}}
+\index{changeSpeed@{changeSpeed}!indie::player::Player@{indie::player::Player}}
+\doxysubsubsection{\texorpdfstring{changeSpeed()}{changeSpeed()}}
+{\footnotesize\ttfamily void indie\+::player\+::\+Player\+::change\+Speed (\begin{DoxyParamCaption}\item[{short int}]{difference }\end{DoxyParamCaption})}
+
+
+
+Change player\textquotesingle{}s speed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em difference} & Speed value difference \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1player_1_1Player_ad09aaf52831a6f90992f8e39d07d5a39}\label{classindie_1_1player_1_1Player_ad09aaf52831a6f90992f8e39d07d5a39}} 
+\index{indie::player::Player@{indie::player::Player}!getBombRadius@{getBombRadius}}
+\index{getBombRadius@{getBombRadius}!indie::player::Player@{indie::player::Player}}
+\doxysubsubsection{\texorpdfstring{getBombRadius()}{getBombRadius()}}
+{\footnotesize\ttfamily short unsigned int indie\+::player\+::\+Player\+::get\+Bomb\+Radius (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the bomb radius of the player. 
+
+\begin{DoxyReturn}{Returns}
+int \mbox{\hyperlink{classindie_1_1player_1_1Player}{Player}}\textquotesingle{}s bomb radius 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classindie_1_1player_1_1Player_afd6c556df9cb65241909e645c883a628}\label{classindie_1_1player_1_1Player_afd6c556df9cb65241909e645c883a628}} 
+\index{indie::player::Player@{indie::player::Player}!getBombStock@{getBombStock}}
+\index{getBombStock@{getBombStock}!indie::player::Player@{indie::player::Player}}
+\doxysubsubsection{\texorpdfstring{getBombStock()}{getBombStock()}}
+{\footnotesize\ttfamily short unsigned int indie\+::player\+::\+Player\+::get\+Bomb\+Stock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the bomb stock of the player. 
+
+\begin{DoxyReturn}{Returns}
+int \mbox{\hyperlink{classindie_1_1player_1_1Player}{Player}}\textquotesingle{}s bomb stock 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classindie_1_1player_1_1Player_a4ad89c8f19f5b3ecc66a20fb248b3848}\label{classindie_1_1player_1_1Player_a4ad89c8f19f5b3ecc66a20fb248b3848}} 
+\index{indie::player::Player@{indie::player::Player}!getColor@{getColor}}
+\index{getColor@{getColor}!indie::player::Player@{indie::player::Player}}
+\doxysubsubsection{\texorpdfstring{getColor()}{getColor()}}
+{\footnotesize\ttfamily Color indie\+::player\+::\+Player\+::get\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the Color. 
+
+\begin{DoxyReturn}{Returns}
+Color Color object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classindie_1_1player_1_1Player_aefae7e801cebee11a734ed3ef746b0a9}\label{classindie_1_1player_1_1Player_aefae7e801cebee11a734ed3ef746b0a9}} 
+\index{indie::player::Player@{indie::player::Player}!getControllerId@{getControllerId}}
+\index{getControllerId@{getControllerId}!indie::player::Player@{indie::player::Player}}
+\doxysubsubsection{\texorpdfstring{getControllerId()}{getControllerId()}}
+{\footnotesize\ttfamily short unsigned int indie\+::player\+::\+Player\+::get\+Controller\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the Controller Id. 
+
+\begin{DoxyReturn}{Returns}
+short unsigned int Controller Id 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classindie_1_1player_1_1Player_aa7bdd5fffab294d76475effbaff43b07}\label{classindie_1_1player_1_1Player_aa7bdd5fffab294d76475effbaff43b07}} 
+\index{indie::player::Player@{indie::player::Player}!getIsAlive@{getIsAlive}}
+\index{getIsAlive@{getIsAlive}!indie::player::Player@{indie::player::Player}}
+\doxysubsubsection{\texorpdfstring{getIsAlive()}{getIsAlive()}}
+{\footnotesize\ttfamily bool indie\+::player\+::\+Player\+::get\+Is\+Alive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get if the player is alive or not. 
+
+\begin{DoxyReturn}{Returns}
+true \mbox{\hyperlink{classindie_1_1player_1_1Player}{Player}} is alive 
+
+false \mbox{\hyperlink{classindie_1_1player_1_1Player}{Player}} is not alive 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classindie_1_1player_1_1Player_a70bea0a6ae9f518a73ade9bb49924b5d}\label{classindie_1_1player_1_1Player_a70bea0a6ae9f518a73ade9bb49924b5d}} 
+\index{indie::player::Player@{indie::player::Player}!getIsPlaying@{getIsPlaying}}
+\index{getIsPlaying@{getIsPlaying}!indie::player::Player@{indie::player::Player}}
+\doxysubsubsection{\texorpdfstring{getIsPlaying()}{getIsPlaying()}}
+{\footnotesize\ttfamily bool indie\+::player\+::\+Player\+::get\+Is\+Playing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get if the player is playing or not. 
+
+\begin{DoxyReturn}{Returns}
+true \mbox{\hyperlink{classindie_1_1player_1_1Player}{Player}} is playing 
+
+false \mbox{\hyperlink{classindie_1_1player_1_1Player}{Player}} is not playing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classindie_1_1player_1_1Player_a15062436d6342046d7846068a21e8611}\label{classindie_1_1player_1_1Player_a15062436d6342046d7846068a21e8611}} 
+\index{indie::player::Player@{indie::player::Player}!getMaxBombStock@{getMaxBombStock}}
+\index{getMaxBombStock@{getMaxBombStock}!indie::player::Player@{indie::player::Player}}
+\doxysubsubsection{\texorpdfstring{getMaxBombStock()}{getMaxBombStock()}}
+{\footnotesize\ttfamily short unsigned int indie\+::player\+::\+Player\+::get\+Max\+Bomb\+Stock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the max bomb stock of the player. 
+
+\begin{DoxyReturn}{Returns}
+int \mbox{\hyperlink{classindie_1_1player_1_1Player}{Player}}\textquotesingle{}s max bomb stock 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classindie_1_1player_1_1Player_aa8b96eaba9000a26bd0874ae752ce8e0}\label{classindie_1_1player_1_1Player_aa8b96eaba9000a26bd0874ae752ce8e0}} 
+\index{indie::player::Player@{indie::player::Player}!getSpeed@{getSpeed}}
+\index{getSpeed@{getSpeed}!indie::player::Player@{indie::player::Player}}
+\doxysubsubsection{\texorpdfstring{getSpeed()}{getSpeed()}}
+{\footnotesize\ttfamily short unsigned int indie\+::player\+::\+Player\+::get\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the speed of the player. 
+
+\begin{DoxyReturn}{Returns}
+int \mbox{\hyperlink{classindie_1_1player_1_1Player}{Player}}\textquotesingle{}s speed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classindie_1_1player_1_1Player_a421161bc4104ce4266e692a93eb0dac1}\label{classindie_1_1player_1_1Player_a421161bc4104ce4266e692a93eb0dac1}} 
+\index{indie::player::Player@{indie::player::Player}!operator=@{operator=}}
+\index{operator=@{operator=}!indie::player::Player@{indie::player::Player}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classindie_1_1player_1_1Player}{Player}} \& indie\+::player\+::\+Player\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classindie_1_1player_1_1Player}{Player}} \&}]{player }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Construct a new \mbox{\hyperlink{classindie_1_1player_1_1Player}{Player}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & with which it will be initialized \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classindie_1_1player_1_1Player}{Player}} \mbox{\hyperlink{classindie_1_1player_1_1Player}{Player}} object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classindie_1_1player_1_1Player_a6501dfd7a1ca60cd1779c3588ccf93ac}\label{classindie_1_1player_1_1Player_a6501dfd7a1ca60cd1779c3588ccf93ac}} 
+\index{indie::player::Player@{indie::player::Player}!setBombRadius@{setBombRadius}}
+\index{setBombRadius@{setBombRadius}!indie::player::Player@{indie::player::Player}}
+\doxysubsubsection{\texorpdfstring{setBombRadius()}{setBombRadius()}}
+{\footnotesize\ttfamily void indie\+::player\+::\+Player\+::set\+Bomb\+Radius (\begin{DoxyParamCaption}\item[{short unsigned int}]{value }\end{DoxyParamCaption})}
+
+
+
+Set player\textquotesingle{}s bomb radius. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & Bomb radius value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1player_1_1Player_ad4dcdc9efe76b1db102d7752ee7f2670}\label{classindie_1_1player_1_1Player_ad4dcdc9efe76b1db102d7752ee7f2670}} 
+\index{indie::player::Player@{indie::player::Player}!setBombStock@{setBombStock}}
+\index{setBombStock@{setBombStock}!indie::player::Player@{indie::player::Player}}
+\doxysubsubsection{\texorpdfstring{setBombStock()}{setBombStock()}}
+{\footnotesize\ttfamily void indie\+::player\+::\+Player\+::set\+Bomb\+Stock (\begin{DoxyParamCaption}\item[{short unsigned int}]{value }\end{DoxyParamCaption})}
+
+
+
+Set player\textquotesingle{}s bomb stock. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & Bomb stock value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1player_1_1Player_a10e301173103d514447f7bb1ec5bb152}\label{classindie_1_1player_1_1Player_a10e301173103d514447f7bb1ec5bb152}} 
+\index{indie::player::Player@{indie::player::Player}!setColor@{setColor}}
+\index{setColor@{setColor}!indie::player::Player@{indie::player::Player}}
+\doxysubsubsection{\texorpdfstring{setColor()}{setColor()}}
+{\footnotesize\ttfamily void indie\+::player\+::\+Player\+::set\+Color (\begin{DoxyParamCaption}\item[{Color}]{color }\end{DoxyParamCaption})}
+
+
+
+Set the Color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & New color \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1player_1_1Player_a57e502c857f02b6565b65b98879b663b}\label{classindie_1_1player_1_1Player_a57e502c857f02b6565b65b98879b663b}} 
+\index{indie::player::Player@{indie::player::Player}!setControllerId@{setControllerId}}
+\index{setControllerId@{setControllerId}!indie::player::Player@{indie::player::Player}}
+\doxysubsubsection{\texorpdfstring{setControllerId()}{setControllerId()}}
+{\footnotesize\ttfamily void indie\+::player\+::\+Player\+::set\+Controller\+Id (\begin{DoxyParamCaption}\item[{short unsigned int}]{value }\end{DoxyParamCaption})}
+
+Set the controller\+Id linked to the player. 
+\begin{DoxyParams}{Parameters}
+{\em value} & new value. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1player_1_1Player_ada052ebd7d7ffdb3299672f6b8786d49}\label{classindie_1_1player_1_1Player_ada052ebd7d7ffdb3299672f6b8786d49}} 
+\index{indie::player::Player@{indie::player::Player}!setIsAlive@{setIsAlive}}
+\index{setIsAlive@{setIsAlive}!indie::player::Player@{indie::player::Player}}
+\doxysubsubsection{\texorpdfstring{setIsAlive()}{setIsAlive()}}
+{\footnotesize\ttfamily void indie\+::player\+::\+Player\+::set\+Is\+Alive (\begin{DoxyParamCaption}\item[{bool}]{is\+Alive }\end{DoxyParamCaption})}
+
+Set if the player is alive or not. 
+\begin{DoxyParams}{Parameters}
+{\em is\+Alive} & new value. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1player_1_1Player_a21933aa375ebb86693f18932b302a968}\label{classindie_1_1player_1_1Player_a21933aa375ebb86693f18932b302a968}} 
+\index{indie::player::Player@{indie::player::Player}!setIsPlaying@{setIsPlaying}}
+\index{setIsPlaying@{setIsPlaying}!indie::player::Player@{indie::player::Player}}
+\doxysubsubsection{\texorpdfstring{setIsPlaying()}{setIsPlaying()}}
+{\footnotesize\ttfamily void indie\+::player\+::\+Player\+::set\+Is\+Playing (\begin{DoxyParamCaption}\item[{bool}]{is\+Playing }\end{DoxyParamCaption})}
+
+
+
+Set player\textquotesingle{}s playing state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em is\+Playing} & \mbox{\hyperlink{classindie_1_1player_1_1Player}{Player}}\textquotesingle{}s state \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1player_1_1Player_a5ac7f42e44e13d508e8a01488e604725}\label{classindie_1_1player_1_1Player_a5ac7f42e44e13d508e8a01488e604725}} 
+\index{indie::player::Player@{indie::player::Player}!setMaxBombStock@{setMaxBombStock}}
+\index{setMaxBombStock@{setMaxBombStock}!indie::player::Player@{indie::player::Player}}
+\doxysubsubsection{\texorpdfstring{setMaxBombStock()}{setMaxBombStock()}}
+{\footnotesize\ttfamily void indie\+::player\+::\+Player\+::set\+Max\+Bomb\+Stock (\begin{DoxyParamCaption}\item[{short unsigned int}]{value }\end{DoxyParamCaption})}
+
+
+
+Set player\textquotesingle{}s max bomb stock. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & Max bomb stock value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1player_1_1Player_aa8b1ae2391c6c45db2f99f734636c2f4}\label{classindie_1_1player_1_1Player_aa8b1ae2391c6c45db2f99f734636c2f4}} 
+\index{indie::player::Player@{indie::player::Player}!setPos@{setPos}}
+\index{setPos@{setPos}!indie::player::Player@{indie::player::Player}}
+\doxysubsubsection{\texorpdfstring{setPos()}{setPos()}}
+{\footnotesize\ttfamily void indie\+::player\+::\+Player\+::set\+Pos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Vec2_8hpp_aecf6af7b876e985cdfb875933855df31}{vec2u}}}]{position }\end{DoxyParamCaption})}
+
+
+
+Set player\textquotesingle{}s position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & \mbox{\hyperlink{classindie_1_1player_1_1Player}{Player}}\textquotesingle{}s position \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1player_1_1Player_a0e4d3278b1b64dcf85dffbb72b46bd73}\label{classindie_1_1player_1_1Player_a0e4d3278b1b64dcf85dffbb72b46bd73}} 
+\index{indie::player::Player@{indie::player::Player}!setSpeed@{setSpeed}}
+\index{setSpeed@{setSpeed}!indie::player::Player@{indie::player::Player}}
+\doxysubsubsection{\texorpdfstring{setSpeed()}{setSpeed()}}
+{\footnotesize\ttfamily void indie\+::player\+::\+Player\+::set\+Speed (\begin{DoxyParamCaption}\item[{short unsigned int}]{value }\end{DoxyParamCaption})}
+
+
+
+Set player\textquotesingle{}s speed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & Speed value \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/player/\mbox{\hyperlink{Player_8hpp}{Player.\+hpp}}\item 
+src/player/\mbox{\hyperlink{Player_8cpp}{Player.\+cpp}}\end{DoxyCompactItemize}

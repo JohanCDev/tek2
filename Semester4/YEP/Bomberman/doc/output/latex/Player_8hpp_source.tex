@@ -1,0 +1,62 @@
+\hypertarget{Player_8hpp_source}{}\doxysection{Player.\+hpp}
+\label{Player_8hpp_source}\index{src/player/Player.hpp@{src/player/Player.hpp}}
+\mbox{\hyperlink{Player_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#ifndef PLAYER\_HPP\_}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#define PLAYER\_HPP\_}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{Vec2_8hpp}{Vec2.hpp}}"{}}}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#include <raylib.h>}}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19 \textcolor{keyword}{namespace }indie}
+\DoxyCodeLine{20 \{}
+\DoxyCodeLine{21     \textcolor{keyword}{namespace }player}
+\DoxyCodeLine{22     \{}
+\DoxyCodeLine{24         \textcolor{keyword}{class }\mbox{\hyperlink{classindie_1_1player_1_1Player}{Player}} \{}
+\DoxyCodeLine{25           \textcolor{keyword}{public}:}
+\DoxyCodeLine{38             \mbox{\hyperlink{classindie_1_1player_1_1Player_a4f7cb3ce491ba569699a59e68aaf71bb}{Player}}(Color color, \textcolor{keywordtype}{short} \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} controllerId, \textcolor{keywordtype}{bool} isAlive = \textcolor{keyword}{true}, \textcolor{keywordtype}{bool} isPlaying = \textcolor{keyword}{false},}
+\DoxyCodeLine{39                 \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{short} bombRadius = 1, \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{short} bombStock = 2, \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{short} maxBombStock = 2,}
+\DoxyCodeLine{40                 \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} speed = 12);}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{44             \mbox{\hyperlink{classindie_1_1player_1_1Player_a8ba875ecdae8a2afdd2b700a38e7cca8}{Player}}(\textcolor{keyword}{const} \mbox{\hyperlink{classindie_1_1player_1_1Player}{Player}} \&player) = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{49             \mbox{\hyperlink{classindie_1_1player_1_1Player}{Player}} \&\mbox{\hyperlink{classindie_1_1player_1_1Player_a421161bc4104ce4266e692a93eb0dac1}{operator=}}(\textcolor{keyword}{const} \mbox{\hyperlink{classindie_1_1player_1_1Player}{Player}} \&player) = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{52             \mbox{\hyperlink{classindie_1_1player_1_1Player_a791591dee2dfe24090d5bb572c48f2ae}{\string~Player}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{59             \textcolor{keywordtype}{bool} \mbox{\hyperlink{classindie_1_1player_1_1Player_aa7bdd5fffab294d76475effbaff43b07}{getIsAlive}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{66             \textcolor{keywordtype}{bool} \mbox{\hyperlink{classindie_1_1player_1_1Player_a70bea0a6ae9f518a73ade9bb49924b5d}{getIsPlaying}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{72             \textcolor{keywordtype}{short} \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} \mbox{\hyperlink{classindie_1_1player_1_1Player_aefae7e801cebee11a734ed3ef746b0a9}{getControllerId}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{78             \textcolor{keywordtype}{short} \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} \mbox{\hyperlink{classindie_1_1player_1_1Player_aa8b96eaba9000a26bd0874ae752ce8e0}{getSpeed}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{84             \textcolor{keywordtype}{short} \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} \mbox{\hyperlink{classindie_1_1player_1_1Player_ad09aaf52831a6f90992f8e39d07d5a39}{getBombRadius}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{90             \textcolor{keywordtype}{short} \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} \mbox{\hyperlink{classindie_1_1player_1_1Player_afd6c556df9cb65241909e645c883a628}{getBombStock}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{96             \textcolor{keywordtype}{short} \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} \mbox{\hyperlink{classindie_1_1player_1_1Player_a15062436d6342046d7846068a21e8611}{getMaxBombStock}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{102             Color \mbox{\hyperlink{classindie_1_1player_1_1Player_a4ad89c8f19f5b3ecc66a20fb248b3848}{getColor}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{105             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1player_1_1Player_ada052ebd7d7ffdb3299672f6b8786d49}{setIsAlive}}(\textcolor{keywordtype}{bool} isAlive);}
+\DoxyCodeLine{111             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1player_1_1Player_a21933aa375ebb86693f18932b302a968}{setIsPlaying}}(\textcolor{keywordtype}{bool} isPlaying);}
+\DoxyCodeLine{114             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1player_1_1Player_a57e502c857f02b6565b65b98879b663b}{setControllerId}}(\textcolor{keywordtype}{short} \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} value);}
+\DoxyCodeLine{120             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1player_1_1Player_a0e4d3278b1b64dcf85dffbb72b46bd73}{setSpeed}}(\textcolor{keywordtype}{short} \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} value);}
+\DoxyCodeLine{126             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1player_1_1Player_ad9fe16fa25295bb19275d0a28c66b1ba}{changeSpeed}}(\textcolor{keywordtype}{short} \textcolor{keywordtype}{int} difference);}
+\DoxyCodeLine{132             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1player_1_1Player_a6501dfd7a1ca60cd1779c3588ccf93ac}{setBombRadius}}(\textcolor{keywordtype}{short} \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} value);}
+\DoxyCodeLine{138             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1player_1_1Player_ad4dcdc9efe76b1db102d7752ee7f2670}{setBombStock}}(\textcolor{keywordtype}{short} \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} value);}
+\DoxyCodeLine{144             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1player_1_1Player_a5ac7f42e44e13d508e8a01488e604725}{setMaxBombStock}}(\textcolor{keywordtype}{short} \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} value);}
+\DoxyCodeLine{150             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1player_1_1Player_a10e301173103d514447f7bb1ec5bb152}{setColor}}(Color color);}
+\DoxyCodeLine{156             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1player_1_1Player_aa8b1ae2391c6c45db2f99f734636c2f4}{setPos}}(\mbox{\hyperlink{structindie_1_1vec2}{vec2u}} position);}
+\DoxyCodeLine{157 }
+\DoxyCodeLine{158           \textcolor{keyword}{private}:}
+\DoxyCodeLine{160             \textcolor{keywordtype}{bool} \_isAlive;}
+\DoxyCodeLine{162             \textcolor{keywordtype}{bool} \_isPlaying;}
+\DoxyCodeLine{164             \textcolor{keywordtype}{short} \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} \_controllerId;}
+\DoxyCodeLine{166             \textcolor{keywordtype}{short} \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} \_bombStock;}
+\DoxyCodeLine{168             \textcolor{keywordtype}{short} \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} \_maxBombStock;}
+\DoxyCodeLine{170             \textcolor{keywordtype}{short} \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} \_speed;}
+\DoxyCodeLine{172             \textcolor{keywordtype}{short} \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} \_bombRadius;}
+\DoxyCodeLine{174             Color \_color;}
+\DoxyCodeLine{175         \};}
+\DoxyCodeLine{176     \} \textcolor{comment}{// namespace player}}
+\DoxyCodeLine{177 \} \textcolor{comment}{// namespace indie}}
+\DoxyCodeLine{178 }
+\DoxyCodeLine{179 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* !PLAYER\_HPP\_ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

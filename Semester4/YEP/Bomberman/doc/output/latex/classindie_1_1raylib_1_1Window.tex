@@ -1,0 +1,219 @@
+\hypertarget{classindie_1_1raylib_1_1Window}{}\doxysection{indie\+::raylib\+::Window Class Reference}
+\label{classindie_1_1raylib_1_1Window}\index{indie::raylib::Window@{indie::raylib::Window}}
+
+
+\mbox{\hyperlink{classindie_1_1raylib_1_1Window}{Window}} class encapsulation.  
+
+
+
+
+{\ttfamily \#include $<$Window.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classindie_1_1raylib_1_1Window_a500a67121d8da2751fc120deec113d6d}{Window}} (\mbox{\hyperlink{classindie_1_1raylib_1_1Window}{Window}} \&other)=delete
+\begin{DoxyCompactList}\small\item\em Windows should not be clonable. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1raylib_1_1Window_a526068291697dfa56ee72e9f953b93b6}{operator=}} (const \mbox{\hyperlink{classindie_1_1raylib_1_1Window}{Window}} \&other)=delete
+\begin{DoxyCompactList}\small\item\em Windows should not be assignable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classindie_1_1raylib_1_1Window}{Window}} $\ast$ \mbox{\hyperlink{classindie_1_1raylib_1_1Window_a910cf9cafd94aadd9745da60ca0be576}{get\+Instance}} (int width, int height, const std\+::string title, bool resizable, int base\+Fps)
+\begin{DoxyCompactList}\small\item\em Method that controls the access to the singleton \mbox{\hyperlink{classindie_1_1raylib_1_1Window}{Window}} instance. On the first run it creates a \mbox{\hyperlink{classindie_1_1raylib_1_1Window}{Window}}, otherwise it returns the existing \mbox{\hyperlink{classindie_1_1raylib_1_1Window}{Window}}. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classindie_1_1raylib_1_1Window_a802c705fef144a049d8b501b793943cf}{get\+FPS}} (void)
+\begin{DoxyCompactList}\small\item\em Get current FPS. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classindie_1_1raylib_1_1Window_a7781f395ea02da44026e96b1723974e4}{set\+Target\+FPS}} (int fps)
+\begin{DoxyCompactList}\small\item\em Set target FPS (maximum) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Window_ada8a1f81f0eb3312b41b7e871a3d30a7}\label{classindie_1_1raylib_1_1Window_ada8a1f81f0eb3312b41b7e871a3d30a7}} 
+static void {\bfseries destroy\+Window} ()
+\begin{DoxyCompactList}\small\item\em Close window and unload Open\+GL context. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classindie_1_1raylib_1_1Window_a37c20c4dafe36ec2910f8e3c13c9828d}{get\+Width}} ()
+\begin{DoxyCompactList}\small\item\em Get current window width. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classindie_1_1raylib_1_1Window_a8031a182ec52efb76079fefcf82e1842}{get\+Height}} ()
+\begin{DoxyCompactList}\small\item\em Get current window height. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Window_aa6ce22a29582a6c4b27050f2fd66c224}\label{classindie_1_1raylib_1_1Window_aa6ce22a29582a6c4b27050f2fd66c224}} 
+static void {\bfseries begin\+Drawing} ()
+\begin{DoxyCompactList}\small\item\em Setup canvas (framebuffer) to start drawing. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Window_a4e1e5b35b4f1423bf5a7cc58add8a563}\label{classindie_1_1raylib_1_1Window_a4e1e5b35b4f1423bf5a7cc58add8a563}} 
+static void {\bfseries end\+Drawing} ()
+\begin{DoxyCompactList}\small\item\em End canvas drawing and swap buffers (double buffering) \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classindie_1_1raylib_1_1Window_a364fe725b2e6a305a9fb55412afd2d93}{clear\+Background}} (Color color)
+\begin{DoxyCompactList}\small\item\em Set background color (framebuffer clear color) \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classindie_1_1raylib_1_1Window_a7c9f3902d2da96b61c4a8d9d3259235b}{window\+Should\+Close}} ()
+\begin{DoxyCompactList}\small\item\em Check if KEY\+\_\+\+ESCAPE pressed or Close icon pressed. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Window_a2e52ad557e4ded26d02f2ee43f249358}\label{classindie_1_1raylib_1_1Window_a2e52ad557e4ded26d02f2ee43f249358}} 
+static void {\bfseries toggle\+Full\+Screen} ()
+\begin{DoxyCompactList}\small\item\em Toggle window state\+: fullscreen/windowed (only PLATFORM\+\_\+\+DESKTOP) \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classindie_1_1raylib_1_1Window_aeeec36dcced44911607793a0a50edc3d}{is\+Window\+Resized}} (void)
+\begin{DoxyCompactList}\small\item\em Is the window resized? \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classindie_1_1raylib_1_1Window}{Window}} class encapsulation. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Window_a500a67121d8da2751fc120deec113d6d}\label{classindie_1_1raylib_1_1Window_a500a67121d8da2751fc120deec113d6d}} 
+\index{indie::raylib::Window@{indie::raylib::Window}!Window@{Window}}
+\index{Window@{Window}!indie::raylib::Window@{indie::raylib::Window}}
+\doxysubsubsection{\texorpdfstring{Window()}{Window()}}
+{\footnotesize\ttfamily indie\+::raylib\+::\+Window\+::\+Window (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classindie_1_1raylib_1_1Window}{Window}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Windows should not be clonable. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & \mbox{\hyperlink{classindie_1_1raylib_1_1Window}{Window}} object \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Window_a364fe725b2e6a305a9fb55412afd2d93}\label{classindie_1_1raylib_1_1Window_a364fe725b2e6a305a9fb55412afd2d93}} 
+\index{indie::raylib::Window@{indie::raylib::Window}!clearBackground@{clearBackground}}
+\index{clearBackground@{clearBackground}!indie::raylib::Window@{indie::raylib::Window}}
+\doxysubsubsection{\texorpdfstring{clearBackground()}{clearBackground()}}
+{\footnotesize\ttfamily void indie\+::raylib\+::\+Window\+::clear\+Background (\begin{DoxyParamCaption}\item[{Color}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Set background color (framebuffer clear color) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & Background color \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Window_a802c705fef144a049d8b501b793943cf}\label{classindie_1_1raylib_1_1Window_a802c705fef144a049d8b501b793943cf}} 
+\index{indie::raylib::Window@{indie::raylib::Window}!getFPS@{getFPS}}
+\index{getFPS@{getFPS}!indie::raylib::Window@{indie::raylib::Window}}
+\doxysubsubsection{\texorpdfstring{getFPS()}{getFPS()}}
+{\footnotesize\ttfamily int indie\+::raylib\+::\+Window\+::get\+FPS (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get current FPS. 
+
+\begin{DoxyReturn}{Returns}
+int \mbox{\hyperlink{classindie_1_1raylib_1_1Window}{Window}} FPS 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Window_a8031a182ec52efb76079fefcf82e1842}\label{classindie_1_1raylib_1_1Window_a8031a182ec52efb76079fefcf82e1842}} 
+\index{indie::raylib::Window@{indie::raylib::Window}!getHeight@{getHeight}}
+\index{getHeight@{getHeight}!indie::raylib::Window@{indie::raylib::Window}}
+\doxysubsubsection{\texorpdfstring{getHeight()}{getHeight()}}
+{\footnotesize\ttfamily int indie\+::raylib\+::\+Window\+::get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get current window height. 
+
+\begin{DoxyReturn}{Returns}
+int \mbox{\hyperlink{classindie_1_1raylib_1_1Window}{Window}} height 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Window_a910cf9cafd94aadd9745da60ca0be576}\label{classindie_1_1raylib_1_1Window_a910cf9cafd94aadd9745da60ca0be576}} 
+\index{indie::raylib::Window@{indie::raylib::Window}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!indie::raylib::Window@{indie::raylib::Window}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classindie_1_1raylib_1_1Window}{indie\+::raylib\+::\+Window}} $\ast$ indie\+::raylib\+::\+Window\+::get\+Instance (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height,  }\item[{const std\+::string}]{title,  }\item[{bool}]{resizable,  }\item[{int}]{base\+Fps }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Method that controls the access to the singleton \mbox{\hyperlink{classindie_1_1raylib_1_1Window}{Window}} instance. On the first run it creates a \mbox{\hyperlink{classindie_1_1raylib_1_1Window}{Window}}, otherwise it returns the existing \mbox{\hyperlink{classindie_1_1raylib_1_1Window}{Window}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & \mbox{\hyperlink{classindie_1_1raylib_1_1Window}{Window}} width \\
+\hline
+{\em height} & \mbox{\hyperlink{classindie_1_1raylib_1_1Window}{Window}} height \\
+\hline
+{\em title} & \mbox{\hyperlink{classindie_1_1raylib_1_1Window}{Window}} title \\
+\hline
+{\em resizable} & Is window resizable ? \\
+\hline
+{\em base\+Fps} & \mbox{\hyperlink{classindie_1_1raylib_1_1Window}{Window}} base FPS\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Window$\ast$ \mbox{\hyperlink{classindie_1_1raylib_1_1Window}{Window}} pointer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Window_a37c20c4dafe36ec2910f8e3c13c9828d}\label{classindie_1_1raylib_1_1Window_a37c20c4dafe36ec2910f8e3c13c9828d}} 
+\index{indie::raylib::Window@{indie::raylib::Window}!getWidth@{getWidth}}
+\index{getWidth@{getWidth}!indie::raylib::Window@{indie::raylib::Window}}
+\doxysubsubsection{\texorpdfstring{getWidth()}{getWidth()}}
+{\footnotesize\ttfamily int indie\+::raylib\+::\+Window\+::get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get current window width. 
+
+\begin{DoxyReturn}{Returns}
+int \mbox{\hyperlink{classindie_1_1raylib_1_1Window}{Window}} width 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Window_aeeec36dcced44911607793a0a50edc3d}\label{classindie_1_1raylib_1_1Window_aeeec36dcced44911607793a0a50edc3d}} 
+\index{indie::raylib::Window@{indie::raylib::Window}!isWindowResized@{isWindowResized}}
+\index{isWindowResized@{isWindowResized}!indie::raylib::Window@{indie::raylib::Window}}
+\doxysubsubsection{\texorpdfstring{isWindowResized()}{isWindowResized()}}
+{\footnotesize\ttfamily bool indie\+::raylib\+::\+Window\+::is\+Window\+Resized (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Is the window resized? 
+
+\begin{DoxyReturn}{Returns}
+true The window has been resized 
+
+false The window hasn\textquotesingle{}t been resized 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Window_a526068291697dfa56ee72e9f953b93b6}\label{classindie_1_1raylib_1_1Window_a526068291697dfa56ee72e9f953b93b6}} 
+\index{indie::raylib::Window@{indie::raylib::Window}!operator=@{operator=}}
+\index{operator=@{operator=}!indie::raylib::Window@{indie::raylib::Window}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily void indie\+::raylib\+::\+Window\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classindie_1_1raylib_1_1Window}{Window}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Windows should not be assignable. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & \mbox{\hyperlink{classindie_1_1raylib_1_1Window}{Window}} object \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Window_a7781f395ea02da44026e96b1723974e4}\label{classindie_1_1raylib_1_1Window_a7781f395ea02da44026e96b1723974e4}} 
+\index{indie::raylib::Window@{indie::raylib::Window}!setTargetFPS@{setTargetFPS}}
+\index{setTargetFPS@{setTargetFPS}!indie::raylib::Window@{indie::raylib::Window}}
+\doxysubsubsection{\texorpdfstring{setTargetFPS()}{setTargetFPS()}}
+{\footnotesize\ttfamily void indie\+::raylib\+::\+Window\+::set\+Target\+FPS (\begin{DoxyParamCaption}\item[{int}]{fps }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Set target FPS (maximum) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fps} & Number of fps \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Window_a7c9f3902d2da96b61c4a8d9d3259235b}\label{classindie_1_1raylib_1_1Window_a7c9f3902d2da96b61c4a8d9d3259235b}} 
+\index{indie::raylib::Window@{indie::raylib::Window}!windowShouldClose@{windowShouldClose}}
+\index{windowShouldClose@{windowShouldClose}!indie::raylib::Window@{indie::raylib::Window}}
+\doxysubsubsection{\texorpdfstring{windowShouldClose()}{windowShouldClose()}}
+{\footnotesize\ttfamily bool indie\+::raylib\+::\+Window\+::window\+Should\+Close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Check if KEY\+\_\+\+ESCAPE pressed or Close icon pressed. 
+
+\begin{DoxyReturn}{Returns}
+true The window should close (ESC pressed) 
+
+false The window shouldn\textquotesingle{}t close (ESC not pressed) 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/raylib/window/\mbox{\hyperlink{Window_8hpp}{Window.\+hpp}}\item 
+src/raylib/window/\mbox{\hyperlink{Window_8cpp}{Window.\+cpp}}\end{DoxyCompactItemize}

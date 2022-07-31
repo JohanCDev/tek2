@@ -1,0 +1,41 @@
+\hypertarget{Window_8hpp_source}{}\doxysection{Window.\+hpp}
+\label{Window_8hpp_source}\index{src/raylib/window/Window.hpp@{src/raylib/window/Window.hpp}}
+\mbox{\hyperlink{Window_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#ifndef Window\_HPP\_}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#define Window\_HPP\_}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include "{}../Raylib.hpp"{}}}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 \textcolor{keyword}{namespace }indie}
+\DoxyCodeLine{18 \{}
+\DoxyCodeLine{19     \textcolor{keyword}{namespace }raylib}
+\DoxyCodeLine{20     \{}
+\DoxyCodeLine{22         \textcolor{keyword}{class }\mbox{\hyperlink{classindie_1_1raylib_1_1Window}{Window}} \{}
+\DoxyCodeLine{23           \textcolor{keyword}{public}:}
+\DoxyCodeLine{29             \mbox{\hyperlink{classindie_1_1raylib_1_1Window_a500a67121d8da2751fc120deec113d6d}{Window}}(\mbox{\hyperlink{classindie_1_1raylib_1_1Window}{Window}} \&other) = \textcolor{keyword}{delete};}
+\DoxyCodeLine{35             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Window_a526068291697dfa56ee72e9f953b93b6}{operator=}}(\textcolor{keyword}{const} \mbox{\hyperlink{classindie_1_1raylib_1_1Window}{Window}} \&other) = \textcolor{keyword}{delete};}
+\DoxyCodeLine{48             \textcolor{keyword}{static} \mbox{\hyperlink{classindie_1_1raylib_1_1Window}{Window}} *\mbox{\hyperlink{classindie_1_1raylib_1_1Window_a910cf9cafd94aadd9745da60ca0be576}{getInstance}}(\textcolor{keywordtype}{int} width, \textcolor{keywordtype}{int} height, \textcolor{keyword}{const} std::string title, \textcolor{keywordtype}{bool} resizable, \textcolor{keywordtype}{int} baseFps);}
+\DoxyCodeLine{54             \textcolor{keyword}{static} \textcolor{keywordtype}{int} \mbox{\hyperlink{classindie_1_1raylib_1_1Window_a802c705fef144a049d8b501b793943cf}{getFPS}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{60             \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Window_a7781f395ea02da44026e96b1723974e4}{setTargetFPS}}(\textcolor{keywordtype}{int} fps);}
+\DoxyCodeLine{64             \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Window_ada8a1f81f0eb3312b41b7e871a3d30a7}{destroyWindow}}();}
+\DoxyCodeLine{70             \textcolor{keyword}{static} \textcolor{keywordtype}{int} \mbox{\hyperlink{classindie_1_1raylib_1_1Window_a37c20c4dafe36ec2910f8e3c13c9828d}{getWidth}}();}
+\DoxyCodeLine{76             \textcolor{keyword}{static} \textcolor{keywordtype}{int} \mbox{\hyperlink{classindie_1_1raylib_1_1Window_a8031a182ec52efb76079fefcf82e1842}{getHeight}}();}
+\DoxyCodeLine{80             \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Window_aa6ce22a29582a6c4b27050f2fd66c224}{beginDrawing}}();}
+\DoxyCodeLine{84             \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Window_a4e1e5b35b4f1423bf5a7cc58add8a563}{endDrawing}}();}
+\DoxyCodeLine{90             \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Window_a364fe725b2e6a305a9fb55412afd2d93}{clearBackground}}(Color color);}
+\DoxyCodeLine{97             \textcolor{keyword}{static} \textcolor{keywordtype}{bool} \mbox{\hyperlink{classindie_1_1raylib_1_1Window_a7c9f3902d2da96b61c4a8d9d3259235b}{windowShouldClose}}();}
+\DoxyCodeLine{101             \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Window_a2e52ad557e4ded26d02f2ee43f249358}{toggleFullScreen}}();}
+\DoxyCodeLine{108             \textcolor{keyword}{static} \textcolor{keywordtype}{bool} \mbox{\hyperlink{classindie_1_1raylib_1_1Window_aeeec36dcced44911607793a0a50edc3d}{isWindowResized}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{109 }
+\DoxyCodeLine{110           \textcolor{keyword}{private}:}
+\DoxyCodeLine{115             \textcolor{keyword}{static} \mbox{\hyperlink{classindie_1_1raylib_1_1Window}{Window}} *\_window;}
+\DoxyCodeLine{125             \mbox{\hyperlink{classindie_1_1raylib_1_1Window_a500a67121d8da2751fc120deec113d6d}{Window}}(\textcolor{keywordtype}{int} width, \textcolor{keywordtype}{int} height, \textcolor{keyword}{const} std::string title, \textcolor{keywordtype}{bool} resizable, \textcolor{keywordtype}{int} baseFps);}
+\DoxyCodeLine{126         \};}
+\DoxyCodeLine{127     \} \textcolor{comment}{// namespace raylib}}
+\DoxyCodeLine{128 \} \textcolor{comment}{// namespace indie}}
+\DoxyCodeLine{129 }
+\DoxyCodeLine{130 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* !Window\_HPP\_ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

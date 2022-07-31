@@ -1,0 +1,42 @@
+\hypertarget{ISystem_8hpp_source}{}\doxysection{ISystem.\+hpp}
+\label{ISystem_8hpp_source}\index{src/ecs/system/ISystem.hpp@{src/ecs/system/ISystem.hpp}}
+\mbox{\hyperlink{ISystem_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#ifndef SYSTEM\_HPP\_}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#define SYSTEM\_HPP\_}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include "{}../component/IComponent.hpp"{}}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include "{}../entity/Entity.hpp"{}}}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18 \textcolor{keyword}{namespace }indie}
+\DoxyCodeLine{19 \{}
+\DoxyCodeLine{20     \textcolor{keyword}{namespace }ecs}
+\DoxyCodeLine{21     \{}
+\DoxyCodeLine{22         \textcolor{keyword}{namespace }system}
+\DoxyCodeLine{23         \{}
+\DoxyCodeLine{28             \textcolor{keyword}{enum} \mbox{\hyperlink{ISystem_8hpp_aec184346273b5fda2bad6ad1aaa44620}{SystemType}} \{}
+\DoxyCodeLine{29                 DRAWABLE3DSYSTEM,}
+\DoxyCodeLine{30                 DRAWABLE2DSYSTEM,}
+\DoxyCodeLine{31                 MOVEMENTSYSTEM,}
+\DoxyCodeLine{32                 COLLIDESYSTEM,}
+\DoxyCodeLine{33                 SOUNDSYSTEM,}
+\DoxyCodeLine{34                 EXPLODABLESYSTEM}
+\DoxyCodeLine{35             \};}
+\DoxyCodeLine{37             \textcolor{keyword}{class }\mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1ISystem}{ISystem}} \{}
+\DoxyCodeLine{38               \textcolor{keyword}{public}:}
+\DoxyCodeLine{42                 \textcolor{keyword}{virtual} \mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1ISystem_a7ed79aa031cd66906e5bb95ca1dd5159}{\string~ISystem}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{49                 \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1ISystem_aa4e9422532642acdb47b70f31405d4d1}{update}}(std::vector<std::unique\_ptr<indie::ecs::entity::Entity>> \&entities) = 0;}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{56                 \textcolor{keyword}{virtual} \mbox{\hyperlink{ISystem_8hpp_aec184346273b5fda2bad6ad1aaa44620}{indie::ecs::system::SystemType}} \mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1ISystem_a4b74e1abca439d48bbb15b4ce62ade3e}{getSystemType}}() \textcolor{keyword}{const} = 0;}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{58               \textcolor{keyword}{private}:}
+\DoxyCodeLine{59             \};}
+\DoxyCodeLine{60         \} \textcolor{comment}{// namespace system}}
+\DoxyCodeLine{61     \}     \textcolor{comment}{// namespace ecs}}
+\DoxyCodeLine{62 \} \textcolor{comment}{// namespace indie}}
+\DoxyCodeLine{63 }
+\DoxyCodeLine{64 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* !SYSTEM\_HPP\_ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

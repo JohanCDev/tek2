@@ -1,0 +1,1325 @@
+## This file contains all the build statements describing the
+# compilation DAG.
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# 
+# Which is the root file.
+# =============================================================================
+
+# =============================================================================
+# Project: bomberman
+# Configurations: Release
+# =============================================================================
+
+#############################################
+# Minimal version of Ninja required by this file
+
+ninja_required_version = 1.5
+
+
+#############################################
+# Set configuration variable for custom commands.
+
+CONFIGURATION = Release
+# =============================================================================
+# Include auxiliary files.
+
+
+#############################################
+# Include rules file.
+
+include CMakeFiles/rules.ninja
+
+# =============================================================================
+
+#############################################
+# Logical path to working directory; prefix for absolute paths.
+
+cmake_ninja_workdir = /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/
+
+#############################################
+# Utility command for package
+
+build CMakeFiles/package.util: CUSTOM_COMMAND all
+  COMMAND = cd /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build && /opt/homebrew/Cellar/cmake/3.23.1_1/bin/cpack --config ./CPackConfig.cmake
+  DESC = Run CPack packaging tool...
+  pool = console
+  restat = 1
+
+build package: phony CMakeFiles/package.util
+
+
+#############################################
+# Utility command for package_source
+
+build CMakeFiles/package_source.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build && /opt/homebrew/Cellar/cmake/3.23.1_1/bin/cpack --config ./CPackSourceConfig.cmake /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/CPackSourceConfig.cmake
+  DESC = Run CPack packaging tool for source...
+  pool = console
+  restat = 1
+
+build package_source: phony CMakeFiles/package_source.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build && /opt/homebrew/Cellar/cmake/3.23.1_1/bin/ccmake -S/Users/johan/Epitech/tek2/B4/YEP/Bomberman -B/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
+
+build edit_cache: phony CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build && /opt/homebrew/Cellar/cmake/3.23.1_1/bin/cmake --regenerate-during-build -S/Users/johan/Epitech/tek2/B4/YEP/Bomberman -B/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build rebuild_cache: phony CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build CMakeFiles/install.util: CUSTOM_COMMAND all
+  COMMAND = cd /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build && /opt/homebrew/Cellar/cmake/3.23.1_1/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build install: phony CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build CMakeFiles/install/local.util: CUSTOM_COMMAND all
+  COMMAND = cd /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build && /opt/homebrew/Cellar/cmake/3.23.1_1/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build install/local: phony CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build CMakeFiles/install/strip.util: CUSTOM_COMMAND all
+  COMMAND = cd /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build && /opt/homebrew/Cellar/cmake/3.23.1_1/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build install/strip: phony CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/johan/Epitech/tek2/B4/YEP/Bomberman/cmake/Findraylib.cmake
+# =============================================================================
+
+
+#############################################
+# Utility command for package
+
+build _deps/raylib-build/CMakeFiles/package.util: CUSTOM_COMMAND _deps/raylib-build/all
+  COMMAND = cd /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build && /opt/homebrew/Cellar/cmake/3.23.1_1/bin/cpack --config ./CPackConfig.cmake
+  DESC = Run CPack packaging tool...
+  pool = console
+  restat = 1
+
+build _deps/raylib-build/package: phony _deps/raylib-build/CMakeFiles/package.util
+
+
+#############################################
+# Utility command for package_source
+
+build _deps/raylib-build/CMakeFiles/package_source.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build && /opt/homebrew/Cellar/cmake/3.23.1_1/bin/cpack --config ./CPackSourceConfig.cmake /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/CPackSourceConfig.cmake
+  DESC = Run CPack packaging tool for source...
+  pool = console
+  restat = 1
+
+build _deps/raylib-build/package_source: phony _deps/raylib-build/CMakeFiles/package_source.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build _deps/raylib-build/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-build && /opt/homebrew/Cellar/cmake/3.23.1_1/bin/ccmake -S/Users/johan/Epitech/tek2/B4/YEP/Bomberman -B/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
+
+build _deps/raylib-build/edit_cache: phony _deps/raylib-build/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build _deps/raylib-build/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-build && /opt/homebrew/Cellar/cmake/3.23.1_1/bin/cmake --regenerate-during-build -S/Users/johan/Epitech/tek2/B4/YEP/Bomberman -B/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build _deps/raylib-build/rebuild_cache: phony _deps/raylib-build/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build _deps/raylib-build/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build _deps/raylib-build/CMakeFiles/install.util: CUSTOM_COMMAND _deps/raylib-build/all
+  COMMAND = cd /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-build && /opt/homebrew/Cellar/cmake/3.23.1_1/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build _deps/raylib-build/install: phony _deps/raylib-build/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build _deps/raylib-build/CMakeFiles/install/local.util: CUSTOM_COMMAND _deps/raylib-build/all
+  COMMAND = cd /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-build && /opt/homebrew/Cellar/cmake/3.23.1_1/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build _deps/raylib-build/install/local: phony _deps/raylib-build/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build _deps/raylib-build/CMakeFiles/install/strip.util: CUSTOM_COMMAND _deps/raylib-build/all
+  COMMAND = cd /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-build && /opt/homebrew/Cellar/cmake/3.23.1_1/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build _deps/raylib-build/install/strip: phony _deps/raylib-build/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target raylib
+
+
+#############################################
+# Order-only phony target for raylib
+
+build cmake_object_order_depends_target_raylib: phony || cmake_object_order_depends_target_glfw
+
+build _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rcore.c.o: C_COMPILER__raylib_Release /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/rcore.c || cmake_object_order_depends_target_raylib
+  DEFINES = -DGL_SILENCE_DEPRECATION -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
+  DEP_FILE = _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rcore.c.o.d
+  FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wall -Wshadow -Wno-unused -Wno-deprecated-copy -Wno-deprecated-declarations -std=gnu99
+  INCLUDES = -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src -isystem /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/include
+  OBJECT_DIR = _deps/raylib-build/raylib/CMakeFiles/raylib.dir
+  OBJECT_FILE_DIR = _deps/raylib-build/raylib/CMakeFiles/raylib.dir
+
+build _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rmodels.c.o: C_COMPILER__raylib_Release /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/rmodels.c || cmake_object_order_depends_target_raylib
+  DEFINES = -DGL_SILENCE_DEPRECATION -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
+  DEP_FILE = _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rmodels.c.o.d
+  FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wall -Wshadow -Wno-unused -Wno-deprecated-copy -Wno-deprecated-declarations -std=gnu99
+  INCLUDES = -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src -isystem /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/include
+  OBJECT_DIR = _deps/raylib-build/raylib/CMakeFiles/raylib.dir
+  OBJECT_FILE_DIR = _deps/raylib-build/raylib/CMakeFiles/raylib.dir
+
+build _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rshapes.c.o: C_COMPILER__raylib_Release /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/rshapes.c || cmake_object_order_depends_target_raylib
+  DEFINES = -DGL_SILENCE_DEPRECATION -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
+  DEP_FILE = _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rshapes.c.o.d
+  FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wall -Wshadow -Wno-unused -Wno-deprecated-copy -Wno-deprecated-declarations -std=gnu99
+  INCLUDES = -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src -isystem /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/include
+  OBJECT_DIR = _deps/raylib-build/raylib/CMakeFiles/raylib.dir
+  OBJECT_FILE_DIR = _deps/raylib-build/raylib/CMakeFiles/raylib.dir
+
+build _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rtext.c.o: C_COMPILER__raylib_Release /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/rtext.c || cmake_object_order_depends_target_raylib
+  DEFINES = -DGL_SILENCE_DEPRECATION -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
+  DEP_FILE = _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rtext.c.o.d
+  FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wall -Wshadow -Wno-unused -Wno-deprecated-copy -Wno-deprecated-declarations -std=gnu99
+  INCLUDES = -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src -isystem /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/include
+  OBJECT_DIR = _deps/raylib-build/raylib/CMakeFiles/raylib.dir
+  OBJECT_FILE_DIR = _deps/raylib-build/raylib/CMakeFiles/raylib.dir
+
+build _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rtextures.c.o: C_COMPILER__raylib_Release /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/rtextures.c || cmake_object_order_depends_target_raylib
+  DEFINES = -DGL_SILENCE_DEPRECATION -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
+  DEP_FILE = _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rtextures.c.o.d
+  FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wall -Wshadow -Wno-unused -Wno-deprecated-copy -Wno-deprecated-declarations -std=gnu99
+  INCLUDES = -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src -isystem /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/include
+  OBJECT_DIR = _deps/raylib-build/raylib/CMakeFiles/raylib.dir
+  OBJECT_FILE_DIR = _deps/raylib-build/raylib/CMakeFiles/raylib.dir
+
+build _deps/raylib-build/raylib/CMakeFiles/raylib.dir/utils.c.o: C_COMPILER__raylib_Release /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/utils.c || cmake_object_order_depends_target_raylib
+  DEFINES = -DGL_SILENCE_DEPRECATION -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
+  DEP_FILE = _deps/raylib-build/raylib/CMakeFiles/raylib.dir/utils.c.o.d
+  FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wall -Wshadow -Wno-unused -Wno-deprecated-copy -Wno-deprecated-declarations -std=gnu99
+  INCLUDES = -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src -isystem /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/include
+  OBJECT_DIR = _deps/raylib-build/raylib/CMakeFiles/raylib.dir
+  OBJECT_FILE_DIR = _deps/raylib-build/raylib/CMakeFiles/raylib.dir
+
+build _deps/raylib-build/raylib/CMakeFiles/raylib.dir/raudio.c.o: C_COMPILER__raylib_Release /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/raudio.c || cmake_object_order_depends_target_raylib
+  DEFINES = -DGL_SILENCE_DEPRECATION -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
+  DEP_FILE = _deps/raylib-build/raylib/CMakeFiles/raylib.dir/raudio.c.o.d
+  FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wall -Wshadow -Wno-unused -Wno-deprecated-copy -Wno-deprecated-declarations -std=gnu99
+  INCLUDES = -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src -isystem /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/include
+  OBJECT_DIR = _deps/raylib-build/raylib/CMakeFiles/raylib.dir
+  OBJECT_FILE_DIR = _deps/raylib-build/raylib/CMakeFiles/raylib.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target raylib
+
+
+#############################################
+# Link the static library _deps/raylib-build/raylib/libraylib.a
+
+build _deps/raylib-build/raylib/libraylib.a: C_STATIC_LIBRARY_LINKER__raylib_Release _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/context.c.o _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/init.c.o _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/input.c.o _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/monitor.c.o _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/vulkan.c.o _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/window.c.o _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/cocoa_init.m.o _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/cocoa_joystick.m.o _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/cocoa_monitor.m.o _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/cocoa_window.m.o _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/cocoa_time.c.o _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/posix_thread.c.o _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/nsgl_context.m.o _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/egl_context.c.o _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.o _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rcore.c.o _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rmodels.c.o _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rshapes.c.o _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rtext.c.o _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rtextures.c.o _deps/raylib-build/raylib/CMakeFiles/raylib.dir/utils.c.o _deps/raylib-build/raylib/CMakeFiles/raylib.dir/raudio.c.o || _deps/raylib-build/raylib/external/glfw/src/libglfw3.a
+  ARCH_FLAGS = -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk
+  LANGUAGE_COMPILE_FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -O3 -DNDEBUG
+  OBJECT_DIR = _deps/raylib-build/raylib/CMakeFiles/raylib.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = _deps/raylib-build/raylib/libraylib.a
+  TARGET_PDB = raylib.a.dbg
+
+
+#############################################
+# Utility command for package
+
+build _deps/raylib-build/raylib/CMakeFiles/package.util: CUSTOM_COMMAND _deps/raylib-build/raylib/all
+  COMMAND = cd /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build && /opt/homebrew/Cellar/cmake/3.23.1_1/bin/cpack --config ./CPackConfig.cmake
+  DESC = Run CPack packaging tool...
+  pool = console
+  restat = 1
+
+build _deps/raylib-build/raylib/package: phony _deps/raylib-build/raylib/CMakeFiles/package.util
+
+
+#############################################
+# Utility command for package_source
+
+build _deps/raylib-build/raylib/CMakeFiles/package_source.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build && /opt/homebrew/Cellar/cmake/3.23.1_1/bin/cpack --config ./CPackSourceConfig.cmake /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/CPackSourceConfig.cmake
+  DESC = Run CPack packaging tool for source...
+  pool = console
+  restat = 1
+
+build _deps/raylib-build/raylib/package_source: phony _deps/raylib-build/raylib/CMakeFiles/package_source.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build _deps/raylib-build/raylib/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-build/raylib && /opt/homebrew/Cellar/cmake/3.23.1_1/bin/ccmake -S/Users/johan/Epitech/tek2/B4/YEP/Bomberman -B/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
+
+build _deps/raylib-build/raylib/edit_cache: phony _deps/raylib-build/raylib/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build _deps/raylib-build/raylib/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-build/raylib && /opt/homebrew/Cellar/cmake/3.23.1_1/bin/cmake --regenerate-during-build -S/Users/johan/Epitech/tek2/B4/YEP/Bomberman -B/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build _deps/raylib-build/raylib/rebuild_cache: phony _deps/raylib-build/raylib/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build _deps/raylib-build/raylib/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build _deps/raylib-build/raylib/CMakeFiles/install.util: CUSTOM_COMMAND _deps/raylib-build/raylib/all
+  COMMAND = cd /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-build/raylib && /opt/homebrew/Cellar/cmake/3.23.1_1/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build _deps/raylib-build/raylib/install: phony _deps/raylib-build/raylib/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build _deps/raylib-build/raylib/CMakeFiles/install/local.util: CUSTOM_COMMAND _deps/raylib-build/raylib/all
+  COMMAND = cd /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-build/raylib && /opt/homebrew/Cellar/cmake/3.23.1_1/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build _deps/raylib-build/raylib/install/local: phony _deps/raylib-build/raylib/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build _deps/raylib-build/raylib/CMakeFiles/install/strip.util: CUSTOM_COMMAND _deps/raylib-build/raylib/all
+  COMMAND = cd /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-build/raylib && /opt/homebrew/Cellar/cmake/3.23.1_1/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build _deps/raylib-build/raylib/install/strip: phony _deps/raylib-build/raylib/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/cmake/GlfwImport.cmake
+# =============================================================================
+
+
+#############################################
+# Utility command for package
+
+build _deps/raylib-build/raylib/external/glfw/CMakeFiles/package.util: CUSTOM_COMMAND _deps/raylib-build/raylib/external/glfw/all
+  COMMAND = cd /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build && /opt/homebrew/Cellar/cmake/3.23.1_1/bin/cpack --config ./CPackConfig.cmake
+  DESC = Run CPack packaging tool...
+  pool = console
+  restat = 1
+
+build _deps/raylib-build/raylib/external/glfw/package: phony _deps/raylib-build/raylib/external/glfw/CMakeFiles/package.util
+
+
+#############################################
+# Utility command for package_source
+
+build _deps/raylib-build/raylib/external/glfw/CMakeFiles/package_source.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build && /opt/homebrew/Cellar/cmake/3.23.1_1/bin/cpack --config ./CPackSourceConfig.cmake /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/CPackSourceConfig.cmake
+  DESC = Run CPack packaging tool for source...
+  pool = console
+  restat = 1
+
+build _deps/raylib-build/raylib/external/glfw/package_source: phony _deps/raylib-build/raylib/external/glfw/CMakeFiles/package_source.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build _deps/raylib-build/raylib/external/glfw/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-build/raylib/external/glfw && /opt/homebrew/Cellar/cmake/3.23.1_1/bin/ccmake -S/Users/johan/Epitech/tek2/B4/YEP/Bomberman -B/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
+
+build _deps/raylib-build/raylib/external/glfw/edit_cache: phony _deps/raylib-build/raylib/external/glfw/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build _deps/raylib-build/raylib/external/glfw/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-build/raylib/external/glfw && /opt/homebrew/Cellar/cmake/3.23.1_1/bin/cmake --regenerate-during-build -S/Users/johan/Epitech/tek2/B4/YEP/Bomberman -B/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build _deps/raylib-build/raylib/external/glfw/rebuild_cache: phony _deps/raylib-build/raylib/external/glfw/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build _deps/raylib-build/raylib/external/glfw/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build _deps/raylib-build/raylib/external/glfw/CMakeFiles/install.util: CUSTOM_COMMAND _deps/raylib-build/raylib/external/glfw/all
+  COMMAND = cd /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-build/raylib/external/glfw && /opt/homebrew/Cellar/cmake/3.23.1_1/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build _deps/raylib-build/raylib/external/glfw/install: phony _deps/raylib-build/raylib/external/glfw/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build _deps/raylib-build/raylib/external/glfw/CMakeFiles/install/local.util: CUSTOM_COMMAND _deps/raylib-build/raylib/external/glfw/all
+  COMMAND = cd /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-build/raylib/external/glfw && /opt/homebrew/Cellar/cmake/3.23.1_1/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build _deps/raylib-build/raylib/external/glfw/install/local: phony _deps/raylib-build/raylib/external/glfw/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build _deps/raylib-build/raylib/external/glfw/CMakeFiles/install/strip.util: CUSTOM_COMMAND _deps/raylib-build/raylib/external/glfw/all
+  COMMAND = cd /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-build/raylib/external/glfw && /opt/homebrew/Cellar/cmake/3.23.1_1/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build _deps/raylib-build/raylib/external/glfw/install/strip: phony _deps/raylib-build/raylib/external/glfw/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target glfw
+
+
+#############################################
+# Order-only phony target for glfw
+
+build cmake_object_order_depends_target_glfw: phony || _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
+
+build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/context.c.o: C_COMPILER__glfw_Release /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/src/context.c || cmake_object_order_depends_target_glfw
+  DEFINES = -D_GLFW_USE_CONFIG_H
+  DEP_FILE = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/context.c.o.d
+  FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -fPIC -Wall -Wshadow -Wno-unused -Wno-deprecated-copy -Wno-deprecated-declarations -std=c99
+  INCLUDES = -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/include -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/src -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-build/raylib/external/glfw/src
+  OBJECT_DIR = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
+  OBJECT_FILE_DIR = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
+
+build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/init.c.o: C_COMPILER__glfw_Release /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/src/init.c || cmake_object_order_depends_target_glfw
+  DEFINES = -D_GLFW_USE_CONFIG_H
+  DEP_FILE = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/init.c.o.d
+  FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -fPIC -Wall -Wshadow -Wno-unused -Wno-deprecated-copy -Wno-deprecated-declarations -std=c99
+  INCLUDES = -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/include -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/src -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-build/raylib/external/glfw/src
+  OBJECT_DIR = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
+  OBJECT_FILE_DIR = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
+
+build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/input.c.o: C_COMPILER__glfw_Release /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/src/input.c || cmake_object_order_depends_target_glfw
+  DEFINES = -D_GLFW_USE_CONFIG_H
+  DEP_FILE = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/input.c.o.d
+  FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -fPIC -Wall -Wshadow -Wno-unused -Wno-deprecated-copy -Wno-deprecated-declarations -std=c99
+  INCLUDES = -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/include -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/src -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-build/raylib/external/glfw/src
+  OBJECT_DIR = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
+  OBJECT_FILE_DIR = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
+
+build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/monitor.c.o: C_COMPILER__glfw_Release /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/src/monitor.c || cmake_object_order_depends_target_glfw
+  DEFINES = -D_GLFW_USE_CONFIG_H
+  DEP_FILE = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/monitor.c.o.d
+  FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -fPIC -Wall -Wshadow -Wno-unused -Wno-deprecated-copy -Wno-deprecated-declarations -std=c99
+  INCLUDES = -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/include -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/src -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-build/raylib/external/glfw/src
+  OBJECT_DIR = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
+  OBJECT_FILE_DIR = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
+
+build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/vulkan.c.o: C_COMPILER__glfw_Release /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/src/vulkan.c || cmake_object_order_depends_target_glfw
+  DEFINES = -D_GLFW_USE_CONFIG_H
+  DEP_FILE = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/vulkan.c.o.d
+  FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -fPIC -Wall -Wshadow -Wno-unused -Wno-deprecated-copy -Wno-deprecated-declarations -std=c99
+  INCLUDES = -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/include -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/src -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-build/raylib/external/glfw/src
+  OBJECT_DIR = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
+  OBJECT_FILE_DIR = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
+
+build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/window.c.o: C_COMPILER__glfw_Release /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/src/window.c || cmake_object_order_depends_target_glfw
+  DEFINES = -D_GLFW_USE_CONFIG_H
+  DEP_FILE = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/window.c.o.d
+  FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -fPIC -Wall -Wshadow -Wno-unused -Wno-deprecated-copy -Wno-deprecated-declarations -std=c99
+  INCLUDES = -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/include -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/src -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-build/raylib/external/glfw/src
+  OBJECT_DIR = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
+  OBJECT_FILE_DIR = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
+
+build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/cocoa_init.m.o: C_COMPILER__glfw_Release /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/src/cocoa_init.m || cmake_object_order_depends_target_glfw
+  DEFINES = -D_GLFW_USE_CONFIG_H
+  DEP_FILE = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/cocoa_init.m.o.d
+  FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -fPIC -Wall -Wshadow -Wno-unused -Wno-deprecated-copy -Wno-deprecated-declarations -std=c99
+  INCLUDES = -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/include -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/src -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-build/raylib/external/glfw/src
+  OBJECT_DIR = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
+  OBJECT_FILE_DIR = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
+
+build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/cocoa_joystick.m.o: C_COMPILER__glfw_Release /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/src/cocoa_joystick.m || cmake_object_order_depends_target_glfw
+  DEFINES = -D_GLFW_USE_CONFIG_H
+  DEP_FILE = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/cocoa_joystick.m.o.d
+  FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -fPIC -Wall -Wshadow -Wno-unused -Wno-deprecated-copy -Wno-deprecated-declarations -std=c99
+  INCLUDES = -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/include -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/src -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-build/raylib/external/glfw/src
+  OBJECT_DIR = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
+  OBJECT_FILE_DIR = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
+
+build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/cocoa_monitor.m.o: C_COMPILER__glfw_Release /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/src/cocoa_monitor.m || cmake_object_order_depends_target_glfw
+  DEFINES = -D_GLFW_USE_CONFIG_H
+  DEP_FILE = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/cocoa_monitor.m.o.d
+  FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -fPIC -Wall -Wshadow -Wno-unused -Wno-deprecated-copy -Wno-deprecated-declarations -std=c99
+  INCLUDES = -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/include -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/src -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-build/raylib/external/glfw/src
+  OBJECT_DIR = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
+  OBJECT_FILE_DIR = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
+
+build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/cocoa_window.m.o: C_COMPILER__glfw_Release /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/src/cocoa_window.m || cmake_object_order_depends_target_glfw
+  DEFINES = -D_GLFW_USE_CONFIG_H
+  DEP_FILE = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/cocoa_window.m.o.d
+  FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -fPIC -Wall -Wshadow -Wno-unused -Wno-deprecated-copy -Wno-deprecated-declarations -std=c99
+  INCLUDES = -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/include -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/src -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-build/raylib/external/glfw/src
+  OBJECT_DIR = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
+  OBJECT_FILE_DIR = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
+
+build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/cocoa_time.c.o: C_COMPILER__glfw_Release /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/src/cocoa_time.c || cmake_object_order_depends_target_glfw
+  DEFINES = -D_GLFW_USE_CONFIG_H
+  DEP_FILE = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/cocoa_time.c.o.d
+  FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -fPIC -Wall -Wshadow -Wno-unused -Wno-deprecated-copy -Wno-deprecated-declarations -std=c99
+  INCLUDES = -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/include -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/src -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-build/raylib/external/glfw/src
+  OBJECT_DIR = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
+  OBJECT_FILE_DIR = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
+
+build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/posix_thread.c.o: C_COMPILER__glfw_Release /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/src/posix_thread.c || cmake_object_order_depends_target_glfw
+  DEFINES = -D_GLFW_USE_CONFIG_H
+  DEP_FILE = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/posix_thread.c.o.d
+  FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -fPIC -Wall -Wshadow -Wno-unused -Wno-deprecated-copy -Wno-deprecated-declarations -std=c99
+  INCLUDES = -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/include -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/src -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-build/raylib/external/glfw/src
+  OBJECT_DIR = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
+  OBJECT_FILE_DIR = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
+
+build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/nsgl_context.m.o: C_COMPILER__glfw_Release /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/src/nsgl_context.m || cmake_object_order_depends_target_glfw
+  DEFINES = -D_GLFW_USE_CONFIG_H
+  DEP_FILE = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/nsgl_context.m.o.d
+  FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -fPIC -Wall -Wshadow -Wno-unused -Wno-deprecated-copy -Wno-deprecated-declarations -std=c99
+  INCLUDES = -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/include -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/src -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-build/raylib/external/glfw/src
+  OBJECT_DIR = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
+  OBJECT_FILE_DIR = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
+
+build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/egl_context.c.o: C_COMPILER__glfw_Release /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/src/egl_context.c || cmake_object_order_depends_target_glfw
+  DEFINES = -D_GLFW_USE_CONFIG_H
+  DEP_FILE = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/egl_context.c.o.d
+  FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -fPIC -Wall -Wshadow -Wno-unused -Wno-deprecated-copy -Wno-deprecated-declarations -std=c99
+  INCLUDES = -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/include -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/src -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-build/raylib/external/glfw/src
+  OBJECT_DIR = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
+  OBJECT_FILE_DIR = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
+
+build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.o: C_COMPILER__glfw_Release /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/src/osmesa_context.c || cmake_object_order_depends_target_glfw
+  DEFINES = -D_GLFW_USE_CONFIG_H
+  DEP_FILE = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.o.d
+  FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -fPIC -Wall -Wshadow -Wno-unused -Wno-deprecated-copy -Wno-deprecated-declarations -std=c99
+  INCLUDES = -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/include -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/src -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-build/raylib/external/glfw/src
+  OBJECT_DIR = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
+  OBJECT_FILE_DIR = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target glfw
+
+
+#############################################
+# Link the static library _deps/raylib-build/raylib/external/glfw/src/libglfw3.a
+
+build _deps/raylib-build/raylib/external/glfw/src/libglfw3.a: C_STATIC_LIBRARY_LINKER__glfw_Release _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/context.c.o _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/init.c.o _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/input.c.o _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/monitor.c.o _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/vulkan.c.o _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/window.c.o _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/cocoa_init.m.o _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/cocoa_joystick.m.o _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/cocoa_monitor.m.o _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/cocoa_window.m.o _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/cocoa_time.c.o _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/posix_thread.c.o _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/nsgl_context.m.o _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/egl_context.c.o _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.o
+  ARCH_FLAGS = -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk
+  LANGUAGE_COMPILE_FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -O3 -DNDEBUG
+  OBJECT_DIR = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = _deps/raylib-build/raylib/external/glfw/src/libglfw3.a
+  TARGET_PDB = glfw3.a.dbg
+
+
+#############################################
+# Utility command for package
+
+build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/package.util: CUSTOM_COMMAND _deps/raylib-build/raylib/external/glfw/src/all
+  COMMAND = cd /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build && /opt/homebrew/Cellar/cmake/3.23.1_1/bin/cpack --config ./CPackConfig.cmake
+  DESC = Run CPack packaging tool...
+  pool = console
+  restat = 1
+
+build _deps/raylib-build/raylib/external/glfw/src/package: phony _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/package.util
+
+
+#############################################
+# Utility command for package_source
+
+build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/package_source.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build && /opt/homebrew/Cellar/cmake/3.23.1_1/bin/cpack --config ./CPackSourceConfig.cmake /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/CPackSourceConfig.cmake
+  DESC = Run CPack packaging tool for source...
+  pool = console
+  restat = 1
+
+build _deps/raylib-build/raylib/external/glfw/src/package_source: phony _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/package_source.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-build/raylib/external/glfw/src && /opt/homebrew/Cellar/cmake/3.23.1_1/bin/ccmake -S/Users/johan/Epitech/tek2/B4/YEP/Bomberman -B/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
+
+build _deps/raylib-build/raylib/external/glfw/src/edit_cache: phony _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-build/raylib/external/glfw/src && /opt/homebrew/Cellar/cmake/3.23.1_1/bin/cmake --regenerate-during-build -S/Users/johan/Epitech/tek2/B4/YEP/Bomberman -B/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build _deps/raylib-build/raylib/external/glfw/src/rebuild_cache: phony _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build _deps/raylib-build/raylib/external/glfw/src/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/install.util: CUSTOM_COMMAND _deps/raylib-build/raylib/external/glfw/src/all
+  COMMAND = cd /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-build/raylib/external/glfw/src && /opt/homebrew/Cellar/cmake/3.23.1_1/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build _deps/raylib-build/raylib/external/glfw/src/install: phony _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/install/local.util: CUSTOM_COMMAND _deps/raylib-build/raylib/external/glfw/src/all
+  COMMAND = cd /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-build/raylib/external/glfw/src && /opt/homebrew/Cellar/cmake/3.23.1_1/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build _deps/raylib-build/raylib/external/glfw/src/install/local: phony _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/install/strip.util: CUSTOM_COMMAND _deps/raylib-build/raylib/external/glfw/src/all
+  COMMAND = cd /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-build/raylib/external/glfw/src && /opt/homebrew/Cellar/cmake/3.23.1_1/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build _deps/raylib-build/raylib/external/glfw/src/install/strip: phony _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/johan/Epitech/tek2/B4/YEP/Bomberman/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target bomberman
+
+
+#############################################
+# Order-only phony target for bomberman
+
+build cmake_object_order_depends_target_bomberman: phony || cmake_object_order_depends_target_glfw cmake_object_order_depends_target_raylib
+
+build src/CMakeFiles/bomberman.dir/main.cpp.o: CXX_COMPILER__bomberman_Release /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/main.cpp || cmake_object_order_depends_target_bomberman
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
+  DEP_FILE = src/CMakeFiles/bomberman.dir/main.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wall -Wshadow -Wno-unused -Wno-deprecated-copy -Wno-deprecated-declarations -std=gnu++20
+  INCLUDES = -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/map -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/game -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/screens -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/include -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/include
+  OBJECT_DIR = src/CMakeFiles/bomberman.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/bomberman.dir
+
+build src/CMakeFiles/bomberman.dir/tools/Tools.cpp.o: CXX_COMPILER__bomberman_Release /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/tools/Tools.cpp || cmake_object_order_depends_target_bomberman
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
+  DEP_FILE = src/CMakeFiles/bomberman.dir/tools/Tools.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wall -Wshadow -Wno-unused -Wno-deprecated-copy -Wno-deprecated-declarations -std=gnu++20
+  INCLUDES = -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/map -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/game -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/screens -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/include -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/include
+  OBJECT_DIR = src/CMakeFiles/bomberman.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/bomberman.dir/tools
+
+build src/CMakeFiles/bomberman.dir/ecs/component/Transform/Transform.cpp.o: CXX_COMPILER__bomberman_Release /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/ecs/component/Transform/Transform.cpp || cmake_object_order_depends_target_bomberman
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
+  DEP_FILE = src/CMakeFiles/bomberman.dir/ecs/component/Transform/Transform.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wall -Wshadow -Wno-unused -Wno-deprecated-copy -Wno-deprecated-declarations -std=gnu++20
+  INCLUDES = -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/map -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/game -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/screens -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/include -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/include
+  OBJECT_DIR = src/CMakeFiles/bomberman.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/bomberman.dir/ecs/component/Transform
+
+build src/CMakeFiles/bomberman.dir/ecs/component/Drawable2D/Drawable2D.cpp.o: CXX_COMPILER__bomberman_Release /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/ecs/component/Drawable2D/Drawable2D.cpp || cmake_object_order_depends_target_bomberman
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
+  DEP_FILE = src/CMakeFiles/bomberman.dir/ecs/component/Drawable2D/Drawable2D.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wall -Wshadow -Wno-unused -Wno-deprecated-copy -Wno-deprecated-declarations -std=gnu++20
+  INCLUDES = -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/map -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/game -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/screens -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/include -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/include
+  OBJECT_DIR = src/CMakeFiles/bomberman.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/bomberman.dir/ecs/component/Drawable2D
+
+build src/CMakeFiles/bomberman.dir/ecs/component/Drawable3D/Drawable3D.cpp.o: CXX_COMPILER__bomberman_Release /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/ecs/component/Drawable3D/Drawable3D.cpp || cmake_object_order_depends_target_bomberman
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
+  DEP_FILE = src/CMakeFiles/bomberman.dir/ecs/component/Drawable3D/Drawable3D.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wall -Wshadow -Wno-unused -Wno-deprecated-copy -Wno-deprecated-declarations -std=gnu++20
+  INCLUDES = -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/map -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/game -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/screens -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/include -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/include
+  OBJECT_DIR = src/CMakeFiles/bomberman.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/bomberman.dir/ecs/component/Drawable3D
+
+build src/CMakeFiles/bomberman.dir/ecs/component/Alive/Alive.cpp.o: CXX_COMPILER__bomberman_Release /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/ecs/component/Alive/Alive.cpp || cmake_object_order_depends_target_bomberman
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
+  DEP_FILE = src/CMakeFiles/bomberman.dir/ecs/component/Alive/Alive.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wall -Wshadow -Wno-unused -Wno-deprecated-copy -Wno-deprecated-declarations -std=gnu++20
+  INCLUDES = -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/map -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/game -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/screens -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/include -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/include
+  OBJECT_DIR = src/CMakeFiles/bomberman.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/bomberman.dir/ecs/component/Alive
+
+build src/CMakeFiles/bomberman.dir/ecs/component/Collectable/Collectable.cpp.o: CXX_COMPILER__bomberman_Release /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/ecs/component/Collectable/Collectable.cpp || cmake_object_order_depends_target_bomberman
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
+  DEP_FILE = src/CMakeFiles/bomberman.dir/ecs/component/Collectable/Collectable.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wall -Wshadow -Wno-unused -Wno-deprecated-copy -Wno-deprecated-declarations -std=gnu++20
+  INCLUDES = -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/map -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/game -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/screens -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/include -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/include
+  OBJECT_DIR = src/CMakeFiles/bomberman.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/bomberman.dir/ecs/component/Collectable
+
+build src/CMakeFiles/bomberman.dir/ecs/component/Inventory/Inventory.cpp.o: CXX_COMPILER__bomberman_Release /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/ecs/component/Inventory/Inventory.cpp || cmake_object_order_depends_target_bomberman
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
+  DEP_FILE = src/CMakeFiles/bomberman.dir/ecs/component/Inventory/Inventory.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wall -Wshadow -Wno-unused -Wno-deprecated-copy -Wno-deprecated-declarations -std=gnu++20
+  INCLUDES = -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/map -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/game -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/screens -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/include -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/include
+  OBJECT_DIR = src/CMakeFiles/bomberman.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/bomberman.dir/ecs/component/Inventory
+
+build src/CMakeFiles/bomberman.dir/ecs/component/Explodable/Explodable.cpp.o: CXX_COMPILER__bomberman_Release /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/ecs/component/Explodable/Explodable.cpp || cmake_object_order_depends_target_bomberman
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
+  DEP_FILE = src/CMakeFiles/bomberman.dir/ecs/component/Explodable/Explodable.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wall -Wshadow -Wno-unused -Wno-deprecated-copy -Wno-deprecated-declarations -std=gnu++20
+  INCLUDES = -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/map -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/game -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/screens -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/include -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/include
+  OBJECT_DIR = src/CMakeFiles/bomberman.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/bomberman.dir/ecs/component/Explodable
+
+build src/CMakeFiles/bomberman.dir/ecs/component/Collide/Collide.cpp.o: CXX_COMPILER__bomberman_Release /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/ecs/component/Collide/Collide.cpp || cmake_object_order_depends_target_bomberman
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
+  DEP_FILE = src/CMakeFiles/bomberman.dir/ecs/component/Collide/Collide.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wall -Wshadow -Wno-unused -Wno-deprecated-copy -Wno-deprecated-declarations -std=gnu++20
+  INCLUDES = -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/map -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/game -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/screens -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/include -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/include
+  OBJECT_DIR = src/CMakeFiles/bomberman.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/bomberman.dir/ecs/component/Collide
+
+build src/CMakeFiles/bomberman.dir/ecs/component/Object/Object.cpp.o: CXX_COMPILER__bomberman_Release /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/ecs/component/Object/Object.cpp || cmake_object_order_depends_target_bomberman
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
+  DEP_FILE = src/CMakeFiles/bomberman.dir/ecs/component/Object/Object.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wall -Wshadow -Wno-unused -Wno-deprecated-copy -Wno-deprecated-declarations -std=gnu++20
+  INCLUDES = -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/map -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/game -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/screens -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/include -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/include
+  OBJECT_DIR = src/CMakeFiles/bomberman.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/bomberman.dir/ecs/component/Object
+
+build src/CMakeFiles/bomberman.dir/ecs/component/Sound/Sound.cpp.o: CXX_COMPILER__bomberman_Release /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/ecs/component/Sound/Sound.cpp || cmake_object_order_depends_target_bomberman
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
+  DEP_FILE = src/CMakeFiles/bomberman.dir/ecs/component/Sound/Sound.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wall -Wshadow -Wno-unused -Wno-deprecated-copy -Wno-deprecated-declarations -std=gnu++20
+  INCLUDES = -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/map -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/game -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/screens -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/include -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/include
+  OBJECT_DIR = src/CMakeFiles/bomberman.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/bomberman.dir/ecs/component/Sound
+
+build src/CMakeFiles/bomberman.dir/ecs/component/Destroyable/Destroyable.cpp.o: CXX_COMPILER__bomberman_Release /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/ecs/component/Destroyable/Destroyable.cpp || cmake_object_order_depends_target_bomberman
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
+  DEP_FILE = src/CMakeFiles/bomberman.dir/ecs/component/Destroyable/Destroyable.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wall -Wshadow -Wno-unused -Wno-deprecated-copy -Wno-deprecated-declarations -std=gnu++20
+  INCLUDES = -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/map -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/game -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/screens -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/include -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/include
+  OBJECT_DIR = src/CMakeFiles/bomberman.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/bomberman.dir/ecs/component/Destroyable
+
+build src/CMakeFiles/bomberman.dir/ecs/entity/Entity.cpp.o: CXX_COMPILER__bomberman_Release /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/ecs/entity/Entity.cpp || cmake_object_order_depends_target_bomberman
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
+  DEP_FILE = src/CMakeFiles/bomberman.dir/ecs/entity/Entity.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wall -Wshadow -Wno-unused -Wno-deprecated-copy -Wno-deprecated-declarations -std=gnu++20
+  INCLUDES = -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/map -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/game -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/screens -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/include -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/include
+  OBJECT_DIR = src/CMakeFiles/bomberman.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/bomberman.dir/ecs/entity
+
+build src/CMakeFiles/bomberman.dir/ecs/system/Draw2D/Draw2D.cpp.o: CXX_COMPILER__bomberman_Release /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/ecs/system/Draw2D/Draw2D.cpp || cmake_object_order_depends_target_bomberman
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
+  DEP_FILE = src/CMakeFiles/bomberman.dir/ecs/system/Draw2D/Draw2D.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wall -Wshadow -Wno-unused -Wno-deprecated-copy -Wno-deprecated-declarations -std=gnu++20
+  INCLUDES = -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/map -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/game -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/screens -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/include -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/include
+  OBJECT_DIR = src/CMakeFiles/bomberman.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/bomberman.dir/ecs/system/Draw2D
+
+build src/CMakeFiles/bomberman.dir/ecs/system/Draw3D/Draw3D.cpp.o: CXX_COMPILER__bomberman_Release /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/ecs/system/Draw3D/Draw3D.cpp || cmake_object_order_depends_target_bomberman
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
+  DEP_FILE = src/CMakeFiles/bomberman.dir/ecs/system/Draw3D/Draw3D.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wall -Wshadow -Wno-unused -Wno-deprecated-copy -Wno-deprecated-declarations -std=gnu++20
+  INCLUDES = -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/map -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/game -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/screens -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/include -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/include
+  OBJECT_DIR = src/CMakeFiles/bomberman.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/bomberman.dir/ecs/system/Draw3D
+
+build src/CMakeFiles/bomberman.dir/ecs/system/Movement/Movement.cpp.o: CXX_COMPILER__bomberman_Release /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/ecs/system/Movement/Movement.cpp || cmake_object_order_depends_target_bomberman
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
+  DEP_FILE = src/CMakeFiles/bomberman.dir/ecs/system/Movement/Movement.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wall -Wshadow -Wno-unused -Wno-deprecated-copy -Wno-deprecated-declarations -std=gnu++20
+  INCLUDES = -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/map -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/game -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/screens -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/include -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/include
+  OBJECT_DIR = src/CMakeFiles/bomberman.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/bomberman.dir/ecs/system/Movement
+
+build src/CMakeFiles/bomberman.dir/ecs/system/Collide/Collide.cpp.o: CXX_COMPILER__bomberman_Release /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/ecs/system/Collide/Collide.cpp || cmake_object_order_depends_target_bomberman
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
+  DEP_FILE = src/CMakeFiles/bomberman.dir/ecs/system/Collide/Collide.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wall -Wshadow -Wno-unused -Wno-deprecated-copy -Wno-deprecated-declarations -std=gnu++20
+  INCLUDES = -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/map -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/game -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/screens -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/include -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/include
+  OBJECT_DIR = src/CMakeFiles/bomberman.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/bomberman.dir/ecs/system/Collide
+
+build src/CMakeFiles/bomberman.dir/ecs/system/Sound/Sound.cpp.o: CXX_COMPILER__bomberman_Release /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/ecs/system/Sound/Sound.cpp || cmake_object_order_depends_target_bomberman
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
+  DEP_FILE = src/CMakeFiles/bomberman.dir/ecs/system/Sound/Sound.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wall -Wshadow -Wno-unused -Wno-deprecated-copy -Wno-deprecated-declarations -std=gnu++20
+  INCLUDES = -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/map -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/game -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/screens -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/include -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/include
+  OBJECT_DIR = src/CMakeFiles/bomberman.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/bomberman.dir/ecs/system/Sound
+
+build src/CMakeFiles/bomberman.dir/ecs/system/Explodable/Explodable.cpp.o: CXX_COMPILER__bomberman_Release /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/ecs/system/Explodable/Explodable.cpp || cmake_object_order_depends_target_bomberman
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
+  DEP_FILE = src/CMakeFiles/bomberman.dir/ecs/system/Explodable/Explodable.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wall -Wshadow -Wno-unused -Wno-deprecated-copy -Wno-deprecated-declarations -std=gnu++20
+  INCLUDES = -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/map -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/game -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/screens -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/include -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/include
+  OBJECT_DIR = src/CMakeFiles/bomberman.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/bomberman.dir/ecs/system/Explodable
+
+build src/CMakeFiles/bomberman.dir/ecs/system/Object/Object.cpp.o: CXX_COMPILER__bomberman_Release /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/ecs/system/Object/Object.cpp || cmake_object_order_depends_target_bomberman
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
+  DEP_FILE = src/CMakeFiles/bomberman.dir/ecs/system/Object/Object.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wall -Wshadow -Wno-unused -Wno-deprecated-copy -Wno-deprecated-declarations -std=gnu++20
+  INCLUDES = -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/map -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/game -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/screens -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/include -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/include
+  OBJECT_DIR = src/CMakeFiles/bomberman.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/bomberman.dir/ecs/system/Object
+
+build src/CMakeFiles/bomberman.dir/raylib/boundingbox/BoundingBox.cpp.o: CXX_COMPILER__bomberman_Release /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/raylib/boundingbox/BoundingBox.cpp || cmake_object_order_depends_target_bomberman
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
+  DEP_FILE = src/CMakeFiles/bomberman.dir/raylib/boundingbox/BoundingBox.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wall -Wshadow -Wno-unused -Wno-deprecated-copy -Wno-deprecated-declarations -std=gnu++20
+  INCLUDES = -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/map -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/game -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/screens -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/include -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/include
+  OBJECT_DIR = src/CMakeFiles/bomberman.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/bomberman.dir/raylib/boundingbox
+
+build src/CMakeFiles/bomberman.dir/raylib/camera3d/Camera3D.cpp.o: CXX_COMPILER__bomberman_Release /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/raylib/camera3d/Camera3D.cpp || cmake_object_order_depends_target_bomberman
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
+  DEP_FILE = src/CMakeFiles/bomberman.dir/raylib/camera3d/Camera3D.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wall -Wshadow -Wno-unused -Wno-deprecated-copy -Wno-deprecated-declarations -std=gnu++20
+  INCLUDES = -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/map -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/game -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/screens -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/include -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/include
+  OBJECT_DIR = src/CMakeFiles/bomberman.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/bomberman.dir/raylib/camera3d
+
+build src/CMakeFiles/bomberman.dir/raylib/circle/Circle.cpp.o: CXX_COMPILER__bomberman_Release /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/raylib/circle/Circle.cpp || cmake_object_order_depends_target_bomberman
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
+  DEP_FILE = src/CMakeFiles/bomberman.dir/raylib/circle/Circle.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wall -Wshadow -Wno-unused -Wno-deprecated-copy -Wno-deprecated-declarations -std=gnu++20
+  INCLUDES = -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/map -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/game -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/screens -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/include -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/include
+  OBJECT_DIR = src/CMakeFiles/bomberman.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/bomberman.dir/raylib/circle
+
+build src/CMakeFiles/bomberman.dir/raylib/cube/Cube.cpp.o: CXX_COMPILER__bomberman_Release /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/raylib/cube/Cube.cpp || cmake_object_order_depends_target_bomberman
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
+  DEP_FILE = src/CMakeFiles/bomberman.dir/raylib/cube/Cube.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wall -Wshadow -Wno-unused -Wno-deprecated-copy -Wno-deprecated-declarations -std=gnu++20
+  INCLUDES = -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/map -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/game -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/screens -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/include -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/include
+  OBJECT_DIR = src/CMakeFiles/bomberman.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/bomberman.dir/raylib/cube
+
+build src/CMakeFiles/bomberman.dir/raylib/cylinder/Cylinder.cpp.o: CXX_COMPILER__bomberman_Release /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/raylib/cylinder/Cylinder.cpp || cmake_object_order_depends_target_bomberman
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
+  DEP_FILE = src/CMakeFiles/bomberman.dir/raylib/cylinder/Cylinder.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wall -Wshadow -Wno-unused -Wno-deprecated-copy -Wno-deprecated-declarations -std=gnu++20
+  INCLUDES = -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/map -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/game -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/screens -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/include -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/include
+  OBJECT_DIR = src/CMakeFiles/bomberman.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/bomberman.dir/raylib/cylinder
+
+build src/CMakeFiles/bomberman.dir/raylib/draw/Draw.cpp.o: CXX_COMPILER__bomberman_Release /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/raylib/draw/Draw.cpp || cmake_object_order_depends_target_bomberman
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
+  DEP_FILE = src/CMakeFiles/bomberman.dir/raylib/draw/Draw.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wall -Wshadow -Wno-unused -Wno-deprecated-copy -Wno-deprecated-declarations -std=gnu++20
+  INCLUDES = -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/map -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/game -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/screens -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/include -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/include
+  OBJECT_DIR = src/CMakeFiles/bomberman.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/bomberman.dir/raylib/draw
+
+build src/CMakeFiles/bomberman.dir/raylib/event/Event.cpp.o: CXX_COMPILER__bomberman_Release /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/raylib/event/Event.cpp || cmake_object_order_depends_target_bomberman
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
+  DEP_FILE = src/CMakeFiles/bomberman.dir/raylib/event/Event.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wall -Wshadow -Wno-unused -Wno-deprecated-copy -Wno-deprecated-declarations -std=gnu++20
+  INCLUDES = -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/map -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/game -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/screens -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/include -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/include
+  OBJECT_DIR = src/CMakeFiles/bomberman.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/bomberman.dir/raylib/event
+
+build src/CMakeFiles/bomberman.dir/raylib/model/Model.cpp.o: CXX_COMPILER__bomberman_Release /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/raylib/model/Model.cpp || cmake_object_order_depends_target_bomberman
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
+  DEP_FILE = src/CMakeFiles/bomberman.dir/raylib/model/Model.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wall -Wshadow -Wno-unused -Wno-deprecated-copy -Wno-deprecated-declarations -std=gnu++20
+  INCLUDES = -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/map -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/game -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/screens -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/include -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/include
+  OBJECT_DIR = src/CMakeFiles/bomberman.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/bomberman.dir/raylib/model
+
+build src/CMakeFiles/bomberman.dir/raylib/rectangle/Rectangle.cpp.o: CXX_COMPILER__bomberman_Release /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/raylib/rectangle/Rectangle.cpp || cmake_object_order_depends_target_bomberman
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
+  DEP_FILE = src/CMakeFiles/bomberman.dir/raylib/rectangle/Rectangle.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wall -Wshadow -Wno-unused -Wno-deprecated-copy -Wno-deprecated-declarations -std=gnu++20
+  INCLUDES = -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/map -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/game -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/screens -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/include -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/include
+  OBJECT_DIR = src/CMakeFiles/bomberman.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/bomberman.dir/raylib/rectangle
+
+build src/CMakeFiles/bomberman.dir/raylib/sound/Sound.cpp.o: CXX_COMPILER__bomberman_Release /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/raylib/sound/Sound.cpp || cmake_object_order_depends_target_bomberman
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
+  DEP_FILE = src/CMakeFiles/bomberman.dir/raylib/sound/Sound.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wall -Wshadow -Wno-unused -Wno-deprecated-copy -Wno-deprecated-declarations -std=gnu++20
+  INCLUDES = -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/map -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/game -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/screens -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/include -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/include
+  OBJECT_DIR = src/CMakeFiles/bomberman.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/bomberman.dir/raylib/sound
+
+build src/CMakeFiles/bomberman.dir/raylib/sphere/Sphere.cpp.o: CXX_COMPILER__bomberman_Release /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/raylib/sphere/Sphere.cpp || cmake_object_order_depends_target_bomberman
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
+  DEP_FILE = src/CMakeFiles/bomberman.dir/raylib/sphere/Sphere.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wall -Wshadow -Wno-unused -Wno-deprecated-copy -Wno-deprecated-declarations -std=gnu++20
+  INCLUDES = -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/map -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/game -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/screens -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/include -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/include
+  OBJECT_DIR = src/CMakeFiles/bomberman.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/bomberman.dir/raylib/sphere
+
+build src/CMakeFiles/bomberman.dir/raylib/triangle/Triangle.cpp.o: CXX_COMPILER__bomberman_Release /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/raylib/triangle/Triangle.cpp || cmake_object_order_depends_target_bomberman
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
+  DEP_FILE = src/CMakeFiles/bomberman.dir/raylib/triangle/Triangle.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wall -Wshadow -Wno-unused -Wno-deprecated-copy -Wno-deprecated-declarations -std=gnu++20
+  INCLUDES = -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/map -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/game -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/screens -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/include -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/include
+  OBJECT_DIR = src/CMakeFiles/bomberman.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/bomberman.dir/raylib/triangle
+
+build src/CMakeFiles/bomberman.dir/raylib/texture2d/Texture2D.cpp.o: CXX_COMPILER__bomberman_Release /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/raylib/texture2d/Texture2D.cpp || cmake_object_order_depends_target_bomberman
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
+  DEP_FILE = src/CMakeFiles/bomberman.dir/raylib/texture2d/Texture2D.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wall -Wshadow -Wno-unused -Wno-deprecated-copy -Wno-deprecated-declarations -std=gnu++20
+  INCLUDES = -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/map -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/game -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/screens -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/include -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/include
+  OBJECT_DIR = src/CMakeFiles/bomberman.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/bomberman.dir/raylib/texture2d
+
+build src/CMakeFiles/bomberman.dir/raylib/window/Window.cpp.o: CXX_COMPILER__bomberman_Release /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/raylib/window/Window.cpp || cmake_object_order_depends_target_bomberman
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
+  DEP_FILE = src/CMakeFiles/bomberman.dir/raylib/window/Window.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wall -Wshadow -Wno-unused -Wno-deprecated-copy -Wno-deprecated-declarations -std=gnu++20
+  INCLUDES = -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/map -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/game -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/screens -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/include -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/include
+  OBJECT_DIR = src/CMakeFiles/bomberman.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/bomberman.dir/raylib/window
+
+build src/CMakeFiles/bomberman.dir/screens/menu/MenuScreen.cpp.o: CXX_COMPILER__bomberman_Release /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/screens/menu/MenuScreen.cpp || cmake_object_order_depends_target_bomberman
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
+  DEP_FILE = src/CMakeFiles/bomberman.dir/screens/menu/MenuScreen.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wall -Wshadow -Wno-unused -Wno-deprecated-copy -Wno-deprecated-declarations -std=gnu++20
+  INCLUDES = -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/map -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/game -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/screens -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/include -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/include
+  OBJECT_DIR = src/CMakeFiles/bomberman.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/bomberman.dir/screens/menu
+
+build src/CMakeFiles/bomberman.dir/screens/game/GameScreen.cpp.o: CXX_COMPILER__bomberman_Release /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/screens/game/GameScreen.cpp || cmake_object_order_depends_target_bomberman
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
+  DEP_FILE = src/CMakeFiles/bomberman.dir/screens/game/GameScreen.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wall -Wshadow -Wno-unused -Wno-deprecated-copy -Wno-deprecated-declarations -std=gnu++20
+  INCLUDES = -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/map -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/game -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/screens -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/include -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/include
+  OBJECT_DIR = src/CMakeFiles/bomberman.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/bomberman.dir/screens/game
+
+build src/CMakeFiles/bomberman.dir/screens/pre_menu/PreMenuScreen.cpp.o: CXX_COMPILER__bomberman_Release /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/screens/pre_menu/PreMenuScreen.cpp || cmake_object_order_depends_target_bomberman
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
+  DEP_FILE = src/CMakeFiles/bomberman.dir/screens/pre_menu/PreMenuScreen.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wall -Wshadow -Wno-unused -Wno-deprecated-copy -Wno-deprecated-declarations -std=gnu++20
+  INCLUDES = -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/map -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/game -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/screens -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/include -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/include
+  OBJECT_DIR = src/CMakeFiles/bomberman.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/bomberman.dir/screens/pre_menu
+
+build src/CMakeFiles/bomberman.dir/screens/game_options/GameOptionsScreen.cpp.o: CXX_COMPILER__bomberman_Release /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/screens/game_options/GameOptionsScreen.cpp || cmake_object_order_depends_target_bomberman
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
+  DEP_FILE = src/CMakeFiles/bomberman.dir/screens/game_options/GameOptionsScreen.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wall -Wshadow -Wno-unused -Wno-deprecated-copy -Wno-deprecated-declarations -std=gnu++20
+  INCLUDES = -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/map -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/game -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/screens -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/include -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/include
+  OBJECT_DIR = src/CMakeFiles/bomberman.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/bomberman.dir/screens/game_options
+
+build src/CMakeFiles/bomberman.dir/screens/set_fps/SetFpsScreen.cpp.o: CXX_COMPILER__bomberman_Release /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/screens/set_fps/SetFpsScreen.cpp || cmake_object_order_depends_target_bomberman
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
+  DEP_FILE = src/CMakeFiles/bomberman.dir/screens/set_fps/SetFpsScreen.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wall -Wshadow -Wno-unused -Wno-deprecated-copy -Wno-deprecated-declarations -std=gnu++20
+  INCLUDES = -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/map -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/game -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/screens -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/include -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/include
+  OBJECT_DIR = src/CMakeFiles/bomberman.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/bomberman.dir/screens/set_fps
+
+build src/CMakeFiles/bomberman.dir/screens/set_music/SetMusicScreen.cpp.o: CXX_COMPILER__bomberman_Release /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/screens/set_music/SetMusicScreen.cpp || cmake_object_order_depends_target_bomberman
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
+  DEP_FILE = src/CMakeFiles/bomberman.dir/screens/set_music/SetMusicScreen.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wall -Wshadow -Wno-unused -Wno-deprecated-copy -Wno-deprecated-declarations -std=gnu++20
+  INCLUDES = -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/map -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/game -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/screens -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/include -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/include
+  OBJECT_DIR = src/CMakeFiles/bomberman.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/bomberman.dir/screens/set_music
+
+build src/CMakeFiles/bomberman.dir/screens/set_sound/SetSoundScreen.cpp.o: CXX_COMPILER__bomberman_Release /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/screens/set_sound/SetSoundScreen.cpp || cmake_object_order_depends_target_bomberman
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
+  DEP_FILE = src/CMakeFiles/bomberman.dir/screens/set_sound/SetSoundScreen.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wall -Wshadow -Wno-unused -Wno-deprecated-copy -Wno-deprecated-declarations -std=gnu++20
+  INCLUDES = -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/map -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/game -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/screens -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/include -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/include
+  OBJECT_DIR = src/CMakeFiles/bomberman.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/bomberman.dir/screens/set_sound
+
+build src/CMakeFiles/bomberman.dir/screens/game/uiPlayerDisplay/UIPlayerDisplay.cpp.o: CXX_COMPILER__bomberman_Release /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/screens/game/uiPlayerDisplay/UIPlayerDisplay.cpp || cmake_object_order_depends_target_bomberman
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
+  DEP_FILE = src/CMakeFiles/bomberman.dir/screens/game/uiPlayerDisplay/UIPlayerDisplay.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wall -Wshadow -Wno-unused -Wno-deprecated-copy -Wno-deprecated-declarations -std=gnu++20
+  INCLUDES = -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/map -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/game -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/screens -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/include -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/include
+  OBJECT_DIR = src/CMakeFiles/bomberman.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/bomberman.dir/screens/game/uiPlayerDisplay
+
+build src/CMakeFiles/bomberman.dir/map/MapGenerator.cpp.o: CXX_COMPILER__bomberman_Release /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/map/MapGenerator.cpp || cmake_object_order_depends_target_bomberman
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
+  DEP_FILE = src/CMakeFiles/bomberman.dir/map/MapGenerator.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wall -Wshadow -Wno-unused -Wno-deprecated-copy -Wno-deprecated-declarations -std=gnu++20
+  INCLUDES = -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/map -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/game -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/screens -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/include -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/include
+  OBJECT_DIR = src/CMakeFiles/bomberman.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/bomberman.dir/map
+
+build src/CMakeFiles/bomberman.dir/gameEvents/GameEvents.cpp.o: CXX_COMPILER__bomberman_Release /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/gameEvents/GameEvents.cpp || cmake_object_order_depends_target_bomberman
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
+  DEP_FILE = src/CMakeFiles/bomberman.dir/gameEvents/GameEvents.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wall -Wshadow -Wno-unused -Wno-deprecated-copy -Wno-deprecated-declarations -std=gnu++20
+  INCLUDES = -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/map -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/game -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/screens -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/include -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/include
+  OBJECT_DIR = src/CMakeFiles/bomberman.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/bomberman.dir/gameEvents
+
+build src/CMakeFiles/bomberman.dir/game/Game.cpp.o: CXX_COMPILER__bomberman_Release /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/game/Game.cpp || cmake_object_order_depends_target_bomberman
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
+  DEP_FILE = src/CMakeFiles/bomberman.dir/game/Game.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wall -Wshadow -Wno-unused -Wno-deprecated-copy -Wno-deprecated-declarations -std=gnu++20
+  INCLUDES = -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/map -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/game -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/screens -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/include -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/include
+  OBJECT_DIR = src/CMakeFiles/bomberman.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/bomberman.dir/game
+
+build src/CMakeFiles/bomberman.dir/player/Player.cpp.o: CXX_COMPILER__bomberman_Release /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/player/Player.cpp || cmake_object_order_depends_target_bomberman
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
+  DEP_FILE = src/CMakeFiles/bomberman.dir/player/Player.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -Wall -Wshadow -Wno-unused -Wno-deprecated-copy -Wno-deprecated-declarations -std=gnu++20
+  INCLUDES = -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/map -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/game -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/screens -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-src/src/external/glfw/include -I/Users/johan/Epitech/tek2/B4/YEP/Bomberman/include
+  OBJECT_DIR = src/CMakeFiles/bomberman.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/bomberman.dir/player
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target bomberman
+
+
+#############################################
+# Link the executable ../bomberman
+
+build ../bomberman: CXX_EXECUTABLE_LINKER__bomberman_Release src/CMakeFiles/bomberman.dir/main.cpp.o src/CMakeFiles/bomberman.dir/tools/Tools.cpp.o src/CMakeFiles/bomberman.dir/ecs/component/Transform/Transform.cpp.o src/CMakeFiles/bomberman.dir/ecs/component/Drawable2D/Drawable2D.cpp.o src/CMakeFiles/bomberman.dir/ecs/component/Drawable3D/Drawable3D.cpp.o src/CMakeFiles/bomberman.dir/ecs/component/Alive/Alive.cpp.o src/CMakeFiles/bomberman.dir/ecs/component/Collectable/Collectable.cpp.o src/CMakeFiles/bomberman.dir/ecs/component/Inventory/Inventory.cpp.o src/CMakeFiles/bomberman.dir/ecs/component/Explodable/Explodable.cpp.o src/CMakeFiles/bomberman.dir/ecs/component/Collide/Collide.cpp.o src/CMakeFiles/bomberman.dir/ecs/component/Object/Object.cpp.o src/CMakeFiles/bomberman.dir/ecs/component/Sound/Sound.cpp.o src/CMakeFiles/bomberman.dir/ecs/component/Destroyable/Destroyable.cpp.o src/CMakeFiles/bomberman.dir/ecs/entity/Entity.cpp.o src/CMakeFiles/bomberman.dir/ecs/system/Draw2D/Draw2D.cpp.o src/CMakeFiles/bomberman.dir/ecs/system/Draw3D/Draw3D.cpp.o src/CMakeFiles/bomberman.dir/ecs/system/Movement/Movement.cpp.o src/CMakeFiles/bomberman.dir/ecs/system/Collide/Collide.cpp.o src/CMakeFiles/bomberman.dir/ecs/system/Sound/Sound.cpp.o src/CMakeFiles/bomberman.dir/ecs/system/Explodable/Explodable.cpp.o src/CMakeFiles/bomberman.dir/ecs/system/Object/Object.cpp.o src/CMakeFiles/bomberman.dir/raylib/boundingbox/BoundingBox.cpp.o src/CMakeFiles/bomberman.dir/raylib/camera3d/Camera3D.cpp.o src/CMakeFiles/bomberman.dir/raylib/circle/Circle.cpp.o src/CMakeFiles/bomberman.dir/raylib/cube/Cube.cpp.o src/CMakeFiles/bomberman.dir/raylib/cylinder/Cylinder.cpp.o src/CMakeFiles/bomberman.dir/raylib/draw/Draw.cpp.o src/CMakeFiles/bomberman.dir/raylib/event/Event.cpp.o src/CMakeFiles/bomberman.dir/raylib/model/Model.cpp.o src/CMakeFiles/bomberman.dir/raylib/rectangle/Rectangle.cpp.o src/CMakeFiles/bomberman.dir/raylib/sound/Sound.cpp.o src/CMakeFiles/bomberman.dir/raylib/sphere/Sphere.cpp.o src/CMakeFiles/bomberman.dir/raylib/triangle/Triangle.cpp.o src/CMakeFiles/bomberman.dir/raylib/texture2d/Texture2D.cpp.o src/CMakeFiles/bomberman.dir/raylib/window/Window.cpp.o src/CMakeFiles/bomberman.dir/screens/menu/MenuScreen.cpp.o src/CMakeFiles/bomberman.dir/screens/game/GameScreen.cpp.o src/CMakeFiles/bomberman.dir/screens/pre_menu/PreMenuScreen.cpp.o src/CMakeFiles/bomberman.dir/screens/game_options/GameOptionsScreen.cpp.o src/CMakeFiles/bomberman.dir/screens/set_fps/SetFpsScreen.cpp.o src/CMakeFiles/bomberman.dir/screens/set_music/SetMusicScreen.cpp.o src/CMakeFiles/bomberman.dir/screens/set_sound/SetSoundScreen.cpp.o src/CMakeFiles/bomberman.dir/screens/game/uiPlayerDisplay/UIPlayerDisplay.cpp.o src/CMakeFiles/bomberman.dir/map/MapGenerator.cpp.o src/CMakeFiles/bomberman.dir/gameEvents/GameEvents.cpp.o src/CMakeFiles/bomberman.dir/game/Game.cpp.o src/CMakeFiles/bomberman.dir/player/Player.cpp.o | _deps/raylib-build/raylib/libraylib.a _deps/raylib-build/raylib/external/glfw/src/libglfw3.a || _deps/raylib-build/raylib/external/glfw/src/libglfw3.a _deps/raylib-build/raylib/libraylib.a
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk
+  LINK_LIBRARIES = _deps/raylib-build/raylib/libraylib.a  -framework IOKit  -framework Cocoa  -framework OpenGL  -framework  OpenGL  _deps/raylib-build/raylib/external/glfw/src/libglfw3.a  -framework IOKit  -framework Cocoa  -framework CoreFoundation
+  OBJECT_DIR = src/CMakeFiles/bomberman.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = ../bomberman
+  TARGET_PDB = bomberman.dbg
+
+
+#############################################
+# Utility command for package
+
+build src/CMakeFiles/package.util: CUSTOM_COMMAND src/all
+  COMMAND = cd /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build && /opt/homebrew/Cellar/cmake/3.23.1_1/bin/cpack --config ./CPackConfig.cmake
+  DESC = Run CPack packaging tool...
+  pool = console
+  restat = 1
+
+build src/package: phony src/CMakeFiles/package.util
+
+
+#############################################
+# Utility command for package_source
+
+build src/CMakeFiles/package_source.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build && /opt/homebrew/Cellar/cmake/3.23.1_1/bin/cpack --config ./CPackSourceConfig.cmake /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/CPackSourceConfig.cmake
+  DESC = Run CPack packaging tool for source...
+  pool = console
+  restat = 1
+
+build src/package_source: phony src/CMakeFiles/package_source.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build src/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/src && /opt/homebrew/Cellar/cmake/3.23.1_1/bin/ccmake -S/Users/johan/Epitech/tek2/B4/YEP/Bomberman -B/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
+
+build src/edit_cache: phony src/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build src/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/src && /opt/homebrew/Cellar/cmake/3.23.1_1/bin/cmake --regenerate-during-build -S/Users/johan/Epitech/tek2/B4/YEP/Bomberman -B/Users/johan/Epitech/tek2/B4/YEP/Bomberman/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build src/rebuild_cache: phony src/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build src/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build src/CMakeFiles/install.util: CUSTOM_COMMAND src/all
+  COMMAND = cd /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/src && /opt/homebrew/Cellar/cmake/3.23.1_1/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build src/install: phony src/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build src/CMakeFiles/install/local.util: CUSTOM_COMMAND src/all
+  COMMAND = cd /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/src && /opt/homebrew/Cellar/cmake/3.23.1_1/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build src/install/local: phony src/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build src/CMakeFiles/install/strip.util: CUSTOM_COMMAND src/all
+  COMMAND = cd /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/src && /opt/homebrew/Cellar/cmake/3.23.1_1/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build src/install/strip: phony src/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Target aliases.
+
+build bomberman: phony ../bomberman
+
+build glfw: phony _deps/raylib-build/raylib/external/glfw/src/libglfw3.a
+
+build libglfw3.a: phony _deps/raylib-build/raylib/external/glfw/src/libglfw3.a
+
+build libraylib.a: phony _deps/raylib-build/raylib/libraylib.a
+
+build raylib: phony _deps/raylib-build/raylib/libraylib.a
+
+# =============================================================================
+# Folder targets.
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build
+
+build all: phony _deps/raylib-build/all src/all
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-build
+
+build _deps/raylib-build/all: phony _deps/raylib-build/raylib/all
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-build/raylib
+
+build _deps/raylib-build/raylib/all: phony _deps/raylib-build/raylib/libraylib.a _deps/raylib-build/raylib/external/glfw/all
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-build/raylib/external/glfw
+
+build _deps/raylib-build/raylib/external/glfw/all: phony _deps/raylib-build/raylib/external/glfw/src/all
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/_deps/raylib-build/raylib/external/glfw/src
+
+build _deps/raylib-build/raylib/external/glfw/src/all: phony _deps/raylib-build/raylib/external/glfw/src/libglfw3.a
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/johan/Epitech/tek2/B4/YEP/Bomberman/build/src
+
+build src/all: phony ../bomberman
+
+# =============================================================================
+# Built-in targets
+
+
+#############################################
+# Re-run CMake if any of its inputs changed.
+
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../cmake/Findraylib.cmake ../src/CMakeLists.txt /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/BasicConfigVersion-SameMajorVersion.cmake.in /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/CMakeCInformation.cmake /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/CMakeCXXInformation.cmake /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/CMakeDependentOption.cmake /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/CMakeGenericSystem.cmake /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/CMakeInitializeConfigs.cmake /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/CMakeLanguageInformation.cmake /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/CMakePackageConfigHelpers.cmake /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/CPack.cmake /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/CPackComponent.cmake /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/CheckCCompilerFlag.cmake /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/CheckCSourceCompiles.cmake /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/CheckIncludeFile.cmake /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/CheckLibraryExists.cmake /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/Compiler/AppleClang-C.cmake /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/Compiler/AppleClang-CXX.cmake /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/Compiler/Clang.cmake /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/Compiler/GNU.cmake /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/FetchContent.cmake /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/FetchContent/CMakeLists.cmake.in /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/FindPackageMessage.cmake /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/FindThreads.cmake /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/GNUInstallDirs.cmake /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/Internal/CheckCompilerFlag.cmake /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/Internal/CheckFlagCommonConfig.cmake /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/Internal/CheckSourceCompiles.cmake /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/Platform/Apple-AppleClang-C.cmake /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/Platform/Apple-AppleClang-CXX.cmake /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/Platform/Apple-Clang-C.cmake /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/Platform/Apple-Clang-CXX.cmake /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/Platform/Apple-Clang.cmake /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/Platform/Darwin-Initialize.cmake /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/Platform/Darwin.cmake /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/Platform/UnixPaths.cmake /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/WriteBasicConfigVersionFile.cmake /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Templates/CPackConfig.cmake.in CMakeCache.txt CMakeFiles/3.23.1/CMakeCCompiler.cmake CMakeFiles/3.23.1/CMakeCXXCompiler.cmake CMakeFiles/3.23.1/CMakeSystem.cmake _deps/raylib-src/CMakeLists.txt _deps/raylib-src/CMakeOptions.txt _deps/raylib-src/cmake/AddIfFlagCompiles.cmake _deps/raylib-src/cmake/BuildOptions.cmake _deps/raylib-src/cmake/CompileDefinitions.cmake _deps/raylib-src/cmake/CompilerFlags.cmake _deps/raylib-src/cmake/EnumOption.cmake _deps/raylib-src/cmake/GlfwImport.cmake _deps/raylib-src/cmake/InstallConfigurations.cmake _deps/raylib-src/cmake/JoinPaths.cmake _deps/raylib-src/cmake/LibraryConfigurations.cmake _deps/raylib-src/cmake/LibraryPathToLinkerFlags.cmake _deps/raylib-src/cmake/PackConfigurations.cmake _deps/raylib-src/cmake/PopulateConfigVariablesLocally.cmake _deps/raylib-src/cmake/raylib-config-version.cmake _deps/raylib-src/raylib.pc.in _deps/raylib-src/src/CMakeLists.txt _deps/raylib-src/src/external/glfw/CMake/glfw3.pc.in _deps/raylib-src/src/external/glfw/CMake/glfw3Config.cmake.in _deps/raylib-src/src/external/glfw/CMakeLists.txt _deps/raylib-src/src/external/glfw/src/CMakeLists.txt _deps/raylib-src/src/external/glfw/src/glfw_config.h.in
+  pool = console
+
+
+#############################################
+# A missing CMake input file is not an error.
+
+build ../CMakeLists.txt ../cmake/Findraylib.cmake ../src/CMakeLists.txt /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/BasicConfigVersion-SameMajorVersion.cmake.in /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/CMakeCInformation.cmake /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/CMakeCXXInformation.cmake /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/CMakeDependentOption.cmake /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/CMakeGenericSystem.cmake /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/CMakeInitializeConfigs.cmake /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/CMakeLanguageInformation.cmake /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/CMakePackageConfigHelpers.cmake /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/CPack.cmake /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/CPackComponent.cmake /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/CheckCCompilerFlag.cmake /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/CheckCSourceCompiles.cmake /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/CheckIncludeFile.cmake /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/CheckLibraryExists.cmake /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/Compiler/AppleClang-C.cmake /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/Compiler/AppleClang-CXX.cmake /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/Compiler/Clang.cmake /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/Compiler/GNU.cmake /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/FetchContent.cmake /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/FetchContent/CMakeLists.cmake.in /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/FindPackageMessage.cmake /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/FindThreads.cmake /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/GNUInstallDirs.cmake /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/Internal/CheckCompilerFlag.cmake /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/Internal/CheckFlagCommonConfig.cmake /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/Internal/CheckSourceCompiles.cmake /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/Platform/Apple-AppleClang-C.cmake /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/Platform/Apple-AppleClang-CXX.cmake /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/Platform/Apple-Clang-C.cmake /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/Platform/Apple-Clang-CXX.cmake /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/Platform/Apple-Clang.cmake /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/Platform/Darwin-Initialize.cmake /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/Platform/Darwin.cmake /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/Platform/UnixPaths.cmake /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Modules/WriteBasicConfigVersionFile.cmake /opt/homebrew/Cellar/cmake/3.23.1_1/share/cmake/Templates/CPackConfig.cmake.in CMakeCache.txt CMakeFiles/3.23.1/CMakeCCompiler.cmake CMakeFiles/3.23.1/CMakeCXXCompiler.cmake CMakeFiles/3.23.1/CMakeSystem.cmake _deps/raylib-src/CMakeLists.txt _deps/raylib-src/CMakeOptions.txt _deps/raylib-src/cmake/AddIfFlagCompiles.cmake _deps/raylib-src/cmake/BuildOptions.cmake _deps/raylib-src/cmake/CompileDefinitions.cmake _deps/raylib-src/cmake/CompilerFlags.cmake _deps/raylib-src/cmake/EnumOption.cmake _deps/raylib-src/cmake/GlfwImport.cmake _deps/raylib-src/cmake/InstallConfigurations.cmake _deps/raylib-src/cmake/JoinPaths.cmake _deps/raylib-src/cmake/LibraryConfigurations.cmake _deps/raylib-src/cmake/LibraryPathToLinkerFlags.cmake _deps/raylib-src/cmake/PackConfigurations.cmake _deps/raylib-src/cmake/PopulateConfigVariablesLocally.cmake _deps/raylib-src/cmake/raylib-config-version.cmake _deps/raylib-src/raylib.pc.in _deps/raylib-src/src/CMakeLists.txt _deps/raylib-src/src/external/glfw/CMake/glfw3.pc.in _deps/raylib-src/src/external/glfw/CMake/glfw3Config.cmake.in _deps/raylib-src/src/external/glfw/CMakeLists.txt _deps/raylib-src/src/external/glfw/src/CMakeLists.txt _deps/raylib-src/src/external/glfw/src/glfw_config.h.in: phony
+
+
+#############################################
+# Clean all the built files.
+
+build clean: CLEAN
+
+
+#############################################
+# Print all primary targets available.
+
+build help: HELP
+
+
+#############################################
+# Make the all target the default.
+
+default all

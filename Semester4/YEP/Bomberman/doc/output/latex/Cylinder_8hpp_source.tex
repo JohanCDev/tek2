@@ -1,0 +1,59 @@
+\hypertarget{Cylinder_8hpp_source}{}\doxysection{Cylinder.\+hpp}
+\label{Cylinder_8hpp_source}\index{src/raylib/cylinder/Cylinder.hpp@{src/raylib/cylinder/Cylinder.hpp}}
+\mbox{\hyperlink{Cylinder_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#ifndef CYLINDER\_HPP\_}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#define CYLINDER\_HPP\_}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include "{}../Raylib.hpp"{}}}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 \textcolor{keyword}{namespace }indie}
+\DoxyCodeLine{18 \{}
+\DoxyCodeLine{19     \textcolor{keyword}{namespace }raylib}
+\DoxyCodeLine{20     \{}
+\DoxyCodeLine{22         \textcolor{keyword}{class }\mbox{\hyperlink{classindie_1_1raylib_1_1Cylinder}{Cylinder}} \{}
+\DoxyCodeLine{23           \textcolor{keyword}{public}:}
+\DoxyCodeLine{34             \mbox{\hyperlink{classindie_1_1raylib_1_1Cylinder_a17f55066ee8d3eb154cf46a346733cc7}{Cylinder}}(::Vector3 position, \textcolor{keywordtype}{float} radiusTop, \textcolor{keywordtype}{float} radiusBottom, \textcolor{keywordtype}{float} height, \textcolor{keywordtype}{int} slices,}
+\DoxyCodeLine{35                 ::Color color = BLACK);}
+\DoxyCodeLine{40             \mbox{\hyperlink{classindie_1_1raylib_1_1Cylinder_a9317913b56517e867650361af41a2cb4}{\string~Cylinder}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{46             ::Vector3 \mbox{\hyperlink{classindie_1_1raylib_1_1Cylinder_af5c39e4bb6164aa9db41a6a7f8db0f2d}{getPosition}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{52             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Cylinder_a4ee45a3c657f2198683ef4f7dbefd887}{setPosition}}(::Vector3 position);}
+\DoxyCodeLine{58             \textcolor{keywordtype}{float} \mbox{\hyperlink{classindie_1_1raylib_1_1Cylinder_a0313e574cc16765fd4c1af202fccce0c}{getRadiusTop}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{64             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Cylinder_af2007e46379cb07c77975383e00927bd}{setRadiusTop}}(\textcolor{keywordtype}{float} radiusTop);}
+\DoxyCodeLine{70             \textcolor{keywordtype}{float} \mbox{\hyperlink{classindie_1_1raylib_1_1Cylinder_a6f06fb55e33cf3faa17f1f3da1a1b2c3}{getRadiusBottom}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{76             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Cylinder_a5e896360784834ff18baa414cb32b0e3}{setRadiusBottom}}(\textcolor{keywordtype}{float} radiusBottom);}
+\DoxyCodeLine{82             \textcolor{keywordtype}{float} \mbox{\hyperlink{classindie_1_1raylib_1_1Cylinder_a30a091f0fda908af8751bc7a9b565c15}{getHeight}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{88             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Cylinder_af1c434ee321efbde8698e42bb6d07e83}{setHeight}}(\textcolor{keywordtype}{float} height);}
+\DoxyCodeLine{94             \textcolor{keywordtype}{int} \mbox{\hyperlink{classindie_1_1raylib_1_1Cylinder_ac8a303eead304d86df80b91b1120f49e}{getSlices}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{100             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Cylinder_a51467dff8367c202ad660c902d0bd178}{setSlices}}(\textcolor{keywordtype}{int} slices);}
+\DoxyCodeLine{106             ::Color \mbox{\hyperlink{classindie_1_1raylib_1_1Cylinder_a241a3d30e0c4ac05d863c2cf6f3eadf0}{getColor}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{112             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Cylinder_a73b9822bd28fe645a4ba5d9285612533}{setColor}}(::Color color);}
+\DoxyCodeLine{116             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Cylinder_afc1ba842e1353ba5a7c219cdf209d62c}{draw}}();}
+\DoxyCodeLine{127             \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Cylinder_afc1ba842e1353ba5a7c219cdf209d62c}{draw}}(}
+\DoxyCodeLine{128                 ::Vector3 position, \textcolor{keywordtype}{float} radiusTop, \textcolor{keywordtype}{float} radiusBottom, \textcolor{keywordtype}{float} height, \textcolor{keywordtype}{int} slices, ::Color color);}
+\DoxyCodeLine{135             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Cylinder_a2f724c4a270103401a34171656a57015}{drawEx}}(::Vector3 startPos, ::Vector3 endPos);}
+\DoxyCodeLine{147             \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Cylinder_a2f724c4a270103401a34171656a57015}{drawEx}}(::Vector3 startPos, ::Vector3 endPos, \textcolor{keywordtype}{float} radiusTop, \textcolor{keywordtype}{float} radiusBottom, \textcolor{keywordtype}{float} height,}
+\DoxyCodeLine{148                 \textcolor{keywordtype}{int} slices, ::Color color);}
+\DoxyCodeLine{149 }
+\DoxyCodeLine{153             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Cylinder_a7536c6427863882f07c41fcc03c3aa27}{drawWires}}();}
+\DoxyCodeLine{164             \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Cylinder_a7536c6427863882f07c41fcc03c3aa27}{drawWires}}(}
+\DoxyCodeLine{165                 ::Vector3 position, \textcolor{keywordtype}{float} radiusTop, \textcolor{keywordtype}{float} radiusBottom, \textcolor{keywordtype}{float} height, \textcolor{keywordtype}{int} slices, ::Color color);}
+\DoxyCodeLine{172             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Cylinder_a6c281b1c03d8309e1104ed1d02c73a4b}{drawWiresEx}}(::Vector3 startPos, ::Vector3 endPos);}
+\DoxyCodeLine{184             \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Cylinder_a6c281b1c03d8309e1104ed1d02c73a4b}{drawWiresEx}}(::Vector3 startPos, ::Vector3 endPos, \textcolor{keywordtype}{float} radiusTop, \textcolor{keywordtype}{float} radiusBottom,}
+\DoxyCodeLine{185                 \textcolor{keywordtype}{float} height, \textcolor{keywordtype}{int} slices, ::Color color);}
+\DoxyCodeLine{186 }
+\DoxyCodeLine{187           \textcolor{keyword}{private}:}
+\DoxyCodeLine{192             ::Vector3 \_position;}
+\DoxyCodeLine{197             \textcolor{keywordtype}{float} \_radiusTop;}
+\DoxyCodeLine{202             \textcolor{keywordtype}{float} \_radiusBottom;}
+\DoxyCodeLine{207             \textcolor{keywordtype}{float} \_height;}
+\DoxyCodeLine{212             \textcolor{keywordtype}{int} \_slices;}
+\DoxyCodeLine{217             ::Color \_color;}
+\DoxyCodeLine{218         \};}
+\DoxyCodeLine{219     \} \textcolor{comment}{// namespace raylib}}
+\DoxyCodeLine{220 \} \textcolor{comment}{// namespace indie}}
+\DoxyCodeLine{221 }
+\DoxyCodeLine{222 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* !CYLINDER\_HPP\_ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

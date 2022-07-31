@@ -1,0 +1,125 @@
+\hypertarget{classindie_1_1raylib_1_1Event}{}\doxysection{indie\+::raylib\+::Event Class Reference}
+\label{classindie_1_1raylib_1_1Event}\index{indie::raylib::Event@{indie::raylib::Event}}
+
+
+\mbox{\hyperlink{classindie_1_1raylib_1_1Event}{Event}} class encapsulation.  
+
+
+
+
+{\ttfamily \#include $<$Event.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Event_a82ac280546219027c3e2551ca483cb2e}\label{classindie_1_1raylib_1_1Event_a82ac280546219027c3e2551ca483cb2e}} 
+{\bfseries Event} ()=default
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classindie_1_1raylib_1_1Event}{Event}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Event_a7983e6123c4c6f70040487c2ede80920}\label{classindie_1_1raylib_1_1Event_a7983e6123c4c6f70040487c2ede80920}} 
+{\bfseries $\sim$\+Event} ()=default
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classindie_1_1raylib_1_1Event}{Event}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{classindie_1_1raylib_1_1Event_a3e2e1ec3b20f07db2f13d9b3092313c0}{is\+Key\+Pressed}} (Keyboard\+Key key)
+\begin{DoxyCompactList}\small\item\em Check if a key is pressed. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classindie_1_1raylib_1_1Event_a65783d5a92e50a89a33507df0f446125}{is\+Gamepad\+Available}} (int gamepad)
+\begin{DoxyCompactList}\small\item\em Check if a gamepad is available. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classindie_1_1raylib_1_1Event_a92fc5a6997c15c4d85c5f7c4b9066553}{is\+Gamepad\+Button\+Pressed}} (int gamepad\+Id, int button\+Id)
+\begin{DoxyCompactList}\small\item\em Check if a specific button on a specific gamepad is pressed. \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{classindie_1_1raylib_1_1Event_af2b6a309034bbd93666c0793bfe30d15}{get\+Gamepad\+Axis\+Movement}} (int gamepad, int axis)
+\begin{DoxyCompactList}\small\item\em Get axis movement value for a gamepad axis. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classindie_1_1raylib_1_1Event}{Event}} class encapsulation. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Event_af2b6a309034bbd93666c0793bfe30d15}\label{classindie_1_1raylib_1_1Event_af2b6a309034bbd93666c0793bfe30d15}} 
+\index{indie::raylib::Event@{indie::raylib::Event}!getGamepadAxisMovement@{getGamepadAxisMovement}}
+\index{getGamepadAxisMovement@{getGamepadAxisMovement}!indie::raylib::Event@{indie::raylib::Event}}
+\doxysubsubsection{\texorpdfstring{getGamepadAxisMovement()}{getGamepadAxisMovement()}}
+{\footnotesize\ttfamily float indie\+::raylib\+::\+Event\+::get\+Gamepad\+Axis\+Movement (\begin{DoxyParamCaption}\item[{int}]{gamepad,  }\item[{int}]{axis }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get axis movement value for a gamepad axis. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gamepad} & The gamepad \\
+\hline
+{\em axis} & The gamepad axis\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float The axis movement value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Event_a65783d5a92e50a89a33507df0f446125}\label{classindie_1_1raylib_1_1Event_a65783d5a92e50a89a33507df0f446125}} 
+\index{indie::raylib::Event@{indie::raylib::Event}!isGamepadAvailable@{isGamepadAvailable}}
+\index{isGamepadAvailable@{isGamepadAvailable}!indie::raylib::Event@{indie::raylib::Event}}
+\doxysubsubsection{\texorpdfstring{isGamepadAvailable()}{isGamepadAvailable()}}
+{\footnotesize\ttfamily bool indie\+::raylib\+::\+Event\+::is\+Gamepad\+Available (\begin{DoxyParamCaption}\item[{int}]{gamepad }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Check if a gamepad is available. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gamepad} & The gamepad\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true The gamepad is available 
+
+false The gamepad isn\textquotesingle{}t available 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Event_a92fc5a6997c15c4d85c5f7c4b9066553}\label{classindie_1_1raylib_1_1Event_a92fc5a6997c15c4d85c5f7c4b9066553}} 
+\index{indie::raylib::Event@{indie::raylib::Event}!isGamepadButtonPressed@{isGamepadButtonPressed}}
+\index{isGamepadButtonPressed@{isGamepadButtonPressed}!indie::raylib::Event@{indie::raylib::Event}}
+\doxysubsubsection{\texorpdfstring{isGamepadButtonPressed()}{isGamepadButtonPressed()}}
+{\footnotesize\ttfamily bool indie\+::raylib\+::\+Event\+::is\+Gamepad\+Button\+Pressed (\begin{DoxyParamCaption}\item[{int}]{gamepad\+Id,  }\item[{int}]{button\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Check if a specific button on a specific gamepad is pressed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gamepad\+Id} & Gamepad ID \\
+\hline
+{\em button\+Id} & Button ID\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true Button is pressed 
+
+false Button isn\textquotesingle{}t pressed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Event_a3e2e1ec3b20f07db2f13d9b3092313c0}\label{classindie_1_1raylib_1_1Event_a3e2e1ec3b20f07db2f13d9b3092313c0}} 
+\index{indie::raylib::Event@{indie::raylib::Event}!isKeyPressed@{isKeyPressed}}
+\index{isKeyPressed@{isKeyPressed}!indie::raylib::Event@{indie::raylib::Event}}
+\doxysubsubsection{\texorpdfstring{isKeyPressed()}{isKeyPressed()}}
+{\footnotesize\ttfamily bool indie\+::raylib\+::\+Event\+::is\+Key\+Pressed (\begin{DoxyParamCaption}\item[{Keyboard\+Key}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Check if a key is pressed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The pressed key\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true The key is pressed 
+
+false The key isn\textquotesingle{}t pressed 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/raylib/event/\mbox{\hyperlink{Event_8hpp}{Event.\+hpp}}\item 
+src/raylib/event/\mbox{\hyperlink{Event_8cpp}{Event.\+cpp}}\end{DoxyCompactItemize}

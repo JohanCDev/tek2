@@ -1,0 +1,321 @@
+\hypertarget{classindie_1_1raylib_1_1Sound}{}\doxysection{indie\+::raylib\+::Sound Class Reference}
+\label{classindie_1_1raylib_1_1Sound}\index{indie::raylib::Sound@{indie::raylib::Sound}}
+
+
+\mbox{\hyperlink{classindie_1_1raylib_1_1Sound}{Sound}} class encapsulation.  
+
+
+
+
+{\ttfamily \#include $<$Sound.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Sound_a522701c30c5f9784c3c2eec78174f650}\label{classindie_1_1raylib_1_1Sound_a522701c30c5f9784c3c2eec78174f650}} 
+{\bfseries Sound} ()=default
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classindie_1_1raylib_1_1Sound}{Sound}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classindie_1_1raylib_1_1Sound_a6a91339b6bd741015088bb43cdf6eff5}{Sound}} (const std\+::string \&file\+Name)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classindie_1_1raylib_1_1Sound}{Sound}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Sound_a860539f59875a8f7e881fbb5ae093b97}\label{classindie_1_1raylib_1_1Sound_a860539f59875a8f7e881fbb5ae093b97}} 
+{\bfseries $\sim$\+Sound} ()=default
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classindie_1_1raylib_1_1Sound}{Sound}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classindie_1_1raylib_1_1Sound_a522701c30c5f9784c3c2eec78174f650}{\+::\+Sound}} \mbox{\hyperlink{classindie_1_1raylib_1_1Sound_ab745d78db5a39a6911fd139804612ed1}{get\+Sound}} () const
+\begin{DoxyCompactList}\small\item\em Get \mbox{\hyperlink{classindie_1_1raylib_1_1Sound}{Sound}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classindie_1_1raylib_1_1Sound_a522701c30c5f9784c3c2eec78174f650}{\+::\+Sound}} \mbox{\hyperlink{classindie_1_1raylib_1_1Sound_a1e898d538cb5d5308bbabfe3dfb991fa}{load}} (const char $\ast$file\+Name)
+\begin{DoxyCompactList}\small\item\em Load sound from file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1raylib_1_1Sound_ae60f9da0f6dafe92a5262f800d916d81}{update}} (\mbox{\hyperlink{classindie_1_1raylib_1_1Sound_a522701c30c5f9784c3c2eec78174f650}{\+::\+Sound}} sound, const void $\ast$data, int samples\+Count)
+\begin{DoxyCompactList}\small\item\em Update sound buffer with new data. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Sound_aed6a40ad3b61ccc309ecb1ab9c81418c}\label{classindie_1_1raylib_1_1Sound_aed6a40ad3b61ccc309ecb1ab9c81418c}} 
+void {\bfseries unload} ()
+\begin{DoxyCompactList}\small\item\em Unload sound. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Sound_a9ba4ddcdbac5aef1338e8fc13568ae4a}\label{classindie_1_1raylib_1_1Sound_a9ba4ddcdbac5aef1338e8fc13568ae4a}} 
+void {\bfseries play} ()
+\begin{DoxyCompactList}\small\item\em Play a sound. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Sound_ab296e50006c25f6d053755592f78b498}\label{classindie_1_1raylib_1_1Sound_ab296e50006c25f6d053755592f78b498}} 
+void {\bfseries stop} ()
+\begin{DoxyCompactList}\small\item\em Stop playing a sound. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Sound_a84583e44bba46ea8931ad6ad18773711}\label{classindie_1_1raylib_1_1Sound_a84583e44bba46ea8931ad6ad18773711}} 
+void {\bfseries pause} ()
+\begin{DoxyCompactList}\small\item\em Pause a sound. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Sound_aca98d32ebd87487f81381fef64cb8d3c}\label{classindie_1_1raylib_1_1Sound_aca98d32ebd87487f81381fef64cb8d3c}} 
+void {\bfseries resume} ()
+\begin{DoxyCompactList}\small\item\em Resume a paused sound. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classindie_1_1raylib_1_1Sound_ae636415ffe9b6a491949b708294bbbd8}{get\+Volume}} () const
+\begin{DoxyCompactList}\small\item\em Get the volume. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1raylib_1_1Sound_a83f90b552841ca45731852d219103ed5}{set\+Volume}} (float volume)
+\begin{DoxyCompactList}\small\item\em Set volume for a sound (1.\+0 is max level) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1raylib_1_1Sound_a85c15b0da9dc2729e38ed52d4e23b583}{set\+Pitch}} (float pitch)
+\begin{DoxyCompactList}\small\item\em Set the pitch for a sound (1.\+0 is base level) \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classindie_1_1raylib_1_1Sound_a08fe453a6f9a04bd1c05e18aae34764b}{is\+Playing}} () const
+\begin{DoxyCompactList}\small\item\em Check if a sound is currently playing. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Sound_a1b1124a2ed0181b4e9c5ec9d766ab7d3}\label{classindie_1_1raylib_1_1Sound_a1b1124a2ed0181b4e9c5ec9d766ab7d3}} 
+static void {\bfseries init\+Audio\+Device} (void)
+\begin{DoxyCompactList}\small\item\em Init audio device. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classindie_1_1raylib_1_1Sound_ac9a1e7b03ffa220a64cdb423e90a6317}{unload}} (\mbox{\hyperlink{classindie_1_1raylib_1_1Sound_a522701c30c5f9784c3c2eec78174f650}{\+::\+Sound}} sound)
+\begin{DoxyCompactList}\small\item\em Unload sound. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classindie_1_1raylib_1_1Sound_a45ca4330827129f31d1badd4f0792e10}{play}} (\mbox{\hyperlink{classindie_1_1raylib_1_1Sound_a522701c30c5f9784c3c2eec78174f650}{\+::\+Sound}} sound)
+\begin{DoxyCompactList}\small\item\em Play a sound. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classindie_1_1raylib_1_1Sound_aa1d7f8bc9eb799cf9ab8143c4f9232e9}{stop}} (\mbox{\hyperlink{classindie_1_1raylib_1_1Sound_a522701c30c5f9784c3c2eec78174f650}{\+::\+Sound}} sound)
+\begin{DoxyCompactList}\small\item\em Stop playing a sound. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classindie_1_1raylib_1_1Sound_aa985698784ef8ccb374dc3ad051cfb71}{pause}} (\mbox{\hyperlink{classindie_1_1raylib_1_1Sound_a522701c30c5f9784c3c2eec78174f650}{\+::\+Sound}} sound)
+\begin{DoxyCompactList}\small\item\em Pause a sound. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classindie_1_1raylib_1_1Sound_ad6eb28d8c10282e20ab85c2cdeae43c2}{resume}} (\mbox{\hyperlink{classindie_1_1raylib_1_1Sound_a522701c30c5f9784c3c2eec78174f650}{\+::\+Sound}} sound)
+\begin{DoxyCompactList}\small\item\em Resume a paused sound. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classindie_1_1raylib_1_1Sound_a9f090f971eb836417749e67b6565837b}{set\+Pitch}} (\mbox{\hyperlink{classindie_1_1raylib_1_1Sound_a522701c30c5f9784c3c2eec78174f650}{\+::\+Sound}} sound, float pitch)
+\begin{DoxyCompactList}\small\item\em Set pitch for a sound (1.\+0 is base level) \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classindie_1_1raylib_1_1Sound_ad214a4868b1a894caa5011ef372a4c00}{is\+Playing}} (\mbox{\hyperlink{classindie_1_1raylib_1_1Sound_a522701c30c5f9784c3c2eec78174f650}{\+::\+Sound}} sound)
+\begin{DoxyCompactList}\small\item\em Check if a sound is currently playing. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classindie_1_1raylib_1_1Sound}{Sound}} class encapsulation. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Sound_a6a91339b6bd741015088bb43cdf6eff5}\label{classindie_1_1raylib_1_1Sound_a6a91339b6bd741015088bb43cdf6eff5}} 
+\index{indie::raylib::Sound@{indie::raylib::Sound}!Sound@{Sound}}
+\index{Sound@{Sound}!indie::raylib::Sound@{indie::raylib::Sound}}
+\doxysubsubsection{\texorpdfstring{Sound()}{Sound()}}
+{\footnotesize\ttfamily indie\+::raylib\+::\+Sound\+::\+Sound (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Name }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classindie_1_1raylib_1_1Sound}{Sound}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & File path to the sound file \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Sound_ab745d78db5a39a6911fd139804612ed1}\label{classindie_1_1raylib_1_1Sound_ab745d78db5a39a6911fd139804612ed1}} 
+\index{indie::raylib::Sound@{indie::raylib::Sound}!getSound@{getSound}}
+\index{getSound@{getSound}!indie::raylib::Sound@{indie::raylib::Sound}}
+\doxysubsubsection{\texorpdfstring{getSound()}{getSound()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classindie_1_1raylib_1_1Sound}{Sound}} indie\+::raylib\+::\+Sound\+::get\+Sound (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get \mbox{\hyperlink{classindie_1_1raylib_1_1Sound}{Sound}}. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classindie_1_1raylib_1_1Sound}{Sound}} \mbox{\hyperlink{classindie_1_1raylib_1_1Sound}{Sound}} Object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Sound_ae636415ffe9b6a491949b708294bbbd8}\label{classindie_1_1raylib_1_1Sound_ae636415ffe9b6a491949b708294bbbd8}} 
+\index{indie::raylib::Sound@{indie::raylib::Sound}!getVolume@{getVolume}}
+\index{getVolume@{getVolume}!indie::raylib::Sound@{indie::raylib::Sound}}
+\doxysubsubsection{\texorpdfstring{getVolume()}{getVolume()}}
+{\footnotesize\ttfamily float indie\+::raylib\+::\+Sound\+::get\+Volume (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the volume. 
+
+\begin{DoxyReturn}{Returns}
+float Volume value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Sound_a08fe453a6f9a04bd1c05e18aae34764b}\label{classindie_1_1raylib_1_1Sound_a08fe453a6f9a04bd1c05e18aae34764b}} 
+\index{indie::raylib::Sound@{indie::raylib::Sound}!isPlaying@{isPlaying}}
+\index{isPlaying@{isPlaying}!indie::raylib::Sound@{indie::raylib::Sound}}
+\doxysubsubsection{\texorpdfstring{isPlaying()}{isPlaying()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool indie\+::raylib\+::\+Sound\+::is\+Playing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Check if a sound is currently playing. 
+
+\begin{DoxyReturn}{Returns}
+true The sound is currently playing 
+
+false The sound isn\textquotesingle{}t currently playing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Sound_ad214a4868b1a894caa5011ef372a4c00}\label{classindie_1_1raylib_1_1Sound_ad214a4868b1a894caa5011ef372a4c00}} 
+\index{indie::raylib::Sound@{indie::raylib::Sound}!isPlaying@{isPlaying}}
+\index{isPlaying@{isPlaying}!indie::raylib::Sound@{indie::raylib::Sound}}
+\doxysubsubsection{\texorpdfstring{isPlaying()}{isPlaying()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool indie\+::raylib\+::\+Sound\+::is\+Playing (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classindie_1_1raylib_1_1Sound_a522701c30c5f9784c3c2eec78174f650}{\+::\+Sound}}}]{sound }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Check if a sound is currently playing. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sound} & The sound stream \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true The sound is currently playing 
+
+false The sound isn\textquotesingle{}t currently playing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Sound_a1e898d538cb5d5308bbabfe3dfb991fa}\label{classindie_1_1raylib_1_1Sound_a1e898d538cb5d5308bbabfe3dfb991fa}} 
+\index{indie::raylib::Sound@{indie::raylib::Sound}!load@{load}}
+\index{load@{load}!indie::raylib::Sound@{indie::raylib::Sound}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classindie_1_1raylib_1_1Sound}{Sound}} indie\+::raylib\+::\+Sound\+::load (\begin{DoxyParamCaption}\item[{const char $\ast$}]{file\+Name }\end{DoxyParamCaption})}
+
+
+
+Load sound from file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & File path to the sound file\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classindie_1_1raylib_1_1Sound}{Sound}} \mbox{\hyperlink{classindie_1_1raylib_1_1Sound}{Sound}} object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Sound_aa985698784ef8ccb374dc3ad051cfb71}\label{classindie_1_1raylib_1_1Sound_aa985698784ef8ccb374dc3ad051cfb71}} 
+\index{indie::raylib::Sound@{indie::raylib::Sound}!pause@{pause}}
+\index{pause@{pause}!indie::raylib::Sound@{indie::raylib::Sound}}
+\doxysubsubsection{\texorpdfstring{pause()}{pause()}}
+{\footnotesize\ttfamily void indie\+::raylib\+::\+Sound\+::pause (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classindie_1_1raylib_1_1Sound_a522701c30c5f9784c3c2eec78174f650}{\+::\+Sound}}}]{sound }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Pause a sound. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sound} & The sound stream \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Sound_a45ca4330827129f31d1badd4f0792e10}\label{classindie_1_1raylib_1_1Sound_a45ca4330827129f31d1badd4f0792e10}} 
+\index{indie::raylib::Sound@{indie::raylib::Sound}!play@{play}}
+\index{play@{play}!indie::raylib::Sound@{indie::raylib::Sound}}
+\doxysubsubsection{\texorpdfstring{play()}{play()}}
+{\footnotesize\ttfamily void indie\+::raylib\+::\+Sound\+::play (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classindie_1_1raylib_1_1Sound_a522701c30c5f9784c3c2eec78174f650}{\+::\+Sound}}}]{sound }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Play a sound. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sound} & The sound stream \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Sound_ad6eb28d8c10282e20ab85c2cdeae43c2}\label{classindie_1_1raylib_1_1Sound_ad6eb28d8c10282e20ab85c2cdeae43c2}} 
+\index{indie::raylib::Sound@{indie::raylib::Sound}!resume@{resume}}
+\index{resume@{resume}!indie::raylib::Sound@{indie::raylib::Sound}}
+\doxysubsubsection{\texorpdfstring{resume()}{resume()}}
+{\footnotesize\ttfamily void indie\+::raylib\+::\+Sound\+::resume (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classindie_1_1raylib_1_1Sound_a522701c30c5f9784c3c2eec78174f650}{\+::\+Sound}}}]{sound }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Resume a paused sound. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sound} & The sound stream \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Sound_a9f090f971eb836417749e67b6565837b}\label{classindie_1_1raylib_1_1Sound_a9f090f971eb836417749e67b6565837b}} 
+\index{indie::raylib::Sound@{indie::raylib::Sound}!setPitch@{setPitch}}
+\index{setPitch@{setPitch}!indie::raylib::Sound@{indie::raylib::Sound}}
+\doxysubsubsection{\texorpdfstring{setPitch()}{setPitch()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void indie\+::raylib\+::\+Sound\+::set\+Pitch (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classindie_1_1raylib_1_1Sound_a522701c30c5f9784c3c2eec78174f650}{\+::\+Sound}}}]{sound,  }\item[{float}]{pitch }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Set pitch for a sound (1.\+0 is base level) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sound} & The sound stream \\
+\hline
+{\em pitch} & The pitch for the sound \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Sound_a85c15b0da9dc2729e38ed52d4e23b583}\label{classindie_1_1raylib_1_1Sound_a85c15b0da9dc2729e38ed52d4e23b583}} 
+\index{indie::raylib::Sound@{indie::raylib::Sound}!setPitch@{setPitch}}
+\index{setPitch@{setPitch}!indie::raylib::Sound@{indie::raylib::Sound}}
+\doxysubsubsection{\texorpdfstring{setPitch()}{setPitch()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void indie\+::raylib\+::\+Sound\+::set\+Pitch (\begin{DoxyParamCaption}\item[{float}]{pitch }\end{DoxyParamCaption})}
+
+
+
+Set the pitch for a sound (1.\+0 is base level) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pitch} & The pitch for the sound \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Sound_a83f90b552841ca45731852d219103ed5}\label{classindie_1_1raylib_1_1Sound_a83f90b552841ca45731852d219103ed5}} 
+\index{indie::raylib::Sound@{indie::raylib::Sound}!setVolume@{setVolume}}
+\index{setVolume@{setVolume}!indie::raylib::Sound@{indie::raylib::Sound}}
+\doxysubsubsection{\texorpdfstring{setVolume()}{setVolume()}}
+{\footnotesize\ttfamily void indie\+::raylib\+::\+Sound\+::set\+Volume (\begin{DoxyParamCaption}\item[{float}]{volume }\end{DoxyParamCaption})}
+
+
+
+Set volume for a sound (1.\+0 is max level) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em volume} & The volume for the sound \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Sound_aa1d7f8bc9eb799cf9ab8143c4f9232e9}\label{classindie_1_1raylib_1_1Sound_aa1d7f8bc9eb799cf9ab8143c4f9232e9}} 
+\index{indie::raylib::Sound@{indie::raylib::Sound}!stop@{stop}}
+\index{stop@{stop}!indie::raylib::Sound@{indie::raylib::Sound}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily void indie\+::raylib\+::\+Sound\+::stop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classindie_1_1raylib_1_1Sound_a522701c30c5f9784c3c2eec78174f650}{\+::\+Sound}}}]{sound }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Stop playing a sound. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sound} & The sound stream \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Sound_ac9a1e7b03ffa220a64cdb423e90a6317}\label{classindie_1_1raylib_1_1Sound_ac9a1e7b03ffa220a64cdb423e90a6317}} 
+\index{indie::raylib::Sound@{indie::raylib::Sound}!unload@{unload}}
+\index{unload@{unload}!indie::raylib::Sound@{indie::raylib::Sound}}
+\doxysubsubsection{\texorpdfstring{unload()}{unload()}}
+{\footnotesize\ttfamily void indie\+::raylib\+::\+Sound\+::unload (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classindie_1_1raylib_1_1Sound_a522701c30c5f9784c3c2eec78174f650}{\+::\+Sound}}}]{sound }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Unload sound. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sound} & \mbox{\hyperlink{classindie_1_1raylib_1_1Sound}{Sound}} object \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Sound_ae60f9da0f6dafe92a5262f800d916d81}\label{classindie_1_1raylib_1_1Sound_ae60f9da0f6dafe92a5262f800d916d81}} 
+\index{indie::raylib::Sound@{indie::raylib::Sound}!update@{update}}
+\index{update@{update}!indie::raylib::Sound@{indie::raylib::Sound}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void indie\+::raylib\+::\+Sound\+::update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classindie_1_1raylib_1_1Sound_a522701c30c5f9784c3c2eec78174f650}{\+::\+Sound}}}]{sound,  }\item[{const void $\ast$}]{data,  }\item[{int}]{samples\+Count }\end{DoxyParamCaption})}
+
+
+
+Update sound buffer with new data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sound} & \mbox{\hyperlink{classindie_1_1raylib_1_1Sound}{Sound}} buffer \\
+\hline
+{\em data} & Data for update \\
+\hline
+{\em samples\+Count} & Samples count \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/raylib/sound/\mbox{\hyperlink{raylib_2sound_2Sound_8hpp}{Sound.\+hpp}}\item 
+src/raylib/sound/\mbox{\hyperlink{raylib_2sound_2Sound_8cpp}{Sound.\+cpp}}\end{DoxyCompactItemize}

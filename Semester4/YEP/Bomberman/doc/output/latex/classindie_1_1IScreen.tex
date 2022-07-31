@@ -1,0 +1,148 @@
+\hypertarget{classindie_1_1IScreen}{}\doxysection{indie\+::IScreen Class Reference}
+\label{classindie_1_1IScreen}\index{indie::IScreen@{indie::IScreen}}
+
+
+\mbox{\hyperlink{classindie_1_1IScreen}{IScreen}} class.  
+
+
+
+
+{\ttfamily \#include $<$IScreen.\+hpp$>$}
+
+Inheritance diagram for indie\+::IScreen\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=0.780488cm]{classindie_1_1IScreen}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classindie_1_1IScreen_afe9a398578abb8ef858b01746b0883dc}\label{classindie_1_1IScreen_afe9a398578abb8ef858b01746b0883dc}} 
+virtual {\bfseries $\sim$\+IScreen} ()=default
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classindie_1_1IScreen}{IScreen}} object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classindie_1_1IScreen_a8a94615d59b1a467347bf806b5c92f17}{init}} ()=0
+\begin{DoxyCompactList}\small\item\em Init the screen. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classindie_1_1IScreen_a50e467ab6b7efae4114a9c3f17fa8ef4}{draw}} ()=0
+\begin{DoxyCompactList}\small\item\em Draw the screen. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classindie_1_1IScreen_aa8a7600f2869b54991b1ae551e8735c1}{update}} ()=0
+\begin{DoxyCompactList}\small\item\em Update the screen. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classindie_1_1IScreen_a715fc5be821e5ed1e66087cf4945234c}{handle\+Event}} (\mbox{\hyperlink{structindie_1_1Event}{indie\+::\+Event}} \&event)=0
+\begin{DoxyCompactList}\small\item\em Handle events. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classindie_1_1IScreen_a08ef01692ea36f0eb9cdf06bf41b12a7}{add\+Entity}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classindie_1_1ecs_1_1entity_1_1Entity}{indie\+::ecs\+::entity\+::\+Entity}} $>$ entity)=0
+\begin{DoxyCompactList}\small\item\em Add entity to the screen. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classindie_1_1IScreen_a492a5f07982dc9df97b71251413e8129}{add\+System}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1ISystem}{indie\+::ecs\+::system\+::\+ISystem}} $>$ system)=0
+\begin{DoxyCompactList}\small\item\em Add system to the screen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classindie_1_1IScreen}{IScreen}} class. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classindie_1_1IScreen_a08ef01692ea36f0eb9cdf06bf41b12a7}\label{classindie_1_1IScreen_a08ef01692ea36f0eb9cdf06bf41b12a7}} 
+\index{indie::IScreen@{indie::IScreen}!addEntity@{addEntity}}
+\index{addEntity@{addEntity}!indie::IScreen@{indie::IScreen}}
+\doxysubsubsection{\texorpdfstring{addEntity()}{addEntity()}}
+{\footnotesize\ttfamily virtual void indie\+::\+IScreen\+::add\+Entity (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classindie_1_1ecs_1_1entity_1_1Entity}{indie\+::ecs\+::entity\+::\+Entity}} $>$}]{entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Add entity to the screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & Entity to add to the screen \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classindie_1_1menu_1_1GameScreen_a1f4cd9d3f115bedcc84d6f1f756512cf}{indie\+::menu\+::\+Game\+Screen}}, \mbox{\hyperlink{classindie_1_1menu_1_1GameOptionsScreen_a9874f4d17e5a6437d5303b8a7c8ef01f}{indie\+::menu\+::\+Game\+Options\+Screen}}, \mbox{\hyperlink{classindie_1_1menu_1_1MenuScreen_ad45e73cc9887c5c2c8cf79f0b9b25b15}{indie\+::menu\+::\+Menu\+Screen}}, \mbox{\hyperlink{classindie_1_1menu_1_1PreMenuScreen_a00a3f328322699fd916d5e37b3866648}{indie\+::menu\+::\+Pre\+Menu\+Screen}}, \mbox{\hyperlink{classindie_1_1menu_1_1SetFpsScreen_ae466f49444b4912166dda0c18c9cf520}{indie\+::menu\+::\+Set\+Fps\+Screen}}, \mbox{\hyperlink{classindie_1_1menu_1_1SetMusicScreen_a037bab4f35df41397816158744f9308a}{indie\+::menu\+::\+Set\+Music\+Screen}}, and \mbox{\hyperlink{classindie_1_1menu_1_1SetSoundScreen_a7aab939b46c5a3e624247c0237346f11}{indie\+::menu\+::\+Set\+Sound\+Screen}}.
+
+\mbox{\Hypertarget{classindie_1_1IScreen_a492a5f07982dc9df97b71251413e8129}\label{classindie_1_1IScreen_a492a5f07982dc9df97b71251413e8129}} 
+\index{indie::IScreen@{indie::IScreen}!addSystem@{addSystem}}
+\index{addSystem@{addSystem}!indie::IScreen@{indie::IScreen}}
+\doxysubsubsection{\texorpdfstring{addSystem()}{addSystem()}}
+{\footnotesize\ttfamily virtual void indie\+::\+IScreen\+::add\+System (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1ISystem}{indie\+::ecs\+::system\+::\+ISystem}} $>$}]{system }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Add system to the screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em system} & System to add to the screen \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classindie_1_1menu_1_1GameScreen_a0c033798a7fe8c5da82f5eedf20b9e17}{indie\+::menu\+::\+Game\+Screen}}, \mbox{\hyperlink{classindie_1_1menu_1_1GameOptionsScreen_a9111690fb74fa8e3b0429ab6689c0980}{indie\+::menu\+::\+Game\+Options\+Screen}}, \mbox{\hyperlink{classindie_1_1menu_1_1MenuScreen_af6a8924fd4edbd35c580e2eb54b0f7a4}{indie\+::menu\+::\+Menu\+Screen}}, \mbox{\hyperlink{classindie_1_1menu_1_1PreMenuScreen_aede7df7a322722768f6474a4628ddbe7}{indie\+::menu\+::\+Pre\+Menu\+Screen}}, \mbox{\hyperlink{classindie_1_1menu_1_1SetFpsScreen_a0460192da44459c1743978b200a7d233}{indie\+::menu\+::\+Set\+Fps\+Screen}}, \mbox{\hyperlink{classindie_1_1menu_1_1SetMusicScreen_a6c696f479fd643e8a7bf85024d866758}{indie\+::menu\+::\+Set\+Music\+Screen}}, and \mbox{\hyperlink{classindie_1_1menu_1_1SetSoundScreen_a51a476007cac590786f7a0138fc28620}{indie\+::menu\+::\+Set\+Sound\+Screen}}.
+
+\mbox{\Hypertarget{classindie_1_1IScreen_a50e467ab6b7efae4114a9c3f17fa8ef4}\label{classindie_1_1IScreen_a50e467ab6b7efae4114a9c3f17fa8ef4}} 
+\index{indie::IScreen@{indie::IScreen}!draw@{draw}}
+\index{draw@{draw}!indie::IScreen@{indie::IScreen}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily virtual void indie\+::\+IScreen\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Draw the screen. 
+
+
+
+Implemented in \mbox{\hyperlink{classindie_1_1menu_1_1GameScreen_aee1fe7c804a66ce3e7c909beb694a1ed}{indie\+::menu\+::\+Game\+Screen}}, \mbox{\hyperlink{classindie_1_1menu_1_1GameOptionsScreen_a8220b4e0f12799d696d251f3c71d9532}{indie\+::menu\+::\+Game\+Options\+Screen}}, \mbox{\hyperlink{classindie_1_1menu_1_1MenuScreen_a1b8f7b8ab498403301e05c3292f7e786}{indie\+::menu\+::\+Menu\+Screen}}, \mbox{\hyperlink{classindie_1_1menu_1_1PreMenuScreen_a94a6c71394bd32f8b61a310b727d99f6}{indie\+::menu\+::\+Pre\+Menu\+Screen}}, \mbox{\hyperlink{classindie_1_1menu_1_1SetFpsScreen_aaf6d3dce8c7e2cd8d4f718d1ef366980}{indie\+::menu\+::\+Set\+Fps\+Screen}}, \mbox{\hyperlink{classindie_1_1menu_1_1SetMusicScreen_a521b28f1a164727578e1a47ae3f06c57}{indie\+::menu\+::\+Set\+Music\+Screen}}, and \mbox{\hyperlink{classindie_1_1menu_1_1SetSoundScreen_a92c37b6536a060a074a33f03c9f35ad0}{indie\+::menu\+::\+Set\+Sound\+Screen}}.
+
+\mbox{\Hypertarget{classindie_1_1IScreen_a715fc5be821e5ed1e66087cf4945234c}\label{classindie_1_1IScreen_a715fc5be821e5ed1e66087cf4945234c}} 
+\index{indie::IScreen@{indie::IScreen}!handleEvent@{handleEvent}}
+\index{handleEvent@{handleEvent}!indie::IScreen@{indie::IScreen}}
+\doxysubsubsection{\texorpdfstring{handleEvent()}{handleEvent()}}
+{\footnotesize\ttfamily virtual int indie\+::\+IScreen\+::handle\+Event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structindie_1_1Event}{indie\+::\+Event}} \&}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Handle events. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & \mbox{\hyperlink{structindie_1_1Event}{Event}} to be handled \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int The scene number 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classindie_1_1menu_1_1GameScreen_aabddf1c69e540495612d49b0e00c5b90}{indie\+::menu\+::\+Game\+Screen}}, \mbox{\hyperlink{classindie_1_1menu_1_1GameOptionsScreen_af3c056db2cd2081280d846a64b2e2a9b}{indie\+::menu\+::\+Game\+Options\+Screen}}, \mbox{\hyperlink{classindie_1_1menu_1_1MenuScreen_a19789ffc37a4b52a0f0c503a4adeab2b}{indie\+::menu\+::\+Menu\+Screen}}, \mbox{\hyperlink{classindie_1_1menu_1_1PreMenuScreen_a51d7d35695b616aed950a0ad2cb363fd}{indie\+::menu\+::\+Pre\+Menu\+Screen}}, \mbox{\hyperlink{classindie_1_1menu_1_1SetFpsScreen_aa0baf0bd498b2eb7d69c53f596409ef5}{indie\+::menu\+::\+Set\+Fps\+Screen}}, \mbox{\hyperlink{classindie_1_1menu_1_1SetMusicScreen_a8f8c3a3526ce7f8cf81ed0e712bc9d43}{indie\+::menu\+::\+Set\+Music\+Screen}}, and \mbox{\hyperlink{classindie_1_1menu_1_1SetSoundScreen_a1057a4b012664242c109e439d3f3f366}{indie\+::menu\+::\+Set\+Sound\+Screen}}.
+
+\mbox{\Hypertarget{classindie_1_1IScreen_a8a94615d59b1a467347bf806b5c92f17}\label{classindie_1_1IScreen_a8a94615d59b1a467347bf806b5c92f17}} 
+\index{indie::IScreen@{indie::IScreen}!init@{init}}
+\index{init@{init}!indie::IScreen@{indie::IScreen}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily virtual void indie\+::\+IScreen\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Init the screen. 
+
+
+
+Implemented in \mbox{\hyperlink{classindie_1_1menu_1_1GameScreen_a72df02464ead6f34d1802f7e3df57ff9}{indie\+::menu\+::\+Game\+Screen}}, \mbox{\hyperlink{classindie_1_1menu_1_1GameOptionsScreen_a31034b52d390d1944937d7a6d0e6a8e2}{indie\+::menu\+::\+Game\+Options\+Screen}}, \mbox{\hyperlink{classindie_1_1menu_1_1MenuScreen_a7d6ca35ef9e5ee9402f5918cbc0de8a3}{indie\+::menu\+::\+Menu\+Screen}}, \mbox{\hyperlink{classindie_1_1menu_1_1PreMenuScreen_ae168653d373d8885dbadc8c63b6cc523}{indie\+::menu\+::\+Pre\+Menu\+Screen}}, \mbox{\hyperlink{classindie_1_1menu_1_1SetFpsScreen_a34934903706a22e08b7ea5e4715c770f}{indie\+::menu\+::\+Set\+Fps\+Screen}}, \mbox{\hyperlink{classindie_1_1menu_1_1SetMusicScreen_acc82deef027c05be407ae340afe3855a}{indie\+::menu\+::\+Set\+Music\+Screen}}, and \mbox{\hyperlink{classindie_1_1menu_1_1SetSoundScreen_a66e44b7e64b6a68e51f148598596c643}{indie\+::menu\+::\+Set\+Sound\+Screen}}.
+
+\mbox{\Hypertarget{classindie_1_1IScreen_aa8a7600f2869b54991b1ae551e8735c1}\label{classindie_1_1IScreen_aa8a7600f2869b54991b1ae551e8735c1}} 
+\index{indie::IScreen@{indie::IScreen}!update@{update}}
+\index{update@{update}!indie::IScreen@{indie::IScreen}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily virtual void indie\+::\+IScreen\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Update the screen. 
+
+
+
+Implemented in \mbox{\hyperlink{classindie_1_1menu_1_1GameScreen_ad3756a0608ed58949b067d40d9542abd}{indie\+::menu\+::\+Game\+Screen}}, \mbox{\hyperlink{classindie_1_1menu_1_1GameOptionsScreen_ab92c797cac3334f6f8c42c0285c5ad39}{indie\+::menu\+::\+Game\+Options\+Screen}}, \mbox{\hyperlink{classindie_1_1menu_1_1MenuScreen_a4621b9e9ce38fdccc1b1acda25f85478}{indie\+::menu\+::\+Menu\+Screen}}, \mbox{\hyperlink{classindie_1_1menu_1_1PreMenuScreen_aa05faa1ca647be62e14dec778353974d}{indie\+::menu\+::\+Pre\+Menu\+Screen}}, \mbox{\hyperlink{classindie_1_1menu_1_1SetFpsScreen_a726246a2874aa36e723caa7fd1fb7652}{indie\+::menu\+::\+Set\+Fps\+Screen}}, \mbox{\hyperlink{classindie_1_1menu_1_1SetMusicScreen_a5f3b08636ab0e417c625c29c4fe6df8d}{indie\+::menu\+::\+Set\+Music\+Screen}}, and \mbox{\hyperlink{classindie_1_1menu_1_1SetSoundScreen_a5d7a2441cad33964e8c43fcc26b39c06}{indie\+::menu\+::\+Set\+Sound\+Screen}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/screens/IScreen.\+hpp\end{DoxyCompactItemize}

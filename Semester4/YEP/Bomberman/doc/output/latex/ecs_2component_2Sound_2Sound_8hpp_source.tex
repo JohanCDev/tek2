@@ -1,0 +1,39 @@
+\hypertarget{ecs_2component_2Sound_2Sound_8hpp_source}{}\doxysection{Sound.\+hpp}
+\label{ecs_2component_2Sound_2Sound_8hpp_source}\index{src/ecs/component/Sound/Sound.hpp@{src/ecs/component/Sound/Sound.hpp}}
+\mbox{\hyperlink{ecs_2component_2Sound_2Sound_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include "{}../IComponent.hpp"{}}}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 \textcolor{keyword}{namespace }indie}
+\DoxyCodeLine{17 \{}
+\DoxyCodeLine{18     \textcolor{keyword}{namespace }ecs}
+\DoxyCodeLine{19     \{}
+\DoxyCodeLine{20         \textcolor{keyword}{namespace }component}
+\DoxyCodeLine{21         \{}
+\DoxyCodeLine{23             \textcolor{keyword}{class }\mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Sound}{Sound}} : \textcolor{keyword}{public} \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1IComponent}{IComponent}} \{}
+\DoxyCodeLine{24               \textcolor{keyword}{public}:}
+\DoxyCodeLine{32                 \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Sound_a32d90d45ece6d47078a1911def302f2d}{Sound}}(std::string soundPath, \textcolor{keywordtype}{bool} play, \textcolor{keywordtype}{float} volume = 1.0f);}
+\DoxyCodeLine{37                 \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Sound_a89d0cfad5170e1894158bd447cbd9387}{\string~Sound}}();}
+\DoxyCodeLine{43                 \mbox{\hyperlink{IComponent_8hpp_ac44f0ed416679d299da366d37fd5eac8}{indie::ecs::component::compoType}} \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Sound_ad6a63a152b982df93fe5277bb83adb0b}{getType}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{49                 std::string \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Sound_ae14ddee3f0dbf88e90241c084aba702b}{getSoundPath}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{55                 \mbox{\hyperlink{classindie_1_1raylib_1_1Sound}{indie::raylib::Sound}} \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Sound_aa497a7441131a79aba89f0185ee61430}{getSound}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{62                 \textcolor{keywordtype}{bool} \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Sound_ad1dcbf29d33eb661f0a7a559e2cc3fec}{getPlay}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{68                 \textcolor{keywordtype}{float} \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Sound_ac84583c51bee668d3fd2e2fb9b1802dc}{getVolume}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{74                 \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Sound_a34baf49bd234ebc51a97a2b5219bed69}{setSoundPath}}(std::string soundPath);}
+\DoxyCodeLine{80                 \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Sound_a766b6e8ba79a046f954a0c8ad89980c4}{setSound}}(std::string soundPath);}
+\DoxyCodeLine{86                 \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Sound_a7e2dc0574c987c0234fa27bbdd7fb90c}{setPlay}}(\textcolor{keywordtype}{bool} play);}
+\DoxyCodeLine{92                 \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Sound_a04b8709c12ec5abbd6705fc0b5c673ea}{setVolume}}(\textcolor{keywordtype}{float} volume);}
+\DoxyCodeLine{93 }
+\DoxyCodeLine{94               \textcolor{keyword}{private}:}
+\DoxyCodeLine{99                 std::string \_soundPath;}
+\DoxyCodeLine{104                 \textcolor{keywordtype}{bool} \_play;}
+\DoxyCodeLine{105                 \textcolor{keywordtype}{float} \_volume;}
+\DoxyCodeLine{106             \};}
+\DoxyCodeLine{107         \} \textcolor{comment}{// namespace component}}
+\DoxyCodeLine{108     \}     \textcolor{comment}{// namespace ecs}}
+\DoxyCodeLine{109 \} \textcolor{comment}{// namespace indie}}
+
+\end{DoxyCode}

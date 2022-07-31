@@ -1,0 +1,267 @@
+\hypertarget{classindie_1_1raylib_1_1Model}{}\doxysection{indie\+::raylib\+::Model Class Reference}
+\label{classindie_1_1raylib_1_1Model}\index{indie::raylib::Model@{indie::raylib::Model}}
+
+
+Class for the 3D Models with Ray\+Lib.  
+
+
+
+
+{\ttfamily \#include $<$Model.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Model_a6b906d05eb6b50bd4fcac7b4e2f2a17d}\label{classindie_1_1raylib_1_1Model_a6b906d05eb6b50bd4fcac7b4e2f2a17d}} 
+{\bfseries Model} ()=default
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classindie_1_1raylib_1_1Model}{Model}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Model_a55b06828c5f9c3e1637a0f7e23b46db6}\label{classindie_1_1raylib_1_1Model_a55b06828c5f9c3e1637a0f7e23b46db6}} 
+{\bfseries $\sim$\+Model} ()=default
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classindie_1_1raylib_1_1Model}{Model}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classindie_1_1raylib_1_1Model_a6b906d05eb6b50bd4fcac7b4e2f2a17d}{\+::\+Model}} \mbox{\hyperlink{classindie_1_1raylib_1_1Model_a102cfec2d3e0e24088fc582c6a17bb8c}{load}} (const char $\ast$file\+Name)
+\begin{DoxyCompactList}\small\item\em Load model from files (meshes and materials) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classindie_1_1raylib_1_1Model_a6b906d05eb6b50bd4fcac7b4e2f2a17d}{\+::\+Model}} \mbox{\hyperlink{classindie_1_1raylib_1_1Model_a55cc03b1dc034c51d9894ec1e11469b4}{load\+From\+Mesh}} (\+::\+Mesh mesh)
+\begin{DoxyCompactList}\small\item\em Load model from generated mesh (default material) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1raylib_1_1Model_a8cbec1960652c1c306e083384fac7a4c}{unload}} (\mbox{\hyperlink{classindie_1_1raylib_1_1Model_a6b906d05eb6b50bd4fcac7b4e2f2a17d}{\+::\+Model}} model)
+\begin{DoxyCompactList}\small\item\em Unload model (including meshes) from memory (RAM and/or VRAM) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1raylib_1_1Model_aba6ef5a8214abf4ab2cf708db2031a11}{update\+Model\+Animation}} (\mbox{\hyperlink{classindie_1_1raylib_1_1Model_a6b906d05eb6b50bd4fcac7b4e2f2a17d}{\+::\+Model}} model, \+::\+Model\+Animation anim, int frame)
+\begin{DoxyCompactList}\small\item\em Unload model (including meshes) from memory (RAM and/or VRAM) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1raylib_1_1Model_af4c4dc5c0115d7457951172d4b7f486d}{set\+Material\+Texture}} (\+::\+Material $\ast$material, int map\+Type, \+::\+Texture2D texture)
+\begin{DoxyCompactList}\small\item\em Set the Material Texture object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1raylib_1_1Model_a613e26cab7a3e6eeae85eea1c373d49d}{unload\+Keep\+Meshes}} (\mbox{\hyperlink{classindie_1_1raylib_1_1Model_a6b906d05eb6b50bd4fcac7b4e2f2a17d}{\+::\+Model}} model)
+\begin{DoxyCompactList}\small\item\em Unload model (but not meshes) from memory (RAM and/or VRAM) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1raylib_1_1Model_aed57004943058f51cbe1d49bb6dacf5e}{unload\+Model\+Animations}} (\+::\+Model\+Animation $\ast$animations, unsigned int count)
+\begin{DoxyCompactList}\small\item\em unload a model animations \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1raylib_1_1Model_aef48f5469fd6672255f81d67975dd3c7}{draw}} (\mbox{\hyperlink{classindie_1_1raylib_1_1Model_a6b906d05eb6b50bd4fcac7b4e2f2a17d}{\+::\+Model}} model, \+::\+Vector3 position, float scale, \+::\+Color tint)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} a model (with texture if set) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1raylib_1_1Model_a2b3bdfd8c39cc352d67b09fa5aabadea}{draw\+Ex}} (\mbox{\hyperlink{classindie_1_1raylib_1_1Model_a6b906d05eb6b50bd4fcac7b4e2f2a17d}{\+::\+Model}} model, \+::\+Vector3 position, \+::\+Vector3 rotation\+Axis, float rotation\+Angle, \+::\+Vector3 scale, \+::\+Color tint)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} a model with extended parameters. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1raylib_1_1Model_a72a7d4f8481df74abc399d5655fee512}{draw\+Wires}} (\mbox{\hyperlink{classindie_1_1raylib_1_1Model_a6b906d05eb6b50bd4fcac7b4e2f2a17d}{\+::\+Model}} model, \+::\+Vector3 position, float scale, \+::\+Color tint)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} a model wires (with texture if set) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1raylib_1_1Model_a4d6ac9ccf8758549cf2c84e350616d00}{draw\+Wires\+Ex}} (\mbox{\hyperlink{classindie_1_1raylib_1_1Model_a6b906d05eb6b50bd4fcac7b4e2f2a17d}{\+::\+Model}} model, \+::\+Vector3 position, \+::\+Vector3 rotation\+Axis, float rotation\+Angle, \+::\+Vector3 scale, \+::\+Color tint)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} a model wires (with texture if set) with extended parameters. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class for the 3D Models with Ray\+Lib. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Model_aef48f5469fd6672255f81d67975dd3c7}\label{classindie_1_1raylib_1_1Model_aef48f5469fd6672255f81d67975dd3c7}} 
+\index{indie::raylib::Model@{indie::raylib::Model}!draw@{draw}}
+\index{draw@{draw}!indie::raylib::Model@{indie::raylib::Model}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void indie\+::raylib\+::\+Model\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classindie_1_1raylib_1_1Model_a6b906d05eb6b50bd4fcac7b4e2f2a17d}{\+::\+Model}}}]{model,  }\item[{\+::\+Vector3}]{position,  }\item[{float}]{scale,  }\item[{\+::\+Color}]{tint }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} a model (with texture if set) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em model} & Drawing model \\
+\hline
+{\em position} & Drawing position \\
+\hline
+{\em scale} & Drawing scale \\
+\hline
+{\em tint} & Drawing color \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Model_a2b3bdfd8c39cc352d67b09fa5aabadea}\label{classindie_1_1raylib_1_1Model_a2b3bdfd8c39cc352d67b09fa5aabadea}} 
+\index{indie::raylib::Model@{indie::raylib::Model}!drawEx@{drawEx}}
+\index{drawEx@{drawEx}!indie::raylib::Model@{indie::raylib::Model}}
+\doxysubsubsection{\texorpdfstring{drawEx()}{drawEx()}}
+{\footnotesize\ttfamily void indie\+::raylib\+::\+Model\+::draw\+Ex (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classindie_1_1raylib_1_1Model_a6b906d05eb6b50bd4fcac7b4e2f2a17d}{\+::\+Model}}}]{model,  }\item[{\+::\+Vector3}]{position,  }\item[{\+::\+Vector3}]{rotation\+Axis,  }\item[{float}]{rotation\+Angle,  }\item[{\+::\+Vector3}]{scale,  }\item[{\+::\+Color}]{tint }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} a model with extended parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em model} & Drawing model \\
+\hline
+{\em position} & Drawing position \\
+\hline
+{\em rotation\+Axis} & Drawing rotation axis \\
+\hline
+{\em rotation\+Angle} & Drawing rotation angle \\
+\hline
+{\em scale} & Drawing scale \\
+\hline
+{\em tint} & Drawing color \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Model_a72a7d4f8481df74abc399d5655fee512}\label{classindie_1_1raylib_1_1Model_a72a7d4f8481df74abc399d5655fee512}} 
+\index{indie::raylib::Model@{indie::raylib::Model}!drawWires@{drawWires}}
+\index{drawWires@{drawWires}!indie::raylib::Model@{indie::raylib::Model}}
+\doxysubsubsection{\texorpdfstring{drawWires()}{drawWires()}}
+{\footnotesize\ttfamily void indie\+::raylib\+::\+Model\+::draw\+Wires (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classindie_1_1raylib_1_1Model_a6b906d05eb6b50bd4fcac7b4e2f2a17d}{\+::\+Model}}}]{model,  }\item[{\+::\+Vector3}]{position,  }\item[{float}]{scale,  }\item[{\+::\+Color}]{tint }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} a model wires (with texture if set) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em model} & Drawing model \\
+\hline
+{\em position} & Drawing position \\
+\hline
+{\em scale} & Drawing scale \\
+\hline
+{\em tint} & Drawing color \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Model_a4d6ac9ccf8758549cf2c84e350616d00}\label{classindie_1_1raylib_1_1Model_a4d6ac9ccf8758549cf2c84e350616d00}} 
+\index{indie::raylib::Model@{indie::raylib::Model}!drawWiresEx@{drawWiresEx}}
+\index{drawWiresEx@{drawWiresEx}!indie::raylib::Model@{indie::raylib::Model}}
+\doxysubsubsection{\texorpdfstring{drawWiresEx()}{drawWiresEx()}}
+{\footnotesize\ttfamily void indie\+::raylib\+::\+Model\+::draw\+Wires\+Ex (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classindie_1_1raylib_1_1Model_a6b906d05eb6b50bd4fcac7b4e2f2a17d}{\+::\+Model}}}]{model,  }\item[{\+::\+Vector3}]{position,  }\item[{\+::\+Vector3}]{rotation\+Axis,  }\item[{float}]{rotation\+Angle,  }\item[{\+::\+Vector3}]{scale,  }\item[{\+::\+Color}]{tint }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} a model wires (with texture if set) with extended parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em model} & Drawing model \\
+\hline
+{\em position} & Drawing position \\
+\hline
+{\em rotation\+Axis} & Drawing rotation axis \\
+\hline
+{\em rotation\+Angle} & Drawing rotation angle \\
+\hline
+{\em scale} & Drawing scale \\
+\hline
+{\em tint} & Drawing color \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Model_a102cfec2d3e0e24088fc582c6a17bb8c}\label{classindie_1_1raylib_1_1Model_a102cfec2d3e0e24088fc582c6a17bb8c}} 
+\index{indie::raylib::Model@{indie::raylib::Model}!load@{load}}
+\index{load@{load}!indie::raylib::Model@{indie::raylib::Model}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classindie_1_1raylib_1_1Model}{Model}} indie\+::raylib\+::\+Model\+::load (\begin{DoxyParamCaption}\item[{const char $\ast$}]{file\+Name }\end{DoxyParamCaption})}
+
+
+
+Load model from files (meshes and materials) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & Filepath to the model file\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classindie_1_1raylib_1_1Model}{Model}} \mbox{\hyperlink{classindie_1_1raylib_1_1Model}{Model}} object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Model_a55cc03b1dc034c51d9894ec1e11469b4}\label{classindie_1_1raylib_1_1Model_a55cc03b1dc034c51d9894ec1e11469b4}} 
+\index{indie::raylib::Model@{indie::raylib::Model}!loadFromMesh@{loadFromMesh}}
+\index{loadFromMesh@{loadFromMesh}!indie::raylib::Model@{indie::raylib::Model}}
+\doxysubsubsection{\texorpdfstring{loadFromMesh()}{loadFromMesh()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classindie_1_1raylib_1_1Model}{Model}} indie\+::raylib\+::\+Model\+::load\+From\+Mesh (\begin{DoxyParamCaption}\item[{\+::\+Mesh}]{mesh }\end{DoxyParamCaption})}
+
+
+
+Load model from generated mesh (default material) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mesh} & Mesh to load\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classindie_1_1raylib_1_1Model}{Model}} \mbox{\hyperlink{classindie_1_1raylib_1_1Model}{Model}} object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Model_af4c4dc5c0115d7457951172d4b7f486d}\label{classindie_1_1raylib_1_1Model_af4c4dc5c0115d7457951172d4b7f486d}} 
+\index{indie::raylib::Model@{indie::raylib::Model}!setMaterialTexture@{setMaterialTexture}}
+\index{setMaterialTexture@{setMaterialTexture}!indie::raylib::Model@{indie::raylib::Model}}
+\doxysubsubsection{\texorpdfstring{setMaterialTexture()}{setMaterialTexture()}}
+{\footnotesize\ttfamily void indie\+::raylib\+::\+Model\+::set\+Material\+Texture (\begin{DoxyParamCaption}\item[{\+::\+Material $\ast$}]{material,  }\item[{int}]{map\+Type,  }\item[{\+::\+Texture2D}]{texture }\end{DoxyParamCaption})}
+
+
+
+Set the Material Texture object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em material} & Material to set \\
+\hline
+{\em map\+Type} & map Type of the material \\
+\hline
+{\em texture} & texture to apply \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Model_a8cbec1960652c1c306e083384fac7a4c}\label{classindie_1_1raylib_1_1Model_a8cbec1960652c1c306e083384fac7a4c}} 
+\index{indie::raylib::Model@{indie::raylib::Model}!unload@{unload}}
+\index{unload@{unload}!indie::raylib::Model@{indie::raylib::Model}}
+\doxysubsubsection{\texorpdfstring{unload()}{unload()}}
+{\footnotesize\ttfamily void indie\+::raylib\+::\+Model\+::unload (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classindie_1_1raylib_1_1Model_a6b906d05eb6b50bd4fcac7b4e2f2a17d}{\+::\+Model}}}]{model }\end{DoxyParamCaption})}
+
+
+
+Unload model (including meshes) from memory (RAM and/or VRAM) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em model} & \mbox{\hyperlink{classindie_1_1raylib_1_1Model}{Model}} to unload \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Model_a613e26cab7a3e6eeae85eea1c373d49d}\label{classindie_1_1raylib_1_1Model_a613e26cab7a3e6eeae85eea1c373d49d}} 
+\index{indie::raylib::Model@{indie::raylib::Model}!unloadKeepMeshes@{unloadKeepMeshes}}
+\index{unloadKeepMeshes@{unloadKeepMeshes}!indie::raylib::Model@{indie::raylib::Model}}
+\doxysubsubsection{\texorpdfstring{unloadKeepMeshes()}{unloadKeepMeshes()}}
+{\footnotesize\ttfamily void indie\+::raylib\+::\+Model\+::unload\+Keep\+Meshes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classindie_1_1raylib_1_1Model_a6b906d05eb6b50bd4fcac7b4e2f2a17d}{\+::\+Model}}}]{model }\end{DoxyParamCaption})}
+
+
+
+Unload model (but not meshes) from memory (RAM and/or VRAM) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em model} & \mbox{\hyperlink{classindie_1_1raylib_1_1Model}{Model}} to unload \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Model_aed57004943058f51cbe1d49bb6dacf5e}\label{classindie_1_1raylib_1_1Model_aed57004943058f51cbe1d49bb6dacf5e}} 
+\index{indie::raylib::Model@{indie::raylib::Model}!unloadModelAnimations@{unloadModelAnimations}}
+\index{unloadModelAnimations@{unloadModelAnimations}!indie::raylib::Model@{indie::raylib::Model}}
+\doxysubsubsection{\texorpdfstring{unloadModelAnimations()}{unloadModelAnimations()}}
+{\footnotesize\ttfamily void indie\+::raylib\+::\+Model\+::unload\+Model\+Animations (\begin{DoxyParamCaption}\item[{\+::\+Model\+Animation $\ast$}]{animations,  }\item[{unsigned int}]{count }\end{DoxyParamCaption})}
+
+
+
+unload a model animations 
+
+
+\begin{DoxyParams}{Parameters}
+{\em animations} & \mbox{\hyperlink{classindie_1_1raylib_1_1Model}{Model}} animations to unload \\
+\hline
+{\em count} & Number of animations to unload \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Model_aba6ef5a8214abf4ab2cf708db2031a11}\label{classindie_1_1raylib_1_1Model_aba6ef5a8214abf4ab2cf708db2031a11}} 
+\index{indie::raylib::Model@{indie::raylib::Model}!updateModelAnimation@{updateModelAnimation}}
+\index{updateModelAnimation@{updateModelAnimation}!indie::raylib::Model@{indie::raylib::Model}}
+\doxysubsubsection{\texorpdfstring{updateModelAnimation()}{updateModelAnimation()}}
+{\footnotesize\ttfamily void indie\+::raylib\+::\+Model\+::update\+Model\+Animation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classindie_1_1raylib_1_1Model_a6b906d05eb6b50bd4fcac7b4e2f2a17d}{\+::\+Model}}}]{model,  }\item[{\+::\+Model\+Animation}]{anim,  }\item[{int}]{frame }\end{DoxyParamCaption})}
+
+
+
+Unload model (including meshes) from memory (RAM and/or VRAM) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em model} & \mbox{\hyperlink{classindie_1_1raylib_1_1Model}{Model}} to animate \\
+\hline
+{\em anim} & Animation model \\
+\hline
+{\em frame} & Frame to update \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/raylib/model/Model.\+hpp\item 
+src/raylib/model/Model.\+cpp\end{DoxyCompactItemize}

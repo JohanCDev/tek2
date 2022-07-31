@@ -1,0 +1,45 @@
+\hypertarget{BoundingBox_8hpp_source}{}\doxysection{Bounding\+Box.\+hpp}
+\label{BoundingBox_8hpp_source}\index{src/raylib/boundingbox/BoundingBox.hpp@{src/raylib/boundingbox/BoundingBox.hpp}}
+\mbox{\hyperlink{BoundingBox_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#ifndef BOUNDINGBOX\_HPP\_}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#define BOUNDINGBOX\_HPP\_}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include "{}../Raylib.hpp"{}}}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 \textcolor{keyword}{namespace }indie}
+\DoxyCodeLine{18 \{}
+\DoxyCodeLine{19     \textcolor{keyword}{namespace }raylib}
+\DoxyCodeLine{20     \{}
+\DoxyCodeLine{22         \textcolor{keyword}{class }\mbox{\hyperlink{classindie_1_1raylib_1_1BoundingBox}{BoundingBox}} \{}
+\DoxyCodeLine{23           \textcolor{keyword}{public}:}
+\DoxyCodeLine{31             \mbox{\hyperlink{classindie_1_1raylib_1_1BoundingBox_adad2a245f505e9e283c9a5cf7ee71fd3}{BoundingBox}}(::Vector3 min, ::Vector3 max, ::Color color = BLACK);}
+\DoxyCodeLine{36             \mbox{\hyperlink{classindie_1_1raylib_1_1BoundingBox_a5418d64c4ef641ba2d70f708ab5382ee}{\string~BoundingBox}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{43             \mbox{\hyperlink{classindie_1_1raylib_1_1BoundingBox_adad2a245f505e9e283c9a5cf7ee71fd3}{::BoundingBox}} \mbox{\hyperlink{classindie_1_1raylib_1_1BoundingBox_a033b6cc3a35e28a2261d6052d007c03b}{getBoundingBox}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{50             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1BoundingBox_a438126debf5e761adcdee92bbf909815}{setBoundingBox}}(::Vector3 min, ::Vector3 max);}
+\DoxyCodeLine{56             ::Color \mbox{\hyperlink{classindie_1_1raylib_1_1BoundingBox_a5a2be03a047b75cdaa2bcf7d1aadbacb}{getColor}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{62             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1BoundingBox_a1e9c2bc498a06471188d6a2e3fa8b374}{setColor}}(::Color color);}
+\DoxyCodeLine{66             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1BoundingBox_affcc562f98d3a36ddc6eebf1bc32b5c5}{draw}}();}
+\DoxyCodeLine{72             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1BoundingBox_ac1e5575a1d437b33156bcbd7603c8951}{draw}}(Color color);}
+\DoxyCodeLine{80             \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1BoundingBox_affcc562f98d3a36ddc6eebf1bc32b5c5}{draw}}(::Vector3 min, ::Vector3 max, ::Color color);}
+\DoxyCodeLine{87             \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1BoundingBox_affcc562f98d3a36ddc6eebf1bc32b5c5}{draw}}(\mbox{\hyperlink{classindie_1_1raylib_1_1BoundingBox_adad2a245f505e9e283c9a5cf7ee71fd3}{::BoundingBox}} boundingBox, ::Color color);}
+\DoxyCodeLine{96             \textcolor{keywordtype}{bool} \mbox{\hyperlink{classindie_1_1raylib_1_1BoundingBox_a98cce68af74bc632dfa499985ab566a7}{checkCollisionBoxes}}(\mbox{\hyperlink{classindie_1_1raylib_1_1BoundingBox_adad2a245f505e9e283c9a5cf7ee71fd3}{::BoundingBox}} box2);}
+\DoxyCodeLine{106             \textcolor{keyword}{static} \textcolor{keywordtype}{bool} \mbox{\hyperlink{classindie_1_1raylib_1_1BoundingBox_a98cce68af74bc632dfa499985ab566a7}{checkCollisionBoxes}}(\mbox{\hyperlink{classindie_1_1raylib_1_1BoundingBox_adad2a245f505e9e283c9a5cf7ee71fd3}{::BoundingBox}} box1, \mbox{\hyperlink{classindie_1_1raylib_1_1BoundingBox_adad2a245f505e9e283c9a5cf7ee71fd3}{::BoundingBox}} box2);}
+\DoxyCodeLine{107 }
+\DoxyCodeLine{117             \textcolor{keywordtype}{bool} \mbox{\hyperlink{classindie_1_1raylib_1_1BoundingBox_aa5ae9fdd0712e7495cc7922a27f03666}{checkCollisionBoxSphere}}(::Vector3 center, \textcolor{keywordtype}{float} radius);}
+\DoxyCodeLine{128             \textcolor{keyword}{static} \textcolor{keywordtype}{bool} \mbox{\hyperlink{classindie_1_1raylib_1_1BoundingBox_aa5ae9fdd0712e7495cc7922a27f03666}{checkCollisionBoxSphere}}(\mbox{\hyperlink{classindie_1_1raylib_1_1BoundingBox_adad2a245f505e9e283c9a5cf7ee71fd3}{::BoundingBox}} box, ::Vector3 center, \textcolor{keywordtype}{float} radius);}
+\DoxyCodeLine{129 }
+\DoxyCodeLine{137             static ::BoundingBox \mbox{\hyperlink{classindie_1_1raylib_1_1BoundingBox_a82ed172cc9ba80d982d45072eb851486}{getModelBox}}(::Model model);}
+\DoxyCodeLine{138 }
+\DoxyCodeLine{139             \textcolor{keyword}{private}:}
+\DoxyCodeLine{144                 \mbox{\hyperlink{classindie_1_1raylib_1_1BoundingBox_adad2a245f505e9e283c9a5cf7ee71fd3}{::BoundingBox}} \_boundingBox;}
+\DoxyCodeLine{149                 ::Color \_color;}
+\DoxyCodeLine{150         \};}
+\DoxyCodeLine{151     \} \textcolor{comment}{// namespace raylib}}
+\DoxyCodeLine{152 \} \textcolor{comment}{// namespace indie}}
+\DoxyCodeLine{153 }
+\DoxyCodeLine{154 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* !BOUNDINGBOX\_HPP\_ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

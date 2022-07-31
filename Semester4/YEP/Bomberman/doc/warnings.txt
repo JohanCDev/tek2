@@ -1,0 +1,91 @@
+/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/raylib/boundingbox/BoundingBox.cpp:47: warning: no uniquely matching class member found for 
+  void indie::raylib::BoundingBox::draw(::Color color)
+Possible candidates:
+  'void indie::Game::draw(void)' at line 53 of file /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/game/Game.hpp
+  'void indie::raylib::BoundingBox::draw()' at line 66 of file /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/raylib/boundingbox/BoundingBox.hpp
+  'void indie::raylib::BoundingBox::draw(Color color)' at line 72 of file /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/raylib/boundingbox/BoundingBox.hpp
+  'static void indie::raylib::BoundingBox::draw(::Vector3 min, ::Vector3 max, ::Color color)' at line 80 of file /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/raylib/boundingbox/BoundingBox.hpp
+  'static void indie::raylib::BoundingBox::draw(::BoundingBox boundingBox, ::Color color)' at line 87 of file /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/raylib/boundingbox/BoundingBox.hpp
+  'static void indie::raylib::Circle::draw(float x, float y, float radius, ::Color color)' at line 87 of file /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/raylib/circle/Circle.hpp
+  'static void indie::raylib::Circle::draw(::Vector2 center, float radius, ::Color color)' at line 95 of file /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/raylib/circle/Circle.hpp
+  'void indie::raylib::Circle::draw()' at line 100 of file /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/raylib/circle/Circle.hpp
+  'void indie::raylib::Cube::draw()' at line 99 of file /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/raylib/cube/Cube.hpp
+  'static void indie::raylib::Cube::draw(::Vector3 position, ::Vector3 size, ::Color color)' at line 107 of file /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/raylib/cube/Cube.hpp
+  'void indie::raylib::Cylinder::draw()' at line 116 of file /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/raylib/cylinder/Cylinder.hpp
+  'static void indie::raylib::Cylinder::draw(::Vector3 position, float radiusTop, float radiusBottom, float height, int slices, ::Color color)' at line 127 of file /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/raylib/cylinder/Cylinder.hpp
+  'void indie::raylib::Model::draw(::Model model, ::Vector3 position, float scale, ::Color tint)' at line 92 of file /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/raylib/model/Model.hpp
+  'void indie::raylib::Rectangle::draw()' at line 89 of file /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/raylib/rectangle/Rectangle.hpp
+  'void indie::raylib::Rectangle::draw(::Color color)' at line 95 of file /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/raylib/rectangle/Rectangle.hpp
+  'static void indie::raylib::Rectangle::draw(int posX, int posY, int width, int height, ::Color color)' at line 105 of file /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/raylib/rectangle/Rectangle.hpp
+  'void indie::raylib::Sphere::draw()' at line 76 of file /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/raylib/sphere/Sphere.hpp
+  'static void indie::raylib::Sphere::draw(::Vector3 centerPosition, float radius, ::Color color)' at line 84 of file /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/raylib/sphere/Sphere.hpp
+  'void indie::raylib::Texture2D::draw(int posX, int posY, ::Color tint)' at line 106 of file /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/raylib/texture2d/Texture2D.hpp
+  'static void indie::raylib::Texture2D::draw(::Texture2D texture, int posX, int posY, ::Color tint)' at line 115 of file /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/raylib/texture2d/Texture2D.hpp
+  'void indie::raylib::Triangle::draw()' at line 89 of file /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/raylib/triangle/Triangle.hpp
+  'static void indie::raylib::Triangle::draw(::Vector2 v1, ::Vector2 v2, ::Vector2 v3, ::Color color)' at line 98 of file /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/raylib/triangle/Triangle.hpp
+  'void indie::menu::GameScreen::draw() override' at line 67 of file /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/screens/game/GameScreen.hpp
+  'void indie::screens::game::uiPlayerDisplay::UIPlayerDisplay::draw()' at line 95 of file /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/screens/game/uiPlayerDisplay/UIPlayerDisplay.hpp
+  'void indie::menu::GameOptionsScreen::draw() override' at line 63 of file /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/screens/game_options/GameOptionsScreen.hpp
+  'virtual void indie::IScreen::draw()=0' at line 39 of file /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/screens/IScreen.hpp
+  'void indie::menu::MenuScreen::draw() override' at line 59 of file /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/screens/menu/MenuScreen.hpp
+  'void indie::menu::PreMenuScreen::draw() override' at line 51 of file /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/screens/pre_menu/PreMenuScreen.hpp
+  'void indie::menu::SetFpsScreen::draw() override' at line 57 of file /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/screens/set_fps/SetFpsScreen.hpp
+  'void indie::menu::SetMusicScreen::draw() override' at line 65 of file /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/screens/set_music/SetMusicScreen.hpp
+  'void indie::menu::SetSoundScreen::draw() override' at line 68 of file /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/screens/set_sound/SetSoundScreen.hpp
+
+/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/raylib/cylinder/Cylinder.cpp:109: warning: no matching class member found for 
+  void indie::raylib::Cylinder::drawWiresEx(Vector3 startPos, Vector3 endPos)
+Possible candidates:
+  'void indie::raylib::Cylinder::drawWiresEx(::Vector3 startPos, ::Vector3 endPos)' at line 172 of file /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/raylib/cylinder/Cylinder.hpp
+  'static void indie::raylib::Cylinder::drawWiresEx(::Vector3 startPos, ::Vector3 endPos, float radiusTop, float radiusBottom, float height, int slices, ::Color color)' at line 184 of file /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/raylib/cylinder/Cylinder.hpp
+  'void indie::raylib::Model::drawWiresEx(::Model model, ::Vector3 position, ::Vector3 rotationAxis, float rotationAngle, ::Vector3 scale, ::Color tint)' at line 124 of file /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/raylib/model/Model.hpp
+
+/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/raylib/rectangle/Rectangle.cpp:22: warning: no matching class member found for 
+  indie::raylib::Rectangle::Rectangle(float x, float y, float width, float height, ::Color color)
+Possible candidates:
+  'indie::raylib::Rectangle::Rectangle(float x, float y, float width, float height)' at line 32 of file /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/raylib/rectangle/Rectangle.hpp
+  'indie::raylib::Rectangle::Rectangle(float x, float y, float width, float height, Color color)' at line 42 of file /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/raylib/rectangle/Rectangle.hpp
+
+/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/raylib/texture2d/Texture2D.cpp:161: warning: no matching class member found for 
+  void indie::raylib::Texture2D::drawPoly(::Vector2 center, Vector2 *points, ::Vector2 *texcoords, int pointsCount, ::Color tint)
+Possible candidates:
+  'void indie::raylib::Texture2D::drawPoly(::Vector2 center, ::Vector2 *points, ::Vector2 *texcoords, int pointsCount, ::Color tint)' at line 267 of file /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/raylib/texture2d/Texture2D.hpp
+  'static void indie::raylib::Texture2D::drawPoly(::Texture2D texture, ::Vector2 center, ::Vector2 *points, ::Vector2 *texcoords, int pointsCount, ::Color tint)' at line 278 of file /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/raylib/texture2d/Texture2D.hpp
+
+/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/raylib/texture2d/Texture2D.cpp:167: warning: no matching class member found for 
+  void indie::raylib::Texture2D::drawPoly(::indie::raylib::Texture2D texture, ::Vector2 center, Vector2 *points, ::Vector2 *texcoords, int pointsCount, ::Color tint)
+Possible candidates:
+  'void indie::raylib::Texture2D::drawPoly(::Vector2 center, ::Vector2 *points, ::Vector2 *texcoords, int pointsCount, ::Color tint)' at line 267 of file /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/raylib/texture2d/Texture2D.hpp
+  'static void indie::raylib::Texture2D::drawPoly(::Texture2D texture, ::Vector2 center, ::Vector2 *points, ::Vector2 *texcoords, int pointsCount, ::Color tint)' at line 278 of file /Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/raylib/texture2d/Texture2D.hpp
+
+error: Problems running epstopdf. Check your TeX installation!
+error: Problems running epstopdf. Check your TeX installation!
+error: Problems running epstopdf. Check your TeX installation!
+error: Problems running epstopdf. Check your TeX installation!
+error: Problems running epstopdf. Check your TeX installation!
+error: Problems running epstopdf. Check your TeX installation!
+error: Problems running epstopdf. Check your TeX installation!
+error: Problems running epstopdf. Check your TeX installation!
+error: Problems running epstopdf. Check your TeX installation!
+error: Problems running epstopdf. Check your TeX installation!
+error: Problems running epstopdf. Check your TeX installation!
+error: Problems running epstopdf. Check your TeX installation!
+error: Problems running epstopdf. Check your TeX installation!
+error: Problems running epstopdf. Check your TeX installation!
+error: Problems running epstopdf. Check your TeX installation!
+error: Problems running epstopdf. Check your TeX installation!
+/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/ecs/system/Explodable/Explodable.hpp:56: warning: Member getValue(float position, float index, char operand) (function) of class indie::ecs::system::Explodable is not documented.
+/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/ecs/system/Explodable/Explodable.hpp:57: warning: Member getNewValue(float bombPos) (function) of class indie::ecs::system::Explodable is not documented.
+/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/ecs/system/Explodable/Explodable.hpp:59: warning: Member getEntityByPosition(std::vector< std::unique_ptr< indie::ecs::entity::Entity > > &entities, float x, float y) (function) of class indie::ecs::system::Explodable is not documented.
+error: Problems running epstopdf. Check your TeX installation!
+error: Problems running epstopdf. Check your TeX installation!
+error: Problems running epstopdf. Check your TeX installation!
+error: Problems running epstopdf. Check your TeX installation!
+error: Problems running epstopdf. Check your TeX installation!
+/Users/johan/Epitech/tek2/B4/YEP/Bomberman/src/screens/game/GameScreen.hpp:162: warning: Member countAlivePlayers() (function) of class indie::menu::GameScreen is not documented.
+<getWinner>:1: warning: return type of member indie::menu::GameScreen::getWinner is not documented
+error: Problems running epstopdf. Check your TeX installation!
+error: Problems running epstopdf. Check your TeX installation!
+error: Problems running epstopdf. Check your TeX installation!
+error: Problems running epstopdf. Check your TeX installation!
+error: Problems running epstopdf. Check your TeX installation!

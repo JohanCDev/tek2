@@ -1,0 +1,47 @@
+\hypertarget{SetFpsScreen_8hpp_source}{}\doxysection{Set\+Fps\+Screen.\+hpp}
+\label{SetFpsScreen_8hpp_source}\index{src/screens/set\_fps/SetFpsScreen.hpp@{src/screens/set\_fps/SetFpsScreen.hpp}}
+\mbox{\hyperlink{SetFpsScreen_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#ifndef SETFPSSCREEN\_HPP\_}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#define SETFPSSCREEN\_HPP\_}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include <map>}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#include "{}../../ecs/entity/Entity.hpp"{}}}
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#include "{}../IScreen.hpp"{}}}
+\DoxyCodeLine{20 \textcolor{preprocessor}{\#include "{}../ecs/system/Draw2D/Draw2D.hpp"{}}}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22 \textcolor{keyword}{namespace }indie}
+\DoxyCodeLine{23 \{}
+\DoxyCodeLine{24     \textcolor{keyword}{namespace }menu}
+\DoxyCodeLine{25     \{}
+\DoxyCodeLine{30         \textcolor{keyword}{class }\mbox{\hyperlink{classindie_1_1menu_1_1SetFpsScreen}{SetFpsScreen}} : \textcolor{keyword}{public} \mbox{\hyperlink{classindie_1_1IScreen}{IScreen}} \{}
+\DoxyCodeLine{35             \textcolor{keyword}{enum} cursorPosition \{ FPS\_30 = 0, FPS\_60 = 1 \};}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37           \textcolor{keyword}{public}:}
+\DoxyCodeLine{42             \mbox{\hyperlink{classindie_1_1menu_1_1SetFpsScreen_a0baacf09e061fe2e5214313c78d9ac27}{SetFpsScreen}}();}
+\DoxyCodeLine{47             \mbox{\hyperlink{classindie_1_1menu_1_1SetFpsScreen_aa2797ce836afa1223df8a15b380fd175}{\string~SetFpsScreen}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{52             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1menu_1_1SetFpsScreen_a34934903706a22e08b7ea5e4715c770f}{init}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{57             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1menu_1_1SetFpsScreen_aaf6d3dce8c7e2cd8d4f718d1ef366980}{draw}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{62             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1menu_1_1SetFpsScreen_a726246a2874aa36e723caa7fd1fb7652}{update}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{69             \textcolor{keywordtype}{int} \mbox{\hyperlink{classindie_1_1menu_1_1SetFpsScreen_aa0baf0bd498b2eb7d69c53f596409ef5}{handleEvent}}(\mbox{\hyperlink{structindie_1_1Event}{indie::Event}} \&event) \textcolor{keyword}{override};}
+\DoxyCodeLine{75             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1menu_1_1SetFpsScreen_ae466f49444b4912166dda0c18c9cf520}{addEntity}}(std::unique\_ptr<indie::ecs::entity::Entity> entity) \textcolor{keyword}{override};}
+\DoxyCodeLine{81             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1menu_1_1SetFpsScreen_a0460192da44459c1743978b200a7d233}{addSystem}}(std::unique\_ptr<indie::ecs::system::ISystem> system) \textcolor{keyword}{override};}
+\DoxyCodeLine{87             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1menu_1_1SetFpsScreen_a97b77e767ff45bb1e42a761954ec3255}{setPreviousScene}}(\textcolor{keywordtype}{bool} scene);}
+\DoxyCodeLine{94             \textcolor{keywordtype}{int} \mbox{\hyperlink{classindie_1_1menu_1_1SetFpsScreen_af06c809bac23c80a05365ddf700c7dcd}{checkCursorPosition}}(\textcolor{keywordtype}{bool} direction);}
+\DoxyCodeLine{95 }
+\DoxyCodeLine{96           \textcolor{keyword}{private}:}
+\DoxyCodeLine{101             std::vector<std::unique\_ptr<indie::ecs::entity::Entity>> \_entities;}
+\DoxyCodeLine{106             std::vector<std::unique\_ptr<indie::ecs::system::ISystem>> \_systems;}
+\DoxyCodeLine{111             std::map<int, float> \_positionsCursor;}
+\DoxyCodeLine{116             \textcolor{keywordtype}{int} \_cursorPosition;}
+\DoxyCodeLine{121             \textcolor{keywordtype}{int} \_lastSeenCursorPos;}
+\DoxyCodeLine{122         \};}
+\DoxyCodeLine{123     \} \textcolor{comment}{// namespace menu}}
+\DoxyCodeLine{124 \} \textcolor{comment}{// namespace indie}}
+\DoxyCodeLine{125 }
+\DoxyCodeLine{126 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* !SetFpsScreen\_HPP\_ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

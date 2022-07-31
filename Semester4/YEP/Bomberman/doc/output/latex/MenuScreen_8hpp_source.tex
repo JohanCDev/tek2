@@ -1,0 +1,48 @@
+\hypertarget{MenuScreen_8hpp_source}{}\doxysection{Menu\+Screen.\+hpp}
+\label{MenuScreen_8hpp_source}\index{src/screens/menu/MenuScreen.hpp@{src/screens/menu/MenuScreen.hpp}}
+\mbox{\hyperlink{MenuScreen_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#ifndef MENUSCREEN\_HPP\_}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#define MENUSCREEN\_HPP\_}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include <map>}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include <memory>}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#include <raylib.h>}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20 \textcolor{preprocessor}{\#include "{}../../ecs/entity/Entity.hpp"{}}}
+\DoxyCodeLine{21 \textcolor{preprocessor}{\#include "{}../../tools/Tools.hpp"{}}}
+\DoxyCodeLine{22 \textcolor{preprocessor}{\#include "{}../IScreen.hpp"{}}}
+\DoxyCodeLine{23 \textcolor{preprocessor}{\#include "{}../ecs/system/Draw2D/Draw2D.hpp"{}}}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25 \textcolor{keyword}{namespace }indie}
+\DoxyCodeLine{26 \{}
+\DoxyCodeLine{27     \textcolor{keyword}{namespace }menu}
+\DoxyCodeLine{28     \{}
+\DoxyCodeLine{33         \textcolor{keyword}{class }\mbox{\hyperlink{classindie_1_1menu_1_1MenuScreen}{MenuScreen}} : \textcolor{keyword}{public} \mbox{\hyperlink{classindie_1_1IScreen}{IScreen}} \{}
+\DoxyCodeLine{34           \textcolor{keyword}{public}:}
+\DoxyCodeLine{39             \textcolor{keyword}{enum} \mbox{\hyperlink{classindie_1_1menu_1_1MenuScreen_ace4d6bdb66567bffa2e5b4e88ff192a9}{cursorPosition}} \{ NEW\_GAME = 0, LOAD\_GAME = 1, EXIT = 2 \};}
+\DoxyCodeLine{44             \mbox{\hyperlink{classindie_1_1menu_1_1MenuScreen_ad49e9ab4410d4cd51efdca0aa8997208}{MenuScreen}}();}
+\DoxyCodeLine{49             \mbox{\hyperlink{classindie_1_1menu_1_1MenuScreen_abcd6f51b54f412ef5b77a0c0d8fcec75}{\string~MenuScreen}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{54             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1menu_1_1MenuScreen_a7d6ca35ef9e5ee9402f5918cbc0de8a3}{init}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{59             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1menu_1_1MenuScreen_a1b8f7b8ab498403301e05c3292f7e786}{draw}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{64             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1menu_1_1MenuScreen_a4621b9e9ce38fdccc1b1acda25f85478}{update}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{71             \textcolor{keywordtype}{int} \mbox{\hyperlink{classindie_1_1menu_1_1MenuScreen_a19789ffc37a4b52a0f0c503a4adeab2b}{handleEvent}}(\mbox{\hyperlink{structindie_1_1Event}{indie::Event}} \&event) \textcolor{keyword}{override};}
+\DoxyCodeLine{77             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1menu_1_1MenuScreen_ad45e73cc9887c5c2c8cf79f0b9b25b15}{addEntity}}(std::unique\_ptr<indie::ecs::entity::Entity> entity) \textcolor{keyword}{override};}
+\DoxyCodeLine{83             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1menu_1_1MenuScreen_af6a8924fd4edbd35c580e2eb54b0f7a4}{addSystem}}(std::unique\_ptr<indie::ecs::system::ISystem> system) \textcolor{keyword}{override};}
+\DoxyCodeLine{91             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1menu_1_1MenuScreen_a4d88ea98ead5bf13451da7b34fa5ad05}{setSize}}(\textcolor{keywordtype}{int} where, \textcolor{keywordtype}{float} height, \textcolor{keywordtype}{float} width);}
+\DoxyCodeLine{98             \textcolor{keywordtype}{int} \mbox{\hyperlink{classindie_1_1menu_1_1MenuScreen_aa1ecb604cbea377676c8d5edaad5af6e}{checkCursorPosition}}(\textcolor{keywordtype}{bool} direction);}
+\DoxyCodeLine{99 }
+\DoxyCodeLine{100           \textcolor{keyword}{private}:}
+\DoxyCodeLine{105             std::vector<std::unique\_ptr<indie::ecs::entity::Entity>> \_entities;}
+\DoxyCodeLine{110             std::vector<std::unique\_ptr<indie::ecs::system::ISystem>> \_systems;}
+\DoxyCodeLine{115             std::map<int, float> \_positionsCursor;}
+\DoxyCodeLine{120             \textcolor{keywordtype}{int} \_cursorPosition;}
+\DoxyCodeLine{121         \};}
+\DoxyCodeLine{122     \} \textcolor{comment}{// namespace menu}}
+\DoxyCodeLine{123 \} \textcolor{comment}{// namespace indie}}
+\DoxyCodeLine{124 }
+\DoxyCodeLine{125 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* !MENUSCREEN\_HPP\_ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

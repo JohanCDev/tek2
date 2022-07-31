@@ -1,0 +1,53 @@
+\hypertarget{GameOptionsScreen_8hpp_source}{}\doxysection{Game\+Options\+Screen.\+hpp}
+\label{GameOptionsScreen_8hpp_source}\index{src/screens/game\_options/GameOptionsScreen.hpp@{src/screens/game\_options/GameOptionsScreen.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#ifndef GAME\_OPTIONS\_SCREEN\_HPP\_}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#define GAME\_OPTIONS\_SCREEN\_HPP\_}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include <map>}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#include "{}../../ecs/entity/Entity.hpp"{}}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#include "{}../IScreen.hpp"{}}}
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#include "{}../ecs/system/Draw2D/Draw2D.hpp"{}}}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21 \textcolor{keyword}{namespace }indie}
+\DoxyCodeLine{22 \{}
+\DoxyCodeLine{23     \textcolor{keyword}{namespace }menu}
+\DoxyCodeLine{24     \{}
+\DoxyCodeLine{29         \textcolor{keyword}{class }\mbox{\hyperlink{classindie_1_1menu_1_1GameOptionsScreen}{GameOptionsScreen}} : \textcolor{keyword}{public} \mbox{\hyperlink{classindie_1_1IScreen}{IScreen}} \{}
+\DoxyCodeLine{30           \textcolor{keyword}{public}:}
+\DoxyCodeLine{35             \textcolor{keyword}{enum} \mbox{\hyperlink{classindie_1_1menu_1_1GameOptionsScreen_a0e96ed29cd99815cd11c33f46a12794b}{cursorPosition}} \{}
+\DoxyCodeLine{36                 RESUME = 0,}
+\DoxyCodeLine{37                 MENU = 1,}
+\DoxyCodeLine{38                 SAVE = 2,}
+\DoxyCodeLine{39                 MUSIC = 3,}
+\DoxyCodeLine{40                 SOUND = 4,}
+\DoxyCodeLine{41                 FPS = 5,}
+\DoxyCodeLine{42                 EXIT = 6,}
+\DoxyCodeLine{43             \};}
+\DoxyCodeLine{48             \mbox{\hyperlink{classindie_1_1menu_1_1GameOptionsScreen_acf89aa17e0302b4601a1217f6dfff567}{GameOptionsScreen}}();}
+\DoxyCodeLine{53             \mbox{\hyperlink{classindie_1_1menu_1_1GameOptionsScreen_ae2c1faa05c5a33ee0ac10e0e5b6d52ee}{\string~GameOptionsScreen}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{58             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1menu_1_1GameOptionsScreen_a31034b52d390d1944937d7a6d0e6a8e2}{init}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{63             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1menu_1_1GameOptionsScreen_a8220b4e0f12799d696d251f3c71d9532}{draw}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{68             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1menu_1_1GameOptionsScreen_ab92c797cac3334f6f8c42c0285c5ad39}{update}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{75             \textcolor{keywordtype}{int} \mbox{\hyperlink{classindie_1_1menu_1_1GameOptionsScreen_af3c056db2cd2081280d846a64b2e2a9b}{handleEvent}}(\mbox{\hyperlink{structindie_1_1Event}{indie::Event}} \&event) \textcolor{keyword}{override};}
+\DoxyCodeLine{81             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1menu_1_1GameOptionsScreen_a9874f4d17e5a6437d5303b8a7c8ef01f}{addEntity}}(std::unique\_ptr<indie::ecs::entity::Entity> entity) \textcolor{keyword}{override};}
+\DoxyCodeLine{87             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1menu_1_1GameOptionsScreen_a9111690fb74fa8e3b0429ab6689c0980}{addSystem}}(std::unique\_ptr<indie::ecs::system::ISystem> system) \textcolor{keyword}{override};}
+\DoxyCodeLine{93             \textcolor{keywordtype}{bool} \mbox{\hyperlink{classindie_1_1menu_1_1GameOptionsScreen_a67efcbec85194fc65badaa43a0b9450a}{getIsGameOptionsCalling}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{100             \textcolor{keywordtype}{int} \mbox{\hyperlink{classindie_1_1menu_1_1GameOptionsScreen_ae9ed219ebb2bb39614ff1cc898b1c907}{checkCursorPosition}}(\textcolor{keywordtype}{bool} direction);}
+\DoxyCodeLine{101 }
+\DoxyCodeLine{102           \textcolor{keyword}{private}:}
+\DoxyCodeLine{107             std::vector<std::unique\_ptr<indie::ecs::entity::Entity>> \_entities;}
+\DoxyCodeLine{112             std::vector<std::unique\_ptr<indie::ecs::system::ISystem>> \_systems;}
+\DoxyCodeLine{117             std::map<int, float> \_positionsCursor;}
+\DoxyCodeLine{122             \textcolor{keywordtype}{int} \_cursorPosition;}
+\DoxyCodeLine{127             \textcolor{keywordtype}{bool} \_isGameOptionsCalling;}
+\DoxyCodeLine{128         \};}
+\DoxyCodeLine{129     \} \textcolor{comment}{// namespace menu}}
+\DoxyCodeLine{130 \} \textcolor{comment}{// namespace indie}}
+\DoxyCodeLine{131 }
+\DoxyCodeLine{132 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* !GAME\_OPTIONS\_SCREEN\_HPP\_ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

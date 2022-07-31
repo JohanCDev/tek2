@@ -1,0 +1,432 @@
+\hypertarget{classindie_1_1raylib_1_1Music}{}\doxysection{indie\+::raylib\+::Music Class Reference}
+\label{classindie_1_1raylib_1_1Music}\index{indie::raylib::Music@{indie::raylib::Music}}
+
+
+\mbox{\hyperlink{classindie_1_1raylib_1_1Music}{Music}} class encapsulation.  
+
+
+
+
+{\ttfamily \#include $<$Music.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classindie_1_1raylib_1_1Music_abcc83e2a092312f67a0e85777f5da46d}{Music}} (const std\+::string \&file\+Name)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classindie_1_1raylib_1_1Music}{Music}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Music_a7c99ebcd248d8aa77e14653340ef5851}\label{classindie_1_1raylib_1_1Music_a7c99ebcd248d8aa77e14653340ef5851}} 
+{\bfseries $\sim$\+Music} ()=default
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classindie_1_1raylib_1_1Music}{Music}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Music_a7532c1d375f56b7e7221ce7ab18f27c0}\label{classindie_1_1raylib_1_1Music_a7532c1d375f56b7e7221ce7ab18f27c0}} 
+void {\bfseries unload\+Stream} (void)
+\begin{DoxyCompactList}\small\item\em Unload \mbox{\hyperlink{classindie_1_1raylib_1_1Music}{Music}} stream. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Music_aeb5df5ef0f52d5773c7396d1a5fc725d}\label{classindie_1_1raylib_1_1Music_aeb5df5ef0f52d5773c7396d1a5fc725d}} 
+void {\bfseries play\+Stream} (void)
+\begin{DoxyCompactList}\small\item\em Start music playing. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classindie_1_1raylib_1_1Music_a2bed30fe0fdf2eddbc95d2ae8ab0b0f9}{is\+Stream\+Playing}} (void)
+\begin{DoxyCompactList}\small\item\em Check if music is playing. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Music_af8b68ce9f84d05ed545fb51a20109940}\label{classindie_1_1raylib_1_1Music_af8b68ce9f84d05ed545fb51a20109940}} 
+void {\bfseries update\+Stream} (void)
+\begin{DoxyCompactList}\small\item\em Update buffers for music streaming. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Music_a50165b61211ed466165923ff8971813d}\label{classindie_1_1raylib_1_1Music_a50165b61211ed466165923ff8971813d}} 
+void {\bfseries stop\+Stream} (void)
+\begin{DoxyCompactList}\small\item\em Stop music playing. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Music_abb0f3d04ca66f7da6d443f4be338b10b}\label{classindie_1_1raylib_1_1Music_abb0f3d04ca66f7da6d443f4be338b10b}} 
+void {\bfseries pause\+Stream} (void)
+\begin{DoxyCompactList}\small\item\em Pause music playing. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Music_ab2a44e0a55a7b19afa296d5df6938369}\label{classindie_1_1raylib_1_1Music_ab2a44e0a55a7b19afa296d5df6938369}} 
+void {\bfseries resume\+Stream} (void)
+\begin{DoxyCompactList}\small\item\em Resume playing paused music. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1raylib_1_1Music_a3793dbacd9d3115e46a800d247006d65}{seek\+Stream}} (float position)
+\begin{DoxyCompactList}\small\item\em Seek music to a position. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1raylib_1_1Music_a880b89902037fff1fc7b1287aa91c056}{set\+Volume}} (float volume)
+\begin{DoxyCompactList}\small\item\em Set volume for music (1.\+0 is max level) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1raylib_1_1Music_a14bd12129b1186d3f51ed1518b3ea569}{set\+Pitch}} (float pitch)
+\begin{DoxyCompactList}\small\item\em Set pitch for a music (1.\+0 is max level) \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classindie_1_1raylib_1_1Music_ad328464a685b0d837914ad94ab8270e5}{get\+Time\+Length}} (void)
+\begin{DoxyCompactList}\small\item\em Get the Time Length object. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classindie_1_1raylib_1_1Music_a3a5ecfb07e36ed81d4ab7cdb7e3c05af}{get\+Time\+Played}} (void)
+\begin{DoxyCompactList}\small\item\em Get the Time Played object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classindie_1_1raylib_1_1Music_abcc83e2a092312f67a0e85777f5da46d}{\+::\+Music}} \mbox{\hyperlink{classindie_1_1raylib_1_1Music_aba8d49963995556bf27295609bc3988d}{load\+Stream}} (const std\+::string \&file\+Name)
+\begin{DoxyCompactList}\small\item\em Load music stream from file. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classindie_1_1raylib_1_1Music_abcc83e2a092312f67a0e85777f5da46d}{\+::\+Music}} \mbox{\hyperlink{classindie_1_1raylib_1_1Music_ace4cbea539bb12e546f926e3f337e27a}{load\+Stream\+From\+Memory}} (const std\+::string \&file\+Type, unsigned char $\ast$data, int data\+Size)
+\begin{DoxyCompactList}\small\item\em Load music stream from data. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classindie_1_1raylib_1_1Music_a5096ccc68175a6b35ffbe21ceb87eeae}{unload\+Stream}} (\mbox{\hyperlink{classindie_1_1raylib_1_1Music_abcc83e2a092312f67a0e85777f5da46d}{\+::\+Music}} music)
+\begin{DoxyCompactList}\small\item\em Unload \mbox{\hyperlink{classindie_1_1raylib_1_1Music}{Music}} stream. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classindie_1_1raylib_1_1Music_ae315d550936937359404b8ae35c1b509}{play\+Stream}} (\mbox{\hyperlink{classindie_1_1raylib_1_1Music_abcc83e2a092312f67a0e85777f5da46d}{\+::\+Music}} music)
+\begin{DoxyCompactList}\small\item\em Start music playing. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classindie_1_1raylib_1_1Music_aa3cd895f0f473cf5f8abb3fb603b5f0f}{is\+Stream\+Playing}} (\mbox{\hyperlink{classindie_1_1raylib_1_1Music_abcc83e2a092312f67a0e85777f5da46d}{\+::\+Music}} music)
+\begin{DoxyCompactList}\small\item\em Check if music is playing. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classindie_1_1raylib_1_1Music_ad89bad09966ea4515d631ae8e9fd8aaf}{update\+Stream}} (\mbox{\hyperlink{classindie_1_1raylib_1_1Music_abcc83e2a092312f67a0e85777f5da46d}{\+::\+Music}} music)
+\begin{DoxyCompactList}\small\item\em Update buffers for music streaming. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classindie_1_1raylib_1_1Music_af5213a352a6c5e505f7f18391e1bd316}{stop\+Stream}} (\mbox{\hyperlink{classindie_1_1raylib_1_1Music_abcc83e2a092312f67a0e85777f5da46d}{\+::\+Music}} music)
+\begin{DoxyCompactList}\small\item\em Stop music playing. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classindie_1_1raylib_1_1Music_ad84a9b20b13288ad6241f69be24f0367}{pause\+Stream}} (\mbox{\hyperlink{classindie_1_1raylib_1_1Music_abcc83e2a092312f67a0e85777f5da46d}{\+::\+Music}} music)
+\begin{DoxyCompactList}\small\item\em Pause music playing. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classindie_1_1raylib_1_1Music_aaae68d159c56e2491446f244519facf1}{resume\+Stream}} (\mbox{\hyperlink{classindie_1_1raylib_1_1Music_abcc83e2a092312f67a0e85777f5da46d}{\+::\+Music}} music)
+\begin{DoxyCompactList}\small\item\em Resume playing paused music. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classindie_1_1raylib_1_1Music_a8ca9fff0d462c98145b695d40d3d3115}{seek\+Stream}} (\mbox{\hyperlink{classindie_1_1raylib_1_1Music_abcc83e2a092312f67a0e85777f5da46d}{\+::\+Music}} music, float position)
+\begin{DoxyCompactList}\small\item\em Seek music to a position (in seconds) \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classindie_1_1raylib_1_1Music_a4538c9b85b0cdf793c5119d0f0d7d3d6}{set\+Volume}} (\mbox{\hyperlink{classindie_1_1raylib_1_1Music_abcc83e2a092312f67a0e85777f5da46d}{\+::\+Music}} music, float volume)
+\begin{DoxyCompactList}\small\item\em Set volume for music (1.\+0 is max level) \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classindie_1_1raylib_1_1Music_a3b8a0ef812f4cd88c2bd12e8ad06763d}{set\+Pitch}} (\mbox{\hyperlink{classindie_1_1raylib_1_1Music_abcc83e2a092312f67a0e85777f5da46d}{\+::\+Music}} music, float pitch)
+\begin{DoxyCompactList}\small\item\em Set pitch for a music (1.\+0 is base level) \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{classindie_1_1raylib_1_1Music_a8d1ab833de0281f1f7f19b05b4118d97}{get\+Time\+Length}} (\mbox{\hyperlink{classindie_1_1raylib_1_1Music_abcc83e2a092312f67a0e85777f5da46d}{\+::\+Music}} music)
+\begin{DoxyCompactList}\small\item\em Get music time length (in seconds) \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{classindie_1_1raylib_1_1Music_a26250b4bb8f2c89c8ee86cea1bd8e7e4}{get\+Time\+Played}} (\mbox{\hyperlink{classindie_1_1raylib_1_1Music_abcc83e2a092312f67a0e85777f5da46d}{\+::\+Music}} music)
+\begin{DoxyCompactList}\small\item\em Get current music time played (in seconds) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classindie_1_1raylib_1_1Music}{Music}} class encapsulation. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Music_abcc83e2a092312f67a0e85777f5da46d}\label{classindie_1_1raylib_1_1Music_abcc83e2a092312f67a0e85777f5da46d}} 
+\index{indie::raylib::Music@{indie::raylib::Music}!Music@{Music}}
+\index{Music@{Music}!indie::raylib::Music@{indie::raylib::Music}}
+\doxysubsubsection{\texorpdfstring{Music()}{Music()}}
+{\footnotesize\ttfamily indie\+::raylib\+::\+Music\+::\+Music (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Name }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classindie_1_1raylib_1_1Music}{Music}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & Filepath to the music file \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Music_a8d1ab833de0281f1f7f19b05b4118d97}\label{classindie_1_1raylib_1_1Music_a8d1ab833de0281f1f7f19b05b4118d97}} 
+\index{indie::raylib::Music@{indie::raylib::Music}!getTimeLength@{getTimeLength}}
+\index{getTimeLength@{getTimeLength}!indie::raylib::Music@{indie::raylib::Music}}
+\doxysubsubsection{\texorpdfstring{getTimeLength()}{getTimeLength()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static float indie\+::raylib\+::\+Music\+::get\+Time\+Length (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classindie_1_1raylib_1_1Music_abcc83e2a092312f67a0e85777f5da46d}{\+::\+Music}}}]{music }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get music time length (in seconds) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em music} & The music stream\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float The music time length 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Music_ad328464a685b0d837914ad94ab8270e5}\label{classindie_1_1raylib_1_1Music_ad328464a685b0d837914ad94ab8270e5}} 
+\index{indie::raylib::Music@{indie::raylib::Music}!getTimeLength@{getTimeLength}}
+\index{getTimeLength@{getTimeLength}!indie::raylib::Music@{indie::raylib::Music}}
+\doxysubsubsection{\texorpdfstring{getTimeLength()}{getTimeLength()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily float indie\+::raylib\+::\+Music\+::get\+Time\+Length (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the Time Length object. 
+
+\begin{DoxyReturn}{Returns}
+float The music time length 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Music_a26250b4bb8f2c89c8ee86cea1bd8e7e4}\label{classindie_1_1raylib_1_1Music_a26250b4bb8f2c89c8ee86cea1bd8e7e4}} 
+\index{indie::raylib::Music@{indie::raylib::Music}!getTimePlayed@{getTimePlayed}}
+\index{getTimePlayed@{getTimePlayed}!indie::raylib::Music@{indie::raylib::Music}}
+\doxysubsubsection{\texorpdfstring{getTimePlayed()}{getTimePlayed()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static float indie\+::raylib\+::\+Music\+::get\+Time\+Played (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classindie_1_1raylib_1_1Music_abcc83e2a092312f67a0e85777f5da46d}{\+::\+Music}}}]{music }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get current music time played (in seconds) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em music} & The music stream\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float The music time played 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Music_a3a5ecfb07e36ed81d4ab7cdb7e3c05af}\label{classindie_1_1raylib_1_1Music_a3a5ecfb07e36ed81d4ab7cdb7e3c05af}} 
+\index{indie::raylib::Music@{indie::raylib::Music}!getTimePlayed@{getTimePlayed}}
+\index{getTimePlayed@{getTimePlayed}!indie::raylib::Music@{indie::raylib::Music}}
+\doxysubsubsection{\texorpdfstring{getTimePlayed()}{getTimePlayed()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily float indie\+::raylib\+::\+Music\+::get\+Time\+Played (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the Time Played object. 
+
+\begin{DoxyReturn}{Returns}
+float The music time played 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Music_aa3cd895f0f473cf5f8abb3fb603b5f0f}\label{classindie_1_1raylib_1_1Music_aa3cd895f0f473cf5f8abb3fb603b5f0f}} 
+\index{indie::raylib::Music@{indie::raylib::Music}!isStreamPlaying@{isStreamPlaying}}
+\index{isStreamPlaying@{isStreamPlaying}!indie::raylib::Music@{indie::raylib::Music}}
+\doxysubsubsection{\texorpdfstring{isStreamPlaying()}{isStreamPlaying()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static bool indie\+::raylib\+::\+Music\+::is\+Stream\+Playing (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classindie_1_1raylib_1_1Music_abcc83e2a092312f67a0e85777f5da46d}{\+::\+Music}}}]{music }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Check if music is playing. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em music} & The music stream played\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true The music is actually playing 
+
+false The music isn\textquotesingle{}t actually playing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Music_a2bed30fe0fdf2eddbc95d2ae8ab0b0f9}\label{classindie_1_1raylib_1_1Music_a2bed30fe0fdf2eddbc95d2ae8ab0b0f9}} 
+\index{indie::raylib::Music@{indie::raylib::Music}!isStreamPlaying@{isStreamPlaying}}
+\index{isStreamPlaying@{isStreamPlaying}!indie::raylib::Music@{indie::raylib::Music}}
+\doxysubsubsection{\texorpdfstring{isStreamPlaying()}{isStreamPlaying()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool indie\+::raylib\+::\+Music\+::is\+Stream\+Playing (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Check if music is playing. 
+
+\begin{DoxyReturn}{Returns}
+true The music is actually playing 
+
+false The music isn\textquotesingle{}t actually playing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Music_aba8d49963995556bf27295609bc3988d}\label{classindie_1_1raylib_1_1Music_aba8d49963995556bf27295609bc3988d}} 
+\index{indie::raylib::Music@{indie::raylib::Music}!loadStream@{loadStream}}
+\index{loadStream@{loadStream}!indie::raylib::Music@{indie::raylib::Music}}
+\doxysubsubsection{\texorpdfstring{loadStream()}{loadStream()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classindie_1_1raylib_1_1Music_abcc83e2a092312f67a0e85777f5da46d}{\+::\+Music}} indie\+::raylib\+::\+Music\+::load\+Stream (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Load music stream from file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & Filepath to the music file\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classindie_1_1raylib_1_1Music}{Music}} The music stream 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Music_ace4cbea539bb12e546f926e3f337e27a}\label{classindie_1_1raylib_1_1Music_ace4cbea539bb12e546f926e3f337e27a}} 
+\index{indie::raylib::Music@{indie::raylib::Music}!loadStreamFromMemory@{loadStreamFromMemory}}
+\index{loadStreamFromMemory@{loadStreamFromMemory}!indie::raylib::Music@{indie::raylib::Music}}
+\doxysubsubsection{\texorpdfstring{loadStreamFromMemory()}{loadStreamFromMemory()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classindie_1_1raylib_1_1Music_abcc83e2a092312f67a0e85777f5da46d}{\+::\+Music}} indie\+::raylib\+::\+Music\+::load\+Stream\+From\+Memory (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Type,  }\item[{unsigned char $\ast$}]{data,  }\item[{int}]{data\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Load music stream from data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Type} & The type of file \\
+\hline
+{\em data} & The data to load \\
+\hline
+{\em data\+Size} & The data size to load\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classindie_1_1raylib_1_1Music}{Music}} The music stream 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Music_ad84a9b20b13288ad6241f69be24f0367}\label{classindie_1_1raylib_1_1Music_ad84a9b20b13288ad6241f69be24f0367}} 
+\index{indie::raylib::Music@{indie::raylib::Music}!pauseStream@{pauseStream}}
+\index{pauseStream@{pauseStream}!indie::raylib::Music@{indie::raylib::Music}}
+\doxysubsubsection{\texorpdfstring{pauseStream()}{pauseStream()}}
+{\footnotesize\ttfamily static void indie\+::raylib\+::\+Music\+::pause\+Stream (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classindie_1_1raylib_1_1Music_abcc83e2a092312f67a0e85777f5da46d}{\+::\+Music}}}]{music }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Pause music playing. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em music} & The music stream to pause \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Music_ae315d550936937359404b8ae35c1b509}\label{classindie_1_1raylib_1_1Music_ae315d550936937359404b8ae35c1b509}} 
+\index{indie::raylib::Music@{indie::raylib::Music}!playStream@{playStream}}
+\index{playStream@{playStream}!indie::raylib::Music@{indie::raylib::Music}}
+\doxysubsubsection{\texorpdfstring{playStream()}{playStream()}}
+{\footnotesize\ttfamily static void indie\+::raylib\+::\+Music\+::play\+Stream (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classindie_1_1raylib_1_1Music_abcc83e2a092312f67a0e85777f5da46d}{\+::\+Music}}}]{music }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Start music playing. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em music} & \mbox{\hyperlink{classindie_1_1raylib_1_1Music}{Music}} stream to paly \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Music_aaae68d159c56e2491446f244519facf1}\label{classindie_1_1raylib_1_1Music_aaae68d159c56e2491446f244519facf1}} 
+\index{indie::raylib::Music@{indie::raylib::Music}!resumeStream@{resumeStream}}
+\index{resumeStream@{resumeStream}!indie::raylib::Music@{indie::raylib::Music}}
+\doxysubsubsection{\texorpdfstring{resumeStream()}{resumeStream()}}
+{\footnotesize\ttfamily static void indie\+::raylib\+::\+Music\+::resume\+Stream (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classindie_1_1raylib_1_1Music_abcc83e2a092312f67a0e85777f5da46d}{\+::\+Music}}}]{music }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Resume playing paused music. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em music} & The music stream to resume playing \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Music_a8ca9fff0d462c98145b695d40d3d3115}\label{classindie_1_1raylib_1_1Music_a8ca9fff0d462c98145b695d40d3d3115}} 
+\index{indie::raylib::Music@{indie::raylib::Music}!seekStream@{seekStream}}
+\index{seekStream@{seekStream}!indie::raylib::Music@{indie::raylib::Music}}
+\doxysubsubsection{\texorpdfstring{seekStream()}{seekStream()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static void indie\+::raylib\+::\+Music\+::seek\+Stream (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classindie_1_1raylib_1_1Music_abcc83e2a092312f67a0e85777f5da46d}{\+::\+Music}}}]{music,  }\item[{float}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Seek music to a position (in seconds) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em music} & The music stream to seek \\
+\hline
+{\em position} & The position to seek the music \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Music_a3793dbacd9d3115e46a800d247006d65}\label{classindie_1_1raylib_1_1Music_a3793dbacd9d3115e46a800d247006d65}} 
+\index{indie::raylib::Music@{indie::raylib::Music}!seekStream@{seekStream}}
+\index{seekStream@{seekStream}!indie::raylib::Music@{indie::raylib::Music}}
+\doxysubsubsection{\texorpdfstring{seekStream()}{seekStream()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void indie\+::raylib\+::\+Music\+::seek\+Stream (\begin{DoxyParamCaption}\item[{float}]{position }\end{DoxyParamCaption})}
+
+
+
+Seek music to a position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & The position to seek the music \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Music_a3b8a0ef812f4cd88c2bd12e8ad06763d}\label{classindie_1_1raylib_1_1Music_a3b8a0ef812f4cd88c2bd12e8ad06763d}} 
+\index{indie::raylib::Music@{indie::raylib::Music}!setPitch@{setPitch}}
+\index{setPitch@{setPitch}!indie::raylib::Music@{indie::raylib::Music}}
+\doxysubsubsection{\texorpdfstring{setPitch()}{setPitch()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static void indie\+::raylib\+::\+Music\+::set\+Pitch (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classindie_1_1raylib_1_1Music_abcc83e2a092312f67a0e85777f5da46d}{\+::\+Music}}}]{music,  }\item[{float}]{pitch }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Set pitch for a music (1.\+0 is base level) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em music} & The music stream \\
+\hline
+{\em pitch} & The music pitch \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Music_a14bd12129b1186d3f51ed1518b3ea569}\label{classindie_1_1raylib_1_1Music_a14bd12129b1186d3f51ed1518b3ea569}} 
+\index{indie::raylib::Music@{indie::raylib::Music}!setPitch@{setPitch}}
+\index{setPitch@{setPitch}!indie::raylib::Music@{indie::raylib::Music}}
+\doxysubsubsection{\texorpdfstring{setPitch()}{setPitch()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void indie\+::raylib\+::\+Music\+::set\+Pitch (\begin{DoxyParamCaption}\item[{float}]{pitch }\end{DoxyParamCaption})}
+
+
+
+Set pitch for a music (1.\+0 is max level) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pitch} & The music pitch \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Music_a4538c9b85b0cdf793c5119d0f0d7d3d6}\label{classindie_1_1raylib_1_1Music_a4538c9b85b0cdf793c5119d0f0d7d3d6}} 
+\index{indie::raylib::Music@{indie::raylib::Music}!setVolume@{setVolume}}
+\index{setVolume@{setVolume}!indie::raylib::Music@{indie::raylib::Music}}
+\doxysubsubsection{\texorpdfstring{setVolume()}{setVolume()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static void indie\+::raylib\+::\+Music\+::set\+Volume (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classindie_1_1raylib_1_1Music_abcc83e2a092312f67a0e85777f5da46d}{\+::\+Music}}}]{music,  }\item[{float}]{volume }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Set volume for music (1.\+0 is max level) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em music} & The music stream \\
+\hline
+{\em volume} & The music volume \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Music_a880b89902037fff1fc7b1287aa91c056}\label{classindie_1_1raylib_1_1Music_a880b89902037fff1fc7b1287aa91c056}} 
+\index{indie::raylib::Music@{indie::raylib::Music}!setVolume@{setVolume}}
+\index{setVolume@{setVolume}!indie::raylib::Music@{indie::raylib::Music}}
+\doxysubsubsection{\texorpdfstring{setVolume()}{setVolume()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void indie\+::raylib\+::\+Music\+::set\+Volume (\begin{DoxyParamCaption}\item[{float}]{volume }\end{DoxyParamCaption})}
+
+
+
+Set volume for music (1.\+0 is max level) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em volume} & The music volume \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Music_af5213a352a6c5e505f7f18391e1bd316}\label{classindie_1_1raylib_1_1Music_af5213a352a6c5e505f7f18391e1bd316}} 
+\index{indie::raylib::Music@{indie::raylib::Music}!stopStream@{stopStream}}
+\index{stopStream@{stopStream}!indie::raylib::Music@{indie::raylib::Music}}
+\doxysubsubsection{\texorpdfstring{stopStream()}{stopStream()}}
+{\footnotesize\ttfamily static void indie\+::raylib\+::\+Music\+::stop\+Stream (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classindie_1_1raylib_1_1Music_abcc83e2a092312f67a0e85777f5da46d}{\+::\+Music}}}]{music }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Stop music playing. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em music} & The music stream to stop \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Music_a5096ccc68175a6b35ffbe21ceb87eeae}\label{classindie_1_1raylib_1_1Music_a5096ccc68175a6b35ffbe21ceb87eeae}} 
+\index{indie::raylib::Music@{indie::raylib::Music}!unloadStream@{unloadStream}}
+\index{unloadStream@{unloadStream}!indie::raylib::Music@{indie::raylib::Music}}
+\doxysubsubsection{\texorpdfstring{unloadStream()}{unloadStream()}}
+{\footnotesize\ttfamily static void indie\+::raylib\+::\+Music\+::unload\+Stream (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classindie_1_1raylib_1_1Music_abcc83e2a092312f67a0e85777f5da46d}{\+::\+Music}}}]{music }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Unload \mbox{\hyperlink{classindie_1_1raylib_1_1Music}{Music}} stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em music} & The music stream to unload \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Music_ad89bad09966ea4515d631ae8e9fd8aaf}\label{classindie_1_1raylib_1_1Music_ad89bad09966ea4515d631ae8e9fd8aaf}} 
+\index{indie::raylib::Music@{indie::raylib::Music}!updateStream@{updateStream}}
+\index{updateStream@{updateStream}!indie::raylib::Music@{indie::raylib::Music}}
+\doxysubsubsection{\texorpdfstring{updateStream()}{updateStream()}}
+{\footnotesize\ttfamily static void indie\+::raylib\+::\+Music\+::update\+Stream (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classindie_1_1raylib_1_1Music_abcc83e2a092312f67a0e85777f5da46d}{\+::\+Music}}}]{music }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Update buffers for music streaming. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em music} & The music stream to update \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/raylib/music/\mbox{\hyperlink{Music_8hpp}{Music.\+hpp}}\end{DoxyCompactItemize}

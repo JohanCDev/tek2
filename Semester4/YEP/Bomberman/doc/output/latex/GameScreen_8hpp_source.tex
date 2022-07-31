@@ -1,0 +1,78 @@
+\hypertarget{GameScreen_8hpp_source}{}\doxysection{Game\+Screen.\+hpp}
+\label{GameScreen_8hpp_source}\index{src/screens/game/GameScreen.hpp@{src/screens/game/GameScreen.hpp}}
+\mbox{\hyperlink{GameScreen_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#ifndef GAMESCREEN\_HPP\_}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#define GAMESCREEN\_HPP\_}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include <fstream>}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include <map>}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#include <memory>}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#include <sstream>}}
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21 \textcolor{preprocessor}{\#include "{}../../ecs/entity/Entity.hpp"{}}}
+\DoxyCodeLine{22 \textcolor{preprocessor}{\#include "{}../../ecs/system/ISystem.hpp"{}}}
+\DoxyCodeLine{23 \textcolor{preprocessor}{\#include "{}../IScreen.hpp"{}}}
+\DoxyCodeLine{24 \textcolor{preprocessor}{\#include "{}../ecs/system/Collide/Collide.hpp"{}}}
+\DoxyCodeLine{25 \textcolor{preprocessor}{\#include "{}../ecs/system/Draw2D/Draw2D.hpp"{}}}
+\DoxyCodeLine{26 \textcolor{preprocessor}{\#include "{}../ecs/system/Draw3D/Draw3D.hpp"{}}}
+\DoxyCodeLine{27 \textcolor{preprocessor}{\#include "{}../ecs/system/Explodable/Explodable.hpp"{}}}
+\DoxyCodeLine{28 \textcolor{preprocessor}{\#include "{}../ecs/system/Movement/Movement.hpp"{}}}
+\DoxyCodeLine{29 \textcolor{preprocessor}{\#include "{}../ecs/system/Sound/Sound.hpp"{}}}
+\DoxyCodeLine{30 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{events_8hpp}{events.hpp}}"{}}}
+\DoxyCodeLine{31 \textcolor{preprocessor}{\#include "{}uiPlayerDisplay/UIPlayerDisplay.hpp"{}}}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33 \textcolor{keyword}{namespace }indie}
+\DoxyCodeLine{34 \{}
+\DoxyCodeLine{35     \textcolor{keyword}{namespace }menu}
+\DoxyCodeLine{36     \{}
+\DoxyCodeLine{41         \textcolor{keyword}{class }\mbox{\hyperlink{classindie_1_1menu_1_1GameScreen}{GameScreen}} : \textcolor{keyword}{public} \mbox{\hyperlink{classindie_1_1IScreen}{IScreen}} \{}
+\DoxyCodeLine{42           \textcolor{keyword}{public}:}
+\DoxyCodeLine{50             \mbox{\hyperlink{classindie_1_1menu_1_1GameScreen_afeda7a352c3ef8cc5264b1963b76ab8a}{GameScreen}}(std::vector<player::Player> *players,}
+\DoxyCodeLine{51                 std::vector<std::unique\_ptr<indie::ecs::entity::Entity>> *\_soundEntities,}
+\DoxyCodeLine{52                 std::vector<std::unique\_ptr<indie::ecs::system::ISystem>> *soundSystems);}
+\DoxyCodeLine{57             \mbox{\hyperlink{classindie_1_1menu_1_1GameScreen_a9d29a8b27bf53794221f24de2db22eea}{\string~GameScreen}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{62             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1menu_1_1GameScreen_a72df02464ead6f34d1802f7e3df57ff9}{init}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{67             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1menu_1_1GameScreen_aee1fe7c804a66ce3e7c909beb694a1ed}{draw}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{72             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1menu_1_1GameScreen_ad3756a0608ed58949b067d40d9542abd}{update}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{79             \textcolor{keywordtype}{int} \mbox{\hyperlink{classindie_1_1menu_1_1GameScreen_aabddf1c69e540495612d49b0e00c5b90}{handleEvent}}(\mbox{\hyperlink{structindie_1_1Event}{indie::Event}} \&event) \textcolor{keyword}{override};}
+\DoxyCodeLine{87             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1menu_1_1GameScreen_a13a2c83022d886f37773582caa176c73}{handleMultipleController}}(\mbox{\hyperlink{structindie_1_1Event}{indie::Event}} \&event, \textcolor{keywordtype}{int} index, \mbox{\hyperlink{Entity_8hpp_a7bca52f144f3350f6f4bd61d567e75ef}{indie::ecs::entity::entityType}} type);}
+\DoxyCodeLine{93             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1menu_1_1GameScreen_a1f4cd9d3f115bedcc84d6f1f756512cf}{addEntity}}(std::unique\_ptr<indie::ecs::entity::Entity> entity) \textcolor{keyword}{override};}
+\DoxyCodeLine{99             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1menu_1_1GameScreen_adfdd923ca37e7daa0f07b5c536743af3}{removeEntity}}(std::unique\_ptr<indie::ecs::entity::Entity> entity);}
+\DoxyCodeLine{105             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1menu_1_1GameScreen_a0c033798a7fe8c5da82f5eedf20b9e17}{addSystem}}(std::unique\_ptr<indie::ecs::system::ISystem> system) \textcolor{keyword}{override};}
+\DoxyCodeLine{111             \mbox{\hyperlink{classindie_1_1raylib_1_1Camera3D}{indie::raylib::Camera3D}} \mbox{\hyperlink{classindie_1_1menu_1_1GameScreen_afa26a69d763782ed9a17f500c6c30bf8}{getCamera}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{120             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1menu_1_1GameScreen_a3dbae6574f4e157981d76cee4ecbbf0f}{getPlayersPlaying}}(\textcolor{keywordtype}{bool} is\_p1\_playing, \textcolor{keywordtype}{bool} is\_p2\_playing, \textcolor{keywordtype}{bool} is\_p3\_playing, \textcolor{keywordtype}{bool} is\_p4\_playing);}
+\DoxyCodeLine{126             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1menu_1_1GameScreen_a801b044ff2c8a7b3e655817d0c2c2a7e}{initMap}}(std::vector<std::vector<char>> map);}
+\DoxyCodeLine{131             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1menu_1_1GameScreen_ad0fd4fafc0e1f301d2ec1c5a21d70e6e}{initEntity}}();}
+\DoxyCodeLine{132 }
+\DoxyCodeLine{142             \textcolor{keywordtype}{bool} \mbox{\hyperlink{classindie_1_1menu_1_1GameScreen_a6d377a23e1297e63364b81bf52330d03}{compareColor}}(Color a, Color b);}
+\DoxyCodeLine{147             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1menu_1_1GameScreen_a790820f64015b4c73bac9773aef2491d}{saveMapEntities}}();}
+\DoxyCodeLine{154             \textcolor{keywordtype}{bool} \mbox{\hyperlink{classindie_1_1menu_1_1GameScreen_a41c80973cf432610109893d58d46be47}{loadSavedMap}}();}
+\DoxyCodeLine{161             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1menu_1_1GameScreen_ad887d0e51864364c38f2d65f7fe82739}{initRightEntity}}(std::vector<std::string> args);}
+\DoxyCodeLine{162             \textcolor{keywordtype}{int} countAlivePlayers();}
+\DoxyCodeLine{167             \textcolor{keywordtype}{int} \mbox{\hyperlink{classindie_1_1menu_1_1GameScreen_a34af606f9039d5cd8c032c26d2b544d0}{getWinner}}();}
+\DoxyCodeLine{172             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1menu_1_1GameScreen_a08e6364ca657cfde5865958d54681cc3}{endScreenDisplay}}();}
+\DoxyCodeLine{178           \textcolor{keyword}{private}:}
+\DoxyCodeLine{183             std::vector<player::Player> *\_players;}
+\DoxyCodeLine{188             std::vector<std::unique\_ptr<indie::ecs::entity::Entity>> \_entities;}
+\DoxyCodeLine{193             std::vector<std::unique\_ptr<indie::ecs::entity::Entity>> *\_soundEntities;}
+\DoxyCodeLine{198             std::vector<std::unique\_ptr<indie::ecs::system::ISystem>> *\_soundSystems;}
+\DoxyCodeLine{203             std::vector<std::unique\_ptr<indie::screens::game::uiPlayerDisplay::UIPlayerDisplay>> \_infoPlayers;}
+\DoxyCodeLine{208             std::vector<std::unique\_ptr<indie::ecs::system::ISystem>> \_systems;}
+\DoxyCodeLine{213             \mbox{\hyperlink{classindie_1_1raylib_1_1Camera3D}{indie::raylib::Camera3D}} \_camera;}
+\DoxyCodeLine{214             std::map<int, std::string> \_playerAssets;}
+\DoxyCodeLine{219             \textcolor{keywordtype}{bool} \_player1\_blue;}
+\DoxyCodeLine{224             \textcolor{keywordtype}{bool} \_player2\_red;}
+\DoxyCodeLine{229             \textcolor{keywordtype}{bool} \_player3\_green;}
+\DoxyCodeLine{234             \textcolor{keywordtype}{bool} \_player4\_yellow;}
+\DoxyCodeLine{239             \textcolor{keywordtype}{bool} \_is\_game\_finished;}
+\DoxyCodeLine{244             \textcolor{keywordtype}{bool} \_end\_screen\_display;}
+\DoxyCodeLine{245         \};}
+\DoxyCodeLine{246     \} \textcolor{comment}{// namespace menu}}
+\DoxyCodeLine{247 \} \textcolor{comment}{// namespace indie}}
+\DoxyCodeLine{248 }
+\DoxyCodeLine{249 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* !MENUSCREEN\_HPP\_ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

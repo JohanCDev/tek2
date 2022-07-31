@@ -1,0 +1,47 @@
+\hypertarget{Cube_8hpp_source}{}\doxysection{Cube.\+hpp}
+\label{Cube_8hpp_source}\index{src/raylib/cube/Cube.hpp@{src/raylib/cube/Cube.hpp}}
+\mbox{\hyperlink{Cube_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#ifndef CUBE\_HPP\_}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#define CUBE\_HPP\_}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include "{}../Raylib.hpp"{}}}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 \textcolor{keyword}{namespace }indie}
+\DoxyCodeLine{18 \{}
+\DoxyCodeLine{19     \textcolor{keyword}{namespace }raylib}
+\DoxyCodeLine{20     \{}
+\DoxyCodeLine{22         \textcolor{keyword}{class }\mbox{\hyperlink{classindie_1_1raylib_1_1Cube}{Cube}} \{}
+\DoxyCodeLine{23           \textcolor{keyword}{public}:}
+\DoxyCodeLine{34             \mbox{\hyperlink{classindie_1_1raylib_1_1Cube_a2242b871defc5069c88ed73e9456a6b8}{Cube}}(\textcolor{keywordtype}{float} x, \textcolor{keywordtype}{float} y, \textcolor{keywordtype}{float} z, \textcolor{keywordtype}{float} width, \textcolor{keywordtype}{float} height, \textcolor{keywordtype}{float} length);}
+\DoxyCodeLine{46             \mbox{\hyperlink{classindie_1_1raylib_1_1Cube_a2242b871defc5069c88ed73e9456a6b8}{Cube}}(\textcolor{keywordtype}{float} x, \textcolor{keywordtype}{float} y, \textcolor{keywordtype}{float} z, \textcolor{keywordtype}{float} width, \textcolor{keywordtype}{float} height, \textcolor{keywordtype}{float} length, ::Color color);}
+\DoxyCodeLine{51             \mbox{\hyperlink{classindie_1_1raylib_1_1Cube_a76180cd60a901c312d1a8de3759ea882}{\string~Cube}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{58             ::Vector3 \mbox{\hyperlink{classindie_1_1raylib_1_1Cube_afbc06721cbd978497197d12cbaad4fed}{getPosition}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{59 }
+\DoxyCodeLine{67             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Cube_a072a639cb5bf11e08bedda409d9fbd4a}{setPosition}}(\textcolor{keywordtype}{float} newX, \textcolor{keywordtype}{float} newY, \textcolor{keywordtype}{float} newZ);}
+\DoxyCodeLine{73             ::Vector3 \mbox{\hyperlink{classindie_1_1raylib_1_1Cube_a22dbef835aca389611c26a96f1136916}{getSize}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{74 }
+\DoxyCodeLine{82             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Cube_aea771a7efa9b3a4d1e36833abe198697}{setSize}}(\textcolor{keywordtype}{float} newWidth, \textcolor{keywordtype}{float} newHeight, \textcolor{keywordtype}{float} newLength);}
+\DoxyCodeLine{88             ::Color \mbox{\hyperlink{classindie_1_1raylib_1_1Cube_a33cfc3095886ceef23f63015a694880c}{getColor}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{89 }
+\DoxyCodeLine{95             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Cube_a156700b6207fc55cb62344a60baef9a7}{setColor}}(::Color color);}
+\DoxyCodeLine{99             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Cube_a9879d4660f22dba8e097e252ee4a4753}{draw}}();}
+\DoxyCodeLine{107             \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Cube_a9879d4660f22dba8e097e252ee4a4753}{draw}}(::Vector3 position, ::Vector3 size, ::Color color);}
+\DoxyCodeLine{111             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Cube_a6dfbbf5bc99ddd0ef5f382641244bc0c}{drawWires}}();}
+\DoxyCodeLine{119             \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Cube_a6dfbbf5bc99ddd0ef5f382641244bc0c}{drawWires}}(::Vector3 position, ::Vector3 size, ::Color color);}
+\DoxyCodeLine{130             \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Cube_a0c2f4241d76ffd9f62b94e254091fba6}{drawTexture}}(}
+\DoxyCodeLine{131                 ::Texture2D texture, ::Vector3 position, \textcolor{keywordtype}{float} width, \textcolor{keywordtype}{float} height, \textcolor{keywordtype}{float} length, ::Color color);}
+\DoxyCodeLine{132 }
+\DoxyCodeLine{133           \textcolor{keyword}{private}:}
+\DoxyCodeLine{138             ::Vector3 \_position;}
+\DoxyCodeLine{143             ::Vector3 \_size;}
+\DoxyCodeLine{148             ::Color \_color;}
+\DoxyCodeLine{149         \};}
+\DoxyCodeLine{150     \} \textcolor{comment}{// namespace raylib}}
+\DoxyCodeLine{151 \} \textcolor{comment}{// namespace indie}}
+\DoxyCodeLine{152 }
+\DoxyCodeLine{153 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* !CUBE\_HPP\_ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

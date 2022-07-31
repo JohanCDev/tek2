@@ -1,0 +1,129 @@
+\hypertarget{classindie_1_1screens_1_1game_1_1uiPlayerDisplay_1_1UIPlayerDisplay}{}\doxysection{indie\+::screens\+::game\+::ui\+Player\+Display\+::UIPlayer\+Display Class Reference}
+\label{classindie_1_1screens_1_1game_1_1uiPlayerDisplay_1_1UIPlayerDisplay}\index{indie::screens::game::uiPlayerDisplay::UIPlayerDisplay@{indie::screens::game::uiPlayerDisplay::UIPlayerDisplay}}
+
+
+Class for the Player\textquotesingle{}s UI.  
+
+
+
+
+{\ttfamily \#include $<$UIPlayer\+Display.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classindie_1_1screens_1_1game_1_1uiPlayerDisplay_1_1UIPlayerDisplay_ac8f7e6aa9223884a779eaff6153d903b}{UIPlayer\+Display}} (\mbox{\hyperlink{classindie_1_1player_1_1Player}{indie\+::player\+::\+Player}} $\ast$player, \mbox{\hyperlink{Vec2_8hpp_a7b5948dba179da4dba0a508ac8cd81f0}{vec2f}} pos, \mbox{\hyperlink{Vec2_8hpp_a7b5948dba179da4dba0a508ac8cd81f0}{vec2f}} size)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classindie_1_1screens_1_1game_1_1uiPlayerDisplay_1_1UIPlayerDisplay}{UIPlayer\+Display}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classindie_1_1screens_1_1game_1_1uiPlayerDisplay_1_1UIPlayerDisplay_ad351d9eb96b32921f2deb2f62c5a34ed}\label{classindie_1_1screens_1_1game_1_1uiPlayerDisplay_1_1UIPlayerDisplay_ad351d9eb96b32921f2deb2f62c5a34ed}} 
+{\bfseries $\sim$\+UIPlayer\+Display} ()=default
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classindie_1_1screens_1_1game_1_1uiPlayerDisplay_1_1UIPlayerDisplay}{UIPlayer\+Display}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1screens_1_1game_1_1uiPlayerDisplay_1_1UIPlayerDisplay_a89dc7407e3d65e1f51ff99efc3390886}{create\+Single\+Text\+Entity}} (std\+::string \&str, \mbox{\hyperlink{Vec2_8hpp_a7b5948dba179da4dba0a508ac8cd81f0}{vec2f}} position)
+\begin{DoxyCompactList}\small\item\em Create the text entity for the player\textquotesingle{}s UI. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classindie_1_1screens_1_1game_1_1uiPlayerDisplay_1_1UIPlayerDisplay_ac9519eec75106f6e082e0be63662d740}\label{classindie_1_1screens_1_1game_1_1uiPlayerDisplay_1_1UIPlayerDisplay_ac9519eec75106f6e082e0be63662d740}} 
+void {\bfseries create\+Image} ()
+\begin{DoxyCompactList}\small\item\em Create an image for the player\textquotesingle{}s UI. \end{DoxyCompactList}\item 
+const std\+::string \mbox{\hyperlink{classindie_1_1screens_1_1game_1_1uiPlayerDisplay_1_1UIPlayerDisplay_acddda485fe8d38359bcbb5b0f2dfbdac}{get\+Player\+Sprite\+Filepath}} () const
+\begin{DoxyCompactList}\small\item\em Get the Player Sprite Filepath. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classindie_1_1screens_1_1game_1_1uiPlayerDisplay_1_1UIPlayerDisplay_a184bc9488901a9d98a0bde04e3756452}{get\+Next\+YPos}} () const
+\begin{DoxyCompactList}\small\item\em Get the Next Y Pos of the Player\textquotesingle{}s UI. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classindie_1_1player_1_1Player}{indie\+::player\+::\+Player}} \mbox{\hyperlink{classindie_1_1screens_1_1game_1_1uiPlayerDisplay_1_1UIPlayerDisplay_a0a989147b89a2c8f4341a936da07c6c2}{get\+Player}} () const
+\begin{DoxyCompactList}\small\item\em Get the Player object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classindie_1_1screens_1_1game_1_1uiPlayerDisplay_1_1UIPlayerDisplay_a577e658a5f721229724314c46f92a9cd}\label{classindie_1_1screens_1_1game_1_1uiPlayerDisplay_1_1UIPlayerDisplay_a577e658a5f721229724314c46f92a9cd}} 
+void {\bfseries create} ()
+\begin{DoxyCompactList}\small\item\em Create a new UI for player. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classindie_1_1screens_1_1game_1_1uiPlayerDisplay_1_1UIPlayerDisplay_aba97518c5ec3682608f9065b0a24c7ce}\label{classindie_1_1screens_1_1game_1_1uiPlayerDisplay_1_1UIPlayerDisplay_aba97518c5ec3682608f9065b0a24c7ce}} 
+void {\bfseries update} ()
+\begin{DoxyCompactList}\small\item\em Update the player\textquotesingle{}s UI. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classindie_1_1screens_1_1game_1_1uiPlayerDisplay_1_1UIPlayerDisplay_ac777e45e572f416919296398fd255099}\label{classindie_1_1screens_1_1game_1_1uiPlayerDisplay_1_1UIPlayerDisplay_ac777e45e572f416919296398fd255099}} 
+void {\bfseries draw} ()
+\begin{DoxyCompactList}\small\item\em Draw the player\textquotesingle{}s UI. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class for the Player\textquotesingle{}s UI. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classindie_1_1screens_1_1game_1_1uiPlayerDisplay_1_1UIPlayerDisplay_ac8f7e6aa9223884a779eaff6153d903b}\label{classindie_1_1screens_1_1game_1_1uiPlayerDisplay_1_1UIPlayerDisplay_ac8f7e6aa9223884a779eaff6153d903b}} 
+\index{indie::screens::game::uiPlayerDisplay::UIPlayerDisplay@{indie::screens::game::uiPlayerDisplay::UIPlayerDisplay}!UIPlayerDisplay@{UIPlayerDisplay}}
+\index{UIPlayerDisplay@{UIPlayerDisplay}!indie::screens::game::uiPlayerDisplay::UIPlayerDisplay@{indie::screens::game::uiPlayerDisplay::UIPlayerDisplay}}
+\doxysubsubsection{\texorpdfstring{UIPlayerDisplay()}{UIPlayerDisplay()}}
+{\footnotesize\ttfamily indie\+::screens\+::game\+::ui\+Player\+Display\+::\+UIPlayer\+Display\+::\+UIPlayer\+Display (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classindie_1_1player_1_1Player}{indie\+::player\+::\+Player}} $\ast$}]{player,  }\item[{\mbox{\hyperlink{Vec2_8hpp_a7b5948dba179da4dba0a508ac8cd81f0}{vec2f}}}]{pos,  }\item[{\mbox{\hyperlink{Vec2_8hpp_a7b5948dba179da4dba0a508ac8cd81f0}{vec2f}}}]{size }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classindie_1_1screens_1_1game_1_1uiPlayerDisplay_1_1UIPlayerDisplay}{UIPlayer\+Display}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & Player targeted by UI Information Display \\
+\hline
+{\em pos} & The position of the UI for player \\
+\hline
+{\em size} & The size of the UI for player \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classindie_1_1screens_1_1game_1_1uiPlayerDisplay_1_1UIPlayerDisplay_a89dc7407e3d65e1f51ff99efc3390886}\label{classindie_1_1screens_1_1game_1_1uiPlayerDisplay_1_1UIPlayerDisplay_a89dc7407e3d65e1f51ff99efc3390886}} 
+\index{indie::screens::game::uiPlayerDisplay::UIPlayerDisplay@{indie::screens::game::uiPlayerDisplay::UIPlayerDisplay}!createSingleTextEntity@{createSingleTextEntity}}
+\index{createSingleTextEntity@{createSingleTextEntity}!indie::screens::game::uiPlayerDisplay::UIPlayerDisplay@{indie::screens::game::uiPlayerDisplay::UIPlayerDisplay}}
+\doxysubsubsection{\texorpdfstring{createSingleTextEntity()}{createSingleTextEntity()}}
+{\footnotesize\ttfamily void indie\+::screens\+::game\+::ui\+Player\+Display\+::\+UIPlayer\+Display\+::create\+Single\+Text\+Entity (\begin{DoxyParamCaption}\item[{std\+::string \&}]{str,  }\item[{\mbox{\hyperlink{Vec2_8hpp_a7b5948dba179da4dba0a508ac8cd81f0}{vec2f}}}]{position }\end{DoxyParamCaption})}
+
+
+
+Create the text entity for the player\textquotesingle{}s UI. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & The text to display \\
+\hline
+{\em position} & The position to display the text \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1screens_1_1game_1_1uiPlayerDisplay_1_1UIPlayerDisplay_a184bc9488901a9d98a0bde04e3756452}\label{classindie_1_1screens_1_1game_1_1uiPlayerDisplay_1_1UIPlayerDisplay_a184bc9488901a9d98a0bde04e3756452}} 
+\index{indie::screens::game::uiPlayerDisplay::UIPlayerDisplay@{indie::screens::game::uiPlayerDisplay::UIPlayerDisplay}!getNextYPos@{getNextYPos}}
+\index{getNextYPos@{getNextYPos}!indie::screens::game::uiPlayerDisplay::UIPlayerDisplay@{indie::screens::game::uiPlayerDisplay::UIPlayerDisplay}}
+\doxysubsubsection{\texorpdfstring{getNextYPos()}{getNextYPos()}}
+{\footnotesize\ttfamily float indie\+::screens\+::game\+::ui\+Player\+Display\+::\+UIPlayer\+Display\+::get\+Next\+YPos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the Next Y Pos of the Player\textquotesingle{}s UI. 
+
+\begin{DoxyReturn}{Returns}
+float The position of the next position 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classindie_1_1screens_1_1game_1_1uiPlayerDisplay_1_1UIPlayerDisplay_a0a989147b89a2c8f4341a936da07c6c2}\label{classindie_1_1screens_1_1game_1_1uiPlayerDisplay_1_1UIPlayerDisplay_a0a989147b89a2c8f4341a936da07c6c2}} 
+\index{indie::screens::game::uiPlayerDisplay::UIPlayerDisplay@{indie::screens::game::uiPlayerDisplay::UIPlayerDisplay}!getPlayer@{getPlayer}}
+\index{getPlayer@{getPlayer}!indie::screens::game::uiPlayerDisplay::UIPlayerDisplay@{indie::screens::game::uiPlayerDisplay::UIPlayerDisplay}}
+\doxysubsubsection{\texorpdfstring{getPlayer()}{getPlayer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classindie_1_1player_1_1Player}{indie\+::player\+::\+Player}} indie\+::screens\+::game\+::ui\+Player\+Display\+::\+UIPlayer\+Display\+::get\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the Player object. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classindie_1_1player_1_1Player}{indie\+::player\+::\+Player}} The object of the targeted player 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classindie_1_1screens_1_1game_1_1uiPlayerDisplay_1_1UIPlayerDisplay_acddda485fe8d38359bcbb5b0f2dfbdac}\label{classindie_1_1screens_1_1game_1_1uiPlayerDisplay_1_1UIPlayerDisplay_acddda485fe8d38359bcbb5b0f2dfbdac}} 
+\index{indie::screens::game::uiPlayerDisplay::UIPlayerDisplay@{indie::screens::game::uiPlayerDisplay::UIPlayerDisplay}!getPlayerSpriteFilepath@{getPlayerSpriteFilepath}}
+\index{getPlayerSpriteFilepath@{getPlayerSpriteFilepath}!indie::screens::game::uiPlayerDisplay::UIPlayerDisplay@{indie::screens::game::uiPlayerDisplay::UIPlayerDisplay}}
+\doxysubsubsection{\texorpdfstring{getPlayerSpriteFilepath()}{getPlayerSpriteFilepath()}}
+{\footnotesize\ttfamily const std\+::string indie\+::screens\+::game\+::ui\+Player\+Display\+::\+UIPlayer\+Display\+::get\+Player\+Sprite\+Filepath (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the Player Sprite Filepath. 
+
+\begin{DoxyReturn}{Returns}
+const std\+::string the filepath to the player Sprite 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/screens/game/ui\+Player\+Display/UIPlayer\+Display.\+hpp\item 
+src/screens/game/ui\+Player\+Display/\mbox{\hyperlink{UIPlayerDisplay_8cpp}{UIPlayer\+Display.\+cpp}}\end{DoxyCompactItemize}

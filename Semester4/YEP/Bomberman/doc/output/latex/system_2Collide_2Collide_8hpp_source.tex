@@ -1,0 +1,40 @@
+\hypertarget{system_2Collide_2Collide_8hpp_source}{}\doxysection{Collide.\+hpp}
+\label{system_2Collide_2Collide_8hpp_source}\index{src/ecs/system/Collide/Collide.hpp@{src/ecs/system/Collide/Collide.hpp}}
+\mbox{\hyperlink{system_2Collide_2Collide_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#ifndef COLLIDE\_HPP\_}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#define COLLIDE\_HPP\_}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include "{}../ISystem.hpp"{}}}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 \textcolor{keyword}{namespace }indie}
+\DoxyCodeLine{18 \{}
+\DoxyCodeLine{19     \textcolor{keyword}{namespace }ecs}
+\DoxyCodeLine{20     \{}
+\DoxyCodeLine{21         \textcolor{keyword}{namespace }system}
+\DoxyCodeLine{22         \{}
+\DoxyCodeLine{24             \textcolor{keyword}{class }\mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1Collide}{Collide}} : \textcolor{keyword}{public} \mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1ISystem}{ISystem}} \{}
+\DoxyCodeLine{25               \textcolor{keyword}{public}:}
+\DoxyCodeLine{30                 \mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1Collide_aaae0ef0bdc33b163e8af0ac20cb64c16}{Collide}}();}
+\DoxyCodeLine{35                 \mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1Collide_a0e97207df398f4f5d9af2be44f4a8dba}{\string~Collide}}();}
+\DoxyCodeLine{41                 \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1Collide_af91bc9e159a9ce1eb63d0702477827e6}{update}}(std::vector<std::unique\_ptr<indie::ecs::entity::Entity>> \&entities);}
+\DoxyCodeLine{52                 \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1Collide_a468f6881a29e58cfdeefdb0c33aa9aec}{checkCubeCollision}}(\textcolor{keyword}{auto} drawable, \textcolor{keyword}{auto} collide, \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Transform}{indie::ecs::component::Transform}} *transform,}
+\DoxyCodeLine{53                     \textcolor{keyword}{auto} otherEntityCollide, \textcolor{keyword}{auto} otherEntityDrawable,}
+\DoxyCodeLine{54                     \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Transform}{indie::ecs::component::Transform}} *otherTransform);}
+\DoxyCodeLine{63                 \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1Collide_a9f1f60b49b85c60637bb118e91a3000c}{checkSphereCollision}}(std::unique\_ptr<indie::ecs::entity::Entity> \&entity,}
+\DoxyCodeLine{64                     std::unique\_ptr<indie::ecs::entity::Entity> \&otherEntity, std::vector<int> \&compoToRemove,}
+\DoxyCodeLine{65                     \textcolor{keywordtype}{int} \&count);}
+\DoxyCodeLine{66 }
+\DoxyCodeLine{72                 \mbox{\hyperlink{ISystem_8hpp_aec184346273b5fda2bad6ad1aaa44620}{indie::ecs::system::SystemType}} \mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1Collide_a539cc528ba23866d573f349a9eae2b80}{getSystemType}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{73 }
+\DoxyCodeLine{74               \textcolor{keyword}{protected}:}
+\DoxyCodeLine{75               \textcolor{keyword}{private}:}
+\DoxyCodeLine{76             \};}
+\DoxyCodeLine{77         \} \textcolor{comment}{// namespace system}}
+\DoxyCodeLine{78     \}     \textcolor{comment}{// namespace ecs}}
+\DoxyCodeLine{79 \} \textcolor{comment}{// namespace indie}}
+\DoxyCodeLine{80 }
+\DoxyCodeLine{81 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* !COLLIDE\_HPP\_ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

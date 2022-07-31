@@ -1,0 +1,152 @@
+\hypertarget{classindie_1_1menu_1_1EndScreen}{}\doxysection{indie\+::menu\+::End\+Screen Class Reference}
+\label{classindie_1_1menu_1_1EndScreen}\index{indie::menu::EndScreen@{indie::menu::EndScreen}}
+
+
+Class for the End Screen.  
+
+
+
+
+{\ttfamily \#include $<$End\+Screen.\+hpp$>$}
+
+Inheritance diagram for indie\+::menu\+::End\+Screen\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classindie_1_1menu_1_1EndScreen}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classindie_1_1menu_1_1EndScreen_a9c63f76a155ed2f87615b69c456913dd}\label{classindie_1_1menu_1_1EndScreen_a9c63f76a155ed2f87615b69c456913dd}} 
+{\bfseries End\+Screen} ()
+\begin{DoxyCompactList}\small\item\em Construct a new End Screen object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classindie_1_1menu_1_1EndScreen_a0aa8163b648e56bbc2cd1ec86de481b2}\label{classindie_1_1menu_1_1EndScreen_a0aa8163b648e56bbc2cd1ec86de481b2}} 
+{\bfseries $\sim$\+End\+Screen} ()=default
+\begin{DoxyCompactList}\small\item\em Destroy the End Screen object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1menu_1_1EndScreen_abceddd183a889476ff7fe97834454f5b}{init}} () override
+\begin{DoxyCompactList}\small\item\em Init the End screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1menu_1_1EndScreen_ae06843220e3730139dcbdd7fa0997df8}{draw}} () override
+\begin{DoxyCompactList}\small\item\em Draw the end screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1menu_1_1EndScreen_a1025b30bf7ca5c1e0a4005cc3fa862b1}{update}} () override
+\begin{DoxyCompactList}\small\item\em Update all the entities / elements of the end scene. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classindie_1_1menu_1_1EndScreen_ae2e619ddfee03c7d98c4aa6def6f9206}{handle\+Event}} (\mbox{\hyperlink{structindie_1_1Event}{indie\+::\+Event}} \&event) override
+\begin{DoxyCompactList}\small\item\em Handle event for End Screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1menu_1_1EndScreen_a66fb424e260d4a2a09f4f7d8cbb4cffe}{add\+Entity}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classindie_1_1ecs_1_1entity_1_1Entity}{indie\+::ecs\+::entity\+::\+Entity}} $>$ entity) override
+\begin{DoxyCompactList}\small\item\em Add entity for the End Screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1menu_1_1EndScreen_a908c2d7d322647b4e4b7aba202116007}{add\+System}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1ISystem}{indie\+::ecs\+::system\+::\+ISystem}} $>$ system) override
+\begin{DoxyCompactList}\small\item\em Add system for the End Screen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class for the End Screen. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classindie_1_1menu_1_1EndScreen_a66fb424e260d4a2a09f4f7d8cbb4cffe}\label{classindie_1_1menu_1_1EndScreen_a66fb424e260d4a2a09f4f7d8cbb4cffe}} 
+\index{indie::menu::EndScreen@{indie::menu::EndScreen}!addEntity@{addEntity}}
+\index{addEntity@{addEntity}!indie::menu::EndScreen@{indie::menu::EndScreen}}
+\doxysubsubsection{\texorpdfstring{addEntity()}{addEntity()}}
+{\footnotesize\ttfamily void indie\+::menu\+::\+End\+Screen\+::add\+Entity (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classindie_1_1ecs_1_1entity_1_1Entity}{indie\+::ecs\+::entity\+::\+Entity}} $>$}]{entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Add entity for the End Screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & the entity to add for the end screen \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classindie_1_1IScreen_a08ef01692ea36f0eb9cdf06bf41b12a7}{indie\+::\+IScreen}}.
+
+\mbox{\Hypertarget{classindie_1_1menu_1_1EndScreen_a908c2d7d322647b4e4b7aba202116007}\label{classindie_1_1menu_1_1EndScreen_a908c2d7d322647b4e4b7aba202116007}} 
+\index{indie::menu::EndScreen@{indie::menu::EndScreen}!addSystem@{addSystem}}
+\index{addSystem@{addSystem}!indie::menu::EndScreen@{indie::menu::EndScreen}}
+\doxysubsubsection{\texorpdfstring{addSystem()}{addSystem()}}
+{\footnotesize\ttfamily void indie\+::menu\+::\+End\+Screen\+::add\+System (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1ISystem}{indie\+::ecs\+::system\+::\+ISystem}} $>$}]{system }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Add system for the End Screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em system} & the system to add for the end screen \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classindie_1_1IScreen_a492a5f07982dc9df97b71251413e8129}{indie\+::\+IScreen}}.
+
+\mbox{\Hypertarget{classindie_1_1menu_1_1EndScreen_ae06843220e3730139dcbdd7fa0997df8}\label{classindie_1_1menu_1_1EndScreen_ae06843220e3730139dcbdd7fa0997df8}} 
+\index{indie::menu::EndScreen@{indie::menu::EndScreen}!draw@{draw}}
+\index{draw@{draw}!indie::menu::EndScreen@{indie::menu::EndScreen}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void indie\+::menu\+::\+End\+Screen\+::draw (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Draw the end screen. 
+
+
+
+Implements \mbox{\hyperlink{classindie_1_1IScreen_a50e467ab6b7efae4114a9c3f17fa8ef4}{indie\+::\+IScreen}}.
+
+\mbox{\Hypertarget{classindie_1_1menu_1_1EndScreen_ae2e619ddfee03c7d98c4aa6def6f9206}\label{classindie_1_1menu_1_1EndScreen_ae2e619ddfee03c7d98c4aa6def6f9206}} 
+\index{indie::menu::EndScreen@{indie::menu::EndScreen}!handleEvent@{handleEvent}}
+\index{handleEvent@{handleEvent}!indie::menu::EndScreen@{indie::menu::EndScreen}}
+\doxysubsubsection{\texorpdfstring{handleEvent()}{handleEvent()}}
+{\footnotesize\ttfamily int indie\+::menu\+::\+End\+Screen\+::handle\+Event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structindie_1_1Event}{indie\+::\+Event}} \&}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Handle event for End Screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & the event to be handled \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int The scene number 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classindie_1_1IScreen_a715fc5be821e5ed1e66087cf4945234c}{indie\+::\+IScreen}}.
+
+\mbox{\Hypertarget{classindie_1_1menu_1_1EndScreen_abceddd183a889476ff7fe97834454f5b}\label{classindie_1_1menu_1_1EndScreen_abceddd183a889476ff7fe97834454f5b}} 
+\index{indie::menu::EndScreen@{indie::menu::EndScreen}!init@{init}}
+\index{init@{init}!indie::menu::EndScreen@{indie::menu::EndScreen}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void indie\+::menu\+::\+End\+Screen\+::init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Init the End screen. 
+
+
+
+Implements \mbox{\hyperlink{classindie_1_1IScreen_a8a94615d59b1a467347bf806b5c92f17}{indie\+::\+IScreen}}.
+
+\mbox{\Hypertarget{classindie_1_1menu_1_1EndScreen_a1025b30bf7ca5c1e0a4005cc3fa862b1}\label{classindie_1_1menu_1_1EndScreen_a1025b30bf7ca5c1e0a4005cc3fa862b1}} 
+\index{indie::menu::EndScreen@{indie::menu::EndScreen}!update@{update}}
+\index{update@{update}!indie::menu::EndScreen@{indie::menu::EndScreen}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void indie\+::menu\+::\+End\+Screen\+::update (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Update all the entities / elements of the end scene. 
+
+
+
+Implements \mbox{\hyperlink{classindie_1_1IScreen_aa8a7600f2869b54991b1ae551e8735c1}{indie\+::\+IScreen}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/screens/end/End\+Screen.\+hpp\item 
+src/screens/end/\mbox{\hyperlink{EndScreen_8cpp}{End\+Screen.\+cpp}}\end{DoxyCompactItemize}

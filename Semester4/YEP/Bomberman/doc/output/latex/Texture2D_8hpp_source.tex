@@ -1,0 +1,73 @@
+\hypertarget{Texture2D_8hpp_source}{}\doxysection{Texture2\+D.\+hpp}
+\label{Texture2D_8hpp_source}\index{src/raylib/texture2d/Texture2D.hpp@{src/raylib/texture2d/Texture2D.hpp}}
+\mbox{\hyperlink{Texture2D_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#ifndef TEXTURE2D\_HPP\_}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#define TEXTURE2D\_HPP\_}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include "{}../Raylib.hpp"{}}}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 \textcolor{keyword}{namespace }indie}
+\DoxyCodeLine{18 \{}
+\DoxyCodeLine{19     \textcolor{keyword}{namespace }raylib}
+\DoxyCodeLine{20     \{}
+\DoxyCodeLine{22         \textcolor{keyword}{class }\mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D}{Texture2D}} \{}
+\DoxyCodeLine{23           \textcolor{keyword}{public}:}
+\DoxyCodeLine{33             \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a594d4979a25c307d5b6f6e88bf8cb56a}{Texture2D}}(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} \textcolor{keywordtype}{id}, \textcolor{keywordtype}{int} width, \textcolor{keywordtype}{int} height, \textcolor{keywordtype}{int} mipmaps, \textcolor{keywordtype}{int} format);}
+\DoxyCodeLine{38             \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a8f6ff84a9b449288fdbae70c8b3567d7}{\string~Texture2D}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{44             \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_ae52415203ba90ae1128038dfe47df975}{getId}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{50             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a6740ccb5429171d79c86193d7e4d353e}{setId}}(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} \textcolor{keywordtype}{id});}
+\DoxyCodeLine{56             \textcolor{keywordtype}{int} \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a149f194c56022e91848980a51d652eee}{getWidth}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{62             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a0f7c4d13f8e76b2219f24086437a8592}{setWidth}}(\textcolor{keywordtype}{int} width);}
+\DoxyCodeLine{68             \textcolor{keywordtype}{int} \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_af71f7384b3ebf36611a0dc27072f7fd2}{getHeight}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{74             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a471fa8a538dbbaa43d54f32273a3eb5c}{setHeight}}(\textcolor{keywordtype}{int} height);}
+\DoxyCodeLine{80             \textcolor{keywordtype}{int} \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a3f864dcc7097394d08f8961ee9538756}{getMipmaps}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{86             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a952470748dbe1add78314420b32f92bc}{setMipmaps}}(\textcolor{keywordtype}{int} mipmaps);}
+\DoxyCodeLine{92             \textcolor{keywordtype}{int} \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_ae05d7b71e2e25429c2f4d4ec697fd83d}{getFormat}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{98             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a3f239252a0a9ddbf71e18e22ce0b680d}{setFormat}}(\textcolor{keywordtype}{int} format);}
+\DoxyCodeLine{106             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_af3062d8e02f672a5549e899949b998da}{draw}}(\textcolor{keywordtype}{int} posX, \textcolor{keywordtype}{int} posY, ::Color tint);}
+\DoxyCodeLine{115             \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_af3062d8e02f672a5549e899949b998da}{draw}}(\mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a594d4979a25c307d5b6f6e88bf8cb56a}{::Texture2D}} texture, \textcolor{keywordtype}{int} posX, \textcolor{keywordtype}{int} posY, ::Color tint);}
+\DoxyCodeLine{122             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a056825308cdcfb67958b7f7d1a35cec4}{drawV}}(::Vector2 position, ::Color tint);}
+\DoxyCodeLine{130             \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a056825308cdcfb67958b7f7d1a35cec4}{drawV}}(\mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a594d4979a25c307d5b6f6e88bf8cb56a}{::Texture2D}} texture, ::Vector2 position, ::Color tint);}
+\DoxyCodeLine{139             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_ac2858b034b305c2b08caba0139c59635}{drawEx}}(::Vector2 position, \textcolor{keywordtype}{float} rotation, \textcolor{keywordtype}{float} scale, ::Color tint);}
+\DoxyCodeLine{149             \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_ac2858b034b305c2b08caba0139c59635}{drawEx}}(\mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a594d4979a25c307d5b6f6e88bf8cb56a}{::Texture2D}} texture, ::Vector2 position, \textcolor{keywordtype}{float} rotation, \textcolor{keywordtype}{float} scale, ::Color tint);}
+\DoxyCodeLine{157             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_af4536ce5bb04d9b5f077b9c279752922}{drawRec}}(::Rectangle source, ::Vector2 position, ::Color tint);}
+\DoxyCodeLine{166             \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_af4536ce5bb04d9b5f077b9c279752922}{drawRec}}(\mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a594d4979a25c307d5b6f6e88bf8cb56a}{::Texture2D}} texture, ::Rectangle source, ::Vector2 position, ::Color tint);}
+\DoxyCodeLine{175             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_afad0187ab85b8a2e1b4ae1216a23b862}{drawQuad}}(::Vector2 tiling, ::Vector2 offset, ::Rectangle quad, ::Color tint);}
+\DoxyCodeLine{185             \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_afad0187ab85b8a2e1b4ae1216a23b862}{drawQuad}}(}
+\DoxyCodeLine{186                 \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a594d4979a25c307d5b6f6e88bf8cb56a}{::Texture2D}} texture, ::Vector2 tiling, ::Vector2 offset, ::Rectangle quad, ::Color tint);}
+\DoxyCodeLine{197             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a299be810ee39c0c1b7a6fd6eb2e38735}{drawTiled}}(}
+\DoxyCodeLine{198                 ::Rectangle source, ::Rectangle dest, ::Vector2 origin, \textcolor{keywordtype}{float} rotation, \textcolor{keywordtype}{float} scale, ::Color tint);}
+\DoxyCodeLine{210             \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a299be810ee39c0c1b7a6fd6eb2e38735}{drawTiled}}(\mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a594d4979a25c307d5b6f6e88bf8cb56a}{::Texture2D}} texture, ::Rectangle source, ::Rectangle dest, ::Vector2 origin,}
+\DoxyCodeLine{211                 \textcolor{keywordtype}{float} rotation, \textcolor{keywordtype}{float} scale, ::Color tint);}
+\DoxyCodeLine{212 }
+\DoxyCodeLine{222             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a6b5b576f0797722af0342bd57ab3dc18}{drawPro}}(::Rectangle source, ::Rectangle dest, ::Vector2 origin, \textcolor{keywordtype}{float} rotation, ::Color tint);}
+\DoxyCodeLine{233             \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a6b5b576f0797722af0342bd57ab3dc18}{drawPro}}(\mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a594d4979a25c307d5b6f6e88bf8cb56a}{::Texture2D}} texture, ::Rectangle source, ::Rectangle dest, ::Vector2 origin,}
+\DoxyCodeLine{234                 \textcolor{keywordtype}{float} rotation, ::Color tint);}
+\DoxyCodeLine{244             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a2772461618679a249bd469f1b23a0729}{drawNPatch}}(::NPatchInfo nPatchInfo, ::Rectangle dest, ::Vector2 origin, \textcolor{keywordtype}{float} rotation, ::Color tint);}
+\DoxyCodeLine{255             \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a2772461618679a249bd469f1b23a0729}{drawNPatch}}(\mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a594d4979a25c307d5b6f6e88bf8cb56a}{::Texture2D}} texture, ::NPatchInfo nPatchInfo, ::Rectangle dest, ::Vector2 origin,}
+\DoxyCodeLine{256                 \textcolor{keywordtype}{float} rotation, ::Color tint);}
+\DoxyCodeLine{257 }
+\DoxyCodeLine{267             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a00fbe859f51c34f2f22c69f74cee0941}{drawPoly}}(::Vector2 center, ::Vector2 *points, ::Vector2 *texcoords, \textcolor{keywordtype}{int} pointsCount, ::Color tint);}
+\DoxyCodeLine{278             \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a74de9bedf61034826d2d72186a2549ab}{drawPoly}}(\mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a594d4979a25c307d5b6f6e88bf8cb56a}{::Texture2D}} texture, ::Vector2 center, ::Vector2 *points, ::Vector2 *texcoords,}
+\DoxyCodeLine{279                 \textcolor{keywordtype}{int} pointsCount, ::Color tint);}
+\DoxyCodeLine{280 }
+\DoxyCodeLine{288             static ::Texture2D \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a094952ba5f011e96b31e8fe2b6357854}{load}}(\textcolor{keyword}{const} \textcolor{keywordtype}{char} *fileName);}
+\DoxyCodeLine{289 }
+\DoxyCodeLine{297             static ::Texture2D \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a7bb4f51ff2538b39ef97b017ecc4f919}{loadFromImage}}(::Image image);}
+\DoxyCodeLine{298 }
+\DoxyCodeLine{302             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_ae327faa3dfa803f02ce12759deaf8dc4}{unload}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{308             \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_ae327faa3dfa803f02ce12759deaf8dc4}{unload}}(\mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a594d4979a25c307d5b6f6e88bf8cb56a}{::Texture2D}} texture);}
+\DoxyCodeLine{314             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a383ec78014a5376fea1bbc5e9ce4e2a2}{update}}(\textcolor{keyword}{const} \textcolor{keywordtype}{void} *pixels);}
+\DoxyCodeLine{321             \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a383ec78014a5376fea1bbc5e9ce4e2a2}{update}}(\mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a594d4979a25c307d5b6f6e88bf8cb56a}{::Texture2D}} texture, \textcolor{keyword}{const} \textcolor{keywordtype}{void} *pixels);}
+\DoxyCodeLine{322 }
+\DoxyCodeLine{323           \textcolor{keyword}{private}:}
+\DoxyCodeLine{328             \mbox{\hyperlink{classindie_1_1raylib_1_1Texture2D_a594d4979a25c307d5b6f6e88bf8cb56a}{::Texture2D}} \_texture;}
+\DoxyCodeLine{329         \};}
+\DoxyCodeLine{330     \} \textcolor{comment}{// namespace raylib}}
+\DoxyCodeLine{331 \} \textcolor{comment}{// namespace indie}}
+\DoxyCodeLine{332 }
+\DoxyCodeLine{333 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* !TEXTURE2D\_HPP\_ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

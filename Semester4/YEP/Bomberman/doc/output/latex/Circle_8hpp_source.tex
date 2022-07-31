@@ -1,0 +1,53 @@
+\hypertarget{Circle_8hpp_source}{}\doxysection{Circle.\+hpp}
+\label{Circle_8hpp_source}\index{src/raylib/circle/Circle.hpp@{src/raylib/circle/Circle.hpp}}
+\mbox{\hyperlink{Circle_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#ifndef CIRCLE\_HPP\_}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#define CIRCLE\_HPP\_}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include "{}../Raylib.hpp"{}}}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 \textcolor{keyword}{namespace }indie}
+\DoxyCodeLine{18 \{}
+\DoxyCodeLine{19     \textcolor{keyword}{namespace }raylib}
+\DoxyCodeLine{20     \{}
+\DoxyCodeLine{22         \textcolor{keyword}{class }\mbox{\hyperlink{classindie_1_1raylib_1_1Circle}{Circle}} \{}
+\DoxyCodeLine{23           \textcolor{keyword}{public}:}
+\DoxyCodeLine{31             \mbox{\hyperlink{classindie_1_1raylib_1_1Circle_ad1525a65d07f6cae30f7766efb4e59b4}{Circle}}(::Vector2 center, \textcolor{keywordtype}{float} radius, ::Color color = BLACK);}
+\DoxyCodeLine{36             \mbox{\hyperlink{classindie_1_1raylib_1_1Circle_a9d930d7464c6e1cd16df6100841b2952}{\string~Circle}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{43             ::Vector2 \mbox{\hyperlink{classindie_1_1raylib_1_1Circle_afa4280a4bca205b9c57c8e73308463eb}{getCenter}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{44 }
+\DoxyCodeLine{50             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Circle_a7cce131ef9e98d2406ea4ca5f1ad5d6e}{setCenter}}(::Vector2 center);}
+\DoxyCodeLine{51 }
+\DoxyCodeLine{57             \textcolor{keywordtype}{float} \mbox{\hyperlink{classindie_1_1raylib_1_1Circle_a50e68be3617a2bfc85327d7baf009053}{getRadius}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{58 }
+\DoxyCodeLine{64             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Circle_a18487a3b75c3de62afbb1875f90d9922}{setRadius}}(\textcolor{keywordtype}{float} radius);}
+\DoxyCodeLine{65 }
+\DoxyCodeLine{71             ::Color \mbox{\hyperlink{classindie_1_1raylib_1_1Circle_aa326d93a0e63d32a9989f5ba27cefda5}{getColor}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{72 }
+\DoxyCodeLine{78             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Circle_a9823442bf16ca13937c984559a099204}{setColor}}(::Color color);}
+\DoxyCodeLine{87             \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Circle_aae4656f33b74ac25f252a717d48aee74}{draw}}(\textcolor{keywordtype}{float} x, \textcolor{keywordtype}{float} y, \textcolor{keywordtype}{float} radius, ::Color color);}
+\DoxyCodeLine{95             \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Circle_aae4656f33b74ac25f252a717d48aee74}{draw}}(::Vector2 center, \textcolor{keywordtype}{float} radius, ::Color color);}
+\DoxyCodeLine{100             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Circle_aae4656f33b74ac25f252a717d48aee74}{draw}}();}
+\DoxyCodeLine{101 }
+\DoxyCodeLine{109             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Circle_a7e82054706917ad1d925ff4afc110bb5}{drawSector}}(\textcolor{keywordtype}{float} startAngle, \textcolor{keywordtype}{float} endAngle, \textcolor{keywordtype}{int} segments);}
+\DoxyCodeLine{110 }
+\DoxyCodeLine{118             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Circle_ae60ac9ce17137138136ce173bdba3d4a}{drawSectorLines}}(\textcolor{keywordtype}{float} startAngle, \textcolor{keywordtype}{float} endAngle, \textcolor{keywordtype}{int} segments);}
+\DoxyCodeLine{119 }
+\DoxyCodeLine{127             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Circle_a7c95b592b4521793bee79b9dc9c4bdef}{draw3D}}(Vector3 center, Vector3 rotationAxis, \textcolor{keywordtype}{float} rotationAngle);}
+\DoxyCodeLine{128 }
+\DoxyCodeLine{138             \textcolor{keywordtype}{bool} \mbox{\hyperlink{classindie_1_1raylib_1_1Circle_aafae666f132d159d3ef3681bb731589a}{checkCollision}}(::Vector2 center2, \textcolor{keywordtype}{float} radius2);}
+\DoxyCodeLine{139 }
+\DoxyCodeLine{140           \textcolor{keyword}{private}:}
+\DoxyCodeLine{145             ::Vector2 \_center;}
+\DoxyCodeLine{150             \textcolor{keywordtype}{float} \_radius;}
+\DoxyCodeLine{155             ::Color \_color;}
+\DoxyCodeLine{156         \};}
+\DoxyCodeLine{157     \} \textcolor{comment}{// namespace raylib}}
+\DoxyCodeLine{158 \} \textcolor{comment}{// namespace indie}}
+\DoxyCodeLine{159 }
+\DoxyCodeLine{160 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* !CIRCLE\_HPP\_ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

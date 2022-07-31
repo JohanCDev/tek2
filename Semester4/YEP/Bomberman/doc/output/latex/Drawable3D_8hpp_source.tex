@@ -1,0 +1,53 @@
+\hypertarget{Drawable3D_8hpp_source}{}\doxysection{Drawable3\+D.\+hpp}
+\label{Drawable3D_8hpp_source}\index{src/ecs/component/Drawable3D/Drawable3D.hpp@{src/ecs/component/Drawable3D/Drawable3D.hpp}}
+\mbox{\hyperlink{Drawable3D_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#ifndef DRAWABLE3D\_HPP\_}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#define DRAWABLE3D\_HPP\_}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include "{}../IComponent.hpp"{}}}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18 \textcolor{keyword}{namespace }indie}
+\DoxyCodeLine{19 \{}
+\DoxyCodeLine{20     \textcolor{keyword}{namespace }ecs}
+\DoxyCodeLine{21     \{}
+\DoxyCodeLine{22         \textcolor{keyword}{namespace }component}
+\DoxyCodeLine{23         \{}
+\DoxyCodeLine{25             \textcolor{keyword}{class }\mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Drawable3D}{Drawable3D}} : \textcolor{keyword}{public} \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1IComponent}{IComponent}} \{}
+\DoxyCodeLine{26               \textcolor{keyword}{public}:}
+\DoxyCodeLine{30                 \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Drawable3D_a2b417e4f911cfbac8bfa1257192166b0}{Drawable3D}}();}
+\DoxyCodeLine{37                 \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Drawable3D_a2b417e4f911cfbac8bfa1257192166b0}{Drawable3D}}(\textcolor{keywordtype}{float} radius, Color color);}
+\DoxyCodeLine{47                 \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Drawable3D_a2b417e4f911cfbac8bfa1257192166b0}{Drawable3D}}(std::string texturePath, \textcolor{keywordtype}{float} height, \textcolor{keywordtype}{float} width, \textcolor{keywordtype}{float} length, Color color);}
+\DoxyCodeLine{51                 \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Drawable3D_aeaa94c7c6962072fe60f69516536a926}{\string~Drawable3D}}();}
+\DoxyCodeLine{57                 \mbox{\hyperlink{IComponent_8hpp_ac44f0ed416679d299da366d37fd5eac8}{indie::ecs::component::compoType}} \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Drawable3D_a5d70e8a08455ddfcf3e2e027cd7d4d6c}{getType}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{63                 \mbox{\hyperlink{IComponent_8hpp_aa8502d67dffca22bc7fe2149622da4e6}{indie::ecs::component::drawableType}} \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Drawable3D_a8092ec0e1c34886caba8cb5f298ba3e8}{getDrawType}}();}
+\DoxyCodeLine{69                 Color \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Drawable3D_ac0da7e039564ed12ad4e9faff1cde97a}{getColor}}();}
+\DoxyCodeLine{75                 \textcolor{keywordtype}{float} \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Drawable3D_a0370f2ddcdd03269347b890e9a416f6e}{getRadius}}();}
+\DoxyCodeLine{81                 \textcolor{keywordtype}{float} \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Drawable3D_af2a7fbbbd6a33a5e26b797c7b40c101c}{getHeight}}();}
+\DoxyCodeLine{87                 \textcolor{keywordtype}{float} \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Drawable3D_a8425a70877526504d49cc8ee6241deab}{getWidth}}();}
+\DoxyCodeLine{93                 \textcolor{keywordtype}{float} \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Drawable3D_a94a2195715eedac7640d680b50d6fa2c}{getLength}}();}
+\DoxyCodeLine{99                 std::string \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Drawable3D_aa7c8251991bf27dd5e8f939ff86c4535}{getTexturePath}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{105                 \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Drawable3D_aee89c2788adfafe67d737127aae267bd}{setTexturePath}}(std::string texturePath);}
+\DoxyCodeLine{111                 Texture2D \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Drawable3D_a260ad778c5ab500835c035d81100e310}{getTexture}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{117                 \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Drawable3D_a639443b481ff053a92a568b45a269b52}{setTexture}}(std::string texturePath);}
+\DoxyCodeLine{118 }
+\DoxyCodeLine{119               \textcolor{keyword}{private}:}
+\DoxyCodeLine{124                 \textcolor{keywordtype}{float} \_radius;}
+\DoxyCodeLine{129                 \textcolor{keywordtype}{float} \_height;}
+\DoxyCodeLine{134                 \textcolor{keywordtype}{float} \_width;}
+\DoxyCodeLine{139                 \textcolor{keywordtype}{float} \_length;}
+\DoxyCodeLine{144                 Color \_color;}
+\DoxyCodeLine{149                 std::string \_texturePath;}
+\DoxyCodeLine{154                 Texture2D \_texture;}
+\DoxyCodeLine{159                 \mbox{\hyperlink{IComponent_8hpp_ac44f0ed416679d299da366d37fd5eac8}{indie::ecs::component::compoType}} \_compoType;}
+\DoxyCodeLine{164                 \mbox{\hyperlink{IComponent_8hpp_aa8502d67dffca22bc7fe2149622da4e6}{indie::ecs::component::drawableType}} \_drawableType;}
+\DoxyCodeLine{165             \};}
+\DoxyCodeLine{166         \} \textcolor{comment}{// namespace component}}
+\DoxyCodeLine{167     \}     \textcolor{comment}{// namespace ecs}}
+\DoxyCodeLine{168 \} \textcolor{comment}{// namespace indie}}
+\DoxyCodeLine{169 }
+\DoxyCodeLine{170 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* !DRAWABLE3D\_HPP\_ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

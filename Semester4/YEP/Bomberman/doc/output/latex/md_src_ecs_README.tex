@@ -1,0 +1,117 @@
+Simple usage of ecs system.\hypertarget{md_src_ecs_README_autotoc_md11}{}\doxysection{Getting Started With Entity}\label{md_src_ecs_README_autotoc_md11}
+\hypertarget{md_src_ecs_README_autotoc_md12}{}\doxysubsection{Create world variable}\label{md_src_ecs_README_autotoc_md12}
+
+\begin{DoxyItemize}
+\item This variable will store all entities and systems. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ecs::World world;}
+
+\end{DoxyCode}
+
+\end{DoxyItemize}\hypertarget{md_src_ecs_README_autotoc_md13}{}\doxysubsection{Create entity}\label{md_src_ecs_README_autotoc_md13}
+
+\begin{DoxyItemize}
+\item Just declare variable normally.
+\item An entity is a unique\+\_\+ptr so declare it as follow\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{std::unique\_ptr<ecs::Entity> entity = std::make\_unique<ecs::Entity>();}
+
+\end{DoxyCode}
+
+\end{DoxyItemize}\hypertarget{md_src_ecs_README_autotoc_md14}{}\doxysubsection{Add a component to an entity}\label{md_src_ecs_README_autotoc_md14}
+
+\begin{DoxyItemize}
+\item Use the add\+Component method present in entity class.
+\item Each component take a variadic number of arguments. The following list is all differents components with their constructor\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ecs::Transform -\/> float posX, float posY, float posZ, float speedX, float speedY, float speedZ}
+\DoxyCodeLine{ecs::Player -\/> std::string texturePath, float radius, Color color}
+\DoxyCodeLine{ecs::Wall -\/> std::string texturePath, float height, float width, Color color}
+\DoxyCodeLine{ecs::Circle -\/> std::string texture, float radius, Color color}
+\DoxyCodeLine{ecs::Rectangle -\/> std::string texture, float height, float width, Color color}
+\DoxyCodeLine{ecs::Text -\/> std::string text, float textSize, Color color}
+
+\end{DoxyCode}
+
+\item To use the add\+Component method you have to specify the type of component you want to use and after give the differents parameters
+\item The following exemple will add Player component without texture\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{entity-\/>addComponent<   >("{}"{}, static\_cast<float>(2.0), BLACK);}
+
+\end{DoxyCode}
+
+\item If you want to add a texture you have to write the file path in the first parameter and use static\+\_\+cast for every float.
+\end{DoxyItemize}\hypertarget{md_src_ecs_README_autotoc_md15}{}\doxysubsection{Add the entity to the world}\label{md_src_ecs_README_autotoc_md15}
+
+\begin{DoxyItemize}
+\item Add the entity by using the world add\+Entity method. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{world.addEntity(std::move(entity));}
+
+\end{DoxyCode}
+
+\end{DoxyItemize}\hypertarget{md_src_ecs_README_autotoc_md16}{}\doxysubsection{Has component}\label{md_src_ecs_README_autotoc_md16}
+
+\begin{DoxyItemize}
+\item You can verify if an entity have a specific component. Return a boolean.
+\item For exemple, you want to know if the entity have a transform component, the following line will tell you if this component is present\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{entity-\/>hasCompoType(ecs::compoType::TRANSFORM);}
+
+\end{DoxyCode}
+
+\end{DoxyItemize}\hypertarget{md_src_ecs_README_autotoc_md17}{}\doxysubsection{Get specific component}\label{md_src_ecs_README_autotoc_md17}
+
+\begin{DoxyItemize}
+\item In some case, you may want to use a specific component. Return a pointer of the type you asking for.
+\item For exemple, if you want to get the Transform component use the following line. Specify the type of component you want to have\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ecs::Transform *transformCompo = entity-\/>getComponent<ecs::Transform>(ecs::compoType::TRANSFORM);}
+
+\end{DoxyCode}
+
+\end{DoxyItemize}\hypertarget{md_src_ecs_README_autotoc_md18}{}\doxysubsection{Display all entities}\label{md_src_ecs_README_autotoc_md18}
+
+\begin{DoxyItemize}
+\item You can use the draw method present in every entity as follow\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{for (auto \&ent : world.entities) \{}
+\DoxyCodeLine{    ent-\/>draw(ecs::drawableType::D2);}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{for (auto \&ent : world.entities) \{}
+\DoxyCodeLine{    ent-\/>draw(ecs::drawableType::D3);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+\end{DoxyItemize}\hypertarget{md_src_ecs_README_autotoc_md19}{}\doxysection{Getting Started With System}\label{md_src_ecs_README_autotoc_md19}
+\hypertarget{md_src_ecs_README_autotoc_md20}{}\doxysubsection{What is a system ?}\label{md_src_ecs_README_autotoc_md20}
+
+\begin{DoxyItemize}
+\item A System is a class who will give life and physics to entity (ex\+: Movement or collisions)
+\item For exemple, movement system take the transform component of the entity (only if he can) and then increment the entity postion with the speed value of transform component.
+\end{DoxyItemize}\hypertarget{md_src_ecs_README_autotoc_md21}{}\doxysubsection{Storage of system}\label{md_src_ecs_README_autotoc_md21}
+
+\begin{DoxyItemize}
+\item The system is also store in the world variable previously created
+\end{DoxyItemize}\hypertarget{md_src_ecs_README_autotoc_md22}{}\doxysubsection{Create systems}\label{md_src_ecs_README_autotoc_md22}
+
+\begin{DoxyItemize}
+\item To create all systems you have to use the world create\+System method, it will created every systems\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{world.createSystem()}
+
+\end{DoxyCode}
+
+\end{DoxyItemize}\hypertarget{md_src_ecs_README_autotoc_md23}{}\doxysubsection{Update systems}\label{md_src_ecs_README_autotoc_md23}
+
+\begin{DoxyItemize}
+\item Every system have is own update method and take the entities array in parameters. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{for (auto \&system : world.systems) \{}
+\DoxyCodeLine{    system-\/>update(world.entities);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+ 
+\end{DoxyItemize}

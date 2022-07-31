@@ -1,0 +1,53 @@
+\hypertarget{SetMusicScreen_8hpp_source}{}\doxysection{Set\+Music\+Screen.\+hpp}
+\label{SetMusicScreen_8hpp_source}\index{src/screens/set\_music/SetMusicScreen.hpp@{src/screens/set\_music/SetMusicScreen.hpp}}
+\mbox{\hyperlink{SetMusicScreen_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#ifndef SETMUSICSCREEN\_HPP\_}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#define SETMUSICSCREEN\_HPP\_}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include <map>}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#include "{}../../ecs/entity/Entity.hpp"{}}}
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#include "{}../IScreen.hpp"{}}}
+\DoxyCodeLine{20 \textcolor{preprocessor}{\#include "{}../ecs/system/Draw2D/Draw2D.hpp"{}}}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22 \textcolor{keyword}{namespace }indie}
+\DoxyCodeLine{23 \{}
+\DoxyCodeLine{24     \textcolor{keyword}{namespace }menu}
+\DoxyCodeLine{25     \{}
+\DoxyCodeLine{30         \textcolor{keyword}{class }\mbox{\hyperlink{classindie_1_1menu_1_1SetMusicScreen}{SetMusicScreen}} : \textcolor{keyword}{public} \mbox{\hyperlink{classindie_1_1IScreen}{IScreen}} \{}
+\DoxyCodeLine{35             \textcolor{keyword}{enum} cursorPosition \{}
+\DoxyCodeLine{36                 MUSIC\_0 = 0,}
+\DoxyCodeLine{37                 MUSIC\_25 = 1,}
+\DoxyCodeLine{38                 MUSIC\_50 = 2,}
+\DoxyCodeLine{39                 MUSIC\_75 = 3,}
+\DoxyCodeLine{40                 MUSIC\_100 = 4,}
+\DoxyCodeLine{41             \};}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{43           \textcolor{keyword}{public}:}
+\DoxyCodeLine{50             \mbox{\hyperlink{classindie_1_1menu_1_1SetMusicScreen_a7defef002234bb346d1f57d6f18644fa}{SetMusicScreen}}(std::map<int, indie::raylib::Sound> *musics);}
+\DoxyCodeLine{55             \mbox{\hyperlink{classindie_1_1menu_1_1SetMusicScreen_aeb9bfff9117dca2677e1722ab4bf5400}{\string~SetMusicScreen}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{60             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1menu_1_1SetMusicScreen_acc82deef027c05be407ae340afe3855a}{init}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{65             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1menu_1_1SetMusicScreen_a521b28f1a164727578e1a47ae3f06c57}{draw}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{70             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1menu_1_1SetMusicScreen_a5f3b08636ab0e417c625c29c4fe6df8d}{update}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{77             \textcolor{keywordtype}{int} \mbox{\hyperlink{classindie_1_1menu_1_1SetMusicScreen_a8f8c3a3526ce7f8cf81ed0e712bc9d43}{handleEvent}}(\mbox{\hyperlink{structindie_1_1Event}{indie::Event}} \&event) \textcolor{keyword}{override};}
+\DoxyCodeLine{83             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1menu_1_1SetMusicScreen_a037bab4f35df41397816158744f9308a}{addEntity}}(std::unique\_ptr<indie::ecs::entity::Entity> entity) \textcolor{keyword}{override};}
+\DoxyCodeLine{89             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1menu_1_1SetMusicScreen_a6c696f479fd643e8a7bf85024d866758}{addSystem}}(std::unique\_ptr<indie::ecs::system::ISystem> system) \textcolor{keyword}{override};}
+\DoxyCodeLine{96             \textcolor{keywordtype}{int} \mbox{\hyperlink{classindie_1_1menu_1_1SetMusicScreen_a21f51072b6398a8e8877389197ae1d24}{checkCursorPosition}}(\textcolor{keywordtype}{bool} direction);}
+\DoxyCodeLine{97 }
+\DoxyCodeLine{98           \textcolor{keyword}{private}:}
+\DoxyCodeLine{103             std::map<int, indie::raylib::Sound> *\_musics;}
+\DoxyCodeLine{108             std::vector<std::unique\_ptr<indie::ecs::entity::Entity>> \_entities;}
+\DoxyCodeLine{113             std::vector<std::unique\_ptr<indie::ecs::system::ISystem>> \_systems;}
+\DoxyCodeLine{118             std::map<int, float> \_positionsCursor;}
+\DoxyCodeLine{123             \textcolor{keywordtype}{int} \_cursorPosition;}
+\DoxyCodeLine{128             \textcolor{keywordtype}{int} \_lastSeenCursorPos;}
+\DoxyCodeLine{129         \};}
+\DoxyCodeLine{130     \} \textcolor{comment}{// namespace menu}}
+\DoxyCodeLine{131 \} \textcolor{comment}{// namespace indie}}
+\DoxyCodeLine{132 }
+\DoxyCodeLine{133 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* !SetFpsScreen\_HPP\_ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

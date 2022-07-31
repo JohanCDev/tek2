@@ -1,0 +1,53 @@
+\hypertarget{component_2Explodable_2Explodable_8hpp_source}{}\doxysection{Explodable.\+hpp}
+\label{component_2Explodable_2Explodable_8hpp_source}\index{src/ecs/component/Explodable/Explodable.hpp@{src/ecs/component/Explodable/Explodable.hpp}}
+\mbox{\hyperlink{component_2Explodable_2Explodable_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include <chrono>}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include "{}../../entity/Entity.hpp"{}}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include "{}../IComponent.hpp"{}}}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18 \textcolor{keyword}{namespace }indie}
+\DoxyCodeLine{19 \{}
+\DoxyCodeLine{20     \textcolor{keyword}{namespace }ecs}
+\DoxyCodeLine{21     \{}
+\DoxyCodeLine{22         \textcolor{keyword}{namespace }component}
+\DoxyCodeLine{23         \{}
+\DoxyCodeLine{25             \textcolor{keyword}{class }\mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Explodable}{Explodable}} : \textcolor{keyword}{public} \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1IComponent}{IComponent}} \{}
+\DoxyCodeLine{26               \textcolor{keyword}{public}:}
+\DoxyCodeLine{31                 \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Explodable_a4807e88206b0beaafca804f0008ce363}{Explodable}}();}
+\DoxyCodeLine{38                 \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Explodable_a4807e88206b0beaafca804f0008ce363}{Explodable}}(\textcolor{keywordtype}{float} range, \textcolor{keywordtype}{int} explosionTime);}
+\DoxyCodeLine{43                 \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Explodable_a14066c90fc16fe65194057faef0bc3ad}{\string~Explodable}}();}
+\DoxyCodeLine{49                 \mbox{\hyperlink{IComponent_8hpp_ac44f0ed416679d299da366d37fd5eac8}{indie::ecs::component::compoType}} \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Explodable_ad9784f3de27329ec452cf648c73985f6}{getType}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{55                 \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Explodable_ac4ffe4b1f8f0b2e89740278e465e6e00}{setRange}}(\textcolor{keywordtype}{float} range);}
+\DoxyCodeLine{61                 \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Explodable_a3ac7affcd26b9a4ca09796674f3bdeda}{setExplosionTime}}(\textcolor{keywordtype}{int} explosionTime);}
+\DoxyCodeLine{67                 \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Explodable_aca69acc3bde79f04b18c6e7fe03dea0d}{setDropped}}(\textcolor{keywordtype}{bool} dropped);}
+\DoxyCodeLine{73                 \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Explodable_a8147776b4ff2e1b7b7b01495f3f49afd}{setExploded}}(\textcolor{keywordtype}{bool} exploded);}
+\DoxyCodeLine{79                 \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Explodable_a3f37ef4dbcfeabe6117343af11093bd8}{setExplode}}(\textcolor{keywordtype}{bool} explode);}
+\DoxyCodeLine{85                 \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Explodable_ae5100cfcbdc06c75e4bba1b23edc6862}{setPlayer}}(\textcolor{keywordtype}{int} player);}
+\DoxyCodeLine{91                 \textcolor{keywordtype}{float} \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Explodable_aa1bcf8df54e9e5de93a99280fff3b175}{getRange}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{97                 \textcolor{keywordtype}{int} \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Explodable_a17667b7bff52c194d94e1ca3c5d201bd}{getExplosionTime}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{104                 \textcolor{keywordtype}{bool} \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Explodable_abce2394fbca7213e7068f68b52db51e2}{getDropped}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{111                 \textcolor{keywordtype}{bool} \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Explodable_a11baa4c926dbd9b8a127cb5b0d79583c}{getExploded}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{118                 \textcolor{keywordtype}{bool} \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Explodable_ae8df132e64a96e87b57e73b1de00969a}{getExplode}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{124                 \textcolor{keywordtype}{int} \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Explodable_acc3a642cf8be7d7c08cff15f9081b955}{getPlayer}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{130                 std::chrono::time\_point<std::chrono::system\_clock> \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Explodable_a8f784c951158bdc9012712ebf9a16307}{getTStart}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{136                 std::chrono::seconds \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Explodable_ad3e50b311520317227bcd08761336e24}{getSeconds}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{137 }
+\DoxyCodeLine{138               \textcolor{keyword}{private}:}
+\DoxyCodeLine{143                 \textcolor{keywordtype}{float} \_range;}
+\DoxyCodeLine{148                 \textcolor{keywordtype}{int} \_explosionTime;}
+\DoxyCodeLine{153                 \textcolor{keywordtype}{bool} \_dropped;}
+\DoxyCodeLine{158                 \textcolor{keywordtype}{bool} \_explode;}
+\DoxyCodeLine{163                 \textcolor{keywordtype}{bool} \_exploded;}
+\DoxyCodeLine{168                 std::chrono::time\_point<std::chrono::system\_clock> \_tStart;}
+\DoxyCodeLine{173                 std::chrono::seconds \_seconds;}
+\DoxyCodeLine{178                 \textcolor{keywordtype}{int} \_player;}
+\DoxyCodeLine{179             \};}
+\DoxyCodeLine{180         \} \textcolor{comment}{// namespace component}}
+\DoxyCodeLine{181     \}     \textcolor{comment}{// namespace ecs}}
+\DoxyCodeLine{182 \} \textcolor{comment}{// namespace indie}}
+
+\end{DoxyCode}

@@ -1,0 +1,43 @@
+\hypertarget{Model_8hpp_source}{}\doxysection{Model.\+hpp}
+\label{Model_8hpp_source}\index{src/raylib/model/Model.hpp@{src/raylib/model/Model.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{/*}}
+\DoxyCodeLine{2 \textcolor{comment}{** EPITECH PROJECT, 2022}}
+\DoxyCodeLine{3 \textcolor{comment}{** Bomberman}}
+\DoxyCodeLine{4 \textcolor{comment}{** File description:}}
+\DoxyCodeLine{5 \textcolor{comment}{** Model}}
+\DoxyCodeLine{6 \textcolor{comment}{*/}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#ifndef MODEL\_HPP\_}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#define MODEL\_HPP\_}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include "{}../Raylib.hpp"{}}}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13 \textcolor{keyword}{namespace }indie}
+\DoxyCodeLine{14 \{}
+\DoxyCodeLine{15     \textcolor{keyword}{namespace }raylib}
+\DoxyCodeLine{16     \{}
+\DoxyCodeLine{21         \textcolor{keyword}{class }\mbox{\hyperlink{classindie_1_1raylib_1_1Model}{Model}} \{}
+\DoxyCodeLine{22           \textcolor{keyword}{public}:}
+\DoxyCodeLine{27             \mbox{\hyperlink{classindie_1_1raylib_1_1Model_a6b906d05eb6b50bd4fcac7b4e2f2a17d}{Model}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{32             \mbox{\hyperlink{classindie_1_1raylib_1_1Model_a55b06828c5f9c3e1637a0f7e23b46db6}{\string~Model}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{40             \mbox{\hyperlink{classindie_1_1raylib_1_1Model_a6b906d05eb6b50bd4fcac7b4e2f2a17d}{::Model}} \mbox{\hyperlink{classindie_1_1raylib_1_1Model_a102cfec2d3e0e24088fc582c6a17bb8c}{load}}(\textcolor{keyword}{const} \textcolor{keywordtype}{char} *fileName);}
+\DoxyCodeLine{48             \mbox{\hyperlink{classindie_1_1raylib_1_1Model_a6b906d05eb6b50bd4fcac7b4e2f2a17d}{::Model}} \mbox{\hyperlink{classindie_1_1raylib_1_1Model_a55cc03b1dc034c51d9894ec1e11469b4}{loadFromMesh}}(::Mesh mesh);}
+\DoxyCodeLine{54             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Model_a8cbec1960652c1c306e083384fac7a4c}{unload}}(\mbox{\hyperlink{classindie_1_1raylib_1_1Model_a6b906d05eb6b50bd4fcac7b4e2f2a17d}{::Model}} model);}
+\DoxyCodeLine{62             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Model_aba6ef5a8214abf4ab2cf708db2031a11}{updateModelAnimation}}(\mbox{\hyperlink{classindie_1_1raylib_1_1Model_a6b906d05eb6b50bd4fcac7b4e2f2a17d}{::Model}} model, ::ModelAnimation anim, \textcolor{keywordtype}{int} frame);}
+\DoxyCodeLine{70             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Model_af4c4dc5c0115d7457951172d4b7f486d}{setMaterialTexture}}(::Material *material, \textcolor{keywordtype}{int} mapType, ::Texture2D texture);}
+\DoxyCodeLine{76             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Model_a613e26cab7a3e6eeae85eea1c373d49d}{unloadKeepMeshes}}(\mbox{\hyperlink{classindie_1_1raylib_1_1Model_a6b906d05eb6b50bd4fcac7b4e2f2a17d}{::Model}} model);}
+\DoxyCodeLine{83             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Model_aed57004943058f51cbe1d49bb6dacf5e}{unloadModelAnimations}}(::ModelAnimation *animations, \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} count);}
+\DoxyCodeLine{92             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Model_aef48f5469fd6672255f81d67975dd3c7}{draw}}(\mbox{\hyperlink{classindie_1_1raylib_1_1Model_a6b906d05eb6b50bd4fcac7b4e2f2a17d}{::Model}} model, ::Vector3 position, \textcolor{keywordtype}{float} scale, ::Color tint);}
+\DoxyCodeLine{103             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Model_a2b3bdfd8c39cc352d67b09fa5aabadea}{drawEx}}(\mbox{\hyperlink{classindie_1_1raylib_1_1Model_a6b906d05eb6b50bd4fcac7b4e2f2a17d}{::Model}} model, ::Vector3 position, ::Vector3 rotationAxis, \textcolor{keywordtype}{float} rotationAngle, ::Vector3 scale,}
+\DoxyCodeLine{104                 ::Color tint);}
+\DoxyCodeLine{113             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Model_a72a7d4f8481df74abc399d5655fee512}{drawWires}}(\mbox{\hyperlink{classindie_1_1raylib_1_1Model_a6b906d05eb6b50bd4fcac7b4e2f2a17d}{::Model}} model, ::Vector3 position, \textcolor{keywordtype}{float} scale, ::Color tint);}
+\DoxyCodeLine{124             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Model_a4d6ac9ccf8758549cf2c84e350616d00}{drawWiresEx}}(\mbox{\hyperlink{classindie_1_1raylib_1_1Model_a6b906d05eb6b50bd4fcac7b4e2f2a17d}{::Model}} model, ::Vector3 position, ::Vector3 rotationAxis, \textcolor{keywordtype}{float} rotationAngle,}
+\DoxyCodeLine{125                 ::Vector3 scale, ::Color tint);}
+\DoxyCodeLine{126         \};}
+\DoxyCodeLine{127     \} \textcolor{comment}{// namespace raylib}}
+\DoxyCodeLine{128 \} \textcolor{comment}{// namespace indie}}
+\DoxyCodeLine{129 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* !MODEL\_HPP\_ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

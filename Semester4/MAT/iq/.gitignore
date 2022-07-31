@@ -1,0 +1,9 @@
+venv/
+__pycache__/
+.idea/
+205IQ
+data
+drawer.gnu
+.coverage
+unit_tests.py
+.pytest_cache/

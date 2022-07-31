@@ -1,0 +1,48 @@
+\hypertarget{Transform_8hpp_source}{}\doxysection{Transform.\+hpp}
+\label{Transform_8hpp_source}\index{src/ecs/component/Transform/Transform.hpp@{src/ecs/component/Transform/Transform.hpp}}
+\mbox{\hyperlink{Transform_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#ifndef TRANSFORM\_HPP\_}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#define TRANSFORM\_HPP\_}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include "{}../IComponent.hpp"{}}}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 \textcolor{keyword}{namespace }indie}
+\DoxyCodeLine{18 \{}
+\DoxyCodeLine{19     \textcolor{keyword}{namespace }ecs}
+\DoxyCodeLine{20     \{}
+\DoxyCodeLine{21         \textcolor{keyword}{namespace }component}
+\DoxyCodeLine{22         \{}
+\DoxyCodeLine{24             \textcolor{keyword}{class }\mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Transform}{Transform}} : \textcolor{keyword}{public} \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1IComponent}{IComponent}} \{}
+\DoxyCodeLine{25               \textcolor{keyword}{public}:}
+\DoxyCodeLine{29                 \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Transform_ae3093fc628024f262555156eed668831}{Transform}}();}
+\DoxyCodeLine{38                 \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Transform_ae3093fc628024f262555156eed668831}{Transform}}(\textcolor{keywordtype}{float} posX, \textcolor{keywordtype}{float} posY, \textcolor{keywordtype}{float} speedX, \textcolor{keywordtype}{float} speedY);}
+\DoxyCodeLine{42                 \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Transform_a50715e447223aea7a181a75d298558ba}{\string~Transform}}();}
+\DoxyCodeLine{48                 \mbox{\hyperlink{IComponent_8hpp_ac44f0ed416679d299da366d37fd5eac8}{indie::ecs::component::compoType}} \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Transform_a8099c53fbd8e4e06f15f09cc066f1159}{getType}}(\textcolor{keywordtype}{void}) \textcolor{keyword}{const override};}
+\DoxyCodeLine{57                 \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Transform_adb4f4cda088e8a7b0c099b3dba7419e5}{update}}(\textcolor{keywordtype}{float} posX, \textcolor{keywordtype}{float} posY, \textcolor{keywordtype}{float} speedX, \textcolor{keywordtype}{float} speedY);}
+\DoxyCodeLine{63                 \textcolor{keywordtype}{float} \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Transform_a4da1d30aa10d8b0060af02f31d7d1128}{getX}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{69                 \textcolor{keywordtype}{float} \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Transform_a83c47b81de8cd1a201d265ad23778006}{getY}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{75                 \textcolor{keywordtype}{float} \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Transform_a36357f6bb8994ce2f99e2e4bb8ef574c}{getZ}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{81                 \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Transform_a2fd3490b380c8a3e9967d55892648fd2}{setX}}(\textcolor{keywordtype}{float} posX);}
+\DoxyCodeLine{87                 \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Transform_af5c55f6e8c4c24f8ffb3a81cfb8f0890}{setY}}(\textcolor{keywordtype}{float} posY);}
+\DoxyCodeLine{93                 \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Transform_a738289cd07633f6119fbbce15c7e1572}{setZ}}(\textcolor{keywordtype}{float} posZ);}
+\DoxyCodeLine{99                 \textcolor{keywordtype}{float} \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Transform_a2cefb2140ed9aa6f9b87227718ddb293}{getSpeedX}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{105                 \textcolor{keywordtype}{float} \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Transform_a20fb278832680769640ca3fd6c9f1357}{getSpeedY}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{111                 \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Transform_ae9c997c07917e2bcbd9882db4bb7c796}{setSpeedY}}(\textcolor{keywordtype}{float} speed);}
+\DoxyCodeLine{117                 \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Transform_a143f00667bdfffd933c1b768621ce666}{setSpeedX}}(\textcolor{keywordtype}{float} speed);}
+\DoxyCodeLine{118 }
+\DoxyCodeLine{119               \textcolor{keyword}{private}:}
+\DoxyCodeLine{124                 \textcolor{keywordtype}{float} \_posX;}
+\DoxyCodeLine{129                 \textcolor{keywordtype}{float} \_posY;}
+\DoxyCodeLine{134                 \textcolor{keywordtype}{float} \_posZ;}
+\DoxyCodeLine{139                 \textcolor{keywordtype}{float} \_speedX;}
+\DoxyCodeLine{144                 \textcolor{keywordtype}{float} \_speedY;}
+\DoxyCodeLine{145             \};}
+\DoxyCodeLine{146         \} \textcolor{comment}{// namespace component}}
+\DoxyCodeLine{147     \}     \textcolor{comment}{// namespace ecs}}
+\DoxyCodeLine{148 \} \textcolor{comment}{// namespace indie}}
+\DoxyCodeLine{149 }
+\DoxyCodeLine{150 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* !TRANSFORM\_HPP\_ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

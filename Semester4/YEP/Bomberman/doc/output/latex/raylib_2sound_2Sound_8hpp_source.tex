@@ -1,0 +1,50 @@
+\hypertarget{raylib_2sound_2Sound_8hpp_source}{}\doxysection{Sound.\+hpp}
+\label{raylib_2sound_2Sound_8hpp_source}\index{src/raylib/sound/Sound.hpp@{src/raylib/sound/Sound.hpp}}
+\mbox{\hyperlink{raylib_2sound_2Sound_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#ifndef SOUND\_HPP\_}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#define SOUND\_HPP\_}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include "{}../Raylib.hpp"{}}}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 \textcolor{keyword}{namespace }indie}
+\DoxyCodeLine{18 \{}
+\DoxyCodeLine{19     \textcolor{keyword}{namespace }raylib}
+\DoxyCodeLine{20     \{}
+\DoxyCodeLine{22         \textcolor{keyword}{class }\mbox{\hyperlink{classindie_1_1raylib_1_1Sound}{Sound}} \{}
+\DoxyCodeLine{23             \textcolor{keyword}{public}:}
+\DoxyCodeLine{28                 \mbox{\hyperlink{classindie_1_1raylib_1_1Sound_a522701c30c5f9784c3c2eec78174f650}{Sound}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{34                 \mbox{\hyperlink{classindie_1_1raylib_1_1Sound_a522701c30c5f9784c3c2eec78174f650}{Sound}}(\textcolor{keyword}{const} std::string\& fileName);}
+\DoxyCodeLine{39                 \mbox{\hyperlink{classindie_1_1raylib_1_1Sound_a860539f59875a8f7e881fbb5ae093b97}{\string~Sound}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{45                 \mbox{\hyperlink{classindie_1_1raylib_1_1Sound_a522701c30c5f9784c3c2eec78174f650}{::Sound}} \mbox{\hyperlink{classindie_1_1raylib_1_1Sound_ab745d78db5a39a6911fd139804612ed1}{getSound}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{49                 \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Sound_a1b1124a2ed0181b4e9c5ec9d766ab7d3}{initAudioDevice}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{57                 \mbox{\hyperlink{classindie_1_1raylib_1_1Sound_a522701c30c5f9784c3c2eec78174f650}{::Sound}} \mbox{\hyperlink{classindie_1_1raylib_1_1Sound_a1e898d538cb5d5308bbabfe3dfb991fa}{load}}(\textcolor{keyword}{const} \textcolor{keywordtype}{char} *fileName);}
+\DoxyCodeLine{65                 \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Sound_ae60f9da0f6dafe92a5262f800d916d81}{update}}(\mbox{\hyperlink{classindie_1_1raylib_1_1Sound_a522701c30c5f9784c3c2eec78174f650}{::Sound}} sound, \textcolor{keyword}{const} \textcolor{keywordtype}{void} *data, \textcolor{keywordtype}{int} samplesCount);}
+\DoxyCodeLine{71                 \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Sound_aed6a40ad3b61ccc309ecb1ab9c81418c}{unload}}(\mbox{\hyperlink{classindie_1_1raylib_1_1Sound_a522701c30c5f9784c3c2eec78174f650}{::Sound}} sound);}
+\DoxyCodeLine{76                 \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Sound_aed6a40ad3b61ccc309ecb1ab9c81418c}{unload}}();}
+\DoxyCodeLine{82                 \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Sound_a9ba4ddcdbac5aef1338e8fc13568ae4a}{play}}(\mbox{\hyperlink{classindie_1_1raylib_1_1Sound_a522701c30c5f9784c3c2eec78174f650}{::Sound}} sound);}
+\DoxyCodeLine{87                 \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Sound_a9ba4ddcdbac5aef1338e8fc13568ae4a}{play}}();}
+\DoxyCodeLine{93                 \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Sound_ab296e50006c25f6d053755592f78b498}{stop}}(\mbox{\hyperlink{classindie_1_1raylib_1_1Sound_a522701c30c5f9784c3c2eec78174f650}{::Sound}} sound);}
+\DoxyCodeLine{98                 \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Sound_ab296e50006c25f6d053755592f78b498}{stop}}();}
+\DoxyCodeLine{104                 \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Sound_a84583e44bba46ea8931ad6ad18773711}{pause}}(\mbox{\hyperlink{classindie_1_1raylib_1_1Sound_a522701c30c5f9784c3c2eec78174f650}{::Sound}} sound);}
+\DoxyCodeLine{109                 \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Sound_a84583e44bba46ea8931ad6ad18773711}{pause}}();}
+\DoxyCodeLine{115                 \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Sound_aca98d32ebd87487f81381fef64cb8d3c}{resume}}(\mbox{\hyperlink{classindie_1_1raylib_1_1Sound_a522701c30c5f9784c3c2eec78174f650}{::Sound}} sound);}
+\DoxyCodeLine{120                 \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Sound_aca98d32ebd87487f81381fef64cb8d3c}{resume}}();}
+\DoxyCodeLine{126                 \textcolor{keywordtype}{float} \mbox{\hyperlink{classindie_1_1raylib_1_1Sound_ae636415ffe9b6a491949b708294bbbd8}{getVolume}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{132                 \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Sound_a83f90b552841ca45731852d219103ed5}{setVolume}}(\textcolor{keywordtype}{float} volume);}
+\DoxyCodeLine{139                 \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Sound_a9f090f971eb836417749e67b6565837b}{setPitch}}(\mbox{\hyperlink{classindie_1_1raylib_1_1Sound_a522701c30c5f9784c3c2eec78174f650}{::Sound}} sound, \textcolor{keywordtype}{float} pitch);}
+\DoxyCodeLine{145                 \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Sound_a9f090f971eb836417749e67b6565837b}{setPitch}}(\textcolor{keywordtype}{float} pitch);}
+\DoxyCodeLine{153                 \textcolor{keyword}{static} \textcolor{keywordtype}{bool} \mbox{\hyperlink{classindie_1_1raylib_1_1Sound_a08fe453a6f9a04bd1c05e18aae34764b}{isPlaying}}(\mbox{\hyperlink{classindie_1_1raylib_1_1Sound_a522701c30c5f9784c3c2eec78174f650}{::Sound}} sound);}
+\DoxyCodeLine{160                 \textcolor{keywordtype}{bool} \mbox{\hyperlink{classindie_1_1raylib_1_1Sound_a08fe453a6f9a04bd1c05e18aae34764b}{isPlaying}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{161 }
+\DoxyCodeLine{162           \textcolor{keyword}{private}:}
+\DoxyCodeLine{167             \mbox{\hyperlink{classindie_1_1raylib_1_1Sound_a522701c30c5f9784c3c2eec78174f650}{::Sound}} \_sound;}
+\DoxyCodeLine{172             \textcolor{keywordtype}{float} \_volume;}
+\DoxyCodeLine{173         \};}
+\DoxyCodeLine{174     \} \textcolor{comment}{// namespace raylib}}
+\DoxyCodeLine{175 \} \textcolor{comment}{// namespace indie}}
+\DoxyCodeLine{176 }
+\DoxyCodeLine{177 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* !SOUND\_HPP\_ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

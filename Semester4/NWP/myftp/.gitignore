@@ -1,0 +1,14 @@
+.vscode/
+myftp
+*.o
+vgcore.*
+*.gcda
+*.gcno
+latex/
+html/
+.clang-format
+ftp_details
+lib/my/libmy.a
+test_ftp.sh
+.DS_Store
+unit_tests

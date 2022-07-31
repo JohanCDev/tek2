@@ -1,0 +1,38 @@
+\hypertarget{EndScreen_8hpp_source}{}\doxysection{End\+Screen.\+hpp}
+\label{EndScreen_8hpp_source}\index{src/screens/end/EndScreen.hpp@{src/screens/end/EndScreen.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#ifndef END\_SCREEN\_HPP\_}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#define END\_SCREEN\_HPP\_}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include "{}../../ecs/entity/Entity.hpp"{}}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#include "{}../IScreen.hpp"{}}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#include "{}../ecs/system/Draw2D/Draw2D.hpp"{}}}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20 \textcolor{keyword}{namespace }indie}
+\DoxyCodeLine{21 \{}
+\DoxyCodeLine{22     \textcolor{keyword}{namespace }menu}
+\DoxyCodeLine{23     \{}
+\DoxyCodeLine{28         \textcolor{keyword}{class }\mbox{\hyperlink{classindie_1_1menu_1_1EndScreen}{EndScreen}} : \textcolor{keyword}{public} \mbox{\hyperlink{classindie_1_1IScreen}{IScreen}} \{}
+\DoxyCodeLine{29           \textcolor{keyword}{public}:}
+\DoxyCodeLine{34             \mbox{\hyperlink{classindie_1_1menu_1_1EndScreen_a9c63f76a155ed2f87615b69c456913dd}{EndScreen}}();}
+\DoxyCodeLine{39             \mbox{\hyperlink{classindie_1_1menu_1_1EndScreen_a0aa8163b648e56bbc2cd1ec86de481b2}{\string~EndScreen}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{44             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1menu_1_1EndScreen_abceddd183a889476ff7fe97834454f5b}{init}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{49             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1menu_1_1EndScreen_ae06843220e3730139dcbdd7fa0997df8}{draw}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{54             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1menu_1_1EndScreen_a1025b30bf7ca5c1e0a4005cc3fa862b1}{update}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{61             \textcolor{keywordtype}{int} \mbox{\hyperlink{classindie_1_1menu_1_1EndScreen_ae2e619ddfee03c7d98c4aa6def6f9206}{handleEvent}}(\mbox{\hyperlink{structindie_1_1Event}{indie::Event}} \&event) \textcolor{keyword}{override};}
+\DoxyCodeLine{67             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1menu_1_1EndScreen_a66fb424e260d4a2a09f4f7d8cbb4cffe}{addEntity}}(std::unique\_ptr<indie::ecs::entity::Entity> entity) \textcolor{keyword}{override};}
+\DoxyCodeLine{73             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1menu_1_1EndScreen_a908c2d7d322647b4e4b7aba202116007}{addSystem}}(std::unique\_ptr<indie::ecs::system::ISystem> system) \textcolor{keyword}{override};}
+\DoxyCodeLine{74 }
+\DoxyCodeLine{75           \textcolor{keyword}{private}:}
+\DoxyCodeLine{80             std::vector<std::unique\_ptr<indie::ecs::entity::Entity>> \_entities;}
+\DoxyCodeLine{85             std::vector<std::unique\_ptr<indie::ecs::system::ISystem>> \_systems;}
+\DoxyCodeLine{86         \};}
+\DoxyCodeLine{87     \} \textcolor{comment}{// namespace menu}}
+\DoxyCodeLine{88 \} \textcolor{comment}{// namespace indie}}
+\DoxyCodeLine{89 }
+\DoxyCodeLine{90 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* !END\_SCREEN\_HPP\_ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

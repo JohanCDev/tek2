@@ -1,0 +1,69 @@
+\hypertarget{PreMenuScreen_8hpp_source}{}\doxysection{Pre\+Menu\+Screen.\+hpp}
+\label{PreMenuScreen_8hpp_source}\index{src/screens/pre\_menu/PreMenuScreen.hpp@{src/screens/pre\_menu/PreMenuScreen.hpp}}
+\mbox{\hyperlink{PreMenuScreen_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#ifndef PRE\_MENU\_SCREEN\_HPP\_}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#define PRE\_MENU\_SCREEN\_HPP\_}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include "{}../../ecs/entity/Entity.hpp"{}}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#include "{}../IScreen.hpp"{}}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#include "{}../ecs/system/Draw2D/Draw2D.hpp"{}}}
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#include "{}../player/Player.hpp"{}}}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21 \textcolor{keyword}{namespace }indie}
+\DoxyCodeLine{22 \{}
+\DoxyCodeLine{23     \textcolor{keyword}{namespace }menu}
+\DoxyCodeLine{24     \{}
+\DoxyCodeLine{29         \textcolor{keyword}{class }\mbox{\hyperlink{classindie_1_1menu_1_1PreMenuScreen}{PreMenuScreen}} : \textcolor{keyword}{public} \mbox{\hyperlink{classindie_1_1IScreen}{IScreen}} \{}
+\DoxyCodeLine{30           \textcolor{keyword}{public}:}
+\DoxyCodeLine{36             \mbox{\hyperlink{classindie_1_1menu_1_1PreMenuScreen_aba0fa17fbc52d65cd0c0dc680798e98a}{PreMenuScreen}}(std::vector<player::Player> *players);}
+\DoxyCodeLine{41             \mbox{\hyperlink{classindie_1_1menu_1_1PreMenuScreen_a9cbde8c9ff9cd5a7efe6f56cebd69fcb}{\string~PreMenuScreen}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{46             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1menu_1_1PreMenuScreen_ae168653d373d8885dbadc8c63b6cc523}{init}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{51             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1menu_1_1PreMenuScreen_a94a6c71394bd32f8b61a310b727d99f6}{draw}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{56             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1menu_1_1PreMenuScreen_aa05faa1ca647be62e14dec778353974d}{update}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{63             \textcolor{keywordtype}{int} \mbox{\hyperlink{classindie_1_1menu_1_1PreMenuScreen_a51d7d35695b616aed950a0ad2cb363fd}{handleEvent}}(\mbox{\hyperlink{structindie_1_1Event}{indie::Event}} \&event) \textcolor{keyword}{override};}
+\DoxyCodeLine{69             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1menu_1_1PreMenuScreen_a00a3f328322699fd916d5e37b3866648}{addEntity}}(std::unique\_ptr<indie::ecs::entity::Entity> entity) \textcolor{keyword}{override};}
+\DoxyCodeLine{75             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1menu_1_1PreMenuScreen_aede7df7a322722768f6474a4628ddbe7}{addSystem}}(std::unique\_ptr<indie::ecs::system::ISystem> system) \textcolor{keyword}{override};}
+\DoxyCodeLine{76 }
+\DoxyCodeLine{82             \textcolor{keywordtype}{int} \mbox{\hyperlink{classindie_1_1menu_1_1PreMenuScreen_a6caf538dff807a4770a747af40cf64cd}{getNbPlayers}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{89             \textcolor{keywordtype}{bool} \mbox{\hyperlink{classindie_1_1menu_1_1PreMenuScreen_a1866d91cd461c0fbf5bcf22e1437167c}{isPlayer2Playing}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{96             \textcolor{keywordtype}{bool} \mbox{\hyperlink{classindie_1_1menu_1_1PreMenuScreen_a20cf21a02a3eea9614d71530f9fa6b3e}{isPlayer3Playing}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{103             \textcolor{keywordtype}{bool} \mbox{\hyperlink{classindie_1_1menu_1_1PreMenuScreen_a64fea0bad49befc3d03a9e1f37b819c7}{isPlayer4Playing}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{110             \textcolor{keywordtype}{bool} \mbox{\hyperlink{classindie_1_1menu_1_1PreMenuScreen_a5599dd2cc293f66968113db5af04efd1}{getIsGameReady}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{116             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1menu_1_1PreMenuScreen_ab1fe8ae35ede07a59bd19b96ce39f9aa}{setIsGameReady}}(\textcolor{keywordtype}{bool} is\_game\_ready);}
+\DoxyCodeLine{123             \textcolor{keywordtype}{bool} \mbox{\hyperlink{classindie_1_1menu_1_1PreMenuScreen_ad815a439239bb13ee4298c6b85e6d5c7}{check\_if\_players\_are\_ready}}();}
+\DoxyCodeLine{129             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1menu_1_1PreMenuScreen_aa16c801c3b1e073cc427aab5c3bd8e81}{handlePlayer1}}(\mbox{\hyperlink{structindie_1_1Event}{indie::Event}} \&event);}
+\DoxyCodeLine{135             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1menu_1_1PreMenuScreen_ae21872e71e86ad8ce698e607504fc203}{handlePlayer2}}(\mbox{\hyperlink{structindie_1_1Event}{indie::Event}} \&event);}
+\DoxyCodeLine{141             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1menu_1_1PreMenuScreen_a12d219abf0315640a387d0f6e7c8164b}{handlePlayer3}}(\mbox{\hyperlink{structindie_1_1Event}{indie::Event}} \&event);}
+\DoxyCodeLine{147             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1menu_1_1PreMenuScreen_abbde47bc06fb50a258e5d74aa0b9c3cd}{handlePlayer4}}(\mbox{\hyperlink{structindie_1_1Event}{indie::Event}} \&event);}
+\DoxyCodeLine{148 }
+\DoxyCodeLine{149           \textcolor{keyword}{private}:}
+\DoxyCodeLine{154             std::vector<std::unique\_ptr<indie::ecs::entity::Entity>> \_entities;}
+\DoxyCodeLine{159             std::vector<std::unique\_ptr<indie::ecs::system::ISystem>> \_systems;}
+\DoxyCodeLine{164             std::vector<player::Player> *\_players;}
+\DoxyCodeLine{169             \textcolor{keywordtype}{int} \_nb\_players;}
+\DoxyCodeLine{174             \textcolor{keywordtype}{bool} \_is\_player2\_playing;}
+\DoxyCodeLine{179             \textcolor{keywordtype}{bool} \_is\_player3\_playing;}
+\DoxyCodeLine{184             \textcolor{keywordtype}{bool} \_is\_player4\_playing;}
+\DoxyCodeLine{189             \textcolor{keywordtype}{bool} \_is\_player1\_ready;}
+\DoxyCodeLine{194             \textcolor{keywordtype}{bool} \_is\_player2\_ready;}
+\DoxyCodeLine{199             \textcolor{keywordtype}{bool} \_is\_player3\_ready;}
+\DoxyCodeLine{204             \textcolor{keywordtype}{bool} \_is\_player4\_ready;}
+\DoxyCodeLine{205 }
+\DoxyCodeLine{210             \textcolor{keywordtype}{int} \_player2\_pos;}
+\DoxyCodeLine{215             \textcolor{keywordtype}{int} \_player3\_pos;}
+\DoxyCodeLine{220             \textcolor{keywordtype}{int} \_player4\_pos;}
+\DoxyCodeLine{225             \textcolor{keywordtype}{int} \_player1\_ready\_pos;}
+\DoxyCodeLine{230             \textcolor{keywordtype}{int} \_player2\_ready\_pos;}
+\DoxyCodeLine{235             \textcolor{keywordtype}{int} \_player3\_ready\_pos;}
+\DoxyCodeLine{240             \textcolor{keywordtype}{int} \_player4\_ready\_pos;}
+\DoxyCodeLine{245             \textcolor{keywordtype}{bool} \_game\_is\_ready;}
+\DoxyCodeLine{246         \};}
+\DoxyCodeLine{247     \} \textcolor{comment}{// namespace menu}}
+\DoxyCodeLine{248 \} \textcolor{comment}{// namespace indie}}
+\DoxyCodeLine{249 }
+\DoxyCodeLine{250 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* !PRE\_MENU\_SCREEN\_HPP\_ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

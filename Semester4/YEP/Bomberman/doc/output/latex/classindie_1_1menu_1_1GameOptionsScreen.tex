@@ -1,0 +1,202 @@
+\hypertarget{classindie_1_1menu_1_1GameOptionsScreen}{}\doxysection{indie\+::menu\+::Game\+Options\+Screen Class Reference}
+\label{classindie_1_1menu_1_1GameOptionsScreen}\index{indie::menu::GameOptionsScreen@{indie::menu::GameOptionsScreen}}
+
+
+Class for the \mbox{\hyperlink{classindie_1_1Game}{Game}} Options Screen.  
+
+
+
+
+{\ttfamily \#include $<$Game\+Options\+Screen.\+hpp$>$}
+
+Inheritance diagram for indie\+::menu\+::Game\+Options\+Screen\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classindie_1_1menu_1_1GameOptionsScreen}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classindie_1_1menu_1_1GameOptionsScreen_a0e96ed29cd99815cd11c33f46a12794b}\label{classindie_1_1menu_1_1GameOptionsScreen_a0e96ed29cd99815cd11c33f46a12794b}} 
+enum \mbox{\hyperlink{classindie_1_1menu_1_1GameOptionsScreen_a0e96ed29cd99815cd11c33f46a12794b}{cursor\+Position}} \{ \newline
+{\bfseries RESUME} = 0
+, {\bfseries MENU} = 1
+, {\bfseries SAVE} = 2
+, {\bfseries MUSIC} = 3
+, \newline
+{\bfseries SOUND} = 4
+, {\bfseries FPS} = 5
+, {\bfseries EXIT} = 6
+ \}
+\begin{DoxyCompactList}\small\item\em Enum for the Cursor position. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classindie_1_1menu_1_1GameOptionsScreen_acf89aa17e0302b4601a1217f6dfff567}\label{classindie_1_1menu_1_1GameOptionsScreen_acf89aa17e0302b4601a1217f6dfff567}} 
+{\bfseries Game\+Options\+Screen} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classindie_1_1Game}{Game}} Options Screen object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classindie_1_1menu_1_1GameOptionsScreen_ae2c1faa05c5a33ee0ac10e0e5b6d52ee}\label{classindie_1_1menu_1_1GameOptionsScreen_ae2c1faa05c5a33ee0ac10e0e5b6d52ee}} 
+{\bfseries $\sim$\+Game\+Options\+Screen} ()=default
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classindie_1_1Game}{Game}} Options Screen object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1menu_1_1GameOptionsScreen_a31034b52d390d1944937d7a6d0e6a8e2}{init}} () override
+\begin{DoxyCompactList}\small\item\em Init the \mbox{\hyperlink{classindie_1_1Game}{Game}} Option Screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1menu_1_1GameOptionsScreen_a8220b4e0f12799d696d251f3c71d9532}{draw}} () override
+\begin{DoxyCompactList}\small\item\em Draw the \mbox{\hyperlink{classindie_1_1Game}{Game}} Option Screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1menu_1_1GameOptionsScreen_ab92c797cac3334f6f8c42c0285c5ad39}{update}} () override
+\begin{DoxyCompactList}\small\item\em Update the \mbox{\hyperlink{classindie_1_1Game}{Game}} Option Screen. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classindie_1_1menu_1_1GameOptionsScreen_af3c056db2cd2081280d846a64b2e2a9b}{handle\+Event}} (\mbox{\hyperlink{structindie_1_1Event}{indie\+::\+Event}} \&event) override
+\begin{DoxyCompactList}\small\item\em Handle events for the \mbox{\hyperlink{classindie_1_1Game}{Game}} Option Screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1menu_1_1GameOptionsScreen_a9874f4d17e5a6437d5303b8a7c8ef01f}{add\+Entity}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classindie_1_1ecs_1_1entity_1_1Entity}{indie\+::ecs\+::entity\+::\+Entity}} $>$ entity) override
+\begin{DoxyCompactList}\small\item\em Add Entity for the \mbox{\hyperlink{classindie_1_1Game}{Game}} Option Screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1menu_1_1GameOptionsScreen_a9111690fb74fa8e3b0429ab6689c0980}{add\+System}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1ISystem}{indie\+::ecs\+::system\+::\+ISystem}} $>$ system) override
+\begin{DoxyCompactList}\small\item\em Add system for the \mbox{\hyperlink{classindie_1_1Game}{Game}} Option Screen. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classindie_1_1menu_1_1GameOptionsScreen_a67efcbec85194fc65badaa43a0b9450a}{get\+Is\+Game\+Options\+Calling}} () const
+\begin{DoxyCompactList}\small\item\em Get the Is \mbox{\hyperlink{classindie_1_1Game}{Game}} Options Calling object. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classindie_1_1menu_1_1GameOptionsScreen_ae9ed219ebb2bb39614ff1cc898b1c907}{check\+Cursor\+Position}} (bool direction)
+\begin{DoxyCompactList}\small\item\em Check where the cursor is. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class for the \mbox{\hyperlink{classindie_1_1Game}{Game}} Options Screen. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classindie_1_1menu_1_1GameOptionsScreen_a9874f4d17e5a6437d5303b8a7c8ef01f}\label{classindie_1_1menu_1_1GameOptionsScreen_a9874f4d17e5a6437d5303b8a7c8ef01f}} 
+\index{indie::menu::GameOptionsScreen@{indie::menu::GameOptionsScreen}!addEntity@{addEntity}}
+\index{addEntity@{addEntity}!indie::menu::GameOptionsScreen@{indie::menu::GameOptionsScreen}}
+\doxysubsubsection{\texorpdfstring{addEntity()}{addEntity()}}
+{\footnotesize\ttfamily void indie\+::menu\+::\+Game\+Options\+Screen\+::add\+Entity (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classindie_1_1ecs_1_1entity_1_1Entity}{indie\+::ecs\+::entity\+::\+Entity}} $>$}]{entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Add Entity for the \mbox{\hyperlink{classindie_1_1Game}{Game}} Option Screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & the entity to add for the \mbox{\hyperlink{classindie_1_1Game}{Game}} Option Screen \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classindie_1_1IScreen_a08ef01692ea36f0eb9cdf06bf41b12a7}{indie\+::\+IScreen}}.
+
+\mbox{\Hypertarget{classindie_1_1menu_1_1GameOptionsScreen_a9111690fb74fa8e3b0429ab6689c0980}\label{classindie_1_1menu_1_1GameOptionsScreen_a9111690fb74fa8e3b0429ab6689c0980}} 
+\index{indie::menu::GameOptionsScreen@{indie::menu::GameOptionsScreen}!addSystem@{addSystem}}
+\index{addSystem@{addSystem}!indie::menu::GameOptionsScreen@{indie::menu::GameOptionsScreen}}
+\doxysubsubsection{\texorpdfstring{addSystem()}{addSystem()}}
+{\footnotesize\ttfamily void indie\+::menu\+::\+Game\+Options\+Screen\+::add\+System (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1ISystem}{indie\+::ecs\+::system\+::\+ISystem}} $>$}]{system }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Add system for the \mbox{\hyperlink{classindie_1_1Game}{Game}} Option Screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em system} & the system to remove from the \mbox{\hyperlink{classindie_1_1Game}{Game}} Option Screen \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classindie_1_1IScreen_a492a5f07982dc9df97b71251413e8129}{indie\+::\+IScreen}}.
+
+\mbox{\Hypertarget{classindie_1_1menu_1_1GameOptionsScreen_ae9ed219ebb2bb39614ff1cc898b1c907}\label{classindie_1_1menu_1_1GameOptionsScreen_ae9ed219ebb2bb39614ff1cc898b1c907}} 
+\index{indie::menu::GameOptionsScreen@{indie::menu::GameOptionsScreen}!checkCursorPosition@{checkCursorPosition}}
+\index{checkCursorPosition@{checkCursorPosition}!indie::menu::GameOptionsScreen@{indie::menu::GameOptionsScreen}}
+\doxysubsubsection{\texorpdfstring{checkCursorPosition()}{checkCursorPosition()}}
+{\footnotesize\ttfamily int indie\+::menu\+::\+Game\+Options\+Screen\+::check\+Cursor\+Position (\begin{DoxyParamCaption}\item[{bool}]{direction }\end{DoxyParamCaption})}
+
+
+
+Check where the cursor is. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em direction} & True is UP and False is DOWN \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int The index for the button 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classindie_1_1menu_1_1GameOptionsScreen_a8220b4e0f12799d696d251f3c71d9532}\label{classindie_1_1menu_1_1GameOptionsScreen_a8220b4e0f12799d696d251f3c71d9532}} 
+\index{indie::menu::GameOptionsScreen@{indie::menu::GameOptionsScreen}!draw@{draw}}
+\index{draw@{draw}!indie::menu::GameOptionsScreen@{indie::menu::GameOptionsScreen}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void indie\+::menu\+::\+Game\+Options\+Screen\+::draw (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Draw the \mbox{\hyperlink{classindie_1_1Game}{Game}} Option Screen. 
+
+
+
+Implements \mbox{\hyperlink{classindie_1_1IScreen_a50e467ab6b7efae4114a9c3f17fa8ef4}{indie\+::\+IScreen}}.
+
+\mbox{\Hypertarget{classindie_1_1menu_1_1GameOptionsScreen_a67efcbec85194fc65badaa43a0b9450a}\label{classindie_1_1menu_1_1GameOptionsScreen_a67efcbec85194fc65badaa43a0b9450a}} 
+\index{indie::menu::GameOptionsScreen@{indie::menu::GameOptionsScreen}!getIsGameOptionsCalling@{getIsGameOptionsCalling}}
+\index{getIsGameOptionsCalling@{getIsGameOptionsCalling}!indie::menu::GameOptionsScreen@{indie::menu::GameOptionsScreen}}
+\doxysubsubsection{\texorpdfstring{getIsGameOptionsCalling()}{getIsGameOptionsCalling()}}
+{\footnotesize\ttfamily bool indie\+::menu\+::\+Game\+Options\+Screen\+::get\+Is\+Game\+Options\+Calling (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the Is \mbox{\hyperlink{classindie_1_1Game}{Game}} Options Calling object. 
+
+\begin{DoxyReturn}{Returns}
+if the game option is called or not 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classindie_1_1menu_1_1GameOptionsScreen_af3c056db2cd2081280d846a64b2e2a9b}\label{classindie_1_1menu_1_1GameOptionsScreen_af3c056db2cd2081280d846a64b2e2a9b}} 
+\index{indie::menu::GameOptionsScreen@{indie::menu::GameOptionsScreen}!handleEvent@{handleEvent}}
+\index{handleEvent@{handleEvent}!indie::menu::GameOptionsScreen@{indie::menu::GameOptionsScreen}}
+\doxysubsubsection{\texorpdfstring{handleEvent()}{handleEvent()}}
+{\footnotesize\ttfamily int indie\+::menu\+::\+Game\+Options\+Screen\+::handle\+Event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structindie_1_1Event}{indie\+::\+Event}} \&}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Handle events for the \mbox{\hyperlink{classindie_1_1Game}{Game}} Option Screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & the event to be handled \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int The scene number 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classindie_1_1IScreen_a715fc5be821e5ed1e66087cf4945234c}{indie\+::\+IScreen}}.
+
+\mbox{\Hypertarget{classindie_1_1menu_1_1GameOptionsScreen_a31034b52d390d1944937d7a6d0e6a8e2}\label{classindie_1_1menu_1_1GameOptionsScreen_a31034b52d390d1944937d7a6d0e6a8e2}} 
+\index{indie::menu::GameOptionsScreen@{indie::menu::GameOptionsScreen}!init@{init}}
+\index{init@{init}!indie::menu::GameOptionsScreen@{indie::menu::GameOptionsScreen}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void indie\+::menu\+::\+Game\+Options\+Screen\+::init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Init the \mbox{\hyperlink{classindie_1_1Game}{Game}} Option Screen. 
+
+
+
+Implements \mbox{\hyperlink{classindie_1_1IScreen_a8a94615d59b1a467347bf806b5c92f17}{indie\+::\+IScreen}}.
+
+\mbox{\Hypertarget{classindie_1_1menu_1_1GameOptionsScreen_ab92c797cac3334f6f8c42c0285c5ad39}\label{classindie_1_1menu_1_1GameOptionsScreen_ab92c797cac3334f6f8c42c0285c5ad39}} 
+\index{indie::menu::GameOptionsScreen@{indie::menu::GameOptionsScreen}!update@{update}}
+\index{update@{update}!indie::menu::GameOptionsScreen@{indie::menu::GameOptionsScreen}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void indie\+::menu\+::\+Game\+Options\+Screen\+::update (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Update the \mbox{\hyperlink{classindie_1_1Game}{Game}} Option Screen. 
+
+
+
+Implements \mbox{\hyperlink{classindie_1_1IScreen_aa8a7600f2869b54991b1ae551e8735c1}{indie\+::\+IScreen}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/screens/game\+\_\+options/Game\+Options\+Screen.\+hpp\item 
+src/screens/game\+\_\+options/Game\+Options\+Screen.\+cpp\end{DoxyCompactItemize}

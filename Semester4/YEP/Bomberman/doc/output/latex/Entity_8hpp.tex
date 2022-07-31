@@ -1,0 +1,62 @@
+\hypertarget{Entity_8hpp}{}\doxysection{src/ecs/entity/\+Entity.hpp File Reference}
+\label{Entity_8hpp}\index{src/ecs/entity/Entity.hpp@{src/ecs/entity/Entity.hpp}}
+
+
+Entity header file.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$memory$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include \char`\"{}../component/\+Alive/\+Alive.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../component/\+Collectable/\+Collectable.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../component/\+Collide/\+Collide.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../component/\+Destroyable/\+Destroyable.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../component/\+Drawable2\+D/\+Drawable2\+D.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../component/\+Drawable3\+D/\+Drawable3\+D.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../component/\+Explodable/\+Explodable.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../component/\+IComponent.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../component/\+Inventory/\+Inventory.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../component/\+Sound/\+Sound.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../component/\+Transform/\+Transform.\+hpp\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classindie_1_1ecs_1_1entity_1_1Entity}{indie\+::ecs\+::entity\+::\+Entity}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classindie_1_1ecs_1_1entity_1_1Entity}{Entity}} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{Entity_8hpp_a7bca52f144f3350f6f4bd61d567e75ef}\label{Entity_8hpp_a7bca52f144f3350f6f4bd61d567e75ef}} 
+enum \mbox{\hyperlink{Entity_8hpp_a7bca52f144f3350f6f4bd61d567e75ef}{indie\+::ecs\+::entity\+::entity\+Type}} \{ \newline
+{\bfseries PLAYER\+\_\+1}
+, {\bfseries PLAYER\+\_\+2}
+, {\bfseries PLAYER\+\_\+3}
+, {\bfseries PLAYER\+\_\+4}
+, \newline
+{\bfseries WALL}
+, {\bfseries BOXES}
+, {\bfseries TEXT}
+, {\bfseries BOMB}
+, \newline
+{\bfseries UNKNOWN}
+ \}
+\begin{DoxyCompactList}\small\item\em Entity Type for entity object creation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Entity header file. 
+
+\begin{DoxyAuthor}{Author}
+Cédric Corge (\href{mailto:cedric.corge@epitech.eu}{\texttt{ cedric.\+corge@epitech.\+eu}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2022-\/06-\/01
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2022 
+\end{DoxyCopyright}

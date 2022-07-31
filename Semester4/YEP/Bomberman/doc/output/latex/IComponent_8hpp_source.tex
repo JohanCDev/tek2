@@ -1,0 +1,50 @@
+\hypertarget{IComponent_8hpp_source}{}\doxysection{IComponent.\+hpp}
+\label{IComponent_8hpp_source}\index{src/ecs/component/IComponent.hpp@{src/ecs/component/IComponent.hpp}}
+\mbox{\hyperlink{IComponent_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#ifndef COMPONENT\_HPP\_}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#define COMPONENT\_HPP\_}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include "{}../../raylib/Raylib.hpp"{}}}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18 \textcolor{keyword}{namespace }indie}
+\DoxyCodeLine{19 \{}
+\DoxyCodeLine{20     \textcolor{keyword}{namespace }ecs}
+\DoxyCodeLine{21     \{}
+\DoxyCodeLine{22         \textcolor{keyword}{namespace }component}
+\DoxyCodeLine{23         \{}
+\DoxyCodeLine{24             \textcolor{keyword}{class }Transform;}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{30             \textcolor{keyword}{enum} \mbox{\hyperlink{IComponent_8hpp_ac44f0ed416679d299da366d37fd5eac8}{compoType}} \{}
+\DoxyCodeLine{31                 TRANSFORM,}
+\DoxyCodeLine{32                 DRAWABLE2D,}
+\DoxyCodeLine{33                 DRAWABLE3D,}
+\DoxyCodeLine{34                 ALIVE,}
+\DoxyCodeLine{35                 COLLECTABLE,}
+\DoxyCodeLine{36                 INVENTORY,}
+\DoxyCodeLine{37                 EXPLODABLE,}
+\DoxyCodeLine{38                 COLLIDE,}
+\DoxyCodeLine{39                 SOUND,}
+\DoxyCodeLine{40                 DESTROYABLE,}
+\DoxyCodeLine{41                 UNKNOWNCOMPO}
+\DoxyCodeLine{42             \};}
+\DoxyCodeLine{47             \textcolor{keyword}{enum} \mbox{\hyperlink{IComponent_8hpp_aa8502d67dffca22bc7fe2149622da4e6}{drawableType}} \{ CIRCLE, TEXT, RECTANGLE, SPHERE, CUBE, UNKNOWNDRAWABLE \};}
+\DoxyCodeLine{52             \textcolor{keyword}{enum} \mbox{\hyperlink{IComponent_8hpp_a7556b6608f1c7620d69cfee745a74351}{bonusType}} \{ BOMBUP, SPEEDUP, FIREUP, WALLPASS, UNKNOWNBONUS \};}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{55             \textcolor{keyword}{class }\mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1IComponent}{IComponent}} \{}
+\DoxyCodeLine{56               \textcolor{keyword}{public}:}
+\DoxyCodeLine{60                 \textcolor{keyword}{virtual} \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1IComponent_a7dd51ae7ee0501271f7c16985e20c3c9}{\string~IComponent}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{61 }
+\DoxyCodeLine{67                 \textcolor{keyword}{virtual} \mbox{\hyperlink{IComponent_8hpp_ac44f0ed416679d299da366d37fd5eac8}{indie::ecs::component::compoType}} \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1IComponent_ac3aec994ad076be5fe4daa8041795da0}{getType}}() \textcolor{keyword}{const} = 0;}
+\DoxyCodeLine{68 }
+\DoxyCodeLine{69               \textcolor{keyword}{private}:}
+\DoxyCodeLine{70             \};}
+\DoxyCodeLine{71         \} \textcolor{comment}{// namespace component}}
+\DoxyCodeLine{72     \}     \textcolor{comment}{// namespace ecs}}
+\DoxyCodeLine{73 \} \textcolor{comment}{// namespace indie}}
+\DoxyCodeLine{74 }
+\DoxyCodeLine{75 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* !COMPONENT\_HPP\_ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

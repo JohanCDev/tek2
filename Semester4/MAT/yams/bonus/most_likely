@@ -1,0 +1,161 @@
+#!/usr/bin/env python3
+import math
+from typing import List, Tuple
+import sys
+
+
+def get_number_of_faces(nb_to_find: int, dices: List[int]) -> int:
+    nb_total = 0
+    for i in range(len(dices)):
+        if dices[i] == nb_to_find:
+            nb_total += 1
+    return nb_total
+
+
+def get_binomial(a: int, b: int) -> float:
+    result = (math.factorial(a) / (math.factorial(b) * math.factorial(a - b))) * pow((1 / 6), b) * pow((5 / 6), (a - b))
+    return result
+
+
+def compute_all(quantity: int, number_to_find: int, dices: List[int]) -> float:
+    result = 0.0
+    occurrence = get_number_of_faces(number_to_find, dices)
+    if quantity <= occurrence:
+        result = 1
+    else:
+        for i in range(quantity - occurrence, 6 - occurrence):
+            result += get_binomial(5 - occurrence, i)
+    return result
+
+
+def calculate_straight(number: int, dices: List[int]) -> float:
+    correct_dices: int = 0
+    for i in range(number - 4, number + 1):
+        if get_number_of_faces(i, dices) >= 1:
+            correct_dices += 1
+    result: float = math.factorial(5 - correct_dices) / math.pow(6, 5 - correct_dices)
+    return result
+
+
+def calculate_full(number1: int, number2: int, dices: List[int]) -> float:
+    result: float = 1.0
+    n: int = 3 - get_number_of_faces(number1, dices)
+    p: int = 2 - get_number_of_faces(number2, dices)
+    if n < 0:
+        n = 0
+    elif p < 0:
+        p = 0
+    l: int = n + p
+    result = (math.factorial(l) / (math.factorial(n) * math.factorial(l - n))) / math.pow(6, l)
+    return result
+
+
+def compute_yams(nb: int, dices: List[int]) -> float:
+    result = compute_all(5, nb, dices) * 100
+    return result
+
+
+def compute_pair(nb: int, dices: List[int]) -> float:
+    result = compute_all(2, nb, dices) * 100
+    return result
+
+
+def compute_three(nb: int, dices: List[int]) -> float:
+    result = compute_all(3, nb, dices) * 100
+    return result
+
+
+def compute_four(nb: int, dices: List[int]) -> float:
+    result = compute_all(4, nb, dices) * 100
+    return result
+
+
+def compute_straight(nb: int, dices: List[int]) -> float:
+    if nb != 5 and nb != 6:
+        sys.stderr.write("Invalid straight\n")
+        exit(84)
+    result = calculate_straight(nb, dices) * 100
+    return result
+
+
+def compute_full(nb, nb2, dices: List[int]) -> float:
+    if nb == nb2:
+        sys.stderr.write("Invalid full (same numbers)\n")
+        exit(84)
+    result = calculate_full(nb, nb2, dices) * 100
+    return result
+
+# ---------------------------------------------------- END COMPUTE --------------------------------------------------- #
+
+
+def concat_probabilities(probabilities: List[Tuple[str, str, float]]) -> List[Tuple[str, str, float]]:
+    tmp: List[(str, str, float)] = []
+    other: int = 0
+    combination: str = ""
+    prob: float = 0.00
+    index: int = 0
+    for index in range(1, len(probabilities)):
+        combination = str(probabilities[index - 1][0]).capitalize()
+        prob = probabilities[index - 1][2]
+        if str(probabilities[index][0]).capitalize() == combination and probabilities[index][2] == prob:
+            probabilities[index - 1 - other] = (probabilities[index - 1 - other][0], probabilities[index - 1 - other][1] + "/" + probabilities[index][1], probabilities[index - 1 - other][2])
+            probabilities[index] = (probabilities[index][0], "", probabilities[index][2])
+            other += 1
+            continue
+        else:
+            other = 0
+    for i in range(0, len(probabilities) - 1):
+        if probabilities[i][1] != "":
+            tmp.append(probabilities[i])
+    tmp.sort(key=lambda tup: tup[2], reverse=True)
+    return tmp
+
+
+def calculate_most_likely(args: List[str]) -> None:
+    dices: List[int] = [int(args[1]), int(args[2]), int(args[3]), int(args[4]), int(args[5])]
+    probabilities: List[(str, str, float)] = []
+    probabilities.append(("straight", "5", compute_straight(5, dices)))
+    probabilities.append(("straight", "6", compute_straight(6, dices)))
+    for i in range(1, 6 + 1):
+        probabilities.append(("pair", str(i), compute_pair(i, dices)))
+        probabilities.append(("three", str(i), compute_three(i, dices)))
+        probabilities.append(("four", str(i), compute_four(i, dices)))
+        probabilities.append(("yams", str(i), compute_yams(i, dices)))
+        for y in range(1, 6 + 1):
+            if i == y:
+                continue
+            probabilities.append(("full", str(i) + "_" + str(y), compute_full(i, y, dices)))
+    probabilities.sort(key=lambda tup: tup[2], reverse=True)
+    combination: str = ""
+    probabilities = concat_probabilities(probabilities)
+    if int(args[6]) == 0:
+        while probabilities[0][2] == 100:
+            probabilities.pop(0)
+    print("The 5 most probables results with this combination of dices :")
+    number: str = ""
+    for i in range(1, 5 + 1):
+        combination = str(probabilities[i - 1][0]).capitalize()
+        number = str(probabilities[i - 1][1])
+        print("\t" + combination + " of " + number, end='')
+        print(" = " + str("{:.2f}".format(probabilities[i - 1][2])) + "%")
+
+
+def print_helper() -> None:
+    print("USAGE")
+    print("\t./most_likely d1 d2 d3 d4 d5 [0 or 1]\n")
+    print("DESCRIPTION")
+    print("\td1\tvalue of the first die (0 if not thrown)")
+    print("\td2\tvalue of the second die (0 if not thrown)")
+    print("\td3\tvalue of the third die (0 if not thrown)")
+    print("\td4\tvalue of the fourth die (0 if not thrown)")
+    print("\td5\tvalue of the fifth die (0 if not thrown)")
+    print("\t[0 or 1]\tDisplay the combinations already obtained")
+
+
+if __name__ == '__main__':
+    if len(sys.argv) == 2 and sys.argv[1] == "-h":
+        print_helper()
+    elif len(sys.argv) != 7:
+        sys.exit(84)
+    else:
+        calculate_most_likely(sys.argv)

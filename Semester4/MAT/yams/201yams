@@ -1,0 +1,80 @@
+#!/usr/bin/env python3
+import typing
+from typing import List
+import sys
+import compute
+import tests
+
+
+def print_helper() -> None:
+    print("USAGE")
+    print("\t./201yams d1 d2 d3 d4 d5 c\n")
+    print("DESCRIPTION")
+    print("\td1\tvalue of the first die (0 if not thrown)")
+    print("\td2\tvalue of the second die (0 if not thrown)")
+    print("\td3\tvalue of the third die (0 if not thrown)")
+    print("\td4\tvalue of the fourth die (0 if not thrown)")
+    print("\td5\tvalue of the fifth die (0 if not thrown)")
+    print("\tc\texpected combination")
+
+
+def two_args(arg: str) -> None:
+    if arg == "-h":
+        print_helper()
+    if arg == "-t":
+        tests.run_tests()
+    else:
+        sys.exit(84)
+
+
+def check_args_number(args: List[str]) -> None:
+    for i in range(1, 6):
+        arg = args[i]
+        if not(arg.isdigit() and 0 <= int(arg) <= 6):
+            sys.stderr.write("Bad numbers given\n")
+            exit(84)
+
+
+def compute_program(dices: List[int], combination: str) -> None:
+    args: List[str] = combination.split("_")
+    combination: str = args[0]
+    if len(args) == 2:
+        if not(args[1].isdigit() and 1 <= int(args[1]) <= 6):
+            exit(84)
+        elif combination == "pair":
+            compute.compute_pair(int(args[1]), dices)
+        elif combination == "three":
+            compute.compute_three(int(args[1]), dices)
+        elif combination == "four":
+            compute.compute_four(int(args[1]), dices)
+        elif combination == "straight":
+            compute.compute_straight(int(args[1]), dices)
+        elif combination == "yams":
+            compute.compute_yams(int(args[1]), dices)
+        else:
+            exit(84)
+    elif len(args) == 3:
+        if not(args[1].isdigit() and 1 <= int(args[1]) <= 6 and args[2].isdigit() and 1 <= int(args[2]) <= 6):
+            exit(84)
+        elif combination == "full":
+            compute.compute_full(int(args[1]), int(args[2]), dices)
+        else:
+            exit(84)
+    else:
+        exit(84)
+
+
+def main_program(args: List[str]) -> None:
+    check_args_number(args)
+    dices: List[int] = [int(args[1]), int(args[2]), int(args[3]), int(args[4]), int(args[5])]
+    combination: str = args[6]
+    compute_program(dices, combination)
+
+
+if __name__ == '__main__':
+    if len(sys.argv) == 2:
+        two_args(sys.argv[1])
+    elif len(sys.argv) != 7:
+        sys.exit(84)
+    else:
+        main_program(sys.argv)

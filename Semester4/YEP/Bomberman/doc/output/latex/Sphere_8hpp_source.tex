@@ -1,0 +1,43 @@
+\hypertarget{Sphere_8hpp_source}{}\doxysection{Sphere.\+hpp}
+\label{Sphere_8hpp_source}\index{src/raylib/sphere/Sphere.hpp@{src/raylib/sphere/Sphere.hpp}}
+\mbox{\hyperlink{Sphere_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#ifndef SPHERE\_HPP\_}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#define SPHERE\_HPP\_}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include "{}../Raylib.hpp"{}}}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 \textcolor{keyword}{namespace }indie}
+\DoxyCodeLine{18 \{}
+\DoxyCodeLine{19     \textcolor{keyword}{namespace }raylib}
+\DoxyCodeLine{20     \{}
+\DoxyCodeLine{22         \textcolor{keyword}{class }\mbox{\hyperlink{classindie_1_1raylib_1_1Sphere}{Sphere}} \{}
+\DoxyCodeLine{23           \textcolor{keyword}{public}:}
+\DoxyCodeLine{31             \mbox{\hyperlink{classindie_1_1raylib_1_1Sphere_ad72c558758c9e869b6afcfa4e81bd9aa}{Sphere}}(::Vector3 centerPos, \textcolor{keywordtype}{float} radius, ::Color color = BLACK);}
+\DoxyCodeLine{36             \mbox{\hyperlink{classindie_1_1raylib_1_1Sphere_a1a1f4c297154515ba762b18586e29f27}{\string~Sphere}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{42             ::Vector3 \mbox{\hyperlink{classindie_1_1raylib_1_1Sphere_a74d312575a48a8527ecffffaba200ebf}{getCenterPosition}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{48             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Sphere_a635c4dc0d04eae88acdba594361ddfcf}{setCenterPosition}}(::Vector3 centerPosition);}
+\DoxyCodeLine{54             \textcolor{keywordtype}{float} \mbox{\hyperlink{classindie_1_1raylib_1_1Sphere_a3e99895a7c4efa261f282043ed4b5cd4}{getRadius}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{60             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Sphere_a7fb94bf1b300e12841dc4ac648ef7ac3}{setRadius}}(\textcolor{keywordtype}{float} radius);}
+\DoxyCodeLine{66             ::Color \mbox{\hyperlink{classindie_1_1raylib_1_1Sphere_a435b8dae5284c185402a35665befc076}{getColor}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{72             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Sphere_a58a8fe9c17ea65fb329cbef83bd04b61}{setColor}}(::Color color);}
+\DoxyCodeLine{76             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Sphere_aebcda2f3905f5a5b893296750d527e87}{draw}}();}
+\DoxyCodeLine{84             \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Sphere_aebcda2f3905f5a5b893296750d527e87}{draw}}(::Vector3 centerPosition, \textcolor{keywordtype}{float} radius, ::Color color);}
+\DoxyCodeLine{91             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Sphere_a5e83ab6cb47b8ebff482f11f260a1898}{drawWires}}(\textcolor{keywordtype}{int} rings, \textcolor{keywordtype}{int} slices);}
+\DoxyCodeLine{101             \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Sphere_a5e83ab6cb47b8ebff482f11f260a1898}{drawWires}}(::Vector3 centerPosition, \textcolor{keywordtype}{float} radius, \textcolor{keywordtype}{int} rings, \textcolor{keywordtype}{int} slices, ::Color color);}
+\DoxyCodeLine{111             \textcolor{keywordtype}{bool} \mbox{\hyperlink{classindie_1_1raylib_1_1Sphere_a48172ae370d725f44556265fc977ef65}{checkCollisionSpheres}}(const ::Vector3 \&sphere2, \textcolor{keywordtype}{float} radius2);}
+\DoxyCodeLine{123             \textcolor{keyword}{static} \textcolor{keywordtype}{bool} \mbox{\hyperlink{classindie_1_1raylib_1_1Sphere_a48172ae370d725f44556265fc977ef65}{checkCollisionSpheres}}(}
+\DoxyCodeLine{124                 const ::Vector3 \&centerPosition, \textcolor{keywordtype}{float} radius, const ::Vector3 \&sphere2, \textcolor{keywordtype}{float} radius2);}
+\DoxyCodeLine{125 }
+\DoxyCodeLine{126           \textcolor{keyword}{private}:}
+\DoxyCodeLine{131             ::Vector3 \_centerPosition;}
+\DoxyCodeLine{136             \textcolor{keywordtype}{float} \_radius;}
+\DoxyCodeLine{141             ::Color \_color;}
+\DoxyCodeLine{142         \};}
+\DoxyCodeLine{143     \} \textcolor{comment}{// namespace raylib}}
+\DoxyCodeLine{144 \} \textcolor{comment}{// namespace indie}}
+\DoxyCodeLine{145 }
+\DoxyCodeLine{146 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* !SPHERE\_HPP\_ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

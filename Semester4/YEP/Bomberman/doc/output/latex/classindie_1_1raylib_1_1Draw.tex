@@ -1,0 +1,474 @@
+\hypertarget{classindie_1_1raylib_1_1Draw}{}\doxysection{indie\+::raylib\+::Draw Class Reference}
+\label{classindie_1_1raylib_1_1Draw}\index{indie::raylib::Draw@{indie::raylib::Draw}}
+
+
+\mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} class encapsulation.  
+
+
+
+
+{\ttfamily \#include $<$Draw.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classindie_1_1raylib_1_1Draw_a7dd0f9629437b77a8d33f366792efd7f}{Draw}} (int posX=0, int posY=0, float font\+Size=100, \+::\+Color color=BLACK)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Draw_a06b528f9df2410935ff0d0e47518725e}\label{classindie_1_1raylib_1_1Draw_a06b528f9df2410935ff0d0e47518725e}} 
+{\bfseries $\sim$\+Draw} ()=default
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} object. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classindie_1_1raylib_1_1Draw_ac1d2a1db7ccdcde0badde77483170c58}{get\+PositionX}} () const
+\begin{DoxyCompactList}\small\item\em Get posX. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1raylib_1_1Draw_a7e004dab1ada7fd1037e4a4bec7efe2b}{set\+PositionX}} (int positionX)
+\begin{DoxyCompactList}\small\item\em Set posX. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classindie_1_1raylib_1_1Draw_a1bc6651081b44bc38c1102fd605dcfb3}{get\+PositionY}} () const
+\begin{DoxyCompactList}\small\item\em Get posY. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1raylib_1_1Draw_a40ac0a85a7d92901236a747b17cdd952}{set\+PositionY}} (int positionY)
+\begin{DoxyCompactList}\small\item\em Set posY. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classindie_1_1raylib_1_1Draw_ad0f83b66864eeb19219dbf0704044ce4}{get\+Font\+Size}} () const
+\begin{DoxyCompactList}\small\item\em Get font size. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1raylib_1_1Draw_ac08b0db9afc864298fbbc8b9237303b4}{set\+Font\+Size}} (float font\+Size)
+\begin{DoxyCompactList}\small\item\em Set font size. \end{DoxyCompactList}\item 
+\+::\+Color \mbox{\hyperlink{classindie_1_1raylib_1_1Draw_ae3a100a01fd22713595062f3eab10fec}{get\+Color}} () const
+\begin{DoxyCompactList}\small\item\em Get color. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1raylib_1_1Draw_ade761a6fed9eda9665d8fd7ae4bdb408}{set\+Color}} (\+::\+Color color)
+\begin{DoxyCompactList}\small\item\em Set color. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1raylib_1_1Draw_a9022a15b48b531a2a7f58613837987d8}{draw\+Text}} (const std\+::string text)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} text (using default font) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Draw_af548f869b31f10df3f8bec5c88dcb785}\label{classindie_1_1raylib_1_1Draw_af548f869b31f10df3f8bec5c88dcb785}} 
+void {\bfseries draw\+FPS} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} current FPS. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1raylib_1_1Draw_a26afd2b3e013294ceb46e8840b0413ac}{draw\+Text\+Ex}} (\+::\+Font font, const char $\ast$text, \+::\+Vector2 position, float spacing)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} text using font and additional parameters. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1raylib_1_1Draw_aadc1addfa88ee1114abafdbed580e69a}{draw\+Text\+Pro}} (\+::\+Font font, const char $\ast$text, \+::\+Vector2 position, \+::\+Vector2 origin, float rotation, float spacing)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} text using Font and pro parameters (rotation) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1raylib_1_1Draw_a06f17b89a86f62fee407c2af07670679}{draw\+Text\+Codepoint}} (\+::\+Font font, int codepoint, \+::\+Vector2 position)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} one character (codepoint) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1raylib_1_1Draw_aa8607f64cea02d1151a90221e18c6e39}{draw\+Plane}} (\+::\+Vector3 center\+Pos, \+::\+Vector2 size)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} a plane XZ. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1raylib_1_1Draw_a8d162ee74b2d96d1f9faf4ad3bae0b98}{draw\+Ray}} (\+::\+Ray ray)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} a ray line. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classindie_1_1raylib_1_1Draw_ae6d5a92bfea60a5c87da161bddec7f8e}{draw\+FPS}} (int posX, int posY)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} current FPS. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classindie_1_1raylib_1_1Draw_a8ee158c701bd3385a881eeb00721a9df}{draw\+Text\+Ex}} (\+::\+Font font, const char $\ast$text, \+::\+Vector2 position, float font\+Size, float spacing, \+::\+Color color)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} text using font and additional parameters. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classindie_1_1raylib_1_1Draw_ad24481aec8461e79f6a6e928e95364b5}{draw\+Text\+Pro}} (\+::\+Font font, const char $\ast$text, \+::\+Vector2 position, \+::\+Vector2 origin, float rotation, float font\+Size, float spacing, \+::\+Color color)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} text using Font and pro parameters (rotation) \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classindie_1_1raylib_1_1Draw_ac33d4122e5668f4c328acd4598a54750}{draw\+Text\+Codepoint}} (\+::\+Font font, int codepoint, \+::\+Vector2 position, float font\+Size, \+::\+Color color)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} one character (codepoint) \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classindie_1_1raylib_1_1Draw_a12f21ad4fc149cac4204b8476ea54098}{draw\+Plane}} (\+::\+Vector3 center\+Pos, \+::\+Vector2 size, \+::\+Color color)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} a plane XZ. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classindie_1_1raylib_1_1Draw_a6c2c39220139d2d0bf0d2954445ff5b4}{draw\+Ray}} (\+::\+Ray ray, \+::\+Color color)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} a ray line. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classindie_1_1raylib_1_1Draw_aa22976b44b1fbe0156d869ffd998b776}{draw\+Grid}} (int slices, float spacing)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} a grid (centered at (0, 0, 0)) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} class encapsulation. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Draw_a7dd0f9629437b77a8d33f366792efd7f}\label{classindie_1_1raylib_1_1Draw_a7dd0f9629437b77a8d33f366792efd7f}} 
+\index{indie::raylib::Draw@{indie::raylib::Draw}!Draw@{Draw}}
+\index{Draw@{Draw}!indie::raylib::Draw@{indie::raylib::Draw}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily indie\+::raylib\+::\+Draw\+::\+Draw (\begin{DoxyParamCaption}\item[{int}]{posX = {\ttfamily 0},  }\item[{int}]{posY = {\ttfamily 0},  }\item[{float}]{font\+Size = {\ttfamily 100},  }\item[{\+::\+Color}]{color = {\ttfamily BLACK} }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em posX} & X position \\
+\hline
+{\em posY} & Y position \\
+\hline
+{\em font\+Size} & Font size \\
+\hline
+{\em color} & Color \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Draw_ae6d5a92bfea60a5c87da161bddec7f8e}\label{classindie_1_1raylib_1_1Draw_ae6d5a92bfea60a5c87da161bddec7f8e}} 
+\index{indie::raylib::Draw@{indie::raylib::Draw}!drawFPS@{drawFPS}}
+\index{drawFPS@{drawFPS}!indie::raylib::Draw@{indie::raylib::Draw}}
+\doxysubsubsection{\texorpdfstring{drawFPS()}{drawFPS()}}
+{\footnotesize\ttfamily void indie\+::raylib\+::\+Draw\+::draw\+FPS (\begin{DoxyParamCaption}\item[{int}]{posX,  }\item[{int}]{posY }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} current FPS. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em posX} & X position \\
+\hline
+{\em posY} & Y position \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Draw_aa22976b44b1fbe0156d869ffd998b776}\label{classindie_1_1raylib_1_1Draw_aa22976b44b1fbe0156d869ffd998b776}} 
+\index{indie::raylib::Draw@{indie::raylib::Draw}!drawGrid@{drawGrid}}
+\index{drawGrid@{drawGrid}!indie::raylib::Draw@{indie::raylib::Draw}}
+\doxysubsubsection{\texorpdfstring{drawGrid()}{drawGrid()}}
+{\footnotesize\ttfamily void indie\+::raylib\+::\+Draw\+::draw\+Grid (\begin{DoxyParamCaption}\item[{int}]{slices,  }\item[{float}]{spacing }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} a grid (centered at (0, 0, 0)) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em slices} & Drawing slices \\
+\hline
+{\em spacing} & Drawing spacing \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Draw_aa8607f64cea02d1151a90221e18c6e39}\label{classindie_1_1raylib_1_1Draw_aa8607f64cea02d1151a90221e18c6e39}} 
+\index{indie::raylib::Draw@{indie::raylib::Draw}!drawPlane@{drawPlane}}
+\index{drawPlane@{drawPlane}!indie::raylib::Draw@{indie::raylib::Draw}}
+\doxysubsubsection{\texorpdfstring{drawPlane()}{drawPlane()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void indie\+::raylib\+::\+Draw\+::draw\+Plane (\begin{DoxyParamCaption}\item[{\+::\+Vector3}]{center\+Pos,  }\item[{\+::\+Vector2}]{size }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} a plane XZ. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em center\+Pos} & Drawing Position (Center) \\
+\hline
+{\em size} & Drawing size \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Draw_a12f21ad4fc149cac4204b8476ea54098}\label{classindie_1_1raylib_1_1Draw_a12f21ad4fc149cac4204b8476ea54098}} 
+\index{indie::raylib::Draw@{indie::raylib::Draw}!drawPlane@{drawPlane}}
+\index{drawPlane@{drawPlane}!indie::raylib::Draw@{indie::raylib::Draw}}
+\doxysubsubsection{\texorpdfstring{drawPlane()}{drawPlane()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void indie\+::raylib\+::\+Draw\+::draw\+Plane (\begin{DoxyParamCaption}\item[{\+::\+Vector3}]{center\+Pos,  }\item[{\+::\+Vector2}]{size,  }\item[{\+::\+Color}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} a plane XZ. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em center\+Pos} & Drawing Position (Center) \\
+\hline
+{\em size} & Drawing size \\
+\hline
+{\em color} & Drawing color \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Draw_a8d162ee74b2d96d1f9faf4ad3bae0b98}\label{classindie_1_1raylib_1_1Draw_a8d162ee74b2d96d1f9faf4ad3bae0b98}} 
+\index{indie::raylib::Draw@{indie::raylib::Draw}!drawRay@{drawRay}}
+\index{drawRay@{drawRay}!indie::raylib::Draw@{indie::raylib::Draw}}
+\doxysubsubsection{\texorpdfstring{drawRay()}{drawRay()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void indie\+::raylib\+::\+Draw\+::draw\+Ray (\begin{DoxyParamCaption}\item[{\+::\+Ray}]{ray }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} a ray line. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ray} & Drawing ray line \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Draw_a6c2c39220139d2d0bf0d2954445ff5b4}\label{classindie_1_1raylib_1_1Draw_a6c2c39220139d2d0bf0d2954445ff5b4}} 
+\index{indie::raylib::Draw@{indie::raylib::Draw}!drawRay@{drawRay}}
+\index{drawRay@{drawRay}!indie::raylib::Draw@{indie::raylib::Draw}}
+\doxysubsubsection{\texorpdfstring{drawRay()}{drawRay()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void indie\+::raylib\+::\+Draw\+::draw\+Ray (\begin{DoxyParamCaption}\item[{\+::\+Ray}]{ray,  }\item[{\+::\+Color}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} a ray line. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ray} & Drawing ray line \\
+\hline
+{\em color} & Drawing color \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Draw_a9022a15b48b531a2a7f58613837987d8}\label{classindie_1_1raylib_1_1Draw_a9022a15b48b531a2a7f58613837987d8}} 
+\index{indie::raylib::Draw@{indie::raylib::Draw}!drawText@{drawText}}
+\index{drawText@{drawText}!indie::raylib::Draw@{indie::raylib::Draw}}
+\doxysubsubsection{\texorpdfstring{drawText()}{drawText()}}
+{\footnotesize\ttfamily void indie\+::raylib\+::\+Draw\+::draw\+Text (\begin{DoxyParamCaption}\item[{const std\+::string}]{text }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} text (using default font) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & Text to draw \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Draw_a06f17b89a86f62fee407c2af07670679}\label{classindie_1_1raylib_1_1Draw_a06f17b89a86f62fee407c2af07670679}} 
+\index{indie::raylib::Draw@{indie::raylib::Draw}!drawTextCodepoint@{drawTextCodepoint}}
+\index{drawTextCodepoint@{drawTextCodepoint}!indie::raylib::Draw@{indie::raylib::Draw}}
+\doxysubsubsection{\texorpdfstring{drawTextCodepoint()}{drawTextCodepoint()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void indie\+::raylib\+::\+Draw\+::draw\+Text\+Codepoint (\begin{DoxyParamCaption}\item[{\+::\+Font}]{font,  }\item[{int}]{codepoint,  }\item[{\+::\+Vector2}]{position }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} one character (codepoint) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em font} & Drawing font \\
+\hline
+{\em codepoint} & Drawing codepoint \\
+\hline
+{\em position} & Drawing position \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Draw_ac33d4122e5668f4c328acd4598a54750}\label{classindie_1_1raylib_1_1Draw_ac33d4122e5668f4c328acd4598a54750}} 
+\index{indie::raylib::Draw@{indie::raylib::Draw}!drawTextCodepoint@{drawTextCodepoint}}
+\index{drawTextCodepoint@{drawTextCodepoint}!indie::raylib::Draw@{indie::raylib::Draw}}
+\doxysubsubsection{\texorpdfstring{drawTextCodepoint()}{drawTextCodepoint()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void indie\+::raylib\+::\+Draw\+::draw\+Text\+Codepoint (\begin{DoxyParamCaption}\item[{\+::\+Font}]{font,  }\item[{int}]{codepoint,  }\item[{\+::\+Vector2}]{position,  }\item[{float}]{font\+Size,  }\item[{\+::\+Color}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} one character (codepoint) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em font} & Drawing font \\
+\hline
+{\em codepoint} & Drawing codepoint \\
+\hline
+{\em position} & Drawing position \\
+\hline
+{\em font\+Size} & Drawing fontsize \\
+\hline
+{\em color} & Drawing color \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Draw_a8ee158c701bd3385a881eeb00721a9df}\label{classindie_1_1raylib_1_1Draw_a8ee158c701bd3385a881eeb00721a9df}} 
+\index{indie::raylib::Draw@{indie::raylib::Draw}!drawTextEx@{drawTextEx}}
+\index{drawTextEx@{drawTextEx}!indie::raylib::Draw@{indie::raylib::Draw}}
+\doxysubsubsection{\texorpdfstring{drawTextEx()}{drawTextEx()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void indie\+::raylib\+::\+Draw\+::draw\+Text\+Ex (\begin{DoxyParamCaption}\item[{\+::\+Font}]{font,  }\item[{const char $\ast$}]{text,  }\item[{\+::\+Vector2}]{position,  }\item[{float}]{font\+Size,  }\item[{float}]{spacing,  }\item[{\+::\+Color}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} text using font and additional parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em font} & Drawing font \\
+\hline
+{\em text} & Drawing text \\
+\hline
+{\em position} & Drawing position \\
+\hline
+{\em font\+Size} & Drawing font size \\
+\hline
+{\em spacing} & Drawing spacing \\
+\hline
+{\em color} & Drawing color \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Draw_a26afd2b3e013294ceb46e8840b0413ac}\label{classindie_1_1raylib_1_1Draw_a26afd2b3e013294ceb46e8840b0413ac}} 
+\index{indie::raylib::Draw@{indie::raylib::Draw}!drawTextEx@{drawTextEx}}
+\index{drawTextEx@{drawTextEx}!indie::raylib::Draw@{indie::raylib::Draw}}
+\doxysubsubsection{\texorpdfstring{drawTextEx()}{drawTextEx()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void indie\+::raylib\+::\+Draw\+::draw\+Text\+Ex (\begin{DoxyParamCaption}\item[{\+::\+Font}]{font,  }\item[{const char $\ast$}]{text,  }\item[{\+::\+Vector2}]{position,  }\item[{float}]{spacing }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} text using font and additional parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em font} & Drawing font \\
+\hline
+{\em text} & Drawing text \\
+\hline
+{\em position} & Drawing position \\
+\hline
+{\em spacing} & Drawing spacing \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Draw_ad24481aec8461e79f6a6e928e95364b5}\label{classindie_1_1raylib_1_1Draw_ad24481aec8461e79f6a6e928e95364b5}} 
+\index{indie::raylib::Draw@{indie::raylib::Draw}!drawTextPro@{drawTextPro}}
+\index{drawTextPro@{drawTextPro}!indie::raylib::Draw@{indie::raylib::Draw}}
+\doxysubsubsection{\texorpdfstring{drawTextPro()}{drawTextPro()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void indie\+::raylib\+::\+Draw\+::draw\+Text\+Pro (\begin{DoxyParamCaption}\item[{\+::\+Font}]{font,  }\item[{const char $\ast$}]{text,  }\item[{\+::\+Vector2}]{position,  }\item[{\+::\+Vector2}]{origin,  }\item[{float}]{rotation,  }\item[{float}]{font\+Size,  }\item[{float}]{spacing,  }\item[{\+::\+Color}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} text using Font and pro parameters (rotation) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em font} & Drawing font \\
+\hline
+{\em text} & Drawing text \\
+\hline
+{\em position} & Drawing position \\
+\hline
+{\em origin} & Drawing origin \\
+\hline
+{\em rotation} & Drawwing rotation \\
+\hline
+{\em font\+Size} & Drawing font size \\
+\hline
+{\em spacing} & Drawing spacing \\
+\hline
+{\em color} & Drawing color \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Draw_aadc1addfa88ee1114abafdbed580e69a}\label{classindie_1_1raylib_1_1Draw_aadc1addfa88ee1114abafdbed580e69a}} 
+\index{indie::raylib::Draw@{indie::raylib::Draw}!drawTextPro@{drawTextPro}}
+\index{drawTextPro@{drawTextPro}!indie::raylib::Draw@{indie::raylib::Draw}}
+\doxysubsubsection{\texorpdfstring{drawTextPro()}{drawTextPro()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void indie\+::raylib\+::\+Draw\+::draw\+Text\+Pro (\begin{DoxyParamCaption}\item[{\+::\+Font}]{font,  }\item[{const char $\ast$}]{text,  }\item[{\+::\+Vector2}]{position,  }\item[{\+::\+Vector2}]{origin,  }\item[{float}]{rotation,  }\item[{float}]{spacing }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} text using Font and pro parameters (rotation) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em font} & Drawing font \\
+\hline
+{\em text} & Drawing text \\
+\hline
+{\em position} & Drawing position \\
+\hline
+{\em origin} & Drawing origin \\
+\hline
+{\em rotation} & Drawing rotation \\
+\hline
+{\em spacing} & Drawing spacing \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Draw_ae3a100a01fd22713595062f3eab10fec}\label{classindie_1_1raylib_1_1Draw_ae3a100a01fd22713595062f3eab10fec}} 
+\index{indie::raylib::Draw@{indie::raylib::Draw}!getColor@{getColor}}
+\index{getColor@{getColor}!indie::raylib::Draw@{indie::raylib::Draw}}
+\doxysubsubsection{\texorpdfstring{getColor()}{getColor()}}
+{\footnotesize\ttfamily Color indie\+::raylib\+::\+Draw\+::get\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get color. 
+
+\begin{DoxyReturn}{Returns}
+Color \mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} color 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Draw_ad0f83b66864eeb19219dbf0704044ce4}\label{classindie_1_1raylib_1_1Draw_ad0f83b66864eeb19219dbf0704044ce4}} 
+\index{indie::raylib::Draw@{indie::raylib::Draw}!getFontSize@{getFontSize}}
+\index{getFontSize@{getFontSize}!indie::raylib::Draw@{indie::raylib::Draw}}
+\doxysubsubsection{\texorpdfstring{getFontSize()}{getFontSize()}}
+{\footnotesize\ttfamily float indie\+::raylib\+::\+Draw\+::get\+Font\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get font size. 
+
+\begin{DoxyReturn}{Returns}
+float Font size 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Draw_ac1d2a1db7ccdcde0badde77483170c58}\label{classindie_1_1raylib_1_1Draw_ac1d2a1db7ccdcde0badde77483170c58}} 
+\index{indie::raylib::Draw@{indie::raylib::Draw}!getPositionX@{getPositionX}}
+\index{getPositionX@{getPositionX}!indie::raylib::Draw@{indie::raylib::Draw}}
+\doxysubsubsection{\texorpdfstring{getPositionX()}{getPositionX()}}
+{\footnotesize\ttfamily int indie\+::raylib\+::\+Draw\+::get\+PositionX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get posX. 
+
+\begin{DoxyReturn}{Returns}
+int X position 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Draw_a1bc6651081b44bc38c1102fd605dcfb3}\label{classindie_1_1raylib_1_1Draw_a1bc6651081b44bc38c1102fd605dcfb3}} 
+\index{indie::raylib::Draw@{indie::raylib::Draw}!getPositionY@{getPositionY}}
+\index{getPositionY@{getPositionY}!indie::raylib::Draw@{indie::raylib::Draw}}
+\doxysubsubsection{\texorpdfstring{getPositionY()}{getPositionY()}}
+{\footnotesize\ttfamily int indie\+::raylib\+::\+Draw\+::get\+PositionY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get posY. 
+
+\begin{DoxyReturn}{Returns}
+int Y position 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Draw_ade761a6fed9eda9665d8fd7ae4bdb408}\label{classindie_1_1raylib_1_1Draw_ade761a6fed9eda9665d8fd7ae4bdb408}} 
+\index{indie::raylib::Draw@{indie::raylib::Draw}!setColor@{setColor}}
+\index{setColor@{setColor}!indie::raylib::Draw@{indie::raylib::Draw}}
+\doxysubsubsection{\texorpdfstring{setColor()}{setColor()}}
+{\footnotesize\ttfamily void indie\+::raylib\+::\+Draw\+::set\+Color (\begin{DoxyParamCaption}\item[{\+::\+Color}]{color }\end{DoxyParamCaption})}
+
+
+
+Set color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & \mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} color \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Draw_ac08b0db9afc864298fbbc8b9237303b4}\label{classindie_1_1raylib_1_1Draw_ac08b0db9afc864298fbbc8b9237303b4}} 
+\index{indie::raylib::Draw@{indie::raylib::Draw}!setFontSize@{setFontSize}}
+\index{setFontSize@{setFontSize}!indie::raylib::Draw@{indie::raylib::Draw}}
+\doxysubsubsection{\texorpdfstring{setFontSize()}{setFontSize()}}
+{\footnotesize\ttfamily void indie\+::raylib\+::\+Draw\+::set\+Font\+Size (\begin{DoxyParamCaption}\item[{float}]{font\+Size }\end{DoxyParamCaption})}
+
+
+
+Set font size. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em font\+Size} & Font size \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Draw_a7e004dab1ada7fd1037e4a4bec7efe2b}\label{classindie_1_1raylib_1_1Draw_a7e004dab1ada7fd1037e4a4bec7efe2b}} 
+\index{indie::raylib::Draw@{indie::raylib::Draw}!setPositionX@{setPositionX}}
+\index{setPositionX@{setPositionX}!indie::raylib::Draw@{indie::raylib::Draw}}
+\doxysubsubsection{\texorpdfstring{setPositionX()}{setPositionX()}}
+{\footnotesize\ttfamily void indie\+::raylib\+::\+Draw\+::set\+PositionX (\begin{DoxyParamCaption}\item[{int}]{positionX }\end{DoxyParamCaption})}
+
+
+
+Set posX. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em positionX} & X position \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Draw_a40ac0a85a7d92901236a747b17cdd952}\label{classindie_1_1raylib_1_1Draw_a40ac0a85a7d92901236a747b17cdd952}} 
+\index{indie::raylib::Draw@{indie::raylib::Draw}!setPositionY@{setPositionY}}
+\index{setPositionY@{setPositionY}!indie::raylib::Draw@{indie::raylib::Draw}}
+\doxysubsubsection{\texorpdfstring{setPositionY()}{setPositionY()}}
+{\footnotesize\ttfamily void indie\+::raylib\+::\+Draw\+::set\+PositionY (\begin{DoxyParamCaption}\item[{int}]{positionY }\end{DoxyParamCaption})}
+
+
+
+Set posY. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em positionY} & Y position \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/raylib/draw/\mbox{\hyperlink{Draw_8hpp}{Draw.\+hpp}}\item 
+src/raylib/draw/\mbox{\hyperlink{Draw_8cpp}{Draw.\+cpp}}\end{DoxyCompactItemize}

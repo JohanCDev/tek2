@@ -1,0 +1,59 @@
+\hypertarget{Draw_8hpp_source}{}\doxysection{Draw.\+hpp}
+\label{Draw_8hpp_source}\index{src/raylib/draw/Draw.hpp@{src/raylib/draw/Draw.hpp}}
+\mbox{\hyperlink{Draw_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#ifndef DRAW\_HPP\_}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#define DRAW\_HPP\_}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include "{}../Raylib.hpp"{}}}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 \textcolor{keyword}{namespace }indie}
+\DoxyCodeLine{18 \{}
+\DoxyCodeLine{19     \textcolor{keyword}{namespace }raylib}
+\DoxyCodeLine{20     \{}
+\DoxyCodeLine{22         \textcolor{keyword}{class }\mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} \{}
+\DoxyCodeLine{23           \textcolor{keyword}{public}:}
+\DoxyCodeLine{32             \mbox{\hyperlink{classindie_1_1raylib_1_1Draw_a7dd0f9629437b77a8d33f366792efd7f}{Draw}}(\textcolor{keywordtype}{int} posX = 0, \textcolor{keywordtype}{int} posY = 0, \textcolor{keywordtype}{float} fontSize = 100, ::Color color = BLACK);}
+\DoxyCodeLine{37             \mbox{\hyperlink{classindie_1_1raylib_1_1Draw_a06b528f9df2410935ff0d0e47518725e}{\string~Draw}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{44             \textcolor{keywordtype}{int} \mbox{\hyperlink{classindie_1_1raylib_1_1Draw_ac1d2a1db7ccdcde0badde77483170c58}{getPositionX}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{50             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Draw_a7e004dab1ada7fd1037e4a4bec7efe2b}{setPositionX}}(\textcolor{keywordtype}{int} positionX);}
+\DoxyCodeLine{56             \textcolor{keywordtype}{int} \mbox{\hyperlink{classindie_1_1raylib_1_1Draw_a1bc6651081b44bc38c1102fd605dcfb3}{getPositionY}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{62             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Draw_a40ac0a85a7d92901236a747b17cdd952}{setPositionY}}(\textcolor{keywordtype}{int} positionY);}
+\DoxyCodeLine{68             \textcolor{keywordtype}{float} \mbox{\hyperlink{classindie_1_1raylib_1_1Draw_ad0f83b66864eeb19219dbf0704044ce4}{getFontSize}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{74             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Draw_ac08b0db9afc864298fbbc8b9237303b4}{setFontSize}}(\textcolor{keywordtype}{float} fontSize);}
+\DoxyCodeLine{80             ::Color \mbox{\hyperlink{classindie_1_1raylib_1_1Draw_ae3a100a01fd22713595062f3eab10fec}{getColor}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{86             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Draw_ade761a6fed9eda9665d8fd7ae4bdb408}{setColor}}(::Color color);}
+\DoxyCodeLine{92             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Draw_a9022a15b48b531a2a7f58613837987d8}{drawText}}(\textcolor{keyword}{const} std::string text);}
+\DoxyCodeLine{96             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Draw_af548f869b31f10df3f8bec5c88dcb785}{drawFPS}}();}
+\DoxyCodeLine{103             \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Draw_af548f869b31f10df3f8bec5c88dcb785}{drawFPS}}(\textcolor{keywordtype}{int} posX, \textcolor{keywordtype}{int} posY);}
+\DoxyCodeLine{112             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Draw_a26afd2b3e013294ceb46e8840b0413ac}{drawTextEx}}(::Font font, \textcolor{keyword}{const} \textcolor{keywordtype}{char} *text, ::Vector2 position, \textcolor{keywordtype}{float} spacing);}
+\DoxyCodeLine{123             \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Draw_a26afd2b3e013294ceb46e8840b0413ac}{drawTextEx}}(}
+\DoxyCodeLine{124                 ::Font font, \textcolor{keyword}{const} \textcolor{keywordtype}{char} *text, ::Vector2 position, \textcolor{keywordtype}{float} fontSize, \textcolor{keywordtype}{float} spacing, ::Color color);}
+\DoxyCodeLine{125 }
+\DoxyCodeLine{136             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Draw_aadc1addfa88ee1114abafdbed580e69a}{drawTextPro}}(}
+\DoxyCodeLine{137                 ::Font font, \textcolor{keyword}{const} \textcolor{keywordtype}{char} *text, ::Vector2 position, ::Vector2 origin, \textcolor{keywordtype}{float} rotation, \textcolor{keywordtype}{float} spacing);}
+\DoxyCodeLine{150             \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Draw_aadc1addfa88ee1114abafdbed580e69a}{drawTextPro}}(::Font font, \textcolor{keyword}{const} \textcolor{keywordtype}{char} *text, ::Vector2 position, ::Vector2 origin, \textcolor{keywordtype}{float} rotation,}
+\DoxyCodeLine{151                 \textcolor{keywordtype}{float} fontSize, \textcolor{keywordtype}{float} spacing, ::Color color);}
+\DoxyCodeLine{159             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Draw_a06f17b89a86f62fee407c2af07670679}{drawTextCodepoint}}(::Font font, \textcolor{keywordtype}{int} codepoint, ::Vector2 position);}
+\DoxyCodeLine{169             \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Draw_a06f17b89a86f62fee407c2af07670679}{drawTextCodepoint}}(}
+\DoxyCodeLine{170                 ::Font font, \textcolor{keywordtype}{int} codepoint, ::Vector2 position, \textcolor{keywordtype}{float} fontSize, ::Color color);}
+\DoxyCodeLine{177             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Draw_aa8607f64cea02d1151a90221e18c6e39}{drawPlane}}(::Vector3 centerPos, ::Vector2 size);}
+\DoxyCodeLine{185             \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Draw_aa8607f64cea02d1151a90221e18c6e39}{drawPlane}}(::Vector3 centerPos, ::Vector2 size, ::Color color);}
+\DoxyCodeLine{191             \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Draw_a8d162ee74b2d96d1f9faf4ad3bae0b98}{drawRay}}(::Ray ray);}
+\DoxyCodeLine{198             \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Draw_a8d162ee74b2d96d1f9faf4ad3bae0b98}{drawRay}}(::Ray ray, ::Color color);}
+\DoxyCodeLine{205             \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1raylib_1_1Draw_aa22976b44b1fbe0156d869ffd998b776}{drawGrid}}(\textcolor{keywordtype}{int} slices, \textcolor{keywordtype}{float} spacing);}
+\DoxyCodeLine{206 }
+\DoxyCodeLine{207           \textcolor{keyword}{private}:}
+\DoxyCodeLine{212             \textcolor{keywordtype}{int} \_posX;}
+\DoxyCodeLine{217             \textcolor{keywordtype}{int} \_posY;}
+\DoxyCodeLine{222             \textcolor{keywordtype}{float} \_fontSize;}
+\DoxyCodeLine{227             ::Color \_color;}
+\DoxyCodeLine{228         \};}
+\DoxyCodeLine{229     \} \textcolor{comment}{// namespace raylib}}
+\DoxyCodeLine{230 \} \textcolor{comment}{// namespace indie}}
+\DoxyCodeLine{231 }
+\DoxyCodeLine{232 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* !DRAW\_HPP\_ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

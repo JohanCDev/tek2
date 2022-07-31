@@ -1,0 +1,206 @@
+\hypertarget{classindie_1_1menu_1_1SetSoundScreen}{}\doxysection{indie\+::menu\+::Set\+Sound\+Screen Class Reference}
+\label{classindie_1_1menu_1_1SetSoundScreen}\index{indie::menu::SetSoundScreen@{indie::menu::SetSoundScreen}}
+
+
+Class for the Set Sound Screen.  
+
+
+
+
+{\ttfamily \#include $<$Set\+Sound\+Screen.\+hpp$>$}
+
+Inheritance diagram for indie\+::menu\+::Set\+Sound\+Screen\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classindie_1_1menu_1_1SetSoundScreen}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classindie_1_1menu_1_1SetSoundScreen_ae23eebd13e11e36613fb7b5360f76df0}{Set\+Sound\+Screen}} (std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classindie_1_1ecs_1_1entity_1_1Entity}{indie\+::ecs\+::entity\+::\+Entity}} $>$ $>$ $\ast$sounds)
+\begin{DoxyCompactList}\small\item\em Set the Sound Screen object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classindie_1_1menu_1_1SetSoundScreen_a69fd38df37727d434f985bc56c631242}\label{classindie_1_1menu_1_1SetSoundScreen_a69fd38df37727d434f985bc56c631242}} 
+{\bfseries $\sim$\+Set\+Sound\+Screen} ()=default
+\begin{DoxyCompactList}\small\item\em Destroy the Set Sound Screen object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1menu_1_1SetSoundScreen_a66e44b7e64b6a68e51f148598596c643}{init}} () override
+\begin{DoxyCompactList}\small\item\em Init the Sound Screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1menu_1_1SetSoundScreen_a92c37b6536a060a074a33f03c9f35ad0}{draw}} () override
+\begin{DoxyCompactList}\small\item\em Draw the Sound Screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1menu_1_1SetSoundScreen_a00c0cc2f5adbb978e6d34727f56e6e64}{set\+Sounds}} (float volume)
+\begin{DoxyCompactList}\small\item\em Set sounds. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1menu_1_1SetSoundScreen_a5d7a2441cad33964e8c43fcc26b39c06}{update}} () override
+\begin{DoxyCompactList}\small\item\em Update the Sound Screen. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classindie_1_1menu_1_1SetSoundScreen_a1057a4b012664242c109e439d3f3f366}{handle\+Event}} (\mbox{\hyperlink{structindie_1_1Event}{indie\+::\+Event}} \&event) override
+\begin{DoxyCompactList}\small\item\em Handle event for the Sound Screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1menu_1_1SetSoundScreen_a7aab939b46c5a3e624247c0237346f11}{add\+Entity}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classindie_1_1ecs_1_1entity_1_1Entity}{indie\+::ecs\+::entity\+::\+Entity}} $>$ entity) override
+\begin{DoxyCompactList}\small\item\em Add entity for the Sound Screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1menu_1_1SetSoundScreen_a51a476007cac590786f7a0138fc28620}{add\+System}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1ISystem}{indie\+::ecs\+::system\+::\+ISystem}} $>$ system) override
+\begin{DoxyCompactList}\small\item\em Add system for the Sound Screen. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classindie_1_1menu_1_1SetSoundScreen_a11ffaafb2727d29aa62f299aa9020a1f}{check\+Cursor\+Position}} (bool direction)
+\begin{DoxyCompactList}\small\item\em Check where the cursor is. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class for the Set Sound Screen. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classindie_1_1menu_1_1SetSoundScreen_ae23eebd13e11e36613fb7b5360f76df0}\label{classindie_1_1menu_1_1SetSoundScreen_ae23eebd13e11e36613fb7b5360f76df0}} 
+\index{indie::menu::SetSoundScreen@{indie::menu::SetSoundScreen}!SetSoundScreen@{SetSoundScreen}}
+\index{SetSoundScreen@{SetSoundScreen}!indie::menu::SetSoundScreen@{indie::menu::SetSoundScreen}}
+\doxysubsubsection{\texorpdfstring{SetSoundScreen()}{SetSoundScreen()}}
+{\footnotesize\ttfamily indie\+::menu\+::\+Set\+Sound\+Screen\+::\+Set\+Sound\+Screen (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classindie_1_1ecs_1_1entity_1_1Entity}{indie\+::ecs\+::entity\+::\+Entity}} $>$ $>$ $\ast$}]{sounds }\end{DoxyParamCaption})}
+
+
+
+Set the Sound Screen object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sounds} & Vector of sounds entity for screen \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classindie_1_1menu_1_1SetSoundScreen_a7aab939b46c5a3e624247c0237346f11}\label{classindie_1_1menu_1_1SetSoundScreen_a7aab939b46c5a3e624247c0237346f11}} 
+\index{indie::menu::SetSoundScreen@{indie::menu::SetSoundScreen}!addEntity@{addEntity}}
+\index{addEntity@{addEntity}!indie::menu::SetSoundScreen@{indie::menu::SetSoundScreen}}
+\doxysubsubsection{\texorpdfstring{addEntity()}{addEntity()}}
+{\footnotesize\ttfamily void indie\+::menu\+::\+Set\+Sound\+Screen\+::add\+Entity (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classindie_1_1ecs_1_1entity_1_1Entity}{indie\+::ecs\+::entity\+::\+Entity}} $>$}]{entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Add entity for the Sound Screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & Entity to add for the Sound Screen \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classindie_1_1IScreen_a08ef01692ea36f0eb9cdf06bf41b12a7}{indie\+::\+IScreen}}.
+
+\mbox{\Hypertarget{classindie_1_1menu_1_1SetSoundScreen_a51a476007cac590786f7a0138fc28620}\label{classindie_1_1menu_1_1SetSoundScreen_a51a476007cac590786f7a0138fc28620}} 
+\index{indie::menu::SetSoundScreen@{indie::menu::SetSoundScreen}!addSystem@{addSystem}}
+\index{addSystem@{addSystem}!indie::menu::SetSoundScreen@{indie::menu::SetSoundScreen}}
+\doxysubsubsection{\texorpdfstring{addSystem()}{addSystem()}}
+{\footnotesize\ttfamily void indie\+::menu\+::\+Set\+Sound\+Screen\+::add\+System (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1ISystem}{indie\+::ecs\+::system\+::\+ISystem}} $>$}]{system }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Add system for the Sound Screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em system} & System to add for the Sound Screen \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classindie_1_1IScreen_a492a5f07982dc9df97b71251413e8129}{indie\+::\+IScreen}}.
+
+\mbox{\Hypertarget{classindie_1_1menu_1_1SetSoundScreen_a11ffaafb2727d29aa62f299aa9020a1f}\label{classindie_1_1menu_1_1SetSoundScreen_a11ffaafb2727d29aa62f299aa9020a1f}} 
+\index{indie::menu::SetSoundScreen@{indie::menu::SetSoundScreen}!checkCursorPosition@{checkCursorPosition}}
+\index{checkCursorPosition@{checkCursorPosition}!indie::menu::SetSoundScreen@{indie::menu::SetSoundScreen}}
+\doxysubsubsection{\texorpdfstring{checkCursorPosition()}{checkCursorPosition()}}
+{\footnotesize\ttfamily int indie\+::menu\+::\+Set\+Sound\+Screen\+::check\+Cursor\+Position (\begin{DoxyParamCaption}\item[{bool}]{direction }\end{DoxyParamCaption})}
+
+
+
+Check where the cursor is. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em direction} & True is UP and False is DOWN \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int The index for the button 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classindie_1_1menu_1_1SetSoundScreen_a92c37b6536a060a074a33f03c9f35ad0}\label{classindie_1_1menu_1_1SetSoundScreen_a92c37b6536a060a074a33f03c9f35ad0}} 
+\index{indie::menu::SetSoundScreen@{indie::menu::SetSoundScreen}!draw@{draw}}
+\index{draw@{draw}!indie::menu::SetSoundScreen@{indie::menu::SetSoundScreen}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void indie\+::menu\+::\+Set\+Sound\+Screen\+::draw (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Draw the Sound Screen. 
+
+Draw the Sound Screen 
+
+Implements \mbox{\hyperlink{classindie_1_1IScreen_a50e467ab6b7efae4114a9c3f17fa8ef4}{indie\+::\+IScreen}}.
+
+\mbox{\Hypertarget{classindie_1_1menu_1_1SetSoundScreen_a1057a4b012664242c109e439d3f3f366}\label{classindie_1_1menu_1_1SetSoundScreen_a1057a4b012664242c109e439d3f3f366}} 
+\index{indie::menu::SetSoundScreen@{indie::menu::SetSoundScreen}!handleEvent@{handleEvent}}
+\index{handleEvent@{handleEvent}!indie::menu::SetSoundScreen@{indie::menu::SetSoundScreen}}
+\doxysubsubsection{\texorpdfstring{handleEvent()}{handleEvent()}}
+{\footnotesize\ttfamily int indie\+::menu\+::\+Set\+Sound\+Screen\+::handle\+Event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structindie_1_1Event}{indie\+::\+Event}} \&}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Handle event for the Sound Screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & \mbox{\hyperlink{structindie_1_1Event}{Event}} to be handled \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int The Scene Number 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classindie_1_1IScreen_a715fc5be821e5ed1e66087cf4945234c}{indie\+::\+IScreen}}.
+
+\mbox{\Hypertarget{classindie_1_1menu_1_1SetSoundScreen_a66e44b7e64b6a68e51f148598596c643}\label{classindie_1_1menu_1_1SetSoundScreen_a66e44b7e64b6a68e51f148598596c643}} 
+\index{indie::menu::SetSoundScreen@{indie::menu::SetSoundScreen}!init@{init}}
+\index{init@{init}!indie::menu::SetSoundScreen@{indie::menu::SetSoundScreen}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void indie\+::menu\+::\+Set\+Sound\+Screen\+::init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Init the Sound Screen. 
+
+
+
+Implements \mbox{\hyperlink{classindie_1_1IScreen_a8a94615d59b1a467347bf806b5c92f17}{indie\+::\+IScreen}}.
+
+\mbox{\Hypertarget{classindie_1_1menu_1_1SetSoundScreen_a00c0cc2f5adbb978e6d34727f56e6e64}\label{classindie_1_1menu_1_1SetSoundScreen_a00c0cc2f5adbb978e6d34727f56e6e64}} 
+\index{indie::menu::SetSoundScreen@{indie::menu::SetSoundScreen}!setSounds@{setSounds}}
+\index{setSounds@{setSounds}!indie::menu::SetSoundScreen@{indie::menu::SetSoundScreen}}
+\doxysubsubsection{\texorpdfstring{setSounds()}{setSounds()}}
+{\footnotesize\ttfamily void indie\+::menu\+::\+Set\+Sound\+Screen\+::set\+Sounds (\begin{DoxyParamCaption}\item[{float}]{volume }\end{DoxyParamCaption})}
+
+
+
+Set sounds. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em volume} & Sound volume \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1menu_1_1SetSoundScreen_a5d7a2441cad33964e8c43fcc26b39c06}\label{classindie_1_1menu_1_1SetSoundScreen_a5d7a2441cad33964e8c43fcc26b39c06}} 
+\index{indie::menu::SetSoundScreen@{indie::menu::SetSoundScreen}!update@{update}}
+\index{update@{update}!indie::menu::SetSoundScreen@{indie::menu::SetSoundScreen}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void indie\+::menu\+::\+Set\+Sound\+Screen\+::update (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Update the Sound Screen. 
+
+
+
+Implements \mbox{\hyperlink{classindie_1_1IScreen_aa8a7600f2869b54991b1ae551e8735c1}{indie\+::\+IScreen}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/screens/set\+\_\+sound/Set\+Sound\+Screen.\+hpp\item 
+src/screens/set\+\_\+sound/\mbox{\hyperlink{SetSoundScreen_8cpp}{Set\+Sound\+Screen.\+cpp}}\end{DoxyCompactItemize}

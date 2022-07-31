@@ -1,0 +1,339 @@
+\hypertarget{classindie_1_1menu_1_1GameScreen}{}\doxysection{indie\+::menu\+::Game\+Screen Class Reference}
+\label{classindie_1_1menu_1_1GameScreen}\index{indie::menu::GameScreen@{indie::menu::GameScreen}}
+
+
+Class for the \mbox{\hyperlink{classindie_1_1Game}{Game}} Screen.  
+
+
+
+
+{\ttfamily \#include $<$Game\+Screen.\+hpp$>$}
+
+Inheritance diagram for indie\+::menu\+::Game\+Screen\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classindie_1_1menu_1_1GameScreen}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classindie_1_1menu_1_1GameScreen_afeda7a352c3ef8cc5264b1963b76ab8a}{Game\+Screen}} (std\+::vector$<$ \mbox{\hyperlink{classindie_1_1player_1_1Player}{player\+::\+Player}} $>$ $\ast$players, std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classindie_1_1ecs_1_1entity_1_1Entity}{indie\+::ecs\+::entity\+::\+Entity}} $>$ $>$ $\ast$\+\_\+sound\+Entities, std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1ISystem}{indie\+::ecs\+::system\+::\+ISystem}} $>$ $>$ $\ast$sound\+Systems)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classindie_1_1Game}{Game}} Screen object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classindie_1_1menu_1_1GameScreen_a9d29a8b27bf53794221f24de2db22eea}\label{classindie_1_1menu_1_1GameScreen_a9d29a8b27bf53794221f24de2db22eea}} 
+{\bfseries $\sim$\+Game\+Screen} ()=default
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classindie_1_1Game}{Game}} Screen object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1menu_1_1GameScreen_a72df02464ead6f34d1802f7e3df57ff9}{init}} () override
+\begin{DoxyCompactList}\small\item\em Init the \mbox{\hyperlink{classindie_1_1Game}{Game}} Screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1menu_1_1GameScreen_aee1fe7c804a66ce3e7c909beb694a1ed}{draw}} () override
+\begin{DoxyCompactList}\small\item\em Draw the \mbox{\hyperlink{classindie_1_1Game}{Game}} Screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1menu_1_1GameScreen_ad3756a0608ed58949b067d40d9542abd}{update}} () override
+\begin{DoxyCompactList}\small\item\em Upadte the \mbox{\hyperlink{classindie_1_1Game}{Game}} Screen. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classindie_1_1menu_1_1GameScreen_aabddf1c69e540495612d49b0e00c5b90}{handle\+Event}} (\mbox{\hyperlink{structindie_1_1Event}{indie\+::\+Event}} \&event) override
+\begin{DoxyCompactList}\small\item\em Handle event for the \mbox{\hyperlink{classindie_1_1Game}{Game}} Screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1menu_1_1GameScreen_a13a2c83022d886f37773582caa176c73}{handle\+Multiple\+Controller}} (\mbox{\hyperlink{structindie_1_1Event}{indie\+::\+Event}} \&event, int index, \mbox{\hyperlink{Entity_8hpp_a7bca52f144f3350f6f4bd61d567e75ef}{indie\+::ecs\+::entity\+::entity\+Type}} type)
+\begin{DoxyCompactList}\small\item\em Handle multiple input from multiple controllers / players. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1menu_1_1GameScreen_a1f4cd9d3f115bedcc84d6f1f756512cf}{add\+Entity}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classindie_1_1ecs_1_1entity_1_1Entity}{indie\+::ecs\+::entity\+::\+Entity}} $>$ entity) override
+\begin{DoxyCompactList}\small\item\em Add entity for the \mbox{\hyperlink{classindie_1_1Game}{Game}} Screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1menu_1_1GameScreen_adfdd923ca37e7daa0f07b5c536743af3}{remove\+Entity}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classindie_1_1ecs_1_1entity_1_1Entity}{indie\+::ecs\+::entity\+::\+Entity}} $>$ entity)
+\begin{DoxyCompactList}\small\item\em Remove entity from the \mbox{\hyperlink{classindie_1_1Game}{Game}} Screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1menu_1_1GameScreen_a0c033798a7fe8c5da82f5eedf20b9e17}{add\+System}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1ISystem}{indie\+::ecs\+::system\+::\+ISystem}} $>$ system) override
+\begin{DoxyCompactList}\small\item\em Add a system for the \mbox{\hyperlink{classindie_1_1Game}{Game}} Screen. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classindie_1_1raylib_1_1Camera3D}{indie\+::raylib\+::\+Camera3D}} \mbox{\hyperlink{classindie_1_1menu_1_1GameScreen_afa26a69d763782ed9a17f500c6c30bf8}{get\+Camera}} () const
+\begin{DoxyCompactList}\small\item\em Get the Camera object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1menu_1_1GameScreen_a3dbae6574f4e157981d76cee4ecbbf0f}{get\+Players\+Playing}} (bool is\+\_\+p1\+\_\+playing, bool is\+\_\+p2\+\_\+playing, bool is\+\_\+p3\+\_\+playing, bool is\+\_\+p4\+\_\+playing)
+\begin{DoxyCompactList}\small\item\em Get the Players state (Playing or not) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1menu_1_1GameScreen_a801b044ff2c8a7b3e655817d0c2c2a7e}{init\+Map}} (std\+::vector$<$ std\+::vector$<$ char $>$ $>$ map)
+\begin{DoxyCompactList}\small\item\em Init the map for the \mbox{\hyperlink{classindie_1_1Game}{Game}} Screen. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classindie_1_1menu_1_1GameScreen_ad0fd4fafc0e1f301d2ec1c5a21d70e6e}\label{classindie_1_1menu_1_1GameScreen_ad0fd4fafc0e1f301d2ec1c5a21d70e6e}} 
+void {\bfseries init\+Entity} ()
+\begin{DoxyCompactList}\small\item\em Init entities of the \mbox{\hyperlink{classindie_1_1Game}{Game}} Screen. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classindie_1_1menu_1_1GameScreen_a6d377a23e1297e63364b81bf52330d03}{compare\+Color}} (Color a, Color b)
+\begin{DoxyCompactList}\small\item\em Compare two colors. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classindie_1_1menu_1_1GameScreen_a790820f64015b4c73bac9773aef2491d}\label{classindie_1_1menu_1_1GameScreen_a790820f64015b4c73bac9773aef2491d}} 
+void {\bfseries save\+Map\+Entities} ()
+\begin{DoxyCompactList}\small\item\em Save map entities into the save file. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classindie_1_1menu_1_1GameScreen_a41c80973cf432610109893d58d46be47}{load\+Saved\+Map}} ()
+\begin{DoxyCompactList}\small\item\em Load the last saved file map. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1menu_1_1GameScreen_ad887d0e51864364c38f2d65f7fe82739}{init\+Right\+Entity}} (std\+::vector$<$ std\+::string $>$ args)
+\begin{DoxyCompactList}\small\item\em Init the right entity from a string. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classindie_1_1menu_1_1GameScreen_a02e7c17fe1b313d8ea370add7e4cd6b3}\label{classindie_1_1menu_1_1GameScreen_a02e7c17fe1b313d8ea370add7e4cd6b3}} 
+int {\bfseries count\+Alive\+Players} ()
+\item 
+\mbox{\Hypertarget{classindie_1_1menu_1_1GameScreen_a34af606f9039d5cd8c032c26d2b544d0}\label{classindie_1_1menu_1_1GameScreen_a34af606f9039d5cd8c032c26d2b544d0}} 
+int {\bfseries get\+Winner} ()
+\begin{DoxyCompactList}\small\item\em Count alive players. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classindie_1_1menu_1_1GameScreen_a08e6364ca657cfde5865958d54681cc3}\label{classindie_1_1menu_1_1GameScreen_a08e6364ca657cfde5865958d54681cc3}} 
+void {\bfseries end\+Screen\+Display} ()
+\begin{DoxyCompactList}\small\item\em Get last player alive. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class for the \mbox{\hyperlink{classindie_1_1Game}{Game}} Screen. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classindie_1_1menu_1_1GameScreen_afeda7a352c3ef8cc5264b1963b76ab8a}\label{classindie_1_1menu_1_1GameScreen_afeda7a352c3ef8cc5264b1963b76ab8a}} 
+\index{indie::menu::GameScreen@{indie::menu::GameScreen}!GameScreen@{GameScreen}}
+\index{GameScreen@{GameScreen}!indie::menu::GameScreen@{indie::menu::GameScreen}}
+\doxysubsubsection{\texorpdfstring{GameScreen()}{GameScreen()}}
+{\footnotesize\ttfamily indie\+::menu\+::\+Game\+Screen\+::\+Game\+Screen (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classindie_1_1player_1_1Player}{player\+::\+Player}} $>$ $\ast$}]{players,  }\item[{std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classindie_1_1ecs_1_1entity_1_1Entity}{indie\+::ecs\+::entity\+::\+Entity}} $>$ $>$ $\ast$}]{\+\_\+sound\+Entities,  }\item[{std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1ISystem}{indie\+::ecs\+::system\+::\+ISystem}} $>$ $>$ $\ast$}]{sound\+Systems }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classindie_1_1Game}{Game}} Screen object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em players} & vector of players pointer \\
+\hline
+{\em \+\_\+sound\+Entities} & vector of entities for sound \\
+\hline
+{\em sound\+Systems} & Vector of systems for sound \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classindie_1_1menu_1_1GameScreen_a1f4cd9d3f115bedcc84d6f1f756512cf}\label{classindie_1_1menu_1_1GameScreen_a1f4cd9d3f115bedcc84d6f1f756512cf}} 
+\index{indie::menu::GameScreen@{indie::menu::GameScreen}!addEntity@{addEntity}}
+\index{addEntity@{addEntity}!indie::menu::GameScreen@{indie::menu::GameScreen}}
+\doxysubsubsection{\texorpdfstring{addEntity()}{addEntity()}}
+{\footnotesize\ttfamily void indie\+::menu\+::\+Game\+Screen\+::add\+Entity (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classindie_1_1ecs_1_1entity_1_1Entity}{indie\+::ecs\+::entity\+::\+Entity}} $>$}]{entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Add entity for the \mbox{\hyperlink{classindie_1_1Game}{Game}} Screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & the entity to add for the \mbox{\hyperlink{classindie_1_1Game}{Game}} Screen \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classindie_1_1IScreen_a08ef01692ea36f0eb9cdf06bf41b12a7}{indie\+::\+IScreen}}.
+
+\mbox{\Hypertarget{classindie_1_1menu_1_1GameScreen_a0c033798a7fe8c5da82f5eedf20b9e17}\label{classindie_1_1menu_1_1GameScreen_a0c033798a7fe8c5da82f5eedf20b9e17}} 
+\index{indie::menu::GameScreen@{indie::menu::GameScreen}!addSystem@{addSystem}}
+\index{addSystem@{addSystem}!indie::menu::GameScreen@{indie::menu::GameScreen}}
+\doxysubsubsection{\texorpdfstring{addSystem()}{addSystem()}}
+{\footnotesize\ttfamily void indie\+::menu\+::\+Game\+Screen\+::add\+System (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1ISystem}{indie\+::ecs\+::system\+::\+ISystem}} $>$}]{system }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Add a system for the \mbox{\hyperlink{classindie_1_1Game}{Game}} Screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em system} & the system to add for the \mbox{\hyperlink{classindie_1_1Game}{Game}} Screen \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classindie_1_1IScreen_a492a5f07982dc9df97b71251413e8129}{indie\+::\+IScreen}}.
+
+\mbox{\Hypertarget{classindie_1_1menu_1_1GameScreen_a6d377a23e1297e63364b81bf52330d03}\label{classindie_1_1menu_1_1GameScreen_a6d377a23e1297e63364b81bf52330d03}} 
+\index{indie::menu::GameScreen@{indie::menu::GameScreen}!compareColor@{compareColor}}
+\index{compareColor@{compareColor}!indie::menu::GameScreen@{indie::menu::GameScreen}}
+\doxysubsubsection{\texorpdfstring{compareColor()}{compareColor()}}
+{\footnotesize\ttfamily bool indie\+::menu\+::\+Game\+Screen\+::compare\+Color (\begin{DoxyParamCaption}\item[{Color}]{a,  }\item[{Color}]{b }\end{DoxyParamCaption})}
+
+
+
+Compare two colors. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Color 1 \\
+\hline
+{\em b} & Color 2\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true Color are identicals 
+
+false Color are not identicals 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classindie_1_1menu_1_1GameScreen_aee1fe7c804a66ce3e7c909beb694a1ed}\label{classindie_1_1menu_1_1GameScreen_aee1fe7c804a66ce3e7c909beb694a1ed}} 
+\index{indie::menu::GameScreen@{indie::menu::GameScreen}!draw@{draw}}
+\index{draw@{draw}!indie::menu::GameScreen@{indie::menu::GameScreen}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void indie\+::menu\+::\+Game\+Screen\+::draw (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Draw the \mbox{\hyperlink{classindie_1_1Game}{Game}} Screen. 
+
+
+
+Implements \mbox{\hyperlink{classindie_1_1IScreen_a50e467ab6b7efae4114a9c3f17fa8ef4}{indie\+::\+IScreen}}.
+
+\mbox{\Hypertarget{classindie_1_1menu_1_1GameScreen_afa26a69d763782ed9a17f500c6c30bf8}\label{classindie_1_1menu_1_1GameScreen_afa26a69d763782ed9a17f500c6c30bf8}} 
+\index{indie::menu::GameScreen@{indie::menu::GameScreen}!getCamera@{getCamera}}
+\index{getCamera@{getCamera}!indie::menu::GameScreen@{indie::menu::GameScreen}}
+\doxysubsubsection{\texorpdfstring{getCamera()}{getCamera()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classindie_1_1raylib_1_1Camera3D}{indie\+::raylib\+::\+Camera3D}} indie\+::menu\+::\+Game\+Screen\+::get\+Camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the Camera object. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classindie_1_1raylib_1_1Camera3D}{indie\+::raylib\+::\+Camera3D}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classindie_1_1menu_1_1GameScreen_a3dbae6574f4e157981d76cee4ecbbf0f}\label{classindie_1_1menu_1_1GameScreen_a3dbae6574f4e157981d76cee4ecbbf0f}} 
+\index{indie::menu::GameScreen@{indie::menu::GameScreen}!getPlayersPlaying@{getPlayersPlaying}}
+\index{getPlayersPlaying@{getPlayersPlaying}!indie::menu::GameScreen@{indie::menu::GameScreen}}
+\doxysubsubsection{\texorpdfstring{getPlayersPlaying()}{getPlayersPlaying()}}
+{\footnotesize\ttfamily void indie\+::menu\+::\+Game\+Screen\+::get\+Players\+Playing (\begin{DoxyParamCaption}\item[{bool}]{is\+\_\+p1\+\_\+playing,  }\item[{bool}]{is\+\_\+p2\+\_\+playing,  }\item[{bool}]{is\+\_\+p3\+\_\+playing,  }\item[{bool}]{is\+\_\+p4\+\_\+playing }\end{DoxyParamCaption})}
+
+
+
+Get the Players state (Playing or not) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em is\+\_\+p1\+\_\+playing} & is playing or not \\
+\hline
+{\em is\+\_\+p2\+\_\+playing} & is playing or not \\
+\hline
+{\em is\+\_\+p3\+\_\+playing} & is playing or not \\
+\hline
+{\em is\+\_\+p4\+\_\+playing} & is playing or not \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1menu_1_1GameScreen_aabddf1c69e540495612d49b0e00c5b90}\label{classindie_1_1menu_1_1GameScreen_aabddf1c69e540495612d49b0e00c5b90}} 
+\index{indie::menu::GameScreen@{indie::menu::GameScreen}!handleEvent@{handleEvent}}
+\index{handleEvent@{handleEvent}!indie::menu::GameScreen@{indie::menu::GameScreen}}
+\doxysubsubsection{\texorpdfstring{handleEvent()}{handleEvent()}}
+{\footnotesize\ttfamily int indie\+::menu\+::\+Game\+Screen\+::handle\+Event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structindie_1_1Event}{indie\+::\+Event}} \&}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Handle event for the \mbox{\hyperlink{classindie_1_1Game}{Game}} Screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & the event to be handled \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int The scene number 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classindie_1_1IScreen_a715fc5be821e5ed1e66087cf4945234c}{indie\+::\+IScreen}}.
+
+\mbox{\Hypertarget{classindie_1_1menu_1_1GameScreen_a13a2c83022d886f37773582caa176c73}\label{classindie_1_1menu_1_1GameScreen_a13a2c83022d886f37773582caa176c73}} 
+\index{indie::menu::GameScreen@{indie::menu::GameScreen}!handleMultipleController@{handleMultipleController}}
+\index{handleMultipleController@{handleMultipleController}!indie::menu::GameScreen@{indie::menu::GameScreen}}
+\doxysubsubsection{\texorpdfstring{handleMultipleController()}{handleMultipleController()}}
+{\footnotesize\ttfamily void indie\+::menu\+::\+Game\+Screen\+::handle\+Multiple\+Controller (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structindie_1_1Event}{indie\+::\+Event}} \&}]{event,  }\item[{int}]{index,  }\item[{\mbox{\hyperlink{Entity_8hpp_a7bca52f144f3350f6f4bd61d567e75ef}{indie\+::ecs\+::entity\+::entity\+Type}}}]{type }\end{DoxyParamCaption})}
+
+
+
+Handle multiple input from multiple controllers / players. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & The event to handle \\
+\hline
+{\em index} & The controller number ( 0,1,2,3) \\
+\hline
+{\em type} & The type of entity (Player1, 2, 3 ,4) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1menu_1_1GameScreen_a72df02464ead6f34d1802f7e3df57ff9}\label{classindie_1_1menu_1_1GameScreen_a72df02464ead6f34d1802f7e3df57ff9}} 
+\index{indie::menu::GameScreen@{indie::menu::GameScreen}!init@{init}}
+\index{init@{init}!indie::menu::GameScreen@{indie::menu::GameScreen}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void indie\+::menu\+::\+Game\+Screen\+::init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Init the \mbox{\hyperlink{classindie_1_1Game}{Game}} Screen. 
+
+
+
+Implements \mbox{\hyperlink{classindie_1_1IScreen_a8a94615d59b1a467347bf806b5c92f17}{indie\+::\+IScreen}}.
+
+\mbox{\Hypertarget{classindie_1_1menu_1_1GameScreen_a801b044ff2c8a7b3e655817d0c2c2a7e}\label{classindie_1_1menu_1_1GameScreen_a801b044ff2c8a7b3e655817d0c2c2a7e}} 
+\index{indie::menu::GameScreen@{indie::menu::GameScreen}!initMap@{initMap}}
+\index{initMap@{initMap}!indie::menu::GameScreen@{indie::menu::GameScreen}}
+\doxysubsubsection{\texorpdfstring{initMap()}{initMap()}}
+{\footnotesize\ttfamily void indie\+::menu\+::\+Game\+Screen\+::init\+Map (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::vector$<$ char $>$ $>$}]{map }\end{DoxyParamCaption})}
+
+
+
+Init the map for the \mbox{\hyperlink{classindie_1_1Game}{Game}} Screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em map} & Vector of vector of char, to draw the map \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1menu_1_1GameScreen_ad887d0e51864364c38f2d65f7fe82739}\label{classindie_1_1menu_1_1GameScreen_ad887d0e51864364c38f2d65f7fe82739}} 
+\index{indie::menu::GameScreen@{indie::menu::GameScreen}!initRightEntity@{initRightEntity}}
+\index{initRightEntity@{initRightEntity}!indie::menu::GameScreen@{indie::menu::GameScreen}}
+\doxysubsubsection{\texorpdfstring{initRightEntity()}{initRightEntity()}}
+{\footnotesize\ttfamily void indie\+::menu\+::\+Game\+Screen\+::init\+Right\+Entity (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::string $>$}]{args }\end{DoxyParamCaption})}
+
+
+
+Init the right entity from a string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & vector of strings for entities \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1menu_1_1GameScreen_a41c80973cf432610109893d58d46be47}\label{classindie_1_1menu_1_1GameScreen_a41c80973cf432610109893d58d46be47}} 
+\index{indie::menu::GameScreen@{indie::menu::GameScreen}!loadSavedMap@{loadSavedMap}}
+\index{loadSavedMap@{loadSavedMap}!indie::menu::GameScreen@{indie::menu::GameScreen}}
+\doxysubsubsection{\texorpdfstring{loadSavedMap()}{loadSavedMap()}}
+{\footnotesize\ttfamily bool indie\+::menu\+::\+Game\+Screen\+::load\+Saved\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Load the last saved file map. 
+
+\begin{DoxyReturn}{Returns}
+true If Map is loaded 
+
+false If map isn\textquotesingle{}t loaded 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classindie_1_1menu_1_1GameScreen_adfdd923ca37e7daa0f07b5c536743af3}\label{classindie_1_1menu_1_1GameScreen_adfdd923ca37e7daa0f07b5c536743af3}} 
+\index{indie::menu::GameScreen@{indie::menu::GameScreen}!removeEntity@{removeEntity}}
+\index{removeEntity@{removeEntity}!indie::menu::GameScreen@{indie::menu::GameScreen}}
+\doxysubsubsection{\texorpdfstring{removeEntity()}{removeEntity()}}
+{\footnotesize\ttfamily void indie\+::menu\+::\+Game\+Screen\+::remove\+Entity (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classindie_1_1ecs_1_1entity_1_1Entity}{indie\+::ecs\+::entity\+::\+Entity}} $>$}]{entity }\end{DoxyParamCaption})}
+
+
+
+Remove entity from the \mbox{\hyperlink{classindie_1_1Game}{Game}} Screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & the entity to remove from the \mbox{\hyperlink{classindie_1_1Game}{Game}} Screen \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1menu_1_1GameScreen_ad3756a0608ed58949b067d40d9542abd}\label{classindie_1_1menu_1_1GameScreen_ad3756a0608ed58949b067d40d9542abd}} 
+\index{indie::menu::GameScreen@{indie::menu::GameScreen}!update@{update}}
+\index{update@{update}!indie::menu::GameScreen@{indie::menu::GameScreen}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void indie\+::menu\+::\+Game\+Screen\+::update (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Upadte the \mbox{\hyperlink{classindie_1_1Game}{Game}} Screen. 
+
+
+
+Implements \mbox{\hyperlink{classindie_1_1IScreen_aa8a7600f2869b54991b1ae551e8735c1}{indie\+::\+IScreen}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/screens/game/\mbox{\hyperlink{GameScreen_8hpp}{Game\+Screen.\+hpp}}\item 
+src/screens/game/\mbox{\hyperlink{GameScreen_8cpp}{Game\+Screen.\+cpp}}\end{DoxyCompactItemize}

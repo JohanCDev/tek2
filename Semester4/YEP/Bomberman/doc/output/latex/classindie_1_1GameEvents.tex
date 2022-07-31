@@ -1,0 +1,101 @@
+\hypertarget{classindie_1_1GameEvents}{}\doxysection{indie\+::Game\+Events Class Reference}
+\label{classindie_1_1GameEvents}\index{indie::GameEvents@{indie::GameEvents}}
+
+
+Events base class.  
+
+
+
+
+{\ttfamily \#include $<$Game\+Events.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classindie_1_1GameEvents_aaa8981e2b98214d1077d8d3fc51df74b}{input\+Update}} (\mbox{\hyperlink{structindie_1_1Event}{indie\+::\+Event}} \&event)
+\begin{DoxyCompactList}\small\item\em Get input events and update game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1GameEvents_a55b5ce3c2bd31d3386266485cefebd74}{get\+Char\+Keys}} (\mbox{\hyperlink{structindie_1_1Event}{indie\+::\+Event}} \&event)
+\begin{DoxyCompactList}\small\item\em Get a char input. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1GameEvents_a2ae9c4f3d8cdbbf643e31b722854370c}{get\+System\+Keys}} (\mbox{\hyperlink{structindie_1_1Event}{indie\+::\+Event}} \&event)
+\begin{DoxyCompactList}\small\item\em Get a system input. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1GameEvents_a62d8e350ddf5a956e0749fbb250aa3e1}{get\+Controller\+Events}} (\mbox{\hyperlink{structindie_1_1Event}{indie\+::\+Event}} \&event, int controller\+Id)
+\begin{DoxyCompactList}\small\item\em Get a controller event. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Events base class. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classindie_1_1GameEvents_a55b5ce3c2bd31d3386266485cefebd74}\label{classindie_1_1GameEvents_a55b5ce3c2bd31d3386266485cefebd74}} 
+\index{indie::GameEvents@{indie::GameEvents}!getCharKeys@{getCharKeys}}
+\index{getCharKeys@{getCharKeys}!indie::GameEvents@{indie::GameEvents}}
+\doxysubsubsection{\texorpdfstring{getCharKeys()}{getCharKeys()}}
+{\footnotesize\ttfamily void indie\+::\+Game\+Events\+::get\+Char\+Keys (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structindie_1_1Event}{indie\+::\+Event}} \&}]{event }\end{DoxyParamCaption})}
+
+
+
+Get a char input. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & event class to modify \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1GameEvents_a62d8e350ddf5a956e0749fbb250aa3e1}\label{classindie_1_1GameEvents_a62d8e350ddf5a956e0749fbb250aa3e1}} 
+\index{indie::GameEvents@{indie::GameEvents}!getControllerEvents@{getControllerEvents}}
+\index{getControllerEvents@{getControllerEvents}!indie::GameEvents@{indie::GameEvents}}
+\doxysubsubsection{\texorpdfstring{getControllerEvents()}{getControllerEvents()}}
+{\footnotesize\ttfamily void indie\+::\+Game\+Events\+::get\+Controller\+Events (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structindie_1_1Event}{indie\+::\+Event}} \&}]{event,  }\item[{int}]{controller\+Id }\end{DoxyParamCaption})}
+
+
+
+Get a controller event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & event class to modify \\
+\hline
+{\em controller\+Id} & id of the controller \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1GameEvents_a2ae9c4f3d8cdbbf643e31b722854370c}\label{classindie_1_1GameEvents_a2ae9c4f3d8cdbbf643e31b722854370c}} 
+\index{indie::GameEvents@{indie::GameEvents}!getSystemKeys@{getSystemKeys}}
+\index{getSystemKeys@{getSystemKeys}!indie::GameEvents@{indie::GameEvents}}
+\doxysubsubsection{\texorpdfstring{getSystemKeys()}{getSystemKeys()}}
+{\footnotesize\ttfamily void indie\+::\+Game\+Events\+::get\+System\+Keys (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structindie_1_1Event}{indie\+::\+Event}} \&}]{event }\end{DoxyParamCaption})}
+
+
+
+Get a system input. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & event class to modify \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1GameEvents_aaa8981e2b98214d1077d8d3fc51df74b}\label{classindie_1_1GameEvents_aaa8981e2b98214d1077d8d3fc51df74b}} 
+\index{indie::GameEvents@{indie::GameEvents}!inputUpdate@{inputUpdate}}
+\index{inputUpdate@{inputUpdate}!indie::GameEvents@{indie::GameEvents}}
+\doxysubsubsection{\texorpdfstring{inputUpdate()}{inputUpdate()}}
+{\footnotesize\ttfamily bool indie\+::\+Game\+Events\+::input\+Update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structindie_1_1Event}{indie\+::\+Event}} \&}]{event }\end{DoxyParamCaption})}
+
+
+
+Get input events and update game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & \mbox{\hyperlink{structindie_1_1Event}{Event}} to be handled\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true escape not pressed 
+
+false escape is pressed 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/game\+Events/\mbox{\hyperlink{GameEvents_8hpp}{Game\+Events.\+hpp}}\item 
+src/game\+Events/\mbox{\hyperlink{GameEvents_8cpp}{Game\+Events.\+cpp}}\end{DoxyCompactItemize}

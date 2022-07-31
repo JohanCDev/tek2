@@ -1,0 +1,53 @@
+\hypertarget{UIPlayerDisplay_8hpp_source}{}\doxysection{UIPlayer\+Display.\+hpp}
+\label{UIPlayerDisplay_8hpp_source}\index{src/screens/game/uiPlayerDisplay/UIPlayerDisplay.hpp@{src/screens/game/uiPlayerDisplay/UIPlayerDisplay.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#ifndef UIPLAYERDISPLAY\_HPP}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#define UIPLAYERDISPLAY\_HPP}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include "{}../../../ecs/component/Drawable2D/Drawable2D.hpp"{}}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include "{}../../../ecs/entity/Entity.hpp"{}}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#include "{}../../../ecs/system/Draw2D/Draw2D.hpp"{}}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#include "{}../../../player/Player.hpp"{}}}
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{Vec2_8hpp}{Vec2.hpp}}"{}}}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21 \textcolor{preprocessor}{\#include <memory>}}
+\DoxyCodeLine{22 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24 \textcolor{keyword}{namespace }indie}
+\DoxyCodeLine{25 \{}
+\DoxyCodeLine{26     \textcolor{keyword}{namespace }screens}
+\DoxyCodeLine{27     \{}
+\DoxyCodeLine{28         \textcolor{keyword}{namespace }game}
+\DoxyCodeLine{29         \{}
+\DoxyCodeLine{30             \textcolor{keyword}{namespace }uiPlayerDisplay}
+\DoxyCodeLine{31             \{}
+\DoxyCodeLine{36                 \textcolor{keyword}{class }\mbox{\hyperlink{classindie_1_1screens_1_1game_1_1uiPlayerDisplay_1_1UIPlayerDisplay}{UIPlayerDisplay}} \{}
+\DoxyCodeLine{37                   \textcolor{keyword}{public}:}
+\DoxyCodeLine{45                     \mbox{\hyperlink{classindie_1_1screens_1_1game_1_1uiPlayerDisplay_1_1UIPlayerDisplay_ac8f7e6aa9223884a779eaff6153d903b}{UIPlayerDisplay}}(\mbox{\hyperlink{classindie_1_1player_1_1Player}{indie::player::Player}} *player, \mbox{\hyperlink{structindie_1_1vec2}{vec2f}} pos, \mbox{\hyperlink{structindie_1_1vec2}{vec2f}} size);}
+\DoxyCodeLine{50                     \mbox{\hyperlink{classindie_1_1screens_1_1game_1_1uiPlayerDisplay_1_1UIPlayerDisplay_ad351d9eb96b32921f2deb2f62c5a34ed}{\string~UIPlayerDisplay}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{57                     \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1screens_1_1game_1_1uiPlayerDisplay_1_1UIPlayerDisplay_a89dc7407e3d65e1f51ff99efc3390886}{createSingleTextEntity}}(std::string \&str, \mbox{\hyperlink{structindie_1_1vec2}{vec2f}} position);}
+\DoxyCodeLine{62                     \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1screens_1_1game_1_1uiPlayerDisplay_1_1UIPlayerDisplay_ac9519eec75106f6e082e0be63662d740}{createImage}}();}
+\DoxyCodeLine{68                     \textcolor{keyword}{const} std::string \mbox{\hyperlink{classindie_1_1screens_1_1game_1_1uiPlayerDisplay_1_1UIPlayerDisplay_acddda485fe8d38359bcbb5b0f2dfbdac}{getPlayerSpriteFilepath}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{74                     \textcolor{keywordtype}{float} \mbox{\hyperlink{classindie_1_1screens_1_1game_1_1uiPlayerDisplay_1_1UIPlayerDisplay_a184bc9488901a9d98a0bde04e3756452}{getNextYPos}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{80                     \mbox{\hyperlink{classindie_1_1player_1_1Player}{indie::player::Player}} \mbox{\hyperlink{classindie_1_1screens_1_1game_1_1uiPlayerDisplay_1_1UIPlayerDisplay_a0a989147b89a2c8f4341a936da07c6c2}{getPlayer}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{85                     \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1screens_1_1game_1_1uiPlayerDisplay_1_1UIPlayerDisplay_a577e658a5f721229724314c46f92a9cd}{create}}();}
+\DoxyCodeLine{90                     \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1screens_1_1game_1_1uiPlayerDisplay_1_1UIPlayerDisplay_aba97518c5ec3682608f9065b0a24c7ce}{update}}();}
+\DoxyCodeLine{95                     \textcolor{keywordtype}{void} \mbox{\hyperlink{classindie_1_1screens_1_1game_1_1uiPlayerDisplay_1_1UIPlayerDisplay_ac777e45e572f416919296398fd255099}{draw}}();}
+\DoxyCodeLine{96 }
+\DoxyCodeLine{97                   \textcolor{keyword}{private}:}
+\DoxyCodeLine{102                     \mbox{\hyperlink{classindie_1_1player_1_1Player}{indie::player::Player}} *\_player;}
+\DoxyCodeLine{107                     \mbox{\hyperlink{structindie_1_1vec2}{vec2f}} \_position;}
+\DoxyCodeLine{112                     \mbox{\hyperlink{structindie_1_1vec2}{vec2f}} \_size;}
+\DoxyCodeLine{117                     std::vector<std::unique\_ptr<indie::ecs::entity::Entity>> \_mainEntity;}
+\DoxyCodeLine{122                     std::vector<std::unique\_ptr<indie::ecs::system::ISystem>> \_systems;}
+\DoxyCodeLine{123                 \};}
+\DoxyCodeLine{124             \} \textcolor{comment}{// namespace uiPlayerDisplay}}
+\DoxyCodeLine{125         \}     \textcolor{comment}{// namespace game}}
+\DoxyCodeLine{126     \}         \textcolor{comment}{// namespace screens}}
+\DoxyCodeLine{127 \} \textcolor{comment}{// namespace indie}}
+\DoxyCodeLine{128 }
+\DoxyCodeLine{129 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

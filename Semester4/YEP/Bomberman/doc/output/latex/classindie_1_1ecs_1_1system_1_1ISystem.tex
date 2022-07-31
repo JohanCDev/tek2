@@ -1,0 +1,74 @@
+\hypertarget{classindie_1_1ecs_1_1system_1_1ISystem}{}\doxysection{indie\+::ecs\+::system\+::ISystem Class Reference}
+\label{classindie_1_1ecs_1_1system_1_1ISystem}\index{indie::ecs::system::ISystem@{indie::ecs::system::ISystem}}
+
+
+System.  
+
+
+
+
+{\ttfamily \#include $<$ISystem.\+hpp$>$}
+
+Inheritance diagram for indie\+::ecs\+::system\+::ISystem\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=0.844646cm]{classindie_1_1ecs_1_1system_1_1ISystem}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classindie_1_1ecs_1_1system_1_1ISystem_a7ed79aa031cd66906e5bb95ca1dd5159}\label{classindie_1_1ecs_1_1system_1_1ISystem_a7ed79aa031cd66906e5bb95ca1dd5159}} 
+virtual {\bfseries $\sim$\+ISystem} ()=default
+\begin{DoxyCompactList}\small\item\em Destroy system. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1ISystem_aa4e9422532642acdb47b70f31405d4d1}{update}} (std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classindie_1_1ecs_1_1entity_1_1Entity}{indie\+::ecs\+::entity\+::\+Entity}} $>$ $>$ \&entities)=0
+\begin{DoxyCompactList}\small\item\em Update all the entities with the system properties. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{ISystem_8hpp_aec184346273b5fda2bad6ad1aaa44620}{indie\+::ecs\+::system\+::\+System\+Type}} \mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1ISystem_a4b74e1abca439d48bbb15b4ce62ade3e}{get\+System\+Type}} () const =0
+\begin{DoxyCompactList}\small\item\em Get the type of system. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+System. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classindie_1_1ecs_1_1system_1_1ISystem_a4b74e1abca439d48bbb15b4ce62ade3e}\label{classindie_1_1ecs_1_1system_1_1ISystem_a4b74e1abca439d48bbb15b4ce62ade3e}} 
+\index{indie::ecs::system::ISystem@{indie::ecs::system::ISystem}!getSystemType@{getSystemType}}
+\index{getSystemType@{getSystemType}!indie::ecs::system::ISystem@{indie::ecs::system::ISystem}}
+\doxysubsubsection{\texorpdfstring{getSystemType()}{getSystemType()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{ISystem_8hpp_aec184346273b5fda2bad6ad1aaa44620}{indie\+::ecs\+::system\+::\+System\+Type}} indie\+::ecs\+::system\+::\+ISystem\+::get\+System\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the type of system. 
+
+\begin{DoxyReturn}{Returns}
+enum value correspond to the type of system 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1Collide_a539cc528ba23866d573f349a9eae2b80}{indie\+::ecs\+::system\+::\+Collide}}, \mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1Explodable_ab526cbf479e61ecd44d68d49921ef434}{indie\+::ecs\+::system\+::\+Explodable}}, \mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1Sound_a52908d1d2285c5ee12043da7deb4404e}{indie\+::ecs\+::system\+::\+Sound}}, \mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1Draw2DSystem_a5c2f5b23a76e3d44b53e2a31aa5fa87a}{indie\+::ecs\+::system\+::\+Draw2\+DSystem}}, \mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1Draw3DSystem_a69fb08513d1acfb8b3470f6bc19984ee}{indie\+::ecs\+::system\+::\+Draw3\+DSystem}}, and \mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1MovementSystem_afd906c576eb39a89ee3b21b7c6001f01}{indie\+::ecs\+::system\+::\+Movement\+System}}.
+
+\mbox{\Hypertarget{classindie_1_1ecs_1_1system_1_1ISystem_aa4e9422532642acdb47b70f31405d4d1}\label{classindie_1_1ecs_1_1system_1_1ISystem_aa4e9422532642acdb47b70f31405d4d1}} 
+\index{indie::ecs::system::ISystem@{indie::ecs::system::ISystem}!update@{update}}
+\index{update@{update}!indie::ecs::system::ISystem@{indie::ecs::system::ISystem}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily virtual void indie\+::ecs\+::system\+::\+ISystem\+::update (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classindie_1_1ecs_1_1entity_1_1Entity}{indie\+::ecs\+::entity\+::\+Entity}} $>$ $>$ \&}]{entities }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Update all the entities with the system properties. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entities} & vector of entites to update \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1Collide_af91bc9e159a9ce1eb63d0702477827e6}{indie\+::ecs\+::system\+::\+Collide}}, \mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1Explodable_ae43d6c7f43f375a028f246b1834e7752}{indie\+::ecs\+::system\+::\+Explodable}}, \mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1Sound_ad17918e2a302859d275d50ea93c6f91d}{indie\+::ecs\+::system\+::\+Sound}}, \mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1Draw2DSystem_a0fa84fe770d2f8be0a0b0fabf89a50ca}{indie\+::ecs\+::system\+::\+Draw2\+DSystem}}, \mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1Draw3DSystem_a92ab732ce98a6ae72c8bbb5b63f1cbcb}{indie\+::ecs\+::system\+::\+Draw3\+DSystem}}, and \mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1MovementSystem_acce6593b2be6ec210a12a85fa29c3b0f}{indie\+::ecs\+::system\+::\+Movement\+System}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/ecs/system/\mbox{\hyperlink{ISystem_8hpp}{ISystem.\+hpp}}\end{DoxyCompactItemize}

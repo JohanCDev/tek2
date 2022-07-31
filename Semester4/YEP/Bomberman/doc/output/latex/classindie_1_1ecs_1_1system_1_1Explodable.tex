@@ -1,0 +1,110 @@
+\hypertarget{classindie_1_1ecs_1_1system_1_1Explodable}{}\doxysection{indie\+::ecs\+::system\+::Explodable Class Reference}
+\label{classindie_1_1ecs_1_1system_1_1Explodable}\index{indie::ecs::system::Explodable@{indie::ecs::system::Explodable}}
+
+
+\mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1Explodable}{Explodable}} system.  
+
+
+
+
+{\ttfamily \#include $<$Explodable.\+hpp$>$}
+
+Inheritance diagram for indie\+::ecs\+::system\+::Explodable\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classindie_1_1ecs_1_1system_1_1Explodable}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classindie_1_1ecs_1_1system_1_1Explodable_a9243eee55bd6722312598bb791ae45bf}\label{classindie_1_1ecs_1_1system_1_1Explodable_a9243eee55bd6722312598bb791ae45bf}} 
+{\bfseries Explodable} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1Explodable}{Explodable}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classindie_1_1ecs_1_1system_1_1Explodable_a763b0c604f3938c14aa42d71aa7d3ed5}\label{classindie_1_1ecs_1_1system_1_1Explodable_a763b0c604f3938c14aa42d71aa7d3ed5}} 
+{\bfseries $\sim$\+Explodable} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1Explodable}{Explodable}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1Explodable_ae43d6c7f43f375a028f246b1834e7752}{update}} (std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classindie_1_1ecs_1_1entity_1_1Entity}{indie\+::ecs\+::entity\+::\+Entity}} $>$ $>$ \&entities)
+\begin{DoxyCompactList}\small\item\em Update explodable entities. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1Explodable_aff1b73cf4615fb4d3c33ca48e2b3ffc0}{destroy\+Boxes}} (std\+::vector$<$ int $>$ \&compo\+To\+Remove, std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classindie_1_1ecs_1_1entity_1_1Entity}{indie\+::ecs\+::entity\+::\+Entity}} $>$ $>$ \&entities, \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Explodable}{indie\+::ecs\+::component\+::\+Explodable}} $\ast$explodable\+Compo, \mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Transform}{indie\+::ecs\+::component\+::\+Transform}} $\ast$transform\+Compo)
+\begin{DoxyCompactList}\small\item\em Destroy the boxes on the map. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classindie_1_1ecs_1_1system_1_1Explodable_af7de8948103455f8f3202967db5aa6a6}\label{classindie_1_1ecs_1_1system_1_1Explodable_af7de8948103455f8f3202967db5aa6a6}} 
+float {\bfseries get\+Value} (float position, float index, char operand)
+\item 
+\mbox{\Hypertarget{classindie_1_1ecs_1_1system_1_1Explodable_a04b078facf97535a8bd68a3ae32ef309}\label{classindie_1_1ecs_1_1system_1_1Explodable_a04b078facf97535a8bd68a3ae32ef309}} 
+float {\bfseries get\+New\+Value} (float bomb\+Pos)
+\item 
+\mbox{\Hypertarget{classindie_1_1ecs_1_1system_1_1Explodable_a82757bf61779339ed7ea36d19d677fb9}\label{classindie_1_1ecs_1_1system_1_1Explodable_a82757bf61779339ed7ea36d19d677fb9}} 
+std\+::map$<$ size\+\_\+t, \mbox{\hyperlink{classindie_1_1ecs_1_1entity_1_1Entity}{indie\+::ecs\+::entity\+::\+Entity}} $\ast$ $>$ {\bfseries get\+Entity\+By\+Position} (std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classindie_1_1ecs_1_1entity_1_1Entity}{indie\+::ecs\+::entity\+::\+Entity}} $>$ $>$ \&entities, float x, float y)
+\item 
+\mbox{\hyperlink{ISystem_8hpp_aec184346273b5fda2bad6ad1aaa44620}{indie\+::ecs\+::system\+::\+System\+Type}} \mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1Explodable_ab526cbf479e61ecd44d68d49921ef434}{get\+System\+Type}} () const
+\begin{DoxyCompactList}\small\item\em Get the System Type object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1Explodable}{Explodable}} system. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classindie_1_1ecs_1_1system_1_1Explodable_aff1b73cf4615fb4d3c33ca48e2b3ffc0}\label{classindie_1_1ecs_1_1system_1_1Explodable_aff1b73cf4615fb4d3c33ca48e2b3ffc0}} 
+\index{indie::ecs::system::Explodable@{indie::ecs::system::Explodable}!destroyBoxes@{destroyBoxes}}
+\index{destroyBoxes@{destroyBoxes}!indie::ecs::system::Explodable@{indie::ecs::system::Explodable}}
+\doxysubsubsection{\texorpdfstring{destroyBoxes()}{destroyBoxes()}}
+{\footnotesize\ttfamily void indie\+::ecs\+::system\+::\+Explodable\+::destroy\+Boxes (\begin{DoxyParamCaption}\item[{std\+::vector$<$ int $>$ \&}]{compo\+To\+Remove,  }\item[{std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classindie_1_1ecs_1_1entity_1_1Entity}{indie\+::ecs\+::entity\+::\+Entity}} $>$ $>$ \&}]{entities,  }\item[{\mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Explodable}{indie\+::ecs\+::component\+::\+Explodable}} $\ast$}]{explodable\+Compo,  }\item[{\mbox{\hyperlink{classindie_1_1ecs_1_1component_1_1Transform}{indie\+::ecs\+::component\+::\+Transform}} $\ast$}]{transform\+Compo }\end{DoxyParamCaption})}
+
+
+
+Destroy the boxes on the map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em compo\+To\+Remove} & Component to be removed \\
+\hline
+{\em entities} & Entity to be removed \\
+\hline
+{\em explodable\+Compo} & \mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1Explodable}{Explodable}} component \\
+\hline
+{\em transform\+Compo} & Transform component \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1ecs_1_1system_1_1Explodable_ab526cbf479e61ecd44d68d49921ef434}\label{classindie_1_1ecs_1_1system_1_1Explodable_ab526cbf479e61ecd44d68d49921ef434}} 
+\index{indie::ecs::system::Explodable@{indie::ecs::system::Explodable}!getSystemType@{getSystemType}}
+\index{getSystemType@{getSystemType}!indie::ecs::system::Explodable@{indie::ecs::system::Explodable}}
+\doxysubsubsection{\texorpdfstring{getSystemType()}{getSystemType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ISystem_8hpp_aec184346273b5fda2bad6ad1aaa44620}{indie\+::ecs\+::system\+::\+System\+Type}} indie\+::ecs\+::system\+::\+Explodable\+::get\+System\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the System Type object. 
+
+\begin{DoxyReturn}{Returns}
+indie\+::ecs\+::system\+::\+System\+Type System\+Type 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1ISystem_a4b74e1abca439d48bbb15b4ce62ade3e}{indie\+::ecs\+::system\+::\+ISystem}}.
+
+\mbox{\Hypertarget{classindie_1_1ecs_1_1system_1_1Explodable_ae43d6c7f43f375a028f246b1834e7752}\label{classindie_1_1ecs_1_1system_1_1Explodable_ae43d6c7f43f375a028f246b1834e7752}} 
+\index{indie::ecs::system::Explodable@{indie::ecs::system::Explodable}!update@{update}}
+\index{update@{update}!indie::ecs::system::Explodable@{indie::ecs::system::Explodable}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void indie\+::ecs\+::system\+::\+Explodable\+::update (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classindie_1_1ecs_1_1entity_1_1Entity}{indie\+::ecs\+::entity\+::\+Entity}} $>$ $>$ \&}]{entities }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Update explodable entities. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entities} & Entity to update \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1ISystem_aa4e9422532642acdb47b70f31405d4d1}{indie\+::ecs\+::system\+::\+ISystem}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/ecs/system/\+Explodable/\mbox{\hyperlink{system_2Explodable_2Explodable_8hpp}{Explodable.\+hpp}}\item 
+src/ecs/system/\+Explodable/\mbox{\hyperlink{system_2Explodable_2Explodable_8cpp}{Explodable.\+cpp}}\end{DoxyCompactItemize}

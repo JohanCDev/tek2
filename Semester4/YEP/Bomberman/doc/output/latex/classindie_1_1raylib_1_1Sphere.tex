@@ -1,0 +1,272 @@
+\hypertarget{classindie_1_1raylib_1_1Sphere}{}\doxysection{indie\+::raylib\+::Sphere Class Reference}
+\label{classindie_1_1raylib_1_1Sphere}\index{indie::raylib::Sphere@{indie::raylib::Sphere}}
+
+
+\mbox{\hyperlink{classindie_1_1raylib_1_1Sphere}{Sphere}} class encapsulation.  
+
+
+
+
+{\ttfamily \#include $<$Sphere.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classindie_1_1raylib_1_1Sphere_ad72c558758c9e869b6afcfa4e81bd9aa}{Sphere}} (\+::\+Vector3 center\+Pos, float radius, \+::\+Color color=BLACK)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classindie_1_1raylib_1_1Sphere}{Sphere}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Sphere_a1a1f4c297154515ba762b18586e29f27}\label{classindie_1_1raylib_1_1Sphere_a1a1f4c297154515ba762b18586e29f27}} 
+{\bfseries $\sim$\+Sphere} ()=default
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classindie_1_1raylib_1_1Sphere}{Sphere}} object. \end{DoxyCompactList}\item 
+\+::\+Vector3 \mbox{\hyperlink{classindie_1_1raylib_1_1Sphere_a74d312575a48a8527ecffffaba200ebf}{get\+Center\+Position}} () const
+\begin{DoxyCompactList}\small\item\em Get sphere center position. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1raylib_1_1Sphere_a635c4dc0d04eae88acdba594361ddfcf}{set\+Center\+Position}} (\+::\+Vector3 center\+Position)
+\begin{DoxyCompactList}\small\item\em Set sphere center position. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classindie_1_1raylib_1_1Sphere_a3e99895a7c4efa261f282043ed4b5cd4}{get\+Radius}} () const
+\begin{DoxyCompactList}\small\item\em Get sphere radius. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1raylib_1_1Sphere_a7fb94bf1b300e12841dc4ac648ef7ac3}{set\+Radius}} (float radius)
+\begin{DoxyCompactList}\small\item\em Set sphere radius. \end{DoxyCompactList}\item 
+\+::\+Color \mbox{\hyperlink{classindie_1_1raylib_1_1Sphere_a435b8dae5284c185402a35665befc076}{get\+Color}} () const
+\begin{DoxyCompactList}\small\item\em Get sphere color. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1raylib_1_1Sphere_a58a8fe9c17ea65fb329cbef83bd04b61}{set\+Color}} (\+::\+Color color)
+\begin{DoxyCompactList}\small\item\em Set sphere color. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Sphere_aebcda2f3905f5a5b893296750d527e87}\label{classindie_1_1raylib_1_1Sphere_aebcda2f3905f5a5b893296750d527e87}} 
+void {\bfseries draw} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} sphere. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1raylib_1_1Sphere_a5e83ab6cb47b8ebff482f11f260a1898}{draw\+Wires}} (int rings, int slices)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} sphere wires. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classindie_1_1raylib_1_1Sphere_a48172ae370d725f44556265fc977ef65}{check\+Collision\+Spheres}} (const \+::\+Vector3 \&sphere2, float radius2)
+\begin{DoxyCompactList}\small\item\em Check collision spheres. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classindie_1_1raylib_1_1Sphere_a20bed50844fe6234616cbcd5f763d7bd}{draw}} (\+::\+Vector3 center\+Position, float radius, \+::\+Color color)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} sphere. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classindie_1_1raylib_1_1Sphere_a8e5604e8346a1d725c75933b2ebfb97f}{draw\+Wires}} (\+::\+Vector3 center\+Position, float radius, int rings, int slices, \+::\+Color color)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} sphere wires. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classindie_1_1raylib_1_1Sphere_aad2822acee7b650fca9b0a9d813f5417}{check\+Collision\+Spheres}} (const \+::\+Vector3 \&center\+Position, float radius, const \+::\+Vector3 \&sphere2, float radius2)
+\begin{DoxyCompactList}\small\item\em Check collision spheres. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classindie_1_1raylib_1_1Sphere}{Sphere}} class encapsulation. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Sphere_ad72c558758c9e869b6afcfa4e81bd9aa}\label{classindie_1_1raylib_1_1Sphere_ad72c558758c9e869b6afcfa4e81bd9aa}} 
+\index{indie::raylib::Sphere@{indie::raylib::Sphere}!Sphere@{Sphere}}
+\index{Sphere@{Sphere}!indie::raylib::Sphere@{indie::raylib::Sphere}}
+\doxysubsubsection{\texorpdfstring{Sphere()}{Sphere()}}
+{\footnotesize\ttfamily indie\+::raylib\+::\+Sphere\+::\+Sphere (\begin{DoxyParamCaption}\item[{\+::\+Vector3}]{center\+Pos,  }\item[{float}]{radius,  }\item[{\+::\+Color}]{color = {\ttfamily BLACK} }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classindie_1_1raylib_1_1Sphere}{Sphere}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em center\+Pos} & \mbox{\hyperlink{classindie_1_1raylib_1_1Sphere}{Sphere}} center\+Pos \\
+\hline
+{\em radius} & \mbox{\hyperlink{classindie_1_1raylib_1_1Sphere}{Sphere}} radius \\
+\hline
+{\em color} & \mbox{\hyperlink{classindie_1_1raylib_1_1Sphere}{Sphere}} color \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Sphere_aad2822acee7b650fca9b0a9d813f5417}\label{classindie_1_1raylib_1_1Sphere_aad2822acee7b650fca9b0a9d813f5417}} 
+\index{indie::raylib::Sphere@{indie::raylib::Sphere}!checkCollisionSpheres@{checkCollisionSpheres}}
+\index{checkCollisionSpheres@{checkCollisionSpheres}!indie::raylib::Sphere@{indie::raylib::Sphere}}
+\doxysubsubsection{\texorpdfstring{checkCollisionSpheres()}{checkCollisionSpheres()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool indie\+::raylib\+::\+Sphere\+::check\+Collision\+Spheres (\begin{DoxyParamCaption}\item[{const \+::\+Vector3 \&}]{center\+Position,  }\item[{float}]{radius,  }\item[{const \+::\+Vector3 \&}]{sphere2,  }\item[{float}]{radius2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Check collision spheres. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em center\+Position} & \mbox{\hyperlink{classindie_1_1raylib_1_1Sphere}{Sphere}} center\+Position \\
+\hline
+{\em radius} & \mbox{\hyperlink{classindie_1_1raylib_1_1Sphere}{Sphere}} radius \\
+\hline
+{\em sphere2} & \mbox{\hyperlink{classindie_1_1raylib_1_1Sphere}{Sphere}} 2 position \\
+\hline
+{\em radius2} & \mbox{\hyperlink{classindie_1_1raylib_1_1Sphere}{Sphere}} 2 radius\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true There is a collision 
+
+false There isn\textquotesingle{}t a collision 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Sphere_a48172ae370d725f44556265fc977ef65}\label{classindie_1_1raylib_1_1Sphere_a48172ae370d725f44556265fc977ef65}} 
+\index{indie::raylib::Sphere@{indie::raylib::Sphere}!checkCollisionSpheres@{checkCollisionSpheres}}
+\index{checkCollisionSpheres@{checkCollisionSpheres}!indie::raylib::Sphere@{indie::raylib::Sphere}}
+\doxysubsubsection{\texorpdfstring{checkCollisionSpheres()}{checkCollisionSpheres()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool indie\+::raylib\+::\+Sphere\+::check\+Collision\+Spheres (\begin{DoxyParamCaption}\item[{const \+::\+Vector3 \&}]{sphere2,  }\item[{float}]{radius2 }\end{DoxyParamCaption})}
+
+
+
+Check collision spheres. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sphere2} & \mbox{\hyperlink{classindie_1_1raylib_1_1Sphere}{Sphere}} position \\
+\hline
+{\em radius2} & \mbox{\hyperlink{classindie_1_1raylib_1_1Sphere}{Sphere}} radius\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true There is a collision 
+
+false There isn\textquotesingle{}t a collision 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Sphere_a20bed50844fe6234616cbcd5f763d7bd}\label{classindie_1_1raylib_1_1Sphere_a20bed50844fe6234616cbcd5f763d7bd}} 
+\index{indie::raylib::Sphere@{indie::raylib::Sphere}!draw@{draw}}
+\index{draw@{draw}!indie::raylib::Sphere@{indie::raylib::Sphere}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void indie\+::raylib\+::\+Sphere\+::draw (\begin{DoxyParamCaption}\item[{\+::\+Vector3}]{center\+Position,  }\item[{float}]{radius,  }\item[{\+::\+Color}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} sphere. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em center\+Position} & \mbox{\hyperlink{classindie_1_1raylib_1_1Sphere}{Sphere}} center\+Position \\
+\hline
+{\em radius} & \mbox{\hyperlink{classindie_1_1raylib_1_1Sphere}{Sphere}} radius \\
+\hline
+{\em color} & \mbox{\hyperlink{classindie_1_1raylib_1_1Sphere}{Sphere}} color \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Sphere_a8e5604e8346a1d725c75933b2ebfb97f}\label{classindie_1_1raylib_1_1Sphere_a8e5604e8346a1d725c75933b2ebfb97f}} 
+\index{indie::raylib::Sphere@{indie::raylib::Sphere}!drawWires@{drawWires}}
+\index{drawWires@{drawWires}!indie::raylib::Sphere@{indie::raylib::Sphere}}
+\doxysubsubsection{\texorpdfstring{drawWires()}{drawWires()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void indie\+::raylib\+::\+Sphere\+::draw\+Wires (\begin{DoxyParamCaption}\item[{\+::\+Vector3}]{center\+Position,  }\item[{float}]{radius,  }\item[{int}]{rings,  }\item[{int}]{slices,  }\item[{\+::\+Color}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} sphere wires. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em center\+Position} & \mbox{\hyperlink{classindie_1_1raylib_1_1Sphere}{Sphere}} center\+Position \\
+\hline
+{\em radius} & \mbox{\hyperlink{classindie_1_1raylib_1_1Sphere}{Sphere}} radius \\
+\hline
+{\em rings} & \mbox{\hyperlink{classindie_1_1raylib_1_1Sphere}{Sphere}} rings \\
+\hline
+{\em slices} & \mbox{\hyperlink{classindie_1_1raylib_1_1Sphere}{Sphere}} slices \\
+\hline
+{\em color} & \mbox{\hyperlink{classindie_1_1raylib_1_1Sphere}{Sphere}} color \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Sphere_a5e83ab6cb47b8ebff482f11f260a1898}\label{classindie_1_1raylib_1_1Sphere_a5e83ab6cb47b8ebff482f11f260a1898}} 
+\index{indie::raylib::Sphere@{indie::raylib::Sphere}!drawWires@{drawWires}}
+\index{drawWires@{drawWires}!indie::raylib::Sphere@{indie::raylib::Sphere}}
+\doxysubsubsection{\texorpdfstring{drawWires()}{drawWires()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void indie\+::raylib\+::\+Sphere\+::draw\+Wires (\begin{DoxyParamCaption}\item[{int}]{rings,  }\item[{int}]{slices }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classindie_1_1raylib_1_1Draw}{Draw}} sphere wires. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rings} & \mbox{\hyperlink{classindie_1_1raylib_1_1Sphere}{Sphere}} rings \\
+\hline
+{\em slices} & \mbox{\hyperlink{classindie_1_1raylib_1_1Sphere}{Sphere}} slices \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Sphere_a74d312575a48a8527ecffffaba200ebf}\label{classindie_1_1raylib_1_1Sphere_a74d312575a48a8527ecffffaba200ebf}} 
+\index{indie::raylib::Sphere@{indie::raylib::Sphere}!getCenterPosition@{getCenterPosition}}
+\index{getCenterPosition@{getCenterPosition}!indie::raylib::Sphere@{indie::raylib::Sphere}}
+\doxysubsubsection{\texorpdfstring{getCenterPosition()}{getCenterPosition()}}
+{\footnotesize\ttfamily Vector3 indie\+::raylib\+::\+Sphere\+::get\+Center\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get sphere center position. 
+
+\begin{DoxyReturn}{Returns}
+Vector3 \mbox{\hyperlink{classindie_1_1raylib_1_1Sphere}{Sphere}} center pos 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Sphere_a435b8dae5284c185402a35665befc076}\label{classindie_1_1raylib_1_1Sphere_a435b8dae5284c185402a35665befc076}} 
+\index{indie::raylib::Sphere@{indie::raylib::Sphere}!getColor@{getColor}}
+\index{getColor@{getColor}!indie::raylib::Sphere@{indie::raylib::Sphere}}
+\doxysubsubsection{\texorpdfstring{getColor()}{getColor()}}
+{\footnotesize\ttfamily Color indie\+::raylib\+::\+Sphere\+::get\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get sphere color. 
+
+\begin{DoxyReturn}{Returns}
+Color \mbox{\hyperlink{classindie_1_1raylib_1_1Sphere}{Sphere}} color 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Sphere_a3e99895a7c4efa261f282043ed4b5cd4}\label{classindie_1_1raylib_1_1Sphere_a3e99895a7c4efa261f282043ed4b5cd4}} 
+\index{indie::raylib::Sphere@{indie::raylib::Sphere}!getRadius@{getRadius}}
+\index{getRadius@{getRadius}!indie::raylib::Sphere@{indie::raylib::Sphere}}
+\doxysubsubsection{\texorpdfstring{getRadius()}{getRadius()}}
+{\footnotesize\ttfamily float indie\+::raylib\+::\+Sphere\+::get\+Radius (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get sphere radius. 
+
+\begin{DoxyReturn}{Returns}
+float \mbox{\hyperlink{classindie_1_1raylib_1_1Sphere}{Sphere}} radius 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Sphere_a635c4dc0d04eae88acdba594361ddfcf}\label{classindie_1_1raylib_1_1Sphere_a635c4dc0d04eae88acdba594361ddfcf}} 
+\index{indie::raylib::Sphere@{indie::raylib::Sphere}!setCenterPosition@{setCenterPosition}}
+\index{setCenterPosition@{setCenterPosition}!indie::raylib::Sphere@{indie::raylib::Sphere}}
+\doxysubsubsection{\texorpdfstring{setCenterPosition()}{setCenterPosition()}}
+{\footnotesize\ttfamily void indie\+::raylib\+::\+Sphere\+::set\+Center\+Position (\begin{DoxyParamCaption}\item[{\+::\+Vector3}]{center\+Position }\end{DoxyParamCaption})}
+
+
+
+Set sphere center position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em center\+Position} & \mbox{\hyperlink{classindie_1_1raylib_1_1Sphere}{Sphere}} center\+Position \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Sphere_a58a8fe9c17ea65fb329cbef83bd04b61}\label{classindie_1_1raylib_1_1Sphere_a58a8fe9c17ea65fb329cbef83bd04b61}} 
+\index{indie::raylib::Sphere@{indie::raylib::Sphere}!setColor@{setColor}}
+\index{setColor@{setColor}!indie::raylib::Sphere@{indie::raylib::Sphere}}
+\doxysubsubsection{\texorpdfstring{setColor()}{setColor()}}
+{\footnotesize\ttfamily void indie\+::raylib\+::\+Sphere\+::set\+Color (\begin{DoxyParamCaption}\item[{\+::\+Color}]{color }\end{DoxyParamCaption})}
+
+
+
+Set sphere color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & \mbox{\hyperlink{classindie_1_1raylib_1_1Sphere}{Sphere}} color \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1raylib_1_1Sphere_a7fb94bf1b300e12841dc4ac648ef7ac3}\label{classindie_1_1raylib_1_1Sphere_a7fb94bf1b300e12841dc4ac648ef7ac3}} 
+\index{indie::raylib::Sphere@{indie::raylib::Sphere}!setRadius@{setRadius}}
+\index{setRadius@{setRadius}!indie::raylib::Sphere@{indie::raylib::Sphere}}
+\doxysubsubsection{\texorpdfstring{setRadius()}{setRadius()}}
+{\footnotesize\ttfamily void indie\+::raylib\+::\+Sphere\+::set\+Radius (\begin{DoxyParamCaption}\item[{float}]{radius }\end{DoxyParamCaption})}
+
+
+
+Set sphere radius. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em radius} & \mbox{\hyperlink{classindie_1_1raylib_1_1Sphere}{Sphere}} radius \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/raylib/sphere/\mbox{\hyperlink{Sphere_8hpp}{Sphere.\+hpp}}\item 
+src/raylib/sphere/\mbox{\hyperlink{Sphere_8cpp}{Sphere.\+cpp}}\end{DoxyCompactItemize}

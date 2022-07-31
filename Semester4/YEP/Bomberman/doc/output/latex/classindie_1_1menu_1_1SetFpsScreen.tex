@@ -1,0 +1,189 @@
+\hypertarget{classindie_1_1menu_1_1SetFpsScreen}{}\doxysection{indie\+::menu\+::Set\+Fps\+Screen Class Reference}
+\label{classindie_1_1menu_1_1SetFpsScreen}\index{indie::menu::SetFpsScreen@{indie::menu::SetFpsScreen}}
+
+
+Class for the Set Fps Screen.  
+
+
+
+
+{\ttfamily \#include $<$Set\+Fps\+Screen.\+hpp$>$}
+
+Inheritance diagram for indie\+::menu\+::Set\+Fps\+Screen\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classindie_1_1menu_1_1SetFpsScreen}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classindie_1_1menu_1_1SetFpsScreen_a0baacf09e061fe2e5214313c78d9ac27}\label{classindie_1_1menu_1_1SetFpsScreen_a0baacf09e061fe2e5214313c78d9ac27}} 
+{\bfseries Set\+Fps\+Screen} ()
+\begin{DoxyCompactList}\small\item\em Set the Fps Screen object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classindie_1_1menu_1_1SetFpsScreen_aa2797ce836afa1223df8a15b380fd175}\label{classindie_1_1menu_1_1SetFpsScreen_aa2797ce836afa1223df8a15b380fd175}} 
+{\bfseries $\sim$\+Set\+Fps\+Screen} ()=default
+\begin{DoxyCompactList}\small\item\em Destroy the Set Fps Screen object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1menu_1_1SetFpsScreen_a34934903706a22e08b7ea5e4715c770f}{init}} () override
+\begin{DoxyCompactList}\small\item\em Init the Fps Screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1menu_1_1SetFpsScreen_aaf6d3dce8c7e2cd8d4f718d1ef366980}{draw}} () override
+\begin{DoxyCompactList}\small\item\em Draw the Fps Screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1menu_1_1SetFpsScreen_a726246a2874aa36e723caa7fd1fb7652}{update}} () override
+\begin{DoxyCompactList}\small\item\em Update the Fps Screen. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classindie_1_1menu_1_1SetFpsScreen_aa0baf0bd498b2eb7d69c53f596409ef5}{handle\+Event}} (\mbox{\hyperlink{structindie_1_1Event}{indie\+::\+Event}} \&event) override
+\begin{DoxyCompactList}\small\item\em Handle event for Fps Screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1menu_1_1SetFpsScreen_ae466f49444b4912166dda0c18c9cf520}{add\+Entity}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classindie_1_1ecs_1_1entity_1_1Entity}{indie\+::ecs\+::entity\+::\+Entity}} $>$ entity) override
+\begin{DoxyCompactList}\small\item\em Add Entity for the Fps Screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1menu_1_1SetFpsScreen_a0460192da44459c1743978b200a7d233}{add\+System}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1ISystem}{indie\+::ecs\+::system\+::\+ISystem}} $>$ system) override
+\begin{DoxyCompactList}\small\item\em Add System for the Fps Screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classindie_1_1menu_1_1SetFpsScreen_a97b77e767ff45bb1e42a761954ec3255}{set\+Previous\+Scene}} (bool scene)
+\begin{DoxyCompactList}\small\item\em Set the scene to the previous one. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classindie_1_1menu_1_1SetFpsScreen_af06c809bac23c80a05365ddf700c7dcd}{check\+Cursor\+Position}} (bool direction)
+\begin{DoxyCompactList}\small\item\em Check where the cursor is. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class for the Set Fps Screen. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classindie_1_1menu_1_1SetFpsScreen_ae466f49444b4912166dda0c18c9cf520}\label{classindie_1_1menu_1_1SetFpsScreen_ae466f49444b4912166dda0c18c9cf520}} 
+\index{indie::menu::SetFpsScreen@{indie::menu::SetFpsScreen}!addEntity@{addEntity}}
+\index{addEntity@{addEntity}!indie::menu::SetFpsScreen@{indie::menu::SetFpsScreen}}
+\doxysubsubsection{\texorpdfstring{addEntity()}{addEntity()}}
+{\footnotesize\ttfamily void indie\+::menu\+::\+Set\+Fps\+Screen\+::add\+Entity (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classindie_1_1ecs_1_1entity_1_1Entity}{indie\+::ecs\+::entity\+::\+Entity}} $>$}]{entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Add Entity for the Fps Screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & Entity to add for the Fps Screen \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classindie_1_1IScreen_a08ef01692ea36f0eb9cdf06bf41b12a7}{indie\+::\+IScreen}}.
+
+\mbox{\Hypertarget{classindie_1_1menu_1_1SetFpsScreen_a0460192da44459c1743978b200a7d233}\label{classindie_1_1menu_1_1SetFpsScreen_a0460192da44459c1743978b200a7d233}} 
+\index{indie::menu::SetFpsScreen@{indie::menu::SetFpsScreen}!addSystem@{addSystem}}
+\index{addSystem@{addSystem}!indie::menu::SetFpsScreen@{indie::menu::SetFpsScreen}}
+\doxysubsubsection{\texorpdfstring{addSystem()}{addSystem()}}
+{\footnotesize\ttfamily void indie\+::menu\+::\+Set\+Fps\+Screen\+::add\+System (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classindie_1_1ecs_1_1system_1_1ISystem}{indie\+::ecs\+::system\+::\+ISystem}} $>$}]{system }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Add System for the Fps Screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em system} & System to add for the Fps Screen \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classindie_1_1IScreen_a492a5f07982dc9df97b71251413e8129}{indie\+::\+IScreen}}.
+
+\mbox{\Hypertarget{classindie_1_1menu_1_1SetFpsScreen_af06c809bac23c80a05365ddf700c7dcd}\label{classindie_1_1menu_1_1SetFpsScreen_af06c809bac23c80a05365ddf700c7dcd}} 
+\index{indie::menu::SetFpsScreen@{indie::menu::SetFpsScreen}!checkCursorPosition@{checkCursorPosition}}
+\index{checkCursorPosition@{checkCursorPosition}!indie::menu::SetFpsScreen@{indie::menu::SetFpsScreen}}
+\doxysubsubsection{\texorpdfstring{checkCursorPosition()}{checkCursorPosition()}}
+{\footnotesize\ttfamily int indie\+::menu\+::\+Set\+Fps\+Screen\+::check\+Cursor\+Position (\begin{DoxyParamCaption}\item[{bool}]{direction }\end{DoxyParamCaption})}
+
+
+
+Check where the cursor is. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em direction} & True is UP and False is DOWN \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int The index for the button 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classindie_1_1menu_1_1SetFpsScreen_aaf6d3dce8c7e2cd8d4f718d1ef366980}\label{classindie_1_1menu_1_1SetFpsScreen_aaf6d3dce8c7e2cd8d4f718d1ef366980}} 
+\index{indie::menu::SetFpsScreen@{indie::menu::SetFpsScreen}!draw@{draw}}
+\index{draw@{draw}!indie::menu::SetFpsScreen@{indie::menu::SetFpsScreen}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void indie\+::menu\+::\+Set\+Fps\+Screen\+::draw (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Draw the Fps Screen. 
+
+
+
+Implements \mbox{\hyperlink{classindie_1_1IScreen_a50e467ab6b7efae4114a9c3f17fa8ef4}{indie\+::\+IScreen}}.
+
+\mbox{\Hypertarget{classindie_1_1menu_1_1SetFpsScreen_aa0baf0bd498b2eb7d69c53f596409ef5}\label{classindie_1_1menu_1_1SetFpsScreen_aa0baf0bd498b2eb7d69c53f596409ef5}} 
+\index{indie::menu::SetFpsScreen@{indie::menu::SetFpsScreen}!handleEvent@{handleEvent}}
+\index{handleEvent@{handleEvent}!indie::menu::SetFpsScreen@{indie::menu::SetFpsScreen}}
+\doxysubsubsection{\texorpdfstring{handleEvent()}{handleEvent()}}
+{\footnotesize\ttfamily int indie\+::menu\+::\+Set\+Fps\+Screen\+::handle\+Event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structindie_1_1Event}{indie\+::\+Event}} \&}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Handle event for Fps Screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & \mbox{\hyperlink{structindie_1_1Event}{Event}} to be handled \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int The scene number 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classindie_1_1IScreen_a715fc5be821e5ed1e66087cf4945234c}{indie\+::\+IScreen}}.
+
+\mbox{\Hypertarget{classindie_1_1menu_1_1SetFpsScreen_a34934903706a22e08b7ea5e4715c770f}\label{classindie_1_1menu_1_1SetFpsScreen_a34934903706a22e08b7ea5e4715c770f}} 
+\index{indie::menu::SetFpsScreen@{indie::menu::SetFpsScreen}!init@{init}}
+\index{init@{init}!indie::menu::SetFpsScreen@{indie::menu::SetFpsScreen}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void indie\+::menu\+::\+Set\+Fps\+Screen\+::init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Init the Fps Screen. 
+
+
+
+Implements \mbox{\hyperlink{classindie_1_1IScreen_a8a94615d59b1a467347bf806b5c92f17}{indie\+::\+IScreen}}.
+
+\mbox{\Hypertarget{classindie_1_1menu_1_1SetFpsScreen_a97b77e767ff45bb1e42a761954ec3255}\label{classindie_1_1menu_1_1SetFpsScreen_a97b77e767ff45bb1e42a761954ec3255}} 
+\index{indie::menu::SetFpsScreen@{indie::menu::SetFpsScreen}!setPreviousScene@{setPreviousScene}}
+\index{setPreviousScene@{setPreviousScene}!indie::menu::SetFpsScreen@{indie::menu::SetFpsScreen}}
+\doxysubsubsection{\texorpdfstring{setPreviousScene()}{setPreviousScene()}}
+{\footnotesize\ttfamily void indie\+::menu\+::\+Set\+Fps\+Screen\+::set\+Previous\+Scene (\begin{DoxyParamCaption}\item[{bool}]{scene }\end{DoxyParamCaption})}
+
+
+
+Set the scene to the previous one. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scene} & The scene to draw \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classindie_1_1menu_1_1SetFpsScreen_a726246a2874aa36e723caa7fd1fb7652}\label{classindie_1_1menu_1_1SetFpsScreen_a726246a2874aa36e723caa7fd1fb7652}} 
+\index{indie::menu::SetFpsScreen@{indie::menu::SetFpsScreen}!update@{update}}
+\index{update@{update}!indie::menu::SetFpsScreen@{indie::menu::SetFpsScreen}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void indie\+::menu\+::\+Set\+Fps\+Screen\+::update (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Update the Fps Screen. 
+
+
+
+Implements \mbox{\hyperlink{classindie_1_1IScreen_aa8a7600f2869b54991b1ae551e8735c1}{indie\+::\+IScreen}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/screens/set\+\_\+fps/\mbox{\hyperlink{SetFpsScreen_8hpp}{Set\+Fps\+Screen.\+hpp}}\item 
+src/screens/set\+\_\+fps/\mbox{\hyperlink{SetFpsScreen_8cpp}{Set\+Fps\+Screen.\+cpp}}\end{DoxyCompactItemize}

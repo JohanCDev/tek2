@@ -1,0 +1,5 @@
+__pycache__/
+venv/
+.idea/
+207demography
+207demography_data.csv
