@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/Users/johan/Epitech/tek2/B4/HUB/CMakeWorkshop/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -I/Users/johan/Epitech/tek2/B4/HUB/CMakeWorkshop/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -o src/CMakeFiles/hello.dir/hello_world.c.o -c /Users/johan/Epitech/tek2/B4/HUB/CMakeWorkshop/src/hello_world.c",
+  "file": "/Users/johan/Epitech/tek2/B4/HUB/CMakeWorkshop/src/hello_world.c"
+},
+{
+  "directory": "/Users/johan/Epitech/tek2/B4/HUB/CMakeWorkshop/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -I/Users/johan/Epitech/tek2/B4/HUB/CMakeWorkshop/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -o src/lib/ikea/CMakeFiles/ikea.dir/ikea.c.o -c /Users/johan/Epitech/tek2/B4/HUB/CMakeWorkshop/src/lib/ikea/ikea.c",
+  "file": "/Users/johan/Epitech/tek2/B4/HUB/CMakeWorkshop/src/lib/ikea/ikea.c"
+},
+{
+  "directory": "/Users/johan/Epitech/tek2/B4/HUB/CMakeWorkshop/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -I/opt/homebrew/include -I/Users/johan/Epitech/tek2/B4/HUB/CMakeWorkshop/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -o tests/CMakeFiles/unit_test.dir/test_ikea.c.o -c /Users/johan/Epitech/tek2/B4/HUB/CMakeWorkshop/tests/test_ikea.c",
+  "file": "/Users/johan/Epitech/tek2/B4/HUB/CMakeWorkshop/tests/test_ikea.c"
+}
+]

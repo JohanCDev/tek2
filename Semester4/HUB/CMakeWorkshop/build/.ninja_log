@@ -1,0 +1,11 @@
+# ninja log v5
+0	24	1652950717286171497	src/lib/ikea/CMakeFiles/ikea.dir/ikea.c.o	4ebaf461a412bc9a
+0	5	0	clean	1f0117926fe85a19
+39	68	1652950717330257579	../unit_test	c5f1ba9bc1a3fdd7
+44	72	1652950358503752590	tests/unit_test	edd8a2955c5f84a8
+0	34	1652950717295847881	tests/CMakeFiles/unit_test.dir/test_ikea.c.o	6c2eca0f33b84863
+24	37	1652950602685071000	lib/ikea/libikea.a	dbdd807bc6457f2d
+1	23	1652950602670373920	lib/ikea/CMakeFiles/ikea.dir/ikea.c.o	c955ccfdb4b94ca7
+25	39	1652950717301735000	src/lib/ikea/libikea.a	356470cca1a93cf1
+39	68	1652950717330263745	../hello	ea9e948e938eda64
+0	25	1652950717286171789	src/CMakeFiles/hello.dir/hello_world.c.o	bb256b2e837cf4fd
